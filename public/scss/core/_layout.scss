@@ -1,0 +1,16 @@
+.container {
+  max-width: clamp(1200px, scale(1612), 2200px);
+  margin: auto;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  position: relative;
+
+  @include md {
+    max-width: none;
+  }
+}
+
+.section {
+  padding: scale(60) 0;
+}

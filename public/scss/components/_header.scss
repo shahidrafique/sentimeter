@@ -1,0 +1,106 @@
+.header {
+  background: rgba($blue, 0.8);
+  align-items: center;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  backdrop-filter: blur(20px);
+
+  .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    height: 84px;
+  }
+
+  .logo {
+    width: clamp(200px, scale(267), 300px);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &--dark {
+    background: rgba($color: #000000, $alpha: 0.2);
+
+    .nav .nav__item {
+      color: white;
+    }
+  }
+
+  .menu-button {
+    position: absolute;
+
+    right: 20px;
+    top: 31px;
+    display: none !important;
+    width: 27px;
+    height: 18px;
+    transition: 0.35s;
+
+    span {
+      width: 27px;
+      height: 3px;
+      background: $black;
+      display: block;
+      margin-bottom: 3px;
+      transition: 0.35s;
+      pointer-events: none;
+    }
+
+    &.show {
+      span {
+        &:first-child {
+          opacity: 0;
+        }
+
+        &:nth-child(2) {
+          background: $red;
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+          background: $red;
+          transform: rotate(-45deg);
+          margin-top: -6px;
+        }
+      }
+    }
+
+    @include md {
+      display: block !important;
+    }
+  }
+
+  &.show {
+    .nav {
+      @include md {
+        max-height: 500px;
+      }
+    }
+  }
+
+  @include md {
+    >.container {
+      padding: 30px 16px;
+    }
+
+    .nav {
+      height: auto;
+    }
+  }
+
+  &.show--notification {
+    .notification-bar {
+      height: 75px;
+      padding: 1rem 0;
+    }
+
+    .menu-button {
+      top: 106px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.nav {
+  $self: &;
+  display: flex;
+  align-items: center;
+  transition: 0.35s;
+
+  #{$self}__item {
+    font-size: clamp(16px, scale(18), 20px);
+    padding: 0 10px;
+    transition: 0.35s;
+    text-transform: uppercase;
+
+  }
+
+  @include md {
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    top: 100%;
+    width: 100%;
+    background-color: $gray-lightest;
+    max-height: 0;
+    overflow: hidden;
+
+    li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+      width: 100%;
+      text-align: right;
+
+      a {
+        color: $black;
+      }
+    }
+  }
+}

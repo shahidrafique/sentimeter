@@ -1,0 +1,34 @@
+@import url("../css/lenis.css");
+// @import url("../css/fonts.css");
+
+@import "global/variables";
+@import "global/mixin";
+@import "global/media-query";
+
+@import "core/reset";
+@import "core/core";
+@import "core/layout";
+
+// Components
+@import "components/header";
+@import "components/footer";
+@import "components/nav";
+@import "components/button";
+@import "components/hero";
+@import "components/about";
+@import "components/companies";
+@import "components/testimonials";
+@import "components/stories";
+@import "components/parallax";
+@import "components/banner";
+@import "components/tab";
+@import "components/member";
+@import "components/sponsors";
+@import "components/notification-bar";
+
+// pages
+@import "pages/team";
+@import "pages/process";
+@import "pages/careers";
+@import "pages/contact";
+@import "pages/upcoming";
