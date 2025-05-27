@@ -1,57 +1,57 @@
-.button {
-  $self: &;
-  background-color: $white;
-  font-size: clamp(16px, scale(18), 20px);
-  padding: 0 scale(30) 0 clamp(60px, scale(70), 120px);
-  border-radius: 100px;
-  position: relative;
-  align-items: center;
-  height: clamp(48px, scale(55), 70px);
-  border: 2px solid $gray-light;
+// .button {
+//   $self: &;
+//   background-color: $white;
+//   font-size: clamp(16px, scale(18), 20px);
+//   padding: 0 scale(30) 0 clamp(60px, scale(70), 120px);
+//   border-radius: 100px;
+//   position: relative;
+//   align-items: center;
+//   height: clamp(48px, scale(55), 70px);
+//   border: 2px solid $gray-light;
 
-  color: $black;
-  display: inline-flex;
-  transition: 0.35s;
+//   color: $black;
+//   display: inline-flex;
+//   transition: 0.35s;
 
-  &:before {
-    content: "";
-    display: block;
-    width: clamp(48px, scale(55), 70px);
-    height: clamp(48px, scale(55), 70px);
-    border-radius: 60px;
-    background: url("/arrow.svg") no-repeat center $black;
-    position: absolute;
-    left: -1px;
-    top: -1px;
-    padding: 0;
-    transition: 0.35s;
-  }
+//   &:before {
+//     content: "";
+//     display: block;
+//     width: clamp(48px, scale(55), 70px);
+//     height: clamp(48px, scale(55), 70px);
+//     border-radius: 60px;
+//     background: url("/arrow.svg") no-repeat center $black;
+//     position: absolute;
+//     left: -1px;
+//     top: -1px;
+//     padding: 0;
+//     transition: 0.35s;
+//   }
 
 
-  @include xs {
-    padding: 0 20px 0 60px;
-  }
+//   @include xs {
+//     padding: 0 20px 0 60px;
+//   }
 
-  &#{$self}--submit {
-    padding: 0 60px;
-    cursor: pointer;
+//   &#{$self}--submit {
+//     padding: 0 60px;
+//     cursor: pointer;
 
-    &:hover {
-      background-color: $black;
-      color: $white;
-      border-color: $black;
-    }
+//     &:hover {
+//       background-color: $black;
+//       color: $white;
+//       border-color: $black;
+//     }
 
-    &::before {
-      display: none !important;
-    }
-  }
-}
+//     &::before {
+//       display: none !important;
+//     }
+//   }
+// }
 
 .button__more {
   font-size: clamp(16px, scale(18), 20px);
 
-  display: flex;
+  display: inline-flex;
   gap: clamp(10px, scale(10), 14px);
   align-items: center;
 
@@ -61,7 +61,7 @@
     width: clamp(20px, scale(24), 28px);
     height: clamp(20px, scale(24), 28px);
     border-radius: clamp(20px, scale(24), 28px);
-    background: url("/arrow.svg") no-repeat center $black;
+    background: url("/images/arrow.svg") no-repeat center $yellow;
     background-size: 50%;
     padding: 0;
   }
@@ -83,5 +83,51 @@
     border-color: black;
     background-color: black;
     color: white;
+  }
+}
+
+
+.button {
+  display: inline-flex;
+  background: #003B6D;
+  background: linear-gradient(134deg, rgba(0, 59, 109, 1) 0%, rgba(0, 114, 211, 1) 100%);
+  color: $white;
+  font-size: clamp(16px, scale(18), 20px);
+  padding: 5px 20px 5px 5px;
+  border-radius: 100px;
+  position: relative;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  transition: .35s;
+  background-size: 100%;
+  background-position: left;
+
+  &:before {
+    content: "";
+    display: block;
+    height: clamp(28px, scale(30), 36px);
+    aspect-ratio: 1;
+    border-radius: clamp(20px, scale(24), 28px);
+    background: url("/images/arrow.svg") no-repeat center $yellow;
+    background-size: 50%;
+    padding: 0;
+  }
+
+  &:hover {
+    background-size: 250%;
+    background-position: right;
+    // color: $yellow;
+  }
+
+  &.button--outline {
+    border: 2px solid $yellow;
+    color: $white;
+    background: transparent;
+
+    &:hover {
+
+      color: $yellow;
+    }
   }
 }

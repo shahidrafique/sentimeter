@@ -1,5 +1,5 @@
 import Image from "next/image";
-export default function Banner() {
+export default function Hero() {
   return (
     <div className="hero section-title">
       <div className="container">

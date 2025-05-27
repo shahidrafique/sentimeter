@@ -13,4 +13,38 @@
 
 .section {
   padding: scale(60) 0;
+
+  &.blue {
+    background: $blue-lightest;
+  }
+
+  &.has-bg {
+    padding: scale(50) scale(40);
+  }
+}
+
+.card {
+  border-radius: 16px;
+  background-color: $white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: scale(100) 0;
+
+}
+
+
+// Sub Header
+.sub-header {
+  background: $blue-lightest;
+  padding: 12px 0;
+
+  .container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sub-header-right {
+    color: $blue;
+    font-size: scale(18);
+    font-weight: 500;
+  }
 }

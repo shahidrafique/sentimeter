@@ -1,0 +1,410 @@
+.employee-experience {
+    &-left {
+        flex: 3;
+        position: relative;
+        padding-right: scale(100);
+        border-right: 1px solid $gray-light;
+
+
+        h3 {
+            // font-size: scale(34);
+            color: $dark-blue;
+        }
+
+        h2 {
+            // font-size: scale(54);
+            color: $yellow;
+            font-style: italic;
+        }
+
+        .content {
+            font-size: scale(20);
+            max-width: 90%;
+            font-weight: 500;
+            margin-bottom: 30px;
+
+            ul {
+                li {
+                    list-style: disc;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+
+    }
+
+    &-right {
+        flex: 2;
+        padding-left: scale(100);
+
+        h3 {
+            // font-size: scale(34);
+            color: $dark-blue;
+            margin-bottom: 30px;
+        }
+
+        .benefit {
+            display: flex;
+            align-items: center;
+            max-width: 80%;
+            font-size: scale(20);
+            gap: 12px;
+        }
+    }
+}
+
+.phases {
+    padding: scale(120) 0;
+    background-color: $dark-blue;
+    color: $white;
+
+    .container {
+        flex-direction: column;
+        max-width: scale(800);
+    }
+
+    .content {
+        text-align: center;
+
+        h3 {
+            span {
+                color: $yellow;
+            }
+        }
+
+        p {
+            font-size: scale(20);
+        }
+    }
+
+    .cards-holder {
+        margin-top: scale(50);
+
+        .phase-card {
+            display: flex;
+            padding: clamp(28px, scale(30), 40px);
+            background: $darkest-blue;
+            border-radius: scale(18);
+            gap: clamp(20px, scale(24), 30px);
+            position: relative;
+            margin-bottom: 74px;
+
+            .icon {
+                flex-shrink: 0;
+
+                img {
+                    width: scale(80);
+                    height: scale(80);
+                }
+            }
+
+            .content {
+                text-align: left;
+
+                h4 {
+                    font-size: clamp(20px, scale(24), 30px);
+
+                }
+
+                p {
+                    margin-top: scale(15);
+                    font-size: clamp(18px, scale(20), 24px);
+                    max-width: 90%;
+                }
+
+                .button {
+                    background: $red;
+                    flex-direction: row-reverse;
+                    padding: 5px 5px 5px 20px;
+
+                    &:before {
+                        background: url(/images/arrow.svg) no-repeat center $white;
+                    }
+
+                    &.green {
+                        background: $green;
+                    }
+
+                    &.yellow {
+                        background: $yellow;
+                    }
+
+                    &.light-blue {
+                        background: $blue-light;
+                    }
+                }
+            }
+
+            &:after {
+                content: "";
+                height: 74px;
+                width: scale(24);
+                display: inline-block;
+                position: absolute;
+                background: url(/images/arrow-down.svg) no-repeat bottom center;
+                left: 50px;
+                bottom: -74px;
+
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+// empowering-employee
+.empowering-employee {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h4 {
+        font-size: scale(26);
+        color: $yellow;
+        margin-top: scale(8);
+    }
+
+    .card {
+        // @extend .gradient;
+        background: $dark-blue;
+        color: $white;
+    }
+
+    .row {
+        margin: scale(60) 0;
+        display: flex;
+        width: 100%;
+        gap: scale(80);
+
+        .col {
+            flex: 1;
+
+            .col-content {
+                display: flex;
+                flex-direction: column;
+
+                // gap: 20px;
+                .icon {
+                    margin-bottom: scale(16);
+
+                    img {
+                        width: scale(86);
+                        height: scale(86);
+                    }
+                }
+
+                h4 {
+                    font-size: clamp(24px, scale(24), 28px);
+                    color: $yellow;
+                }
+
+                p {
+                    font-size: clamp(18px, scale(20), 24px);
+                }
+            }
+        }
+    }
+}
+
+
+//supporting-team
+.supporting-team {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3 {
+        color: $dark-blue;
+    }
+
+    h4 {
+        font-size: scale(26);
+        margin-top: scale(8);
+    }
+
+    .image-holder {
+        margin: scale(60) 0;
+
+        img {
+            width: scale(1136);
+            height: scale(338);
+        }
+    }
+}
+
+//power-transformation
+.power-transformation {
+    .container {
+        gap: 24px;
+    }
+
+    .col {
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: scale(799);
+            height: scale(387);
+        }
+    }
+
+    .content {
+        h3 {
+            font-size: scale(38);
+            color: $dark-blue
+        }
+
+        h4 {
+            font-size: scale(22);
+            margin-top: 8px;
+            max-width: 80%;
+        }
+
+        ul {
+            margin: scale(30) 0;
+            display: flex;
+            flex-direction: column;
+            padding-left: scale(10);
+            gap: 12px;
+
+            li {
+                font-size: scale(20);
+                color: rgba($black, .7);
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                &:before {
+                    content: '';
+                    width: scale(32);
+                    height: scale(32);
+                    display: inline-block;
+                    background: url('/images/yellow-tick.svg') no-repeat center;
+                    background-size: contain;
+
+                }
+
+            }
+        }
+
+        p {
+            font-size: scale(20);
+            padding-left: scale(55);
+            font-style: italic;
+        }
+
+        .button {
+            margin-left: scale(10);
+            margin-top: scale(16);
+        }
+    }
+}
+
+// smart-survey
+.smart-survey {
+    .card {
+        background: $red-light;
+        box-shadow: none;
+    }
+
+    .col {
+        flex: 1;
+        align-items: center;
+        display: flex;
+
+        &:nth-child(2) {
+            flex-direction: column;
+
+            h4 {
+                font-size: scale(28);
+                margin-bottom: scale(24);
+            }
+        }
+    }
+
+    .content {
+        max-width: 80%;
+
+        h3 {
+            font-size: scale(50);
+            color: $dark-blue;
+        }
+
+        p {
+            font-size: scale(22);
+            font-weight: 500;
+        }
+    }
+}
+
+// real-results
+.real-results {
+    .col {
+        flex: 1;
+        align-items: center;
+        display: flex;
+
+        &:nth-child(2) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        &.image-holder {
+            img {
+                width: scale(887);
+                height: scale(476);
+            }
+        }
+    }
+
+    .content {
+        max-width: 80%;
+
+        h3 {
+            font-size: scale(50);
+            color: $dark-blue;
+        }
+
+        p {
+            font-size: scale(22);
+            font-weight: 500;
+        }
+    }
+}
+
+
+//transform-employee
+.transform-employee {
+    .card {
+        @extend .gradient;
+        color: $white;
+    }
+
+    .content {
+        max-width: scale(700);
+
+        h3 {
+            span {
+                color: $yellow;
+                font-style: italic;
+            }
+        }
+
+        p {
+            font-size: scale(28)
+        }
+    }
+}
