@@ -1,0 +1,32 @@
+.banner {
+    @extend .gradient;
+    color: $white;
+    height: scale(680);
+
+    .container {
+        height: 100%;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .content {
+        max-width: 70%;
+
+        h2 {
+            text-transform: uppercase;
+            margin: 0;
+
+            span {
+                color: $yellow;
+                font-style: italic;
+            }
+        }
+
+        p {
+            font-size: clamp(16px, scale(20), 30px);
+            font-weight: 400;
+            margin-bottom: 40px;
+            max-width: scale(700);
+        }
+    }
+}

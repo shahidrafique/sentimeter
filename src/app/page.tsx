@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Banner from "./components/home/banner";
+import Hero from "./components/home/hero";
 import Clients from "./components/clients";
 import Problems from "./components/home/problems";
 import PowerInsights from "./components/home/power-insights";
@@ -13,7 +13,7 @@ import DemoForm from "./components/demo-form";
 export default function Home() {
   return (
     <article className="home">
-      <Banner />
+      <Hero />
       <Clients />
       <Problems />
       <PowerInsights />

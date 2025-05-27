@@ -4,6 +4,8 @@
 @import "global/variables";
 @import "global/mixin";
 @import "global/media-query";
+@import "global/utilities";
+@import "global/typography";
 
 @import "core/reset";
 @import "core/core";
@@ -28,7 +30,7 @@
 
 // pages
 @import "pages/team";
-@import "pages/process";
+@import "pages/cx";
 @import "pages/careers";
 @import "pages/contact";
 @import "pages/upcoming";

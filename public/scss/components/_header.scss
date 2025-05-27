@@ -1,35 +1,47 @@
 .header {
-  background: rgba($blue, 0.8);
+  background: rgba($white, 0.9);
   align-items: center;
   position: sticky;
   z-index: 100;
   top: 0;
   backdrop-filter: blur(20px);
+  border-top: 16px solid $yellow;
+  padding: 20px 0;
 
   .container {
     justify-content: space-between;
     align-items: center;
   }
 
-  .nav {
-    height: 84px;
-  }
+  &-left {
+    .logo {
+      display: flex;
+      align-items: center;
+      color: #003B6D;
 
-  .logo {
-    width: clamp(200px, scale(267), 300px);
+      img {
+        margin-right: 8px;
+      }
 
-    img {
-      width: 100%;
+      font-size: 38px;
+
+      b {
+        font-weight: 600;
+
+      }
     }
   }
 
-  &--dark {
-    background: rgba($color: #000000, $alpha: 0.2);
-
-    .nav .nav__item {
-      color: white;
-    }
+  &-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
   }
+
+
+
+
+
 
   .menu-button {
     position: absolute;
