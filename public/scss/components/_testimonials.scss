@@ -2,45 +2,52 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding: scale(100) scale(90);
 
   .section-title {
     color: $dark-blue;
     text-align: center;
     margin-bottom: scale(30);
+    width: 100%;
+
   }
 
-  .testimonial {
+  .card {
     background: $red-light;
-    border-radius: 8px;
-    padding: scale(70) scale(20);
+    box-shadow: none;
 
-    &-inner {
-      display: flex;
-      align-items: center;
-      gap: scale(120);
-      max-width: scale(1400);
-      margin: 0 auto;
+    .container {
+      flex-direction: column;
+    }
 
-      img {
-        width: scale(478);
-        height: auto;
+    .testimonial {
+
+      &-inner {
+        display: flex;
+        align-items: center;
+        gap: scale(120);
+        max-width: scale(1400);
+        margin: 0 auto;
+
+        img {
+          width: scale(478);
+          height: auto;
+        }
       }
-    }
 
-    &-text {
-      font-size: scale(24);
-    }
+      &-text {
+        font-size: scale(24);
+      }
 
-    &-author {
-      font-size: scale(30);
-      color: #3B4752;
-      font-weight: 500;
-    }
+      &-author {
+        font-size: scale(30);
+        color: #3B4752;
+        font-weight: 500;
+      }
 
-    &-role {
-      color: $red;
-      font-size: scale(24);
+      &-role {
+        color: $red;
+        font-size: scale(24);
+      }
     }
   }
 }

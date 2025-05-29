@@ -2,3 +2,18 @@
     background: #003B6D;
     background: linear-gradient(134deg, rgba(0, 59, 109, 1) 0%, rgba(0, 114, 211, 1) 100%);
 }
+
+
+// Tint of Red
+$percentages: 1, .9, .8, .7; // corresponds to 100, 90, 80, 70
+// Corresponding class suffixes:
+$class-suffixes: 100, 90, 80, 70;
+
+@for $i from 1 through length($percentages) {
+    $percent: nth($percentages, $i);
+    $suffix: nth($class-suffixes, $i);
+
+    .red-#{$suffix} {
+        color: rgba($red, $percent);
+    }
+}

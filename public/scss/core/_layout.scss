@@ -34,6 +34,10 @@
     background: $blue-lightest;
   }
 
+  &.red-light {
+    background: $red-light;
+  }
+
   &.has-bg {
     padding: scale(50) scale(40);
   }

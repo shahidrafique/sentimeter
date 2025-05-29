@@ -1,0 +1,406 @@
+.phase1 {
+
+	// Banner
+	.banner {
+		.container {
+			gap: scale(50);
+
+			.col {
+				.content {
+					max-width: none;
+				}
+
+				img {
+					width: scale(515);
+					height: scale(515);
+				}
+			}
+		}
+	}
+
+	// Comprehensive Feedback
+	.comprehensive-feedback {
+		&-left {
+			flex: 1;
+			position: relative;
+			padding-right: scale(100);
+			border-right: 1px solid $gray-light;
+
+			h2 {
+				font-size: scale(54);
+
+				span {
+					color: $red;
+				}
+			}
+
+			.content {
+				font-size: scale(20);
+				max-width: 90%;
+				font-weight: 500;
+				margin-bottom: 30px;
+
+				p {
+					span {
+						color: $red;
+					}
+				}
+			}
+
+			.button {
+				background: $red;
+
+				&:before {
+					background-color: $white;
+				}
+			}
+		}
+
+		&-right {
+			flex: 1;
+			padding-left: scale(100);
+
+			h3 {
+				color: $dark-blue;
+				margin-bottom: 30px;
+			}
+
+			.benefit {
+				display: flex;
+				align-items: center;
+				// max-width: 90%;
+				font-size: scale(20);
+				gap: 12px;
+
+				$class-suffixes: 100, 90, 80, 70;
+
+				@for $i from 1 through length($class-suffixes) {
+					&:nth-child(#{$i + 1}) {
+						$suffix: nth($class-suffixes, $i);
+
+						p span {
+							@extend .red-#{$suffix};
+							font-weight: 600;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Build Trust
+	.build-trust {
+		.card {
+			@extend .gradient;
+			color: white;
+		}
+
+		.container {
+			gap: scale(30);
+		}
+
+		.col.content {
+			max-width: 60%;
+
+			h3 {
+				span {
+					color: $yellow;
+				}
+			}
+
+			p {
+				font-size: scale(20);
+
+				span {
+					color: $yellow;
+				}
+			}
+
+			h5 {
+				font-size: scale(22);
+				color: $yellow;
+				font-weight: 500;
+				font-style: italic;
+				margin: 10px 0;
+			}
+
+			.row {
+				display: flex;
+				gap: 30px;
+
+				.col {
+					flex: 1;
+
+					h4 {
+						font-size: scale(22);
+						margin: 10px 0;
+						color: $yellow;
+					}
+
+					p {
+						font-size: scale(20);
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+
+	// Automation
+	.automation {
+		.container {
+			gap: scale(50);
+
+			&:first-child {
+				flex-direction: column;
+				gap: 0;
+
+				h3 {
+					color: $dark-blue;
+				}
+
+				p {
+					font-size: scale(22);
+				}
+			}
+
+			&:nth-child(2) {
+				align-items: center;
+			}
+		}
+
+		h5 {
+			color: $dark-blue;
+		}
+
+		ul {
+			margin: scale(10) 0;
+			display: flex;
+			flex-direction: column;
+			padding-left: scale(10);
+			gap: 8px;
+
+			li {
+				font-size: scale(20);
+				color: rgba($black, .7);
+				display: flex;
+				align-items: center;
+				gap: 16px;
+
+				p {
+					margin: 8px 0;
+					font-size: scale(20);
+
+					span {
+						font-weight: 600;
+					}
+				}
+
+				&:before {
+					content: '';
+					flex: 0 0 auto;
+					width: scale(32);
+					height: scale(32);
+					display: inline-block;
+					background: url('/images/yellow-tick.svg') no-repeat center;
+					background-size: contain;
+
+				}
+
+			}
+		}
+
+		.note {
+			span {
+				color: $dark-blue;
+				font-style: normal;
+				font-weight: 600;
+			}
+
+			font-style: italic;
+		}
+
+
+
+
+	}
+
+	// Proactive
+	.proactive {
+
+		.card {
+			>.container {
+				align-items: center;
+
+				>.col {
+
+					&:nth-child(1) {
+						flex: 2.2;
+						padding-right: scale(50);
+						border-right: 1px solid $gray-light;
+					}
+
+					&:nth-child(2) {
+						flex: 2.8;
+						padding-left: scale(50);
+
+						.container {
+							gap: 30px;
+							align-items: center;
+						}
+					}
+				}
+			}
+
+			.content {
+				h2 {
+					color: $dark-blue;
+				}
+
+				p {
+					font-size: scale(20);
+				}
+
+				.note {
+					font-style: italic;
+
+					span {
+						font-weight: 600;
+						color: $dark-blue;
+						font-style: normal;
+					}
+				}
+			}
+
+			.key-features {
+				text-align: center;
+				margin-bottom: 16px;
+			}
+
+			.features {
+				display: flex;
+				flex-direction: column;
+				gap: 22px;
+
+				.feature {
+					display: flex;
+					gap: 20px;
+
+					.content {
+
+						h5 {
+							font-size: scale(20);
+							margin-bottom: 8px;
+						}
+
+						p {
+							margin: 0;
+							font-size: scale(18);
+							color: rgba($black, .7)
+						}
+					}
+
+					&:nth-child(1) {
+						h5 {
+							color: $green;
+						}
+					}
+
+					&:nth-child(2) {
+						h5 {
+							color: $red;
+						}
+					}
+
+					&:nth-child(3) {
+						h5 {
+							color: $yellow;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.why {
+
+		.container {
+			flex-direction: column;
+			gap: scale(30);
+			align-items: center;
+		}
+
+		h3 {
+			color: $dark-blue;
+			margin-bottom: scale(30);
+
+			span {
+				color: $red;
+			}
+		}
+
+
+		.row {
+			display: flex;
+			gap: scale(20);
+
+			.col {
+				flex: 1;
+
+				&:nth-child(2) {
+					width: scale(380);
+					flex: none;
+					text-align: center;
+
+					img {
+						width: scale(366);
+						height: auto;
+					}
+				}
+
+				&:nth-child(1) {
+					.feature {
+						justify-content: end;
+						text-align: right;
+					}
+				}
+			}
+		}
+
+		h3 {
+			text-align: center;
+		}
+
+		.feature {
+			display: flex;
+			gap: scale(20);
+			margin-bottom: scale(90);
+
+			.content {
+				h5 {
+					font-size: scale(25);
+				}
+
+				p {
+					font-size: scale(22);
+					margin: 0;
+
+				}
+			}
+
+			&:nth-child(1) {
+				margin-top: 50px;
+			}
+
+			&.feature-1 {
+				transform: translateX(scale(40));
+			}
+
+			&.feature-4 {
+				transform: translateX(scale(-40));
+			}
+		}
+	}
+
+}
