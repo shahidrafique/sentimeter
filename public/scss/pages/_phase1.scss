@@ -72,6 +72,11 @@
 				font-size: scale(20);
 				gap: 12px;
 
+				img {
+					width: scale(60);
+					height: scale(60);
+				}
+
 				$class-suffixes: 100, 90, 80, 70;
 
 				@for $i from 1 through length($class-suffixes) {
@@ -99,47 +104,65 @@
 			gap: scale(30);
 		}
 
-		.col.content {
-			max-width: 60%;
 
-			h3 {
-				span {
-					color: $yellow;
+
+		.col {
+			&:first-child {
+				img {
+					width: scale(125);
+					height: scale(125);
 				}
 			}
 
-			p {
-				font-size: scale(20);
+			&.content {
+				max-width: 60%;
 
-				span {
-					color: $yellow;
-				}
-			}
-
-			h5 {
-				font-size: scale(22);
-				color: $yellow;
-				font-weight: 500;
-				font-style: italic;
-				margin: 10px 0;
-			}
-
-			.row {
-				display: flex;
-				gap: 30px;
-
-				.col {
-					flex: 1;
-
-					h4 {
-						font-size: scale(22);
-						margin: 10px 0;
+				h3 {
+					span {
 						color: $yellow;
 					}
+				}
 
-					p {
-						font-size: scale(20);
-						margin-top: 0;
+				p {
+					font-size: scale(20);
+
+					span {
+						color: $yellow;
+					}
+				}
+
+				h5 {
+					font-size: scale(22);
+					color: $yellow;
+					font-weight: 500;
+					font-style: italic;
+					margin: 10px 0;
+				}
+
+				.row {
+					display: flex;
+					gap: 30px;
+
+					.col {
+						flex: 1;
+
+						.icon {
+							img {
+								width: scale(86);
+								height: scale(86);
+							}
+						}
+
+						h4 {
+							font-size: scale(22);
+							margin: 10px 0;
+							color: $yellow;
+						}
+
+						p {
+							font-size: scale(20);
+							margin-top: 0;
+						}
 					}
 				}
 			}
@@ -166,6 +189,15 @@
 
 			&:nth-child(2) {
 				align-items: center;
+			}
+		}
+
+		.col {
+			&:nth-child(2) {
+				img {
+					width: scale(708);
+					height: scale(444);
+				}
 			}
 		}
 
@@ -277,6 +309,11 @@
 				margin-bottom: 16px;
 			}
 
+			.ternado {
+				width: scale(303);
+				height: scale(341);
+			}
+
 			.features {
 				display: flex;
 				flex-direction: column;
@@ -285,6 +322,11 @@
 				.feature {
 					display: flex;
 					gap: 20px;
+
+					img {
+						width: scale(60);
+						height: scale(60);
+					}
 
 					.content {
 
@@ -371,6 +413,8 @@
 		h3 {
 			text-align: center;
 		}
+
+
 
 		.feature {
 			display: flex;

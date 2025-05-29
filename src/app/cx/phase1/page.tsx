@@ -304,6 +304,7 @@ export default function page() {
                     width={303}
                     height={341}
                     alt="ternado"
+                    className="ternado"
                   />
                 </div>
                 <div className="col features">
@@ -422,7 +423,7 @@ export default function page() {
                   />
                 </div>
                 <div className="content">
-                  <h5>Employee-Centric Design</h5>
+                  <h5 className="red-100">Employee-Centric Design</h5>
                   <p>
                     Build trust and engagement with tools designed for
                     inclusivity.
