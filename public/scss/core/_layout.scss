@@ -9,6 +9,22 @@
   @include md {
     max-width: none;
   }
+
+  &.w-full {
+    max-width: none;
+  }
+
+  &.dir-col {
+    flex-direction: column;
+  }
+
+  &.justify-center {
+    justify-content: center;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
 }
 
 .section {

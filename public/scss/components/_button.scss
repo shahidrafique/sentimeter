@@ -120,6 +120,27 @@
     // color: $yellow;
   }
 
+  &.without-icon {
+    padding-left: 20px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  &.button--dark {
+    background:
+      linear-gradient($dark-blue, $dark-blue) padding-box,   /* Solid fill */
+      linear-gradient(45deg, $dark-blue, $blue) border-box; /* Gradient border */
+    border: 2px solid transparent; /* Needed to make the gradient visible */
+
+    &:hover {
+      background:
+        linear-gradient($dark-blue, $dark-blue) padding-box,   /* Solid fill */
+        linear-gradient(45deg, $blue, $dark-blue) border-box; /* Gradient border */
+    }
+  }
+
   &.button--outline {
     border: 2px solid $yellow;
     color: $white;

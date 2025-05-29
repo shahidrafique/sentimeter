@@ -287,6 +287,7 @@
 
                 &:before {
                     content: '';
+                    flex: 0 0 auto;
                     width: scale(32);
                     height: scale(32);
                     display: inline-block;
