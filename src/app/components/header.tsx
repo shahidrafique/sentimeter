@@ -28,10 +28,10 @@ export default function Header() {
                 <Link href="/solution">Pricing</Link>
               </li>
               <li className="nav__item">
-                <Link href="/solution">Customers</Link>
+                <Link href="/text-analysis">Customers</Link>
               </li>
               <li className="nav__item">
-                <Link href="/solution">Resources</Link>
+                <Link href="/recovery-management">Resources</Link>
               </li>
             </ul>
           </nav>

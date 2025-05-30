@@ -34,6 +34,14 @@
     background: $blue-lightest;
   }
 
+  &.green {
+    background: $green-lightest;
+  }
+
+  &.yellow {
+    background: $yellow-lightest;
+  }
+
   &.red-light {
     background: $red-light;
   }
@@ -66,5 +74,147 @@
     color: $blue;
     font-size: scale(18);
     font-weight: 500;
+  }
+}
+
+
+// Checklist
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: scale(20);
+
+  &-item {
+    position: relative;
+    padding-left: scale(50);
+
+    span {
+      font-weight: 600;
+    }
+
+    &::before {
+      content: "";
+      flex: 0 0 auto;
+      width: clamp(22px, scale(30), 30px);
+      height: clamp(22px, scale(30), 30px);
+      border-radius: 50%;
+      background-color: $black;
+      background-image: url(/images/tick-white.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: clamp(16px, scale(20), 20px);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &.blue {
+
+    span {
+      color: $blue;
+    }
+
+    .checklist-item::before {
+      background-color: $blue;
+    }
+  }
+
+  &.yellow {
+
+    span {
+      color: $yellow;
+    }
+
+    .checklist-item::before {
+      background-color: $yellow;
+    }
+  }
+}
+
+
+// Content Group
+.content-group {
+
+  h2,
+  h3 {
+
+    small {
+      font-size: scale(22);
+      font-weight: 500;
+      display: block;
+      opacity: 0.5;
+    }
+  }
+
+  h2 {
+    font-size: scale(50);
+  }
+
+  p {
+    font-size: scale(20);
+    font-weight: 500;
+  }
+
+  .row {
+    display: flex;
+    gap: scale(20);
+    align-items: center;
+  }
+
+  $colors: (
+    'blue': $blue,
+    'blue-light': $blue-light,
+    'yellow': $yellow,
+    'green': $green,
+    'red': $red
+  );
+  @each $name, $color in $colors {
+    &.has-inner-text-#{$name} {
+
+      h2,
+      h3,
+      p {
+        span {
+          color: $color;
+        }
+      }
+    }
+  }
+}
+
+
+// Card Blocks
+.card-blocks {
+  display: flex;
+  gap: scale(30);
+
+  &-item {
+    border-style: solid;
+    border-width: scale(10) 1px 1px;
+    border-color: $blue;
+    padding: scale(25) scale(40);
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: scale(15);
+
+    p {
+      margin: 0;
+    }
+
+    &.green {
+      border-color: $green;
+    }
+
+    &.red {
+      border-color: $red;
+    }
+
+    &.yellow {
+      border-color: $yellow;
+    }
   }
 }

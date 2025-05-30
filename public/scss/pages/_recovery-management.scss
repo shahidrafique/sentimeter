@@ -1,0 +1,338 @@
+// recovery-management
+.recovery-management {
+
+    .banner {
+
+        .container {
+            margin: auto;
+
+            .content {
+                text-align: center;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .title {
+                    font-size: scale(50);
+
+                    span {
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// collect-feedback
+.collect-feedback {
+
+    &-left {
+        flex: 2.3;
+        padding-right: scale(60);
+        border-right: 2px solid $gray-light;
+    }
+
+    &-right {
+        flex: 2.7;
+        padding-left: scale(60);
+        min-width: 0;
+
+        img {
+            width: scale(874);
+            height: auto;
+            max-width: 100%;
+        }
+    }
+}
+
+
+// automate-responses
+.automate-responses {
+
+    .card {
+        @extend .gradient;
+        color: white;
+        align-items: flex-start;
+    }
+
+    &-row {
+        gap: scale(60);
+        display: flex;
+    }
+
+    &-point {
+        display: flex;
+        gap: scale(15);
+        margin: scale(20) 0 scale(40);
+
+        img {
+            max-width: scale(50);
+        }
+
+        .text {
+
+            h4 {
+                color: $yellow;
+                font-size: scale(26);
+                margin-bottom: scale(10);
+            }
+
+            p {
+                font-size: scale(20);
+                max-width: scale(220);
+                margin: 0;
+            }
+        }
+    }
+
+    .link {
+        color: $yellow;
+    }
+
+    .row {
+        display: flex;
+        gap: scale(20);
+        align-items: center;
+    }
+}
+
+
+// assign-tickets
+.assign-tickets {
+    padding-top: scale(100);
+    padding-bottom: scale(150);
+
+    &-left {
+        flex: 1;
+        display: flex;
+        padding-right: scale(90);
+        border-right: 2px solid $gray-light;
+        gap: scale(35);
+        align-items: flex-end;
+
+        img {
+            max-width: scale(244);
+            height: auto;
+        }
+
+        .filter-point {
+            display: flex;
+            gap: scale(20);
+            font-size: scale(18);
+            margin-bottom: scale(40);
+
+            img {
+                max-width: scale(50);
+                height: auto;
+            }
+
+            span {
+                font-weight: 600;
+            }
+
+            &.priority {
+                span {
+                    color: $green;
+                }
+            }
+
+            &.dynamic {
+                span {
+                    color: $yellow;
+                }
+            }
+
+            &.assignment {
+                margin-bottom: 0;
+
+                span {
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    &-right {
+        flex: 1;
+        padding-left: scale(90);
+    }
+}
+
+
+// communication
+.communication {
+
+    .card-blocks {
+        gap: scale(80);
+
+        img {
+            max-width: scale(50);
+            height: auto;
+        }
+    }
+}
+
+// communication
+.resolution {
+
+    &-left {
+        flex: 1;
+        padding-right: scale(90);
+        border-right: 2px solid $gray-light;
+
+        .checklist {
+            margin-left: scale(20);
+        }
+    }
+
+    &-right {
+        flex: 1;
+        padding-left: scale(90);
+
+        img {
+            max-width: scale(596);
+            height: auto;
+        }
+    }
+}
+
+
+// analyze
+.analyze {
+
+    &-left {
+        flex: 1;
+        padding-right: scale(100);
+        border-right: 2px solid $gray-light;
+    }
+
+    &-right {
+        flex: 1;
+        padding-left: scale(100);
+    }
+
+    &-features {
+        display: flex;
+        flex-direction: column;
+        gap: scale(30);
+        margin-top: scale(30);
+
+        .feature {
+            display: flex;
+            gap: scale(15);
+            align-items: flex-start;
+
+            img {
+                width: scale(80);
+                height: auto;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: scale(10);
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            &.green {
+                h5 {
+                    color: $green;
+                }
+            }
+
+            &.yellow {
+                h5 {
+                    color: $yellow;
+                }
+            }
+
+            &.red {
+                h5 {
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+
+
+// why-choose
+.why-choose {
+
+    .card {
+        @extend .gradient;
+        color: white;
+        align-items: flex-start;
+    }
+
+    .container {
+        gap: scale(30);
+    }
+
+
+
+    .col {
+        &:first-child {
+            img {
+                width: scale(125);
+                height: scale(125);
+            }
+        }
+
+        &.content {
+
+            h3 {
+                span {
+                    color: $yellow;
+                }
+            }
+
+            p {
+                font-size: scale(20);
+                margin: scale(10) 0 scale(30);
+
+                span {
+                    color: $yellow;
+                }
+            }
+
+            .row {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                .col {
+                    display: flex;
+                    gap: scale(15);
+
+                    img {
+                        width: clamp(30px, scale(52), 52px);
+                        height: auto;
+                    }
+
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: scale(5);
+
+                        h5 {
+                            color: $yellow;
+                            margin: 0;
+                        }
+
+                        p {
+                            font-size: scale(20);
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

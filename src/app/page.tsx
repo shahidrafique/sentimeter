@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "./components/home/hero";
 import Clients from "./components/clients";
 import Problems from "./components/home/problems";

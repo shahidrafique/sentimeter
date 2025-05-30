@@ -152,3 +152,15 @@
     }
   }
 }
+
+.link {
+  color: $blue;
+  font-weight: 600;
+  font-size: scale(20);
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    color: $dark-blue;
+  }
+}
