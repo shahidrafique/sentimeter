@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Clients from "../components/clients";
+import Clients from "../../components/clients";
 import Link from "next/link";
 export default function page() {
   return (
@@ -50,7 +50,7 @@ export default function page() {
           </div>
         </div>
       </section>
-
+      <Clients />
       {/* Comprehensive Feedback */}
 
       <section className="section has-bg red-light comprehensive-feedback">
