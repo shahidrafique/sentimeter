@@ -17,3 +17,24 @@ $class-suffixes: 100, 90, 80, 70;
         color: rgba($red, $percent);
     }
 }
+
+// Text Color
+.text-blue {
+    color: $blue;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text-red {
+    color: $red;
+}
+
+.text-yellow {
+    color: $yellow;
+}
+
+.text-center {
+    text-align: center;
+}

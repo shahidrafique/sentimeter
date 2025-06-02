@@ -1,0 +1,361 @@
+.our-services {
+  overflow: hidden;
+
+  .banner {
+
+    .content {
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  .section-header {
+    position: relative;
+    z-index: 1;
+
+    h3 {
+      margin-bottom: scale(25);
+
+      span {
+        color: $white;
+        position: relative;
+        padding: scale(15) scale(15) scale(15) 0;
+        display: inline-block;
+
+        &::before {
+          content: "";
+          height: 100%;
+          left: -9999px;
+          right: 0;
+          top: 0;
+          position: absolute;
+          z-index: -1;
+        }
+      }
+    }
+  }
+
+  $colors: (
+    'green': $green,
+    'red-light': $red,
+    'yellow': $yellow,
+    'blue': $blue
+  );
+
+@each $name, $color in $colors {
+  .section.#{$name} .section-header h3 {
+    span {
+      background: $color;
+
+      &::before {
+        background: $color;
+      }
+    }
+  }
+}
+}
+
+.right-path-for-org {
+
+  .card {
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+
+// Rewamp, Launch
+.rewamp,
+.launch {
+
+  p {
+    margin-top: scale(5);
+  }
+
+  .checklist {
+    gap: scale(50);
+  }
+
+  .row {
+    gap: scale(50);
+    margin: scale(20) 0 scale(50);
+
+    .col {
+      display: flex;
+      gap: scale(15);
+
+      img {
+        width: scale(92);
+        height: auto;
+      }
+
+      p {
+        display: flex;
+        flex-direction: column;
+        gap: scale(10);
+        margin: 0;
+
+        span {
+          font-size: scale(22);
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+
+// technology-integration
+.technology-integration {
+  padding-top: 0 !important;
+
+  .card {
+    background: $green;
+    color: white;
+    align-items: flex-start;
+
+    .container {
+      flex-direction: column;
+    }
+
+    h3 span,
+    h5 {
+      color: $black;
+    }
+
+    .row {
+      display: flex;
+      gap: scale(50);
+      margin: scale(30) 0;
+
+      .col {
+        display: flex;
+        flex-direction: column;
+        gap: scale(20);
+
+        img {
+          width: scale(40);
+          height: auto;
+        }
+      }
+
+      &.iintegration-logos {
+        gap: scale(20);
+        margin: scale(10) 0 0;
+
+        img {
+          width: auto;
+          height: scale(48);
+        }
+      }
+    }
+  }
+}
+
+
+// Adopt
+.adopt {
+
+  .card-blocks {
+    margin-top: scale(50);
+
+    &-item {
+      gap: scale(30);
+
+      .row {
+        display: flex;
+        align-items: center;
+      }
+
+      img {
+        width: scale(56);
+        height: auto;
+      }
+
+      .checklist {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+// Simpify
+.simplify {
+
+  .card {
+
+    >.container {
+      align-items: center;
+
+      >.col {
+
+        >h5 {
+          text-align: center;
+        }
+
+        .managed-services {
+          display: flex;
+          gap: scale(20);
+          margin-top: scale(30);
+
+          .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h5 {
+              color: $red;
+            }
+
+            p {
+              margin: scale(10) 0 0;
+            }
+
+            &:first-child {
+              text-align: right;
+            }
+          }
+        }
+
+        &:nth-child(1) {
+          flex: 1.5;
+          padding-right: scale(50);
+        }
+
+        &:nth-child(2) {
+          flex: 3.5;
+          padding-left: scale(50);
+          border-left: 1px solid $gray-light;
+
+          .container {
+            gap: 30px;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Launch
+.launch {
+
+  .row {
+    margin-bottom: 0;
+  }
+}
+
+
+// launch-technology-integration
+.launch-technology-integration {
+
+  h3 {
+    span {
+      color: $blue;
+    }
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  .col {
+
+    &:nth-child(1) {
+      flex: 2.3;
+      padding-right: scale(50);
+    }
+
+    &:nth-child(2) {
+      flex: 2.7;
+      padding-left: scale(50);
+      border-left: 1px solid $gray-light;
+
+      .container {
+        gap: 30px;
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+// specific-framework
+.specific-framework {
+  .card {
+    @extend .gradient;
+    color: white;
+  }
+
+  .container {
+    gap: scale(30);
+  }
+
+
+
+  .col {
+    &:first-child {
+      img {
+        width: scale(125);
+        height: scale(125);
+      }
+    }
+
+    &.content {
+      max-width: 60%;
+
+      h3 {
+        margin-bottom: scale(40);
+        span {
+          color: $yellow;
+        }
+      }
+
+      p {
+        font-size: scale(20);
+
+        span {
+          color: $yellow;
+        }
+      }
+
+      h5 {
+        font-size: scale(22);
+        color: $yellow;
+        font-weight: 500;
+        font-style: italic;
+        margin: 10px 0;
+      }
+
+      .row {
+        display: flex;
+        gap: 30px;
+
+        .col {
+          flex: 1;
+
+          .icon {
+            img {
+              width: scale(86);
+              height: scale(86);
+            }
+          }
+
+          h4 {
+            font-size: scale(22);
+            margin: 10px 0;
+            color: $yellow;
+          }
+
+          p {
+            font-size: scale(20);
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

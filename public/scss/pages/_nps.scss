@@ -1,0 +1,160 @@
+.nps-survey-platform {
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    max-width: scale(1230);
+    gap: scale(50);
+
+    .header-copy {
+      text-align: center;
+      max-width: scale(800);
+    }
+
+    .nps-platform-points {
+      display: flex;
+      gap: scale(30);
+
+      .col {
+        display: flex;
+        flex-direction: column;
+        gap: scale(30);
+        justify-content: space-around;
+
+        img {
+          width: scale(370);
+          height: auto;
+        }
+
+        p {
+          margin: scale(10) 0 0;
+        }
+
+
+        &:first-child {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+
+// np-features
+.nps-features {
+
+  .container {
+    flex-direction: column;
+    gap: scale(50);
+
+    h3 {
+      span {
+        color: $blue;
+      }
+    }
+  }
+
+  .card-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &-item {
+
+      .row {
+        display: flex;
+        align-items: center;
+        gap: scale(20);
+
+        img {
+          width: scale(92);
+          height: auto
+        }
+      }
+    }
+  }
+}
+
+
+// nps-business-routine
+.nps-business-routine {
+
+  .card {
+    @extend .gradient;
+    color: white;
+    margin-bottom: scale(50);
+  }
+
+  .container {
+    gap: scale(30);
+    flex-direction: column;
+
+    > .row {
+      display: flex;
+      gap: scale(30);
+      max-width: 50%;
+      align-items: center;
+
+      img {
+        width: scale(90);
+        height: auto;
+      }
+
+      h3 {
+
+        span {
+          color: $yellow;
+        }
+      }
+    }
+  }
+
+  .col {
+
+    &.content {
+      max-width: 80%;
+
+      p {
+        font-size: scale(20);
+
+        span {
+          color: $yellow;
+        }
+      }
+
+      h5 {
+        font-size: scale(22);
+        color: $yellow;
+        font-weight: 500;
+        font-style: italic;
+        margin: 10px 0;
+      }
+
+      .row {
+        display: flex;
+        gap: 30px;
+
+        .col {
+          flex: 1;
+
+          .icon {
+            img {
+              width: scale(86);
+              height: scale(86);
+            }
+          }
+
+          h4 {
+            font-size: scale(22);
+            margin: 10px 0;
+            color: $yellow;
+          }
+
+          p {
+            font-size: scale(20);
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
