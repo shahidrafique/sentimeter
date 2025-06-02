@@ -30,20 +30,67 @@
 .collect-feedback {
 
     &-left {
-        flex: 2.3;
+        flex: 2.2;
         padding-right: scale(60);
         border-right: 2px solid $gray-light;
     }
 
     &-right {
-        flex: 2.7;
+        flex: 2.8;
         padding-left: scale(60);
         min-width: 0;
 
+        .row {
+            display: flex;
+            gap: scale(5);
+
+            .col {
+                display: flex;
+                flex-direction: column;
+                gap: scale(30);
+                justify-content: space-around;
+            }
+
+            .feature {
+                display: flex;
+                align-items: flex-start;
+                gap: scale(15);
+
+                p {
+                    margin: 0;
+                    max-width: scale(280);
+
+                    span {
+
+                        &.text-green {
+                            color: $green;
+                        }
+
+                        &.text-red {
+                            color: $red;
+                        }
+
+                        &.text-yellow {
+                            color: $yellow;
+                        }
+                    }
+                }
+
+                &.has-icon-right {
+                    flex-direction: row-reverse;
+                    text-align: right;
+                }
+            }
+        }
+
         img {
-            width: scale(874);
+            width: scale(230);
             height: auto;
             max-width: 100%;
+
+            &.icon {
+                width: scale(34);
+            }
         }
     }
 }

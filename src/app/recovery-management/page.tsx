@@ -41,12 +41,50 @@ export default function page() {
             </div>
             <div className="collect-feedback-right">
               <h3>Key Features:</h3>
-              <Image
-                src="/images/key-features.svg"
-                width={874}
-                height={308}
-                alt="key feathres"
-              />
+              <div className="row">
+                <div className="col">
+                  <div className="feature has-icon-right">
+                    <Image
+                      src={"/images/icon-feedback-integration.svg"}
+                      width={34}
+                      height={34}
+                      className="icon"
+                      alt="feedback integration"
+                    />
+                    <p><span className="text-green">Omnichannel Feedback Integration:</span> Capture feedback from surveys, social media, CRM systems, emails, and call centers.</p>
+                  </div>
+                  <div className="feature has-icon-right">
+                    <Image
+                      src={"/images/icon-rich-metadata.svg"}
+                      width={34}
+                      height={34}
+                      className="icon"
+                      alt="rich metadata"
+                    />
+                    <p><span className="text-red">Rich Metadata:</span> Include details like customer name, contact info, geographic data, and timestamps.</p>
+                  </div>
+                </div>
+                <div className="col">
+                  <Image
+                    src={"/images/illustration-collect-feedback-features.svg"}
+                    width={230}
+                    height={308}
+                    alt="collect feedback features"
+                  />
+                </div>
+                <div className="col">
+                  <div className="feature">
+                    <Image
+                      src={"/images/icon-feedback-access.svg"}
+                      width={34}
+                      height={34}
+                      className="icon"
+                      alt="feedback access"
+                    />
+                    <p><span className="text-yellow">Comprehensive Feedback Access:</span> Review all feedback, including solicited and unsolicited inputs, across customer journeys and touchpoints.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -65,7 +103,7 @@ export default function page() {
               <div className="automate-responses-row">
                 <div className="automate-responses-point">
                   <Image
-                    src="/images/icon-alert.svg"
+                    src={"/images/icon-alert.svg"}
                     width={50}
                     height={50}
                     alt="icon alert"
@@ -77,7 +115,7 @@ export default function page() {
                 </div>
                 <div className="automate-responses-point">
                   <Image
-                    src="/images/icon-assignment.svg"
+                    src={"/images/icon-assignment.svg"}
                     width={50}
                     height={50}
                     alt="icon assignment"
@@ -89,7 +127,7 @@ export default function page() {
                 </div>
                 <div className="automate-responses-point">
                   <Image
-                    src="/images/icon-complaint.svg"
+                    src={"/images/icon-complaint.svg"}
                     width={50}
                     height={50}
                     alt="icon complaint"
@@ -118,7 +156,7 @@ export default function page() {
         <div className="container align-center">
           <div className="assign-tickets-left">
             <Image
-              src="/images/assign-tasks-filter.svg"
+              src={"/images/assign-tasks-filter.svg"}
               width={244}
               height={373}
               alt="assign tasks filter"
@@ -126,7 +164,7 @@ export default function page() {
             <div>
               <div className="filter-point priority">
                 <Image
-                  src="/images/filter-icon-priority.svg"
+                  src={"/images/filter-icon-priority.svg"}
                   width={48}
                   height={48}
                   alt="priority filter"
@@ -137,7 +175,7 @@ export default function page() {
               </div>
               <div className="filter-point dynamic">
                 <Image
-                  src="/images/filter-icon-dynamic.svg"
+                  src={"/images/filter-icon-dynamic.svg"}
                   width={48}
                   height={48}
                   alt="dynamic filter"
@@ -148,7 +186,7 @@ export default function page() {
               </div>
               <div className="filter-point assignment">
                 <Image
-                  src="/images/filter-icon-assignment.svg"
+                  src={"/images/filter-icon-assignment.svg"}
                   width={48}
                   height={48}
                   alt="assignment filter"
@@ -186,7 +224,7 @@ export default function page() {
               <div className="card-blocks">
                 <div className="card-blocks-item green">
                   <Image
-                    src="/images/icon-connect.svg"
+                    src={"/images/icon-connect.svg"}
                     width={50}
                     height={50}
                     alt="icon connect"
@@ -196,7 +234,7 @@ export default function page() {
                 </div>
                 <div className="card-blocks-item red">
                   <Image
-                    src="/images/icon-escalation.svg"
+                    src={"/images/icon-escalation.svg"}
                     width={50}
                     height={50}
                     alt="icon escalation"
@@ -206,7 +244,7 @@ export default function page() {
                 </div>
                 <div className="card-blocks-item yellow">
                   <Image
-                    src="/images/icon-confirmation.svg"
+                    src={"/images/icon-confirmation.svg"}
                     width={50}
                     height={50}
                     alt="icon confirmation"
@@ -258,7 +296,7 @@ export default function page() {
           </div>
           <div className="resolution-right">
             <Image
-              src="/images/illustration-win-over.svg"
+              src={"/images/illustration-win-over.svg"}
               width={596}
               height={596}
               alt="win over"
@@ -290,7 +328,7 @@ export default function page() {
               <div className="analyze-features">
                 <div className="feature green">
                   <Image
-                    src="/images/icon-performance.svg"
+                    src={"/images/icon-performance.svg"}
                     width={80}
                     height={80}
                     alt="icon performance"
@@ -302,7 +340,7 @@ export default function page() {
                 </div>
                 <div className="feature yellow">
                   <Image
-                    src="/images/icon-trend.svg"
+                    src={"/images/icon-trend.svg"}
                     width={80}
                     height={80}
                     alt="icon trend"
@@ -314,7 +352,7 @@ export default function page() {
                 </div>
                 <div className="feature red">
                   <Image
-                    src="/images/icon-scenario.svg"
+                    src={"/images/icon-scenario.svg"}
                     width={80}
                     height={80}
                     alt="icon scenario"
