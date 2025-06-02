@@ -1,0 +1,221 @@
+.ex-phase2 {
+
+	// Banner
+	.banner {
+		.container {
+			gap: scale(50);
+
+			.col {
+				.content {
+					max-width: none;
+				}
+
+				img {
+					width: scale(515);
+					height: scale(515);
+				}
+			}
+		}
+	}
+
+
+
+	// omni-channel
+	.lifecycle {
+		.container {
+			gap: scale(50);
+
+			&:first-child {
+				margin-bottom: scale(40);
+
+				h3 {
+					span {
+						color: $green;
+						display: block;
+					}
+				}
+			}
+		}
+
+		.col {
+			flex: 1;
+		}
+
+		.content-card {
+			border: 1px solid $green;
+			border-top-width: 10px;
+			border-radius: scale(12);
+			padding: scale(36);
+			display: flex;
+			flex-direction: column;
+			gap: scale(16);
+
+			h4 {
+				font-size: scale(22);
+			}
+
+			p {
+				margin: 10px 0 0;
+				font-size: scale(18);
+			}
+
+			&.yellow {
+				border-color: $yellow;
+			}
+
+			&.red {
+				border-color: $red;
+			}
+		}
+
+
+	}
+
+
+	.approach {
+
+		h3 {
+			width: 100%;
+
+			span {
+				color: $green
+			}
+		}
+
+		.progress-bar {
+			display: flex;
+			overflow: hidden;
+			justify-content: center;
+			width: 90%;
+			margin: scale(30) auto;
+
+
+			.step {
+				position: relative;
+				background-color: #E9E7E7;
+				color: rgba($black, .5);
+				padding: scale(10) scale(20);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				clip-path: polygon(0% 0%,
+						calc(100% - scale(25)) 0%,
+						100% 50%,
+						calc(100% - scale(25)) 100%,
+						0% 100%,
+						scale(25)50%);
+				flex: 1;
+				margin-right: scale(-10);
+				z-index: 1;
+				font-size: scale(28);
+
+
+
+				&:first-child {
+					border-radius: 50vw 0 0 50vw;
+					clip-path: polygon(0% 0%,
+							calc(100% - scale(25)) 0%,
+							100% 50%,
+							calc(100% - scale(25)) 100%,
+							0% 100%,
+							0 50%);
+				}
+
+				&:last-child {
+					border-radius: 0 50vw 50vw 0;
+					clip-path: polygon(0% 0%,
+							100% 0%,
+							100% 50%,
+							100% 100%,
+							0% 100%,
+							scale(25) 50%);
+					margin-right: 0;
+				}
+
+				&.active {
+					background-color: $green;
+					color: #fff;
+					font-weight: 500;
+					z-index: 2;
+				}
+			}
+		}
+
+		.stage {
+			display: flex;
+			gap: scale(40);
+			align-items: center;
+
+			h3 {
+				font-size: scale(38);
+				color: $dark-blue;
+			}
+
+			p {
+				font-size: scale(27);
+			}
+
+			.col {
+				flex: 2.5;
+
+				&:first-child {
+					flex: 2;
+				}
+			}
+
+			&.stage1 {
+				img {
+					width: scale(1050);
+					height: scale(574);
+				}
+			}
+
+			&.stage2 {
+				img {
+					width: scale(993);
+					height: scale(487);
+				}
+			}
+
+			&.stage3 {
+				img {
+					width: scale(946);
+					height: scale(447);
+				}
+			}
+
+			&.stage3 {
+				img {
+					width: scale(991);
+					height: scale(418);
+				}
+			}
+
+		}
+
+	}
+
+
+
+	//transform-employee
+	.mapping {
+		.card {
+			@extend .gradient;
+			color: $white;
+		}
+
+		.content {
+			max-width: scale(700);
+
+			h3 {
+				span {
+					color: $yellow;
+				}
+			}
+
+			p {
+				font-size: scale(23)
+			}
+		}
+	}
+}

@@ -92,8 +92,8 @@
   background: #003B6D;
   background: linear-gradient(134deg, rgba(0, 59, 109, 1) 0%, rgba(0, 114, 211, 1) 100%);
   color: $white;
-  font-size: clamp(16px, scale(18), 20px);
-  padding: 5px 20px 5px 5px;
+  font-size: clamp(16px, scale(18), 24px);
+  padding: scale(5) scale(20) scale(5) scale(5);
   border-radius: 100px;
   position: relative;
   align-items: center;
@@ -130,14 +130,19 @@
 
   &.button--dark {
     background:
-      linear-gradient($dark-blue, $dark-blue) padding-box,   /* Solid fill */
-      linear-gradient(45deg, $dark-blue, $blue) border-box; /* Gradient border */
-    border: 2px solid transparent; /* Needed to make the gradient visible */
+      linear-gradient($dark-blue, $dark-blue) padding-box,
+      /* Solid fill */
+      linear-gradient(45deg, $dark-blue, $blue) border-box;
+    /* Gradient border */
+    border: 2px solid transparent;
+    /* Needed to make the gradient visible */
 
     &:hover {
       background:
-        linear-gradient($dark-blue, $dark-blue) padding-box,   /* Solid fill */
-        linear-gradient(45deg, $blue, $dark-blue) border-box; /* Gradient border */
+        linear-gradient($dark-blue, $dark-blue) padding-box,
+        /* Solid fill */
+        linear-gradient(45deg, $blue, $dark-blue) border-box;
+      /* Gradient border */
     }
   }
 
