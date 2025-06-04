@@ -1,0 +1,437 @@
+.ex-phase3 {
+
+	// Banner
+	.banner {
+		.container {
+			gap: scale(50);
+
+			.col {
+				.content {
+					max-width: none;
+				}
+
+				img {
+					width: scale(515);
+					height: scale(515);
+				}
+			}
+		}
+	}
+
+
+	// holistic
+	.holistic {
+		.col {
+			flex: 1;
+
+			&:first-child {
+				padding-right: scale(50);
+				border-right: 1px solid $gray-light;
+				align-content: center;
+			}
+
+			&:nth-child(2) {
+				padding-left: scale(50);
+			}
+		}
+
+		.left-content {
+			h3 {
+				span {
+					color: $yellow
+				}
+			}
+
+			p {
+				font-size: scale(20)
+			}
+
+			.note {
+				span {
+					color: $yellow;
+					font-weight: 600
+				}
+			}
+
+			.button {
+				background: $yellow;
+
+				&:before {
+					background-color: white
+				}
+			}
+		}
+
+		.features {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			ul {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+
+			.feature {
+				display: flex;
+				gap: 16px;
+
+				.icon {
+					img {
+						width: scale(72);
+						height: scale(84);
+					}
+				}
+
+				.content {
+					font-size: scale(20);
+
+					span {
+						font-weight: 600
+					}
+				}
+			}
+		}
+	}
+
+
+	// Overlay
+	.overlay {
+		.container {
+			align-items: center;
+			gap: scale(50);
+		}
+
+		.col-left,
+		.col-right {
+			flex: 1;
+		}
+
+		.col-left {
+			h3 {
+				color: $dark-blue;
+			}
+
+			.row {
+				padding-top: 20px;
+
+				p {
+					font-size: scale(20);
+					color: $dark-blue;
+					font-weight: 600;
+
+				}
+			}
+		}
+
+		.col-right {
+			h4 {
+				text-align: center;
+				margin-bottom: 20px;
+				color: $dark-blue;
+			}
+
+			.features {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+
+				.feature {
+					display: flex;
+					align-items: center;
+					gap: 20px;
+
+					.icon,
+					.content {
+						flex: 1;
+						box-sizing: border-box;
+					}
+
+					.icon {
+						background-color: $yellow-dark;
+						display: flex;
+						align-items: center;
+						padding: 24px 10px;
+						border-radius: 100px 0 0 100px;
+						gap: 10px;
+						color: white;
+						font-size: scale(20);
+						font-weight: 600;
+
+						img {
+							margin-left: 16px;
+							display: inline-block;
+						}
+					}
+
+					.content {
+						font-size: scale(20);
+					}
+
+					$class-suffixes: 100, 90, 80, 70;
+
+					@for $i from 1 through length($class-suffixes) {
+						&:nth-child(#{$i}) {
+							$suffix: nth($class-suffixes, $i);
+
+							.icon {
+								@extend .yellow-bg-#{$suffix};
+							}
+
+							.content span {
+								@extend .yellow-#{$suffix};
+								font-weight: 600;
+							}
+						}
+					}
+
+					&:nth-child(2n + 2) {
+						flex-direction: row-reverse;
+
+						.icon {
+							border-radius: 0 100px 100px 0;
+						}
+
+						.content {
+							text-align: right;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
+	// Decode
+	.decode {
+		.card {
+			@extend .gradient;
+			color: white;
+		}
+
+		.container {
+			gap: scale(30);
+		}
+
+
+
+		.col {
+			&:first-child {
+				img {
+					width: scale(125);
+					height: scale(125);
+				}
+			}
+
+			&.content {
+				max-width: 90%;
+
+				h3 {
+					span {
+						color: $yellow;
+					}
+				}
+
+				p {
+					font-size: scale(20);
+
+					span {
+						color: $yellow;
+					}
+				}
+
+				h5 {
+					font-size: scale(22);
+					color: $yellow;
+					font-weight: 500;
+					font-style: italic;
+					margin: 10px 0;
+				}
+
+				.row {
+					display: flex;
+					gap: 30px;
+
+					.col {
+						flex: 1;
+
+						.icon {
+							img {
+								width: scale(86);
+								height: scale(86);
+							}
+						}
+
+						h4 {
+							font-size: scale(22);
+							margin: 10px 0;
+							color: $yellow;
+						}
+
+						p {
+							font-size: scale(20);
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// omni-channel
+	.leverage {
+		.container {
+
+			&:first-child {
+				margin-bottom: scale(20);
+			}
+
+			&:nth-child(2) {
+				margin-bottom: scale(20);
+				gap: scale(50);
+			}
+		}
+
+		.col {
+			flex: 1;
+		}
+
+		.content-card {
+			border: 1px solid $green;
+			border-top-width: 10px;
+			border-radius: scale(12);
+			padding: scale(36);
+			display: flex;
+			flex-direction: column;
+			gap: scale(16);
+
+			h4 {
+				font-size: scale(22);
+			}
+
+			p {
+				margin: 10px 0 0;
+				font-size: scale(18);
+			}
+
+			&.yellow {
+				border-color: $yellow;
+			}
+
+			&.red {
+				border-color: $red;
+			}
+		}
+
+		.row {
+			display: flex;
+			gap: scale(16);
+			align-items: center;
+
+			p {
+				font-size: scale(20);
+				font-weight: 600;
+				color: $dark-blue;
+			}
+
+		}
+	}
+
+
+	// Trends
+	.trends {
+
+		.col {
+			flex: 1;
+		}
+
+		.content {
+
+			.row {
+				h3 {
+					color: $dark-blue;
+				}
+
+				p {
+					font-size: scale(20);
+					font-weight: 600;
+				}
+			}
+
+			.button-holder {
+				display: flex;
+				gap: scale(16);
+				align-items: center;
+			}
+
+			padding-right: scale(100);
+		}
+
+		ul {
+			margin: scale(10) 0;
+			display: flex;
+			flex-direction: column;
+			padding-left: scale(10);
+			gap: 8px;
+
+			li {
+				font-size: scale(20);
+				color: rgba($black, .7);
+				display: flex;
+				align-items: center;
+				gap: 16px;
+
+				p {
+					margin: 8px 0;
+					font-size: scale(20);
+
+					span {
+						font-weight: 600;
+						color: $dark-blue
+					}
+				}
+
+				&:before {
+					content: '';
+					flex: 0 0 auto;
+					width: scale(32);
+					height: scale(32);
+					display: inline-block;
+					background: url('/images/yellow-tick.svg') no-repeat center;
+					background-size: contain;
+
+				}
+
+			}
+		}
+
+		.note {
+			span {
+				color: $dark-blue;
+				font-style: normal;
+				font-weight: 600;
+			}
+
+			font-style: italic;
+			font-size: scale(20);
+		}
+
+
+
+
+	}
+
+	.image-container {
+		text-align: right;
+		align-content: center;
+
+		img {
+			width: scale(689);
+			height: scale(437);
+		}
+	}
+
+
+}

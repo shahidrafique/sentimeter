@@ -1,0 +1,364 @@
+.ex-phase4 {
+
+	// Banner
+	.banner {
+		.container {
+			gap: scale(50);
+
+			.col {
+				.content {
+					max-width: none;
+				}
+
+				img {
+					width: scale(515);
+					height: scale(515);
+				}
+			}
+		}
+	}
+
+
+	// Reports
+	.reports {
+		.col {
+			flex: 1;
+
+			&:first-child {
+
+				padding-right: scale(50);
+				border-right: 1px solid $gray-light;
+				align-content: center;
+			}
+
+			&:nth-child(2) {
+				padding-left: scale(50);
+			}
+		}
+
+		.left-content {
+			h3 {
+				span {
+					color: $blue-light
+				}
+			}
+
+			p {
+				font-size: scale(20)
+			}
+
+			.note {
+				span {
+					color: $blue-light;
+				}
+			}
+
+			.row {
+				display: flex;
+				align-items: center;
+				gap: scale(16);
+
+				p {
+					font-size: scale(20);
+					font-weight: 600;
+					color: $dark-blue;
+					width: scale(170);
+				}
+
+				.button {
+					background: $blue-light;
+
+					&:before {
+						background-color: white
+					}
+				}
+			}
+		}
+
+
+
+		.features {
+			flex: 1.5;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+
+			.image-container {
+				width: scale(516);
+				height: scale(350);
+				position: relative;
+				margin: auto;
+
+				img {
+					width: scale(516);
+					height: scale(350);
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					margin: auto;
+					text-align: center;
+					display: inline-block;
+				}
+			}
+
+			h4 {
+				width: 100%;
+				text-align: center;
+			}
+
+			ul {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+
+				li {
+					position: absolute;
+
+					&:nth-child(1) {
+						top: scale(-30);
+						left: scale(-180);
+					}
+
+					&:nth-child(2) {
+						top: scale(-10);
+						right: scale(-200);
+					}
+
+					&:nth-child(3) {
+						top: scale(140);
+						left: scale(-180);
+					}
+				}
+			}
+
+			.feature {
+				display: flex;
+				gap: 16px;
+				width: scale(180);
+				text-align: left;
+
+				.content {
+					font-size: scale(16);
+
+					span {
+						font-weight: 600
+					}
+				}
+
+
+			}
+		}
+	}
+
+
+	// Overlay
+	.dashboard {
+		.container {
+			align-items: center;
+			gap: scale(50);
+		}
+
+		.col-left,
+		.col-right {
+			flex: 1;
+		}
+
+		.col-left {
+			img {
+				width: scale(732);
+				height: scale(443);
+			}
+		}
+
+		.col-right {
+			.right-content {
+				h3 {
+					span {
+						color: $blue-light;
+					}
+				}
+
+				p {
+					font-size: scale(20);
+				}
+			}
+
+
+			.button-holder {
+				padding-top: 20px;
+				display: flex;
+				gap: scale(16);
+				align-items: center;
+
+				p {
+					font-size: scale(20);
+					color: $dark-blue;
+					font-weight: 600;
+
+				}
+			}
+		}
+
+
+
+
+		.row {
+			display: flex;
+			gap: 30px;
+
+			.col {
+				flex: 1;
+
+				.icon {
+					img {
+						width: scale(86);
+						height: scale(86);
+					}
+				}
+
+				h4 {
+					font-size: scale(22);
+					margin: 10px 0;
+					color: $blue-light;
+				}
+
+				p {
+					font-size: scale(20);
+					margin-top: 0;
+				}
+			}
+		}
+
+	}
+
+
+
+	// Insights
+	.insights {
+		.card {
+			@extend .gradient;
+			color: white;
+		}
+
+		.container {
+			gap: scale(30);
+		}
+
+		.col {
+			&:first-child {
+				img {
+					width: scale(125);
+					height: scale(125);
+				}
+			}
+
+			&.content {
+				max-width: 50%;
+
+				h3 {
+					span {
+						color: $yellow;
+					}
+				}
+
+				p {
+					font-size: scale(20);
+
+					span {
+						color: $yellow;
+					}
+				}
+
+				.row {
+					h5 {
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+
+
+	.overlay {
+		.container {
+			gap: 50px;
+
+			.col {
+				flex: 1;
+				align-content: center;
+			}
+		}
+
+
+		.col-right {
+			h4 {
+				text-align: center;
+				margin-bottom: 30px;
+			}
+
+			.features {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+
+				.feature {
+					display: flex;
+					align-items: center;
+					gap: 20px;
+
+					.icon,
+					.content {
+						flex: 1;
+						box-sizing: border-box;
+					}
+
+					.icon {
+						background-color: $blue-light;
+						display: flex;
+						align-items: center;
+						padding: 24px 10px;
+						border-radius: 100px 0 0 100px;
+						gap: 10px;
+						color: white;
+						font-size: scale(20);
+						font-weight: 600;
+
+						img {
+							margin-left: 16px;
+							display: inline-block;
+						}
+					}
+
+					.content {
+						font-size: scale(20);
+
+						span {
+							color: $blue-light;
+							font-weight: 500;
+						}
+					}
+
+
+
+					&:nth-child(2n + 2) {
+						flex-direction: row-reverse;
+
+						.icon {
+							border-radius: 0 100px 100px 0;
+							background-color: $blue;
+						}
+
+						.content {
+							text-align: right;
+						}
+					}
+				}
+			}
+		}
+
+
+	}
+
+}

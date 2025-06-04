@@ -88,6 +88,7 @@
     position: relative;
     padding-left: scale(50);
     line-height: 1.6;
+    font-size: scale(20);
 
     span {
       font-weight: 600;
@@ -116,21 +117,22 @@
     'yellow': $yellow,
     'blue': $blue
   );
-  @each $name, $color in $colors {
-    &.#{$name} {
-      span {
-        color: $color;
-      }
 
-      .checklist-item::before {
-        background-color: $color;
-      }
+@each $name, $color in $colors {
+  &.#{$name} {
+    span {
+      color: $color;
+    }
+
+    .checklist-item::before {
+      background-color: $color;
     }
   }
+}
 
-  &.inline {
-    flex-direction: row;
-  }
+&.inline {
+  flex-direction: row;
+}
 }
 
 
@@ -170,18 +172,19 @@
     'green': $green,
     'red': $red
   );
-  @each $name, $color in $colors {
-    &.has-inner-text-#{$name} {
 
-      h2,
-      h3,
-      p {
-        span {
-          color: $color;
-        }
+@each $name, $color in $colors {
+  &.has-inner-text-#{$name} {
+
+    h2,
+    h3,
+    p {
+      span {
+        color: $color;
       }
     }
   }
+}
 }
 
 
@@ -269,48 +272,61 @@
           'green': $green,
           'red': $red
         );
-        @each $name, $color in $colors {
-          &.has-inner-text-#{$name} {
 
-            .section-symbol::before {
-              background: $color;
+      @each $name, $color in $colors {
+        &.has-inner-text-#{$name} {
+
+          .section-symbol::before {
+            background: $color;
+          }
+
+          h3 {
+            small {
+              opacity: 1;
+              color: $color;
             }
+          }
 
-            h3 {
-              small {
-                opacity: 1;
-                color: $color;
-              }
-            }
+          .button {
+            background: $color;
 
-            .button {
-              background: $color;
-
-              &::before {
-                background: url("/images/icon-arrow-right-circled.svg") no-repeat center;
-              }
+            &::before {
+              background: url("/images/icon-arrow-right-circled.svg") no-repeat center;
             }
           }
         }
       }
     }
+  }
 
-    &:last-child {
+  &:last-child {
 
-      .content-group {
-        text-align: right;
+    .content-group {
+      text-align: right;
 
-        .section-symbol {
+      .section-symbol {
 
-          &::before {
-            left: calc(100% + 20px);
-          }
-        }
-
-        h3 {
-          margin-left: auto;
+        &::before {
+          left: calc(100% + 20px);
         }
       }
+
+      h3 {
+        margin-left: auto;
+      }
     }
+  }
+}
+}
+
+.note {
+  font-size: scale(20);
+  font-style: italic;
+  font-weight: 500;
+
+  span {
+    font-weight: 600;
+    font-style: normal;
+    color: $dark-blue;
   }
 }
