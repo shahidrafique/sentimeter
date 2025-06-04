@@ -18,6 +18,43 @@ $class-suffixes: 100, 90, 80, 70;
     }
 }
 
+// Tint of Yellow
+$percentages: 1, .9, .8, .7, .6; // corresponds to 100, 90, 80, 70, 60
+// Corresponding class suffixes:
+$class-suffixes: 100, 90, 80, 70, 60;
+
+@for $i from 1 through length($percentages) {
+    $percent: nth($percentages, $i);
+    $suffix: nth($class-suffixes, $i);
+
+    .yellow-#{$suffix} {
+        color: rgba($yellow-dark, $percent);
+    }
+
+    .yellow-bg-#{$suffix} {
+        background: rgba($yellow-dark, $percent);
+    }
+}
+
+
+// Tint of Blue
+$percentages: 1, .9, .8, .7, .6; // corresponds to 100, 90, 80, 70, 60
+// Corresponding class suffixes:
+$class-suffixes: 100, 90, 80, 70, 60;
+
+@for $i from 1 through length($percentages) {
+    $percent: nth($percentages, $i);
+    $suffix: nth($class-suffixes, $i);
+
+    .blue-#{$suffix} {
+        color: rgba($dark-blue, $percent);
+    }
+
+    .blue-bg-#{$suffix} {
+        background: rgba($dark-blue, $percent);
+    }
+}
+
 
 
 // Text Color
