@@ -63,82 +63,85 @@ export default function page() {
       <section className="section has-bg green lifecycle">
         <div className="card">
           <div className="container">
-            <h3>
-              Why Start with Employee <span>Lifecycle Mapping?</span>
-            </h3>
+            <section className="section-header green">
+              <h2>
+                Why Start with Employee <span>Lifecycle Mapping?</span>
+              </h2>
+            </section>
           </div>
           <div className="container">
-            {/* Col Start */}
-            <div className="col">
-              <section className="content-card">
-                <div className="icon">
-                  <Image
-                    src={"/images/ex/phase2/lifecycle-icon-1.svg"}
-                    width={72}
-                    height={72}
-                    alt="Senti CX"
-                  />
-                </div>
-                <div className="content">
-                  <h4>See the Whole Picture</h4>
-                  <p>
-                    Understand how employees interact with your organization
-                    from recruitment to offboarding.
-                  </p>
-                </div>
-              </section>
-            </div>
-            {/* Col Start */}
-            <div className="col">
-              <section className="content-card  red">
-                <div className="icon">
-                  <Image
-                    src={"/images/ex/phase2/lifecycle-icon-2.svg"}
-                    width={72}
-                    height={72}
-                    alt="Senti CX"
-                  />
-                </div>
-                <div className="content">
-                  <h4>Identify Key Moments</h4>
-                  <p>
-                    Pinpoint critical milestones, friction points, and
-                    opportunities for meaningful engagement.
-                  </p>
-                </div>
-              </section>
-            </div>
-            {/* Col Start */}
-            <div className="col">
-              <section className="content-card yellow">
-                <div className="icon">
-                  <Image
-                    src={"/images/ex/phase2/lifecycle-icon-3.svg"}
-                    width={72}
-                    height={72}
-                    alt="Senti CX"
-                  />
-                </div>
-                <div className="content">
-                  <h4>Drive Strategic Action</h4>
-                  <p>
-                    Use insights to craft targeted strategies that enhance
-                    retention, satisfaction, and loyalty.
-                  </p>
-                </div>
-              </section>
+            <div className="features">
+              <div className="cards">
+                {/* Col Start */}
+                <section className="card">
+                  <div className="icon">
+                    <Image
+                      src={"/images/ex/phase2/lifecycle-icon-1.svg"}
+                      width={72}
+                      height={72}
+                      alt="Senti CX"
+                    />
+                  </div>
+                  <div className="card-content">
+                    <h4>See the Whole Picture</h4>
+                    <p>
+                      Understand how employees interact with your organization
+                      from recruitment to offboarding.
+                    </p>
+                  </div>
+                </section>
+                {/* Col Start */}
+
+                <section className="card  red">
+                  <div className="icon">
+                    <Image
+                      src={"/images/ex/phase2/lifecycle-icon-2.svg"}
+                      width={72}
+                      height={72}
+                      alt="Senti CX"
+                    />
+                  </div>
+                  <div className="card-content">
+                    <h4>Identify Key Moments</h4>
+                    <p>
+                      Pinpoint critical milestones, friction points, and
+                      opportunities for meaningful engagement.
+                    </p>
+                  </div>
+                </section>
+                {/* Col Start */}
+                <section className="card yellow">
+                  <div className="icon">
+                    <Image
+                      src={"/images/ex/phase2/lifecycle-icon-3.svg"}
+                      width={72}
+                      height={72}
+                      alt="Senti CX"
+                    />
+                  </div>
+                  <div className="card-content">
+                    <h4>Drive Strategic Action</h4>
+                    <p>
+                      Use insights to craft targeted strategies that enhance
+                      retention, satisfaction, and loyalty.
+                    </p>
+                  </div>
+                </section>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ai-powered */}
+      {/* Approach */}
       <section className="section has-bg blue approach">
         <div className="card">
           <div className="container">
-            <h3 className="text-center">
-              The Lifecycle-First Approach: <span>4 Stages</span> to Success
-            </h3>
+            <section className="section-header green">
+              <h2>
+                The Lifecycle-First Approach: <span>4 Stages</span> to Success
+              </h2>
+            </section>
           </div>
           <div className="container">
             <div className="progress-bar">
@@ -263,21 +266,27 @@ export default function page() {
                 height={124}
                 alt="core pillars"
               />
-              <h3>
-                Why <span>Lifecycle</span> Mapping Matters
-              </h3>
-              <p>
-                Employee lifecycle mapping is more than just a framework—it’s a
-                foundation for continuous improvement. By understanding your
-                employees’ journey, you can proactively design interventions
-                that boost morale, engagement, and long-term loyalty.
-              </p>
-              <p className="text-yellow">
-                <i>Start Mapping Your Employee Lifecycle Today</i>
-              </p>
-              <Link href="#" className="button button--outline">
-                Request a Demo
-              </Link>
+              <section className="section-header yellow">
+                <h2>
+                  Why <span>Lifecycle</span> Mapping Matters
+                </h2>
+                <p>
+                  Employee lifecycle mapping is more than just a framework—it’s
+                  a foundation for continuous improvement. By understanding your
+                  employees’ journey, you can proactively design interventions
+                  that boost morale, engagement, and long-term loyalty.
+                </p>
+              </section>
+              <section className="section-footer">
+                <div className="note">
+                  <p className="text-yellow">
+                    Start Mapping Your Employee Lifecycle Today
+                  </p>
+                  <Link href="#" className="button button--outline">
+                    Request a Demo
+                  </Link>
+                </div>
+              </section>
             </div>
           </div>
         </div>

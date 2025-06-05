@@ -1,0 +1,51 @@
+// clients
+.clients {
+    overflow: hidden;
+
+    .row {
+        display: flex;
+        justify-content: flex-start;
+        width: 100vw;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: scale(35);
+    }
+
+    .client-logos-container {
+        display: flex;
+        align-items: center;
+        gap: scale(100);
+        animation: scroll 20s linear infinite;
+        padding-right: scale(100);
+
+        img {
+            height: scale(50px);
+            width: auto;
+            object-fit: contain;
+            transition: .35s;
+            filter: grayscale(1);
+            opacity: .7;
+
+            &:hover {
+                filter: grayscale(0);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}

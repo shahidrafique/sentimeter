@@ -36,47 +36,6 @@
 			}
 		}
 
-		.left-content {
-			h3 {
-				span {
-					color: $blue-light
-				}
-			}
-
-			p {
-				font-size: scale(20)
-			}
-
-			.note {
-				span {
-					color: $blue-light;
-				}
-			}
-
-			.row {
-				display: flex;
-				align-items: center;
-				gap: scale(16);
-
-				p {
-					font-size: scale(20);
-					font-weight: 600;
-					color: $dark-blue;
-					width: scale(170);
-				}
-
-				.button {
-					background: $blue-light;
-
-					&:before {
-						background-color: white
-					}
-				}
-			}
-		}
-
-
-
 		.features {
 			flex: 1.5;
 			display: flex;
@@ -172,65 +131,6 @@
 			}
 		}
 
-		.col-right {
-			.right-content {
-				h3 {
-					span {
-						color: $blue-light;
-					}
-				}
-
-				p {
-					font-size: scale(20);
-				}
-			}
-
-
-			.button-holder {
-				padding-top: 20px;
-				display: flex;
-				gap: scale(16);
-				align-items: center;
-
-				p {
-					font-size: scale(20);
-					color: $dark-blue;
-					font-weight: 600;
-
-				}
-			}
-		}
-
-
-
-
-		.row {
-			display: flex;
-			gap: 30px;
-
-			.col {
-				flex: 1;
-
-				.icon {
-					img {
-						width: scale(86);
-						height: scale(86);
-					}
-				}
-
-				h4 {
-					font-size: scale(22);
-					margin: 10px 0;
-					color: $blue-light;
-				}
-
-				p {
-					font-size: scale(20);
-					margin-top: 0;
-				}
-			}
-		}
-
 	}
 
 
@@ -256,32 +156,12 @@
 
 			&.content {
 				max-width: 50%;
-
-				h3 {
-					span {
-						color: $yellow;
-					}
-				}
-
-				p {
-					font-size: scale(20);
-
-					span {
-						color: $yellow;
-					}
-				}
-
-				.row {
-					h5 {
-						margin-bottom: 10px;
-					}
-				}
 			}
 		}
 	}
 
 
-	.overlay {
+	.lifecycle {
 		.container {
 			gap: 50px;
 
@@ -293,11 +173,6 @@
 
 
 		.col-right {
-			h4 {
-				text-align: center;
-				margin-bottom: 30px;
-			}
-
 			.features {
 				display: flex;
 				flex-direction: column;
@@ -359,6 +234,52 @@
 		}
 
 
+
+
 	}
+
+	.secure-sharing {
+		.col {
+			align-content: center;
+			flex: 1;
+		}
+
+		.col-left {
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			img {
+				width: scale(571);
+				height: scale(365);
+			}
+		}
+	}
+
+	// continuous
+	.continuous {
+		color: white;
+
+		.card {
+			@extend .gradient;
+
+			.container {
+				.col-icon {
+					img {
+						width: scale(95);
+						height: scale(95);
+					}
+				}
+
+				.col-content {
+					max-width: 50%;
+
+				}
+			}
+		}
+	}
+
+
 
 }

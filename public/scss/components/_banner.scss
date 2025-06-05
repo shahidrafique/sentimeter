@@ -12,9 +12,16 @@
     .content {
         max-width: 70%;
 
+        .subtitle {
+            color: $yellow;
+            font-size: scale(24);
+            font-weight: 500;
+        }
+
         h2 {
             text-transform: uppercase;
             margin: 0;
+            line-height: 1.2;
 
             span {
                 color: $yellow;
