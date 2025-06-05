@@ -5,6 +5,7 @@
   padding: 0 20px;
   display: flex;
   position: relative;
+  gap: scale(50);
 
   @include md {
     max-width: none;
@@ -25,6 +26,7 @@
   &.align-center {
     align-items: center;
   }
+
 }
 
 .section {
@@ -49,6 +51,164 @@
   &.has-bg {
     padding: scale(50) scale(40);
   }
+
+
+
+  .section-header {
+    margin-bottom: scale(30);
+
+    h2 {
+      font-size: scale(50);
+      font-weight: 500;
+    }
+
+    p {
+      font-size: scale(22);
+      margin-top: 0;
+    }
+
+    &.blue {
+      h2 {
+        span {
+          color: $blue-light;
+        }
+      }
+    }
+
+    &.blue-dark {
+      h2 {
+        span {
+          color: $dark-blue;
+        }
+      }
+    }
+
+    &.yellow {
+      h2 {
+        span {
+          color: $yellow;
+        }
+      }
+    }
+
+    &.green {
+      h2 {
+        span {
+          color: $green;
+        }
+      }
+    }
+
+    &.red {
+      h2 {
+        span {
+          color: $red;
+        }
+      }
+    }
+  }
+
+  .section-footer {
+    margin-top: scale(30);
+
+    .note {
+      font-size: scale(20);
+      font-style: italic;
+      font-weight: 500;
+      margin-bottom: 8px;
+
+      span {
+        font-weight: 600;
+        font-style: normal;
+        color: $dark-blue;
+      }
+    }
+
+    .button-wrapper {
+      display: flex;
+      gap: scale(16);
+      align-items: center;
+
+      p {
+        font-size: scale(20);
+        font-weight: 600;
+        color: $dark-blue;
+        margin: 10px 0;
+        max-width: scale(240);
+      }
+    }
+
+    &.yellow {
+      .note span {
+        color: $yellow
+      }
+
+      .button-wrapper p {
+        color: $yellow;
+      }
+    }
+  }
+}
+
+.features-heading {
+  font-size: scale(32);
+  margin-bottom: 30px;
+}
+
+.features {
+  .cards {
+    display: flex;
+    gap: scale(30);
+
+    .card {
+      border: 1px solid $green;
+      border-top-width: 10px;
+      border-radius: scale(12);
+      padding: scale(36);
+      display: flex;
+      flex-direction: column;
+      gap: scale(16);
+      flex: 1;
+
+      .icon {
+        img {
+          height: scale(72);
+          width: scale(72);
+        }
+      }
+
+      .card-content {
+        h4 {
+          font-size: scale(22);
+        }
+
+        p {
+          margin: 10px 0 0;
+          font-size: scale(18);
+        }
+      }
+
+      &.yellow {
+        border-color: $yellow;
+      }
+
+      &.red {
+        border-color: $red;
+      }
+
+
+    }
+
+    &.no-border {
+      .card {
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+      }
+    }
+  }
 }
 
 .card {
@@ -56,7 +216,6 @@
   background-color: $white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: scale(100) 0;
-
 }
 
 
@@ -143,7 +302,7 @@
   h3 {
 
     small {
-      font-size: scale(22);
+      font-size: scale(20);
       font-weight: 500;
       display: block;
       opacity: 0.5;
@@ -317,16 +476,4 @@
     }
   }
 }
-}
-
-.note {
-  font-size: scale(20);
-  font-style: italic;
-  font-weight: 500;
-
-  span {
-    font-weight: 600;
-    font-style: normal;
-    color: $dark-blue;
-  }
 }

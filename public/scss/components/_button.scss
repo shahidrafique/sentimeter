@@ -156,6 +156,23 @@
       color: $yellow;
     }
   }
+
+  &--yellow {
+    background: $yellow;
+
+    &:before {
+      background-color: white;
+    }
+  }
+
+  &--blue {
+    background: $blue-light;
+
+    &:before {
+      background-color: white;
+    }
+  }
+
 }
 
 .link {

@@ -11,8 +11,8 @@
 				}
 
 				img {
-					width: scale(515);
-					height: scale(515);
+					width: scale(782);
+					height: scale(389);
 				}
 			}
 		}
@@ -32,33 +32,6 @@
 
 			&:nth-child(2) {
 				padding-left: scale(50);
-			}
-		}
-
-		.left-content {
-			h3 {
-				span {
-					color: $yellow
-				}
-			}
-
-			p {
-				font-size: scale(20)
-			}
-
-			.note {
-				span {
-					color: $yellow;
-					font-weight: 600
-				}
-			}
-
-			.button {
-				background: $yellow;
-
-				&:before {
-					background-color: white
-				}
 			}
 		}
 
@@ -101,34 +74,16 @@
 		.container {
 			align-items: center;
 			gap: scale(50);
-		}
 
-		.col-left,
-		.col-right {
-			flex: 1;
-		}
-
-		.col-left {
-			h3 {
-				color: $dark-blue;
-			}
-
-			.row {
-				padding-top: 20px;
-
-				p {
-					font-size: scale(20);
-					color: $dark-blue;
-					font-weight: 600;
-
-				}
+			.col-left,
+			.col-right {
+				flex: 1;
 			}
 		}
 
 		.col-right {
 			h4 {
 				text-align: center;
-				margin-bottom: 20px;
 				color: $dark-blue;
 			}
 
@@ -209,133 +164,23 @@
 		.card {
 			@extend .gradient;
 			color: white;
-		}
 
-		.container {
-			gap: scale(30);
-		}
+			.container {
+				gap: scale(30);
 
-
-
-		.col {
-			&:first-child {
-				img {
-					width: scale(125);
-					height: scale(125);
-				}
-			}
-
-			&.content {
-				max-width: 90%;
-
-				h3 {
-					span {
-						color: $yellow;
+				.col {
+					&.col-icon {
+						img {
+							width: scale(125);
+							height: scale(125);
+						}
 					}
-				}
 
-				p {
-					font-size: scale(20);
-
-					span {
-						color: $yellow;
-					}
-				}
-
-				h5 {
-					font-size: scale(22);
-					color: $yellow;
-					font-weight: 500;
-					font-style: italic;
-					margin: 10px 0;
-				}
-
-				.row {
-					display: flex;
-					gap: 30px;
-
-					.col {
-						flex: 1;
-
-						.icon {
-							img {
-								width: scale(86);
-								height: scale(86);
-							}
-						}
-
-						h4 {
-							font-size: scale(22);
-							margin: 10px 0;
-							color: $yellow;
-						}
-
-						p {
-							font-size: scale(20);
-							margin-top: 0;
-						}
+					&.content {
+						max-width: 90%;
 					}
 				}
 			}
-		}
-	}
-
-	// omni-channel
-	.leverage {
-		.container {
-
-			&:first-child {
-				margin-bottom: scale(20);
-			}
-
-			&:nth-child(2) {
-				margin-bottom: scale(20);
-				gap: scale(50);
-			}
-		}
-
-		.col {
-			flex: 1;
-		}
-
-		.content-card {
-			border: 1px solid $green;
-			border-top-width: 10px;
-			border-radius: scale(12);
-			padding: scale(36);
-			display: flex;
-			flex-direction: column;
-			gap: scale(16);
-
-			h4 {
-				font-size: scale(22);
-			}
-
-			p {
-				margin: 10px 0 0;
-				font-size: scale(18);
-			}
-
-			&.yellow {
-				border-color: $yellow;
-			}
-
-			&.red {
-				border-color: $red;
-			}
-		}
-
-		.row {
-			display: flex;
-			gap: scale(16);
-			align-items: center;
-
-			p {
-				font-size: scale(20);
-				font-weight: 600;
-				color: $dark-blue;
-			}
-
 		}
 	}
 
@@ -347,91 +192,15 @@
 			flex: 1;
 		}
 
-		.content {
+		.image-container {
+			text-align: right;
+			align-content: center;
 
-			.row {
-				h3 {
-					color: $dark-blue;
-				}
-
-				p {
-					font-size: scale(20);
-					font-weight: 600;
-				}
+			img {
+				width: scale(689);
+				height: scale(437);
 			}
-
-			.button-holder {
-				display: flex;
-				gap: scale(16);
-				align-items: center;
-			}
-
-			padding-right: scale(100);
-		}
-
-		ul {
-			margin: scale(10) 0;
-			display: flex;
-			flex-direction: column;
-			padding-left: scale(10);
-			gap: 8px;
-
-			li {
-				font-size: scale(20);
-				color: rgba($black, .7);
-				display: flex;
-				align-items: center;
-				gap: 16px;
-
-				p {
-					margin: 8px 0;
-					font-size: scale(20);
-
-					span {
-						font-weight: 600;
-						color: $dark-blue
-					}
-				}
-
-				&:before {
-					content: '';
-					flex: 0 0 auto;
-					width: scale(32);
-					height: scale(32);
-					display: inline-block;
-					background: url('/images/yellow-tick.svg') no-repeat center;
-					background-size: contain;
-
-				}
-
-			}
-		}
-
-		.note {
-			span {
-				color: $dark-blue;
-				font-style: normal;
-				font-weight: 600;
-			}
-
-			font-style: italic;
-			font-size: scale(20);
-		}
-
-
-
-
-	}
-
-	.image-container {
-		text-align: right;
-		align-content: center;
-
-		img {
-			width: scale(689);
-			height: scale(437);
 		}
 	}
-
 
 }
