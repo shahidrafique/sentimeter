@@ -75,13 +75,6 @@
                 color: $color;
               }
             }
-
-            .button {
-              background: $color;
-              &::before {
-                background: url("/images/icon-arrow-right-circled.svg") no-repeat center;
-              }
-            }
           }
         }
       }

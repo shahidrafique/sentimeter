@@ -448,4 +448,152 @@
 		}
 	}
 
+	.customer-journey-mapping {
+
+		.card {
+			@extend .gradient;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			gap: scale(50);
+
+			> .container {
+				gap: scale(10);
+
+				img {
+					margin-bottom: scale(20);
+					width: scale(88);
+					height: auto;
+				}
+
+				h5 {
+					color: $yellow;
+				}
+
+				.col {
+					max-width: scale(350);
+				}
+			}
+		}
+	}
+
+	.journey-first-approach {
+
+		.section-title {
+			margin-bottom: scale(20);
+			text-align: center;
+
+			span {
+				color: $red;
+			}
+		}
+
+		.card {
+			padding-left: scale(220);
+			position: relative;
+			overflow: hidden;
+			min-height: scale(900);
+
+			.progress-steps {
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: flex;
+				flex-direction: column;
+				gap: 2px;
+
+				.step {
+					display: flex;
+					align-items: center;
+					gap: scale(15);
+					border-radius: 0 50px 50px 0;
+					position: relative;
+					font-size: scale(20);
+					font-weight: 600;
+					color: rgba($red, 0.28);
+
+					.icon {
+						background: $red-light;
+						padding: scale(20) scale(40) scale(20) scale(30);
+						border-radius: 0 50px 50px 0;
+					}
+
+					&.active {
+						color: $white;
+						background: $red;
+						padding: scale(20) scale(40) scale(20) scale(30);
+
+						.icon {
+							padding: 0;
+							background: transparent;
+						}
+					}
+				}
+			}
+
+			.step-content {
+				display: flex;
+				gap: scale(200);
+				width: 100%;
+				align-items: center;
+
+				.col {
+
+					h3 {
+						color: $red;
+						margin: scale(20) 0;
+					}
+
+					h5 {
+						margin-bottom: scale(10);
+					}
+
+					&:first-child {
+						flex: 2.2;
+					}
+
+					&:last-child {
+						flex: 2.3;
+					}
+				}
+
+				&.step9 {
+					max-width: scale(1100);
+					flex-direction: column;
+					gap: scale(10);
+					align-items: flex-start;
+
+					.row {
+						display: flex;
+						gap: scale(100);
+
+						.col {
+							flex: 1;
+							display: flex;
+							flex-direction: column;
+							gap: scale(15);
+
+							h5,
+							p {
+								margin: 0;
+							}
+
+							h5 {
+								color: $red;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.business-impact {
+
+		.card {
+			@extend .gradient;
+			color: white;
+		}
+	}
+
 }

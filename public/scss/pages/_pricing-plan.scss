@@ -1,0 +1,100 @@
+.pricing-plan {
+
+  .container {
+
+    >.col {
+
+      &:nth-child(1) {
+        flex: 2.7;
+        padding-right: scale(50);
+
+        h3 {
+          color: $dark-blue;
+          line-height: 1.1;
+
+          small {
+            font-size: scale(20);
+            display: block;
+            margin-bottom: scale(5);
+          }
+        }
+
+        h5 {
+          margin: scale(25) 0 scale(10);
+        }
+
+        p {
+          margin-top: 0;
+        }
+
+        .checklist {
+          margin-top: scale(25);
+        }
+      }
+
+      &:nth-child(2) {
+        flex: 2.3;
+        padding-left: scale(50);
+
+        .request-pricing-card {
+          border: 1px solid $blue;
+          position: relative;
+          border-radius: scale(11);
+          padding: scale(70) scale(60) scale(50);
+          overflow: hidden;
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+          text-align: center;
+          gap: scale(50);
+
+          h4 {
+            font-size: scale(26);
+            color: $blue;
+          }
+
+          p {
+            margin: scale(10) 0 scale(40);
+          }
+
+          form {
+            display: flex;
+            flex-direction: column;
+            gap: scale(40);
+            width: 100%;
+            align-items: center;
+
+            input {
+              width: 100%;
+              border-style: solid;
+              border-width: 0 0 1px;
+              font-size: scale(18);
+              border-color: $black;
+              padding: scale(10) 0;
+              font-family: inherit;
+              resize: none;
+
+              &:focus {
+                outline: 0;
+                border-color: $blue;
+              }
+            }
+
+            .button {
+              margin-top: scale(20);
+            }
+          }
+
+          &:before {
+            content: "";
+            height: 20px;
+            width: 100%;
+            @extend .gradient;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}

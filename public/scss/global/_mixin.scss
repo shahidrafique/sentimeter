@@ -10,3 +10,16 @@
   $result: ($value / $screen * 100) + vw;
   @return $result;
 }
+
+@mixin layout-row(
+  $direction: row,
+  $gap: scale(10),
+  $align: stretch,
+  $justify: flex-start
+) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  align-items: $align;
+  justify-content: $justify;
+}

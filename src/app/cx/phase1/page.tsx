@@ -1,9 +1,13 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Clients from "../../components/clients";
 import Link from "next/link";
 export default function page() {
+  const [activeStage, setActiveStage] = useState(0);
   return (
     <article className="phase1">
+
       {/* Sub Header */}
       <section className="sub-header">
         <div className="container">
@@ -51,409 +55,530 @@ export default function page() {
         </div>
       </section>
       <Clients />
-      {/* Comprehensive Feedback */}
 
-      <section className="section has-bg red-light comprehensive-feedback">
+      {/* Customer Journey Mapping  */}
+      <section className="section has-bg customer-journey-mapping">
         <div className="card">
-          <div className="container">
-            <div className="comprehensive-feedback-left">
-              <h2>
-                Comprehensive <span>Feedback</span> at Every Corner
-              </h2>
-              <div className="content">
-                <p>
-                  Sentimeter collects feedback across multiple channels, giving
-                  you a complete view of the employee experience. Whether
-                  through pulse surveys or unsolicited comments, our tools
-                  ensure no signal is missed.
-                </p>
-
-                <p>
-                  <i>
-                    <span>Why It Matters:</span> "When feedback is easy to give,
-                    employees are eager to share it."
-                  </i>
-                </p>
-              </div>
-              <Link href="#" className="button">
-                Explore Why Sentimeter
-              </Link>
-            </div>
-            <div className="comprehensive-feedback-right">
-              <h3>Key Features:</h3>
-              <div className="benefit">
-                <Image
-                  src={"/images/icon-comprehensive-1.svg"}
-                  width={60}
-                  height={60}
-                  alt="benefit"
-                />
-                <p>
-                  <span>Global Accessibility:</span> Multi-lingual, multi-modal
-                  feedback tools cater to diverse teams across geographies.
-                </p>
-              </div>
-              <div className="benefit">
-                <Image
-                  src={"/images/icon-comprehensive-2.svg"}
-                  width={60}
-                  height={60}
-                  alt="benefit"
-                />
-                <p>
-                  <span>Omnichannel Integration:</span> Collect insights from
-                  surveys, chat logs, emails, in-app tools, and more.
-                </p>
-              </div>
-              <div className="benefit">
-                <Image
-                  src={"/images/icon-comprehensive-3.svg"}
-                  width={60}
-                  height={60}
-                  alt="benefit"
-                />
-                <p>
-                  <span>Rich Media Support:</span> Gather deeper insights with
-                  video, image, and voice-based feedback.
-                </p>
-              </div>
-              <div className="benefit">
-                <Image
-                  src={"/images/icon-comprehensive-3.svg"}
-                  width={60}
-                  height={60}
-                  alt="benefit"
-                />
-                <p>
-                  <span>Push and Pull Options:</span> Combine proactive surveys
-                  with always-available feedback channels for a seamless
-                  experience.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Build Trust */}
-      <section className="section has-bg build-trust">
-        <div className="card">
-          <div className="container">
-            <div className="col">
-              <Image
-                src={"/images/image-build-trust-icon.png"}
-                width={125}
-                height={125}
-                alt="benefit"
-              />
-            </div>
-
-            <div className="col content">
-              <h3>
-                Build <span>Trust</span> Through Anonymity
-              </h3>
-              <p>
-                Honest feedback is fearless feedback. Sentimeter ensures
-                confidentiality, allowing employees to share their thoughts
-                openly without fear of repercussions.
-              </p>
-              <h5>Key Features:</h5>
-              <div className="row">
-                <div className="col">
-                  <div className="icon">
-                    <Image
-                      src={"/images/icon-build-trust1.svg"}
-                      width={86}
-                      height={86}
-                      alt="benefit"
-                    />
-                  </div>
-                  <h4>Guaranteed Anonymity</h4>
-                  <p>
-                    Secure systems ensure privacy for fearless participation.
-                  </p>
-                </div>
-
-                <div className="col">
-                  <div className="icon">
-                    <Image
-                      src={"/images/icon-build-trust2.svg"}
-                      width={86}
-                      height={86}
-                      alt="benefit"
-                    />
-                  </div>
-                  <h4>Transparency Tools</h4>
-                  <p>
-                    Foster trust by demonstrating how feedback drives real
-                    improvements.
-                  </p>
-                </div>
-
-                <div className="col">
-                  <div className="icon">
-                    <Image
-                      src={"/images/icon-build-trust3.svg"}
-                      width={86}
-                      height={86}
-                      alt="benefit"
-                    />
-                  </div>
-                  <h4>Trust-Building Analytics</h4>
-                  <p>
-                    Build stronger relationships between employees and
-                    leadership.
-                  </p>
-                </div>
-              </div>
-              <p>
-                <span>Why It Matters: </span>
-                <i>
-                  "When feedback is easy to give, employees are eager to share
-                  it."
-                </i>
-              </p>
-              <div className="button button--outline">
-                Create a Safe Feedback Space
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Automation */}
-      <section className="section automation">
-        <div className="container">
-          <h3>Automation That Works for You</h3>
-          <p>
-            Save time and improve participation with automated surveys and
-            response tracking. Sentimeter ensures you ask the right questions at
-            the right time.
-          </p>
-        </div>
-        <div className="container">
-          <div className="col">
-            <h5>Key Features:</h5>
-            <ul>
-              <li>
-                <p>
-                  <span>Timely Pulse Surveys:</span> Automate feedback
-                  collection after key moments like onboarding or performance
-                  reviews.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span>Smart Sampling:</span> Avoid survey fatigue with
-                  optimized distribution strategies.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <span>Real-Time Feedback:</span> Act on insights as they come
-                  in, with minimal effort.
-                </p>
-              </li>
-            </ul>
-            <p className="note">
-              <span>Why It Matters:</span> "Automation eliminates friction and
-              ensures you capture meaningful feedback every time"
-            </p>
-            <Link href="#" className="button">
-              Experience Smarter Employee Surveys
-            </Link>
-          </div>
-          <div className="col">
+          <div className="container dir-col">
             <Image
-              src={"/images/image-automation.png"}
-              width={708}
-              height={444}
-              alt="Automation"
+              src={"/images/icon-customer-journey-maping.svg"}
+              width={88}
+              height={88}
+              alt="icon customer journey maping"
             />
+            <h5>
+              Customer Journey Mapping:
+            </h5>
+            <h3>
+              The Key to CX Success
+            </h3>
           </div>
-        </div>
-      </section>
-
-      {/* Proactive */}
-      <section className="section has-bg blue proactive">
-        <div className="card">
           <div className="container">
             <div className="col">
-              <div className="content">
-                <h2>Proactive Listening Across the Lifecycle</h2>
-                <p>
-                  Capture feedback throughout the employee journey with tools
-                  tailored to each stage—from recruitment to exit.
-                </p>
-                <p className="note">
-                  <span>Why It Matters:</span> "Understanding employees
-                  holistically ensures every stage of their journey is
-                  impactful."
-                </p>
-                <Link href={"#"} className="button">
-                  See Lifecycle Insights in Action
-                </Link>
+              <div className="icon">
+                <Image
+                  src={"/images/icon-gain.svg"}
+                  width={86}
+                  height={86}
+                  alt="icon gain"
+                />
               </div>
+              <h5>Gain a Holistic View of Customer Interactions</h5>
+              <p>
+                Understand how customers interact with your brand at every stage.
+              </p>
             </div>
             <div className="col">
-              <h5 className="key-features">Key Features</h5>
-              <div className="container">
-                <div className="col">
-                  <Image
-                    src={"/images/ternado.svg"}
-                    width={303}
-                    height={341}
-                    alt="ternado"
-                    className="ternado"
-                  />
-                </div>
-                <div className="col features">
-                  <div className="feature">
-                    <div className="icon">
-                      <Image
-                        src={"/images/icon-proactive-1.svg"}
-                        width={60}
-                        height={60}
-                        alt="ternado"
-                      />
-                    </div>
-                    <div className="content">
-                      <h5>Lifecycle Feedback Mapping</h5>
-                      <p>
-                        Monitor experiences across all touchpoints, including
-                        onboarding, training, and performance reviews.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="feature">
-                    <div className="icon">
-                      <Image
-                        src={"/images/icon-proactive-2.svg"}
-                        width={60}
-                        height={60}
-                        alt="ternado"
-                      />
-                    </div>
-                    <div className="content">
-                      <h5>End-to-End Analytics</h5>
-                      <p>
-                        Track trends and patterns to see the bigger picture.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="feature">
-                    <div className="icon">
-                      <Image
-                        src={"/images/icon-proactive-3.svg"}
-                        width={60}
-                        height={60}
-                        alt="ternado"
-                      />
-                    </div>
-                    <div className="content">
-                      <h5>Responsive Listening</h5>
-                      <p>Stay open to feedback when employees need it most.</p>
-                    </div>
-                  </div>
-                </div>
+              <div className="icon">
+                <Image
+                  src={"/images/icon-build-trust2.svg"}
+                  width={86}
+                  height={86}
+                  alt="benefit"
+                />
               </div>
+              <h5>Identify & Resolve Customer Friction Points</h5>
+              <p>
+                Foster trust by demonstrating how feedback drives real
+                improvements.
+              </p>
+            </div>
+            <div className="col">
+              <div className="icon">
+                <Image
+                  src={"/images/icon-build-trust3.svg"}
+                  width={86}
+                  height={86}
+                  alt="benefit"
+                />
+              </div>
+              <h5>Trust-Building Analytics</h5>
+              <p>
+                Build stronger relationships between employees and
+                leadership.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Sentimeter for Feedback? */}
+      {/* Journey-First Approach  */}
+      <section className="section has-bg red-light journey-first-approach">
+        <h4 className="section-title">
+          The Journey-First Approach: <span>9 Key Steps to Success</span>
+        </h4>
+        <div className="card">
+          <div className="progress-steps">
+            {["Step 1", "Step 2", "Step 3", "Step 4", "Step 5", "Step 6", "Step 7", "Step 8", "Step 9"].map(
+              (label, index) => (
+                <div
+                  key={index}
+                  className={`${"step"} ${activeStage === index ? "active" : ""
+                    }`}
+                  onClick={() => setActiveStage(index)}
+                >
+                  <div className="icon">
+                    <Image
+                      src={"/images/journey-icon-step1-white.png"}
+                      width={46}
+                      height={46}
+                      alt="journey icon step1 white"
+                    />
+                  </div>
+                  {label}
+                </div>
+              )
+            )}
+          </div>
 
-      <section className="section why">
+          <div className="container">
+            {activeStage === 0 && (
+              <section className="step-content step1">
+                <div className="col">
+                  <Image
+                    src={"/images/journey-icon-step1-red.png"}
+                    width={113}
+                    height={113}
+                    alt="journey icon step1 red"
+                  />
+                  <h3>Identify Customer Journeys</h3>
+                  <p>
+                    Start by identifying all the ways customers interact with your business, from signing up to resolving issues. Collaborate with stakeholders to ensure no pathway is missed.
+                  </p>
+                  <h5>Example Journeys:</h5>
+                  <ul className="checklist red">
+                    <li className="checklist-item">
+                      <span>FinTech:</span> Account sign-up, bill payment, transaction disputes.
+                    </li>
+                    <li className="checklist-item">
+                      <span>Retail:</span> Online purchases, in-store experiences, returns.
+                    </li>
+                    <li className="checklist-item">
+                      <span>SaaS:</span> Free trials, subscription renewals, technical support.
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <Image
+                    src={"/images/journey-illustration-step1.svg"}
+                    width={408}
+                    height={408}
+                    alt="journey illustration step1"
+                  />
+                </div>
+              </section>
+            )}
+            {activeStage === 1 && (
+              <section className="step-content step2">
+                <div className="col">
+                  <Image
+                    src={"/images/journey-icon-step2-red.png"}
+                    width={113}
+                    height={113}
+                    alt="journey icon step2 red"
+                  />
+                  <h3>Define Journey-Specific Stages</h3>
+                  <p>
+                    Break each journey into its unique steps. Go beyond generic stages like "Awareness" or "Purchase" to capture what truly happens at each touchpoint.
+                  </p>
+                  <h5>Example Stages for an Online Purchase Flow:</h5>
+                  <ul className="checklist red">
+                    <li className="checklist-item">
+                      Homepage Visit
+                    </li>
+                    <li className="checklist-item">
+                      Browsing Products
+                    </li>
+                    <li className="checklist-item">
+                      Adding Items to Basket
+                    </li>
+                    <li className="checklist-item">
+                      Checkout/Payment
+                    </li>
+                    <li className="checklist-item">
+                      Delivery or Collection
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <Image
+                    src={"/images/journey-illustration-step2.svg"}
+                    width={580}
+                    height={536}
+                    alt="journey illustration step2"
+                  />
+                </div>
+              </section>
+            )}
+            {activeStage === 2 && (
+              <section className="step-content step3">
+                <div className="col">
+                  <Image
+                    src={"/images/journey-icon-step3-red.png"}
+                    width={113}
+                    height={113}
+                    alt="journey icon step3 red"
+                  />
+                  <h3>Create High-Level Process Flows</h3>
+                  <p>
+                    Visualize every journey with process flows that outline key stages, decision points, and potential drop-offs. Use tools like Lucidchart or Miro to build a clear roadmap.
+                  </p>
+                  <h5>Example Flow for Checkout/Payment:</h5>
+                  <ul className="checklist red">
+                    <li className="checklist-item">
+                      Homepage Visit
+                    </li>
+                    <li className="checklist-item">
+                      Browsing Products
+                    </li>
+                    <li className="checklist-item">
+                      Add to Basket
+                    </li>
+                    <li className="checklist-item">
+                      Checkout
+                    </li>
+                    <li className="checklist-item">
+                      Payment Successful
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <Image
+                    src={"/images/journey-illustration-step3.svg"}
+                    width={488}
+                    height={446}
+                    alt="journey illustration step3"
+                  />
+                </div>
+              </section>
+            )}
+            {activeStage === 3 && (
+              <section className="step-content step4">
+                <div className="col">
+                  <Image
+                    src={"/images/journey-icon-step4-red.png"}
+                    width={113}
+                    height={113}
+                    alt="journey icon step4 red"
+                  />
+                  <h3>Identify Potential Drop-Off Points</h3>
+                  <p>
+                    Drop-off points are moments where customers leave the journey without achieving their goal. These insights are critical to:
+                  </p>
+                  <ul className="checklist red">
+                    <li className="checklist-item">
+                      <span>Reduce Friction:</span> Improve processes that cause frustration.
+                    </li>
+                    <li className="checklist-item">
+                      <span>Boost Conversions:</span> Minimize lost opportunities.
+                    </li>
+                    <li className="checklist-item">
+                      <span>Enhance Satisfaction:</span> Resolve customer pain points proactively.
+                    </li>
+                  </ul>
+                  <h5>Example Drop-Off Points:</h5>
+                  <ul className="checklist red">
+                    <li className="checklist-item">
+                      Browsing without adding items to the basket.
+                    </li>
+                    <li className="checklist-item">
+                      Abandoning the cart due to unclear pricing or payment options.
+                    </li>
+                    <li className="checklist-item">
+                      Support calls ending unresolved due to long wait times.
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <Image
+                    src={"/images/journey-illustration-step4.svg"}
+                    width={488}
+                    height={446}
+                    alt="journey illustration step4"
+                  />
+                </div>
+              </section>
+            )}
+            {activeStage === 4 && (
+              <section className="step-content step5">
+                <div className="col">
+                  <Image
+                    src={"/images/journey-icon-step5-red.png"}
+                    width={113}
+                    height={113}
+                    alt="journey icon step5 red"
+                  />
+                  <h3>Overlay Feedback Touchpoints</h3>
+                  <p>
+                    Map out where and how customer feedback is currently collected. This includes both:
+                  </p>
+                  <ul className="checklist red">
+                    <li className="checklist-item">
+                      <span>Solicited Feedback:</span> Surveys, feedback requests, post-purchase emails.
+                    </li>
+                    <li className="checklist-item">
+                      <span>Unsolicited Feedback:</span> Social media reviews, support call transcripts, chatbot interactions.
+                    </li>
+                  </ul>
+                  <h5>Example Feedback Touchpoints for an Online Purchase Journey:</h5>
+                  <ul className="checklist red">
+                    <li className="checklist-item">
+                      Homepage Visit → Social Media Reviews (Unsolicited)
+                    </li>
+                    <li className="checklist-item">
+                      Checkout → Post-Purchase Survey (Solicited)
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <Image
+                    src={"/images/journey-illustration-step5.svg"}
+                    width={488}
+                    height={446}
+                    alt="journey illustration step5"
+                  />
+                </div>
+              </section>
+            )}
+            {activeStage === 5 && (
+              <section className="step-content step6">
+                <div className="col">
+                  <Image
+                    src={"/images/journey-icon-step6-red.png"}
+                    width={113}
+                    height={113}
+                    alt="journey icon step6 red"
+                  />
+                  <h3>Identify Feedback Gaps</h3>
+                  <p>
+                    At each stage, ask, “How do we understand what customers think and feel here?” If there’s no clear answer, you’ve found a gap.
+                  </p>
+                  <h5>How to Address Feedback Gaps:</h5>
+                  <ul className="checklist red">
+                    <li className="checklist-item">
+                      Add potential feedback touchpoints to your journey map.
+                    </li>
+                    <li className="checklist-item">
+                      Clearly distinguish existing feedback mechanisms from gaps.interactions.
+                    </li>
+                    <li className="checklist-item">
+                      Focus on methods that capture both quantitative and qualitative insights.
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <Image
+                    src={"/images/journey-illustration-step6.svg"}
+                    width={488}
+                    height={446}
+                    alt="journey illustration step6"
+                  />
+                </div>
+              </section>
+            )}
+            {activeStage === 6 && (
+              <section className="step-content step7">
+                <div className="col">
+                  <Image
+                    src={"/images/journey-icon-step7-red.png"}
+                    width={113}
+                    height={113}
+                    alt="journey icon step7 red"
+                  />
+                  <h3>Close the Gaps in Understanding</h3>
+                  <p>
+                    Once gaps are identified, determine the best way to close them without overloading your customers.
+                  </p>
+                  <h5>Key Actions:</h5>
+                  <ul className="checklist red">
+                    <li className="checklist-item">
+                      Introduce new feedback touchpoints to address blind spots.
+                    </li>
+                    <li className="checklist-item">
+                      Ensure seamless integration with existing systems.
+                    </li>
+                    <li className="checklist-item">
+                      Test and refine collection methods to optimize response rates.
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <Image
+                    src={"/images/journey-illustration-step7.svg"}
+                    width={488}
+                    height={446}
+                    alt="journey illustration step7"
+                  />
+                </div>
+              </section>
+            )}
+            {activeStage === 7 && (
+              <section className="step-content step8">
+                <div className="col">
+                  <Image
+                    src={"/images/journey-icon-step8-red.png"}
+                    width={113}
+                    height={113}
+                    alt="journey icon step8 red"
+                  />
+                  <h3>Prioritize Customer Journeysng</h3>
+                  <p>
+                    Not all journeys have equal importance. Prioritize based on business impact, customer impact, and implementation feasibility.
+                  </p>
+                  <h5>Prioritization Framework:</h5>
+                  <ul className="checklist red">
+                    <li className="checklist-item">
+                      <span>Business Impact:</span> Revenue potential, cost reduction, strategic alignment.
+                    </li>
+                    <li className="checklist-item">
+                      <span>Customer Impact:</span> Volume affected, pain point severity, satisfaction impact.
+                    </li>
+                    <li className="checklist-item">
+                      <span>Feasibility:</span> Resources, technical complexity, dependencies, timeline.
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <Image
+                    src={"/images/journey-illustration-step8.svg"}
+                    width={488}
+                    height={446}
+                    alt="journey illustration step8"
+                  />
+                </div>
+              </section>
+            )}
+            {activeStage === 8 && (
+              <section className="step-content step9">
+                <Image
+                  src={"/images/journey-icon-step9-red.png"}
+                  width={113}
+                  height={113}
+                  alt="journey icon step9 red"
+                />
+                <h3>Validate with Stakeholders</h3>
+                <p>
+                  Validation ensures your mapping reflects actual customer interactions, accurate pain points, and opportunities. It also fosters cross-department collaboration and alignment.
+                </p>
+                <h5>How to Validate:</h5>
+                <div className="row">
+                  <div className="col">
+                    <Image
+                      src={"/images/icon-review-with-team.svg"}
+                      width={86}
+                      height={86}
+                      alt="icon review with team"
+                    />
+                    <h5>Review with Teams:</h5>
+                    <p>Share drafts with department heads and process owners.</p>
+                  </div>
+                  <div className="col">
+                    <Image
+                      src={"/images/icon-facilitate-workshops.svg"}
+                      width={86}
+                      height={86}
+                      alt="icon review with team"
+                    />
+                    <h5>Facilitate Workshops:</h5>
+                    <p>Collaborate to fill gaps or refine stages.</p>
+                  </div>
+                  <div className="col">
+                    <Image
+                      src={"/images/icon-incorporate-feedback.svg"}
+                      width={86}
+                      height={86}
+                      alt="icon incorporate feedback"
+                    />
+                    <h5>Incorporate Feedback:</h5>
+                    <p>Adjust maps based on stakeholder input and updated insights.</p>
+                  </div>
+                </div>
+              </section>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Dive Deeper Into the Journey-First Approach */}
+      <section className="section">
         <div className="container">
-          <h3>
-            Why <span>Sentimeter</span> for Feedback?
-          </h3>
-          <div className="row">
-            <div className="col">
-              <div className="feature feature-1">
-                <div className="content">
-                  <h5 className="red-70">Data Security</h5>
-                  <p>
-                    Guarantee privacy and security for fearless participation.
-                  </p>
-                </div>
-                <div className="icon">
-                  <Image
-                    src={"/images/icon-why-1.svg"}
-                    width={60}
-                    height={60}
-                    alt="ternado"
-                  />
-                </div>
-              </div>
-              <div className="feature  feature-2">
-                <div className="content">
-                  <h5 className="red-80">Real-Time Insights</h5>
-                  <p>
-                    Act quickly with live dashboards and detailed reporting.
-                  </p>
-                </div>
-                <div className="icon">
-                  <Image
-                    src={"/images/icon-why-2.svg"}
-                    width={60}
-                    height={60}
-                    alt="ternado"
-                  />
-                </div>
-              </div>
+          <div className="content-group has-inner-text-red">
+            <h2>
+              Dive Deeper Into the <span>Journey-First</span> Approach
+            </h2>
+            <p>
+              Want to see the full methodology? Explore our comprehensive <span>Journey-First Approach Guide</span> to uncover:
+            </p>
+          </div>
+          <ul className="checklist red">
+            <li className="checklist-item">
+              <span>Detailed Frameworks:</span> Step-by-step instructions for mapping, analyzing, and optimizing journeys.
+            </li>
+            <li className="checklist-item">
+              <span>Examples Across Industries:</span> From retail to SaaS, see real-world applications.
+            </li>
+            <li className="checklist-item">
+              <span>Proven Strategies:</span> Insights to drive satisfaction and business growth.
+            </li>
+            <li className="checklist-item">
+              Download the Full Guide
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Business Impact */}
+      <section className="section has-bg business-impact">
+        <div className="card">
+          <div className="container">
+            <div className="content-group has-inner-text-yellow">
+              <Image
+                src={"/images/icon-business-impact.png"}
+                width={118}
+                height={118}
+                alt="icon business impact"
+              />
+              <h2>
+                <span>The Business Impact of Customer Journey Mapping</span>
+              </h2>
+              <p>
+                Customer journey mapping isn’t just about visualizing—it’s about understanding and improving. This foundational exercise enables you to see your business through your customers’ eyes, identify hidden opportunities, and create strategies that matter.
+              </p>
+              <h5>Begin Your Customer Journey Optimization Now</h5>
+              <Link href="#" className="button">Request a Demo</Link>
             </div>
             <div className="col">
               <Image
-                src={"/images/image-why.svg"}
-                width={366}
-                height={366}
-                alt="ternado"
+                src={"/images/illustration-business-impact.svg"}
+                width={500}
+                height={500}
+                alt="illustration business impact"
               />
             </div>
-            <div className="col">
-              <div className="feature feature-3">
-                <div className="icon">
-                  <Image
-                    src={"/images/icon-why-3.svg"}
-                    width={60}
-                    height={60}
-                    alt="ternado"
-                  />
-                </div>
-                <div className="content">
-                  <h5 className="red-100">Employee-Centric Design</h5>
-                  <p>
-                    Build trust and engagement with tools designed for
-                    inclusivity.
-                  </p>
-                </div>
-              </div>
-              <div className="feature feature-4">
-                <div className="icon">
-                  <Image
-                    src={"/images/icon-why-4.svg"}
-                    width={60}
-                    height={60}
-                    alt="ternado"
-                  />
-                </div>
-                <div className="content">
-                  <h5 className="red-90">Scalable Solutions</h5>
-                  <p>
-                    Adapt seamlessly from small teams to global enterprises.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
-
-          <Link href={"#"} className="button">
-            Empower Employees Through Feedback
-          </Link>
         </div>
       </section>
+
     </article>
   );
 }
