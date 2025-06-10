@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <article className="home">
       <Hero />
-      <Clients />
+      <Clients showHeader />
       <Problems />
       <PowerInsights />
       <StrategyPath />

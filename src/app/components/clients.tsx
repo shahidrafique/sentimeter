@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-export default function Clients() {
+export default function Clients({ showHeader }) {
   return (
     <section className="section clients">
       <div className="container w-full dir-col align-center">
         <div className="content">
-          <h4>Our Trusted Clients</h4>
+          {showHeader && <h4>Our Trusted Clients</h4>}
           <div className="row">
             <div className="client-logos-container">
               <Image

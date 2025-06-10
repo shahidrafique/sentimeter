@@ -1,7 +1,133 @@
 // problems
 .problems {
-    // height: 100vh;
-    border: 2px solid red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: url('/images/home/problems/problem-ref.png') no-repeat center;
+
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading {
+        font-size: scale(100);
+        text-transform: uppercase;
+        color: $red;
+        position: absolute;
+
+        &.solution {
+            color: $green;
+            overflow: hidden;
+        }
+    }
+
+    .icons-problem {
+        position: relative;
+
+        .icon {
+            position: absolute;
+
+            &.one {
+                right: 271px;
+                top: -357px;
+
+                img {
+                    width: clamp(250px, scale(280), 300px);
+                }
+            }
+
+            &.two {
+                left: -84px;
+                top: -500px;
+
+                img {
+                    width: clamp(325px, scale(376), 400px);
+                }
+            }
+
+            &.three {
+                left: 350px;
+                top: -227px;
+
+                img {
+                    width: clamp(350px, scale(397), 440px);
+                }
+            }
+
+            &.four {
+                left: 25px;
+                top: 100px;
+
+                img {
+                    width: clamp(280px, scale(309), 350px);
+                }
+            }
+
+            &.five {
+                left: -489px;
+                top: 66px;
+
+                img {
+                    width: clamp(280px, scale(313), 350px);
+                }
+            }
+        }
+    }
+
+    .icons-solution {
+        position: relative;
+
+        .icon {
+            position: absolute;
+
+            &.one {
+                right: 323px;
+                top: -357px;
+
+                img {
+                    width: clamp(250px, scale(280), 300px);
+                }
+            }
+
+            &.two {
+                left: -136px;
+                top: -500px;
+
+                img {
+                    width: clamp(325px, scale(376), 400px);
+                }
+            }
+
+            &.three {
+                left: 298px;
+                top: -227px;
+
+                img {
+                    width: clamp(350px, scale(397), 440px);
+                }
+            }
+
+            &.four {
+                left: -28px;
+                top: 100px;
+
+                img {
+                    width: clamp(280px, scale(309), 350px);
+                }
+            }
+
+            &.five {
+                left: -542px;
+                top: 66px;
+
+                img {
+                    width: clamp(280px, scale(313), 350px);
+                }
+            }
+        }
+    }
 }
 
 
@@ -175,17 +301,30 @@
         }
     }
 
-    .overview-steps {
 
-        ul {
+
+    .senticx-slider {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        .nav {
+            justify-content: center;
+
             display: flex;
             align-items: center;
-            gap: scale(30);
+            gap: scale(8);
 
             li {
                 display: flex;
                 align-items: center;
-                gap: scale(10);
+
+
+                label {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
 
                 .number,
                 .text {
@@ -205,23 +344,71 @@
                 }
 
                 .text {
-                    display: none;
+                    max-width: 0;
+                    overflow: hidden;
+                    transition: 1s;
+                    white-space: nowrap;
                 }
 
-                &.active {
 
-                    .number,
-                    .text {
-                        opacity: 1;
-                    }
-
-                    .text {
-                        display: block;
-                    }
-                }
             }
         }
     }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.6s ease;
+        width: 400%;
+        /* 3 slides */
+    }
+
+    .slide {
+        width: 25%;
+        // flex: 1;
+        box-sizing: border-box;
+    }
+
+    /* Slide navigation using radio buttons */
+    #slide1:checked~.slides {
+        transform: translateX(0%);
+    }
+
+    #slide2:checked~.slides {
+        transform: translateX(-25%);
+    }
+
+    #slide3:checked~.slides {
+        transform: translateX(-50%);
+    }
+
+    #slide4:checked~.slides {
+        transform: translateX(-75%);
+    }
+
+
+
+    input#slide1:checked~.nav label[for="slide1"],
+    input#slide2:checked~.nav label[for="slide2"],
+    input#slide3:checked~.nav label[for="slide3"],
+    input#slide4:checked~.nav label[for="slide4"] {
+
+        .number {
+            opacity: 1;
+        }
+
+        .text {
+            max-width: scale(230);
+            display: flex;
+        }
+
+
+
+    }
+
 }
 
 

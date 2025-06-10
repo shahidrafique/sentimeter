@@ -31,40 +31,67 @@ export default function Senticx() {
             />
           </a>
         </div>
-        <div className="senticx-overview-container">
-          <div className="content-left">
-            Track NPS, feedback, and essential KPIs instantly.
+
+        <section className="senticx-slider">
+          <input type="radio" name="slider" id="slide1" defaultChecked />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+          <input type="radio" name="slider" id="slide4" />
+          <div className="slides">
+            <div className="slide" id="s1">
+              <div className="senticx-overview-container">
+                <div className="content-left">
+                  Track NPS, feedback, and essential KPIs instantly.
+                </div>
+                <Image
+                  src="/images/senticx-dashboard.png"
+                  width={1092}
+                  height={737}
+                  alt="Senticx dashboard insights"
+                />
+                <div className="content-right">
+                  Analyze feedback segments and key satisfaction metrics for
+                  actionable customer insights.
+                </div>
+              </div>
+            </div>
+            <div className="slide" id="s2">
+              <p>Slide 2 Content: Dashboard Visualization</p>
+            </div>
+            <div className="slide" id="s3">
+              <p>Slide 3 Content: Metrics and Insights</p>
+            </div>
+            <div className="slide" id="s4">
+              <p>Slide 4 Content: Metrics and Insights</p>
+            </div>
           </div>
-          <Image
-            src="/images/senticx-dashboard.png"
-            width={1092}
-            height={737}
-            alt="Senticx dashboard insights"
-          />
-          <div className="content-right">
-            Analyze feedback segments and key satisfaction metrics for actionable customer insights.
-          </div>
-        </div>
-        <div className="overview-steps">
-          <ul>
-            <li className="active">
-              <div className="number">01</div>
-              <div className="text">Overview</div>
+          <ul className="nav ">
+            <li>
+              <label htmlFor="slide1">
+                <div className="number">01</div>
+                <div className="text">Overview</div>
+              </label>
             </li>
             <li>
-              <div className="number">02</div>
-              <div className="text">Overview</div>
+              <label htmlFor="slide2">
+                <div className="number">02</div>
+                <div className="text">Comparison</div>
+              </label>
             </li>
             <li>
-              <div className="number">03</div>
-              <div className="text">Overview</div>
+              <label htmlFor="slide3">
+                <div className="number">03</div>
+                <div className="text">Customer Recovery</div>
+              </label>
             </li>
             <li>
-              <div className="number">04</div>
-              <div className="text">Overview</div>
+              <label htmlFor="slide4">
+                <div className="number">04</div>
+                <div className="text">Text Analysis</div>
+              </label>
             </li>
           </ul>
-        </div>
+        </section>
       </div>
     </section>
   );
