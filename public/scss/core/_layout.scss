@@ -332,18 +332,18 @@
     'red': $red
   );
 
-@each $name, $color in $colors {
-  &.has-inner-text-#{$name} {
+  @each $name, $color in $colors {
+    &.has-inner-text-#{$name} {
 
-    h2,
-    h3,
-    p {
-      span {
-        color: $color;
+      h2,
+      h3,
+      p {
+        span {
+          color: $color;
+        }
       }
     }
   }
-}
 }
 
 
@@ -353,6 +353,7 @@
   gap: scale(30);
 
   &-item {
+    background: $white;
     border-style: solid;
     border-width: scale(10) 1px 1px;
     border-color: $blue;
@@ -378,6 +379,63 @@
 
     &.yellow {
       border-color: $yellow;
+    }
+  }
+}
+
+
+// Features
+.features-capsule {
+  display: flex;
+  flex-direction: column;
+  gap: scale(25);
+
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: scale(20);
+
+    .icon,
+    .content {
+      flex: 0 1 100%;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      gap: scale(15);
+      padding: scale(20);
+      color: $white;
+      background: $blue;
+      border-radius: scale(100) 0 0 scale(100);
+
+      img {
+        width: scale(50);
+        height: auto;
+      }
+    }
+
+    .content {
+      font-size: scale(20);
+
+      span {
+        color: $blue;
+        font-weight: 500;
+      }
+    }
+
+    &:nth-child(2n + 2) {
+      flex-direction: row-reverse;
+
+      .icon {
+        border-radius: 0 scale(100) scale(100) 0;
+        background: $blue;
+      }
+
+      .content {
+        text-align: right;
+      }
     }
   }
 }
@@ -444,6 +502,10 @@
               opacity: 1;
               color: $color;
             }
+          }
+
+          .link {
+            color: $color;
           }
 
           .button {

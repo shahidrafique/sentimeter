@@ -26,7 +26,7 @@ export default function page() {
           <div className="container">
             <div className="col">
               <Image
-                src="/images/illustration-unify-insights.png"
+                src={"/images/illustration-unify-insights.png"}
                 width={726}
                 height={524}
                 alt="unify insights"
@@ -36,7 +36,7 @@ export default function page() {
               <div className="content-group has-inner-text-blue-light">
                 <div className="section-symbol">
                   <Image
-                    src="/images/icon-unify-insights.svg"
+                    src={"/images/icon-unify-insights.svg"}
                     width={77}
                     height={77}
                     alt="unify insights"
@@ -64,7 +64,7 @@ export default function page() {
               <div className="content-group has-inner-text-green">
                 <div className="section-symbol">
                   <Image
-                    src="/images/icon-transform-text.svg"
+                    src={"/images/icon-transform-text.svg"}
                     width={77}
                     height={77}
                     alt="transform text"
@@ -82,7 +82,7 @@ export default function page() {
             </div>
             <div className="col">
               <Image
-                src="/images/illustration-transform-text.png"
+                src={"/images/illustration-transform-text.png"}
                 width={726}
                 height={524}
                 alt="unify insights"
@@ -98,7 +98,7 @@ export default function page() {
           <div className="container">
             <div className="col">
               <Image
-                src="/images/illustration-meaningful-action.png"
+                src={"/images/illustration-meaningful-action.png"}
                 width={726}
                 height={524}
                 alt="meaningful action"
@@ -108,7 +108,7 @@ export default function page() {
               <div className="content-group has-inner-text-red">
                 <div className="section-symbol">
                   <Image
-                    src="/images/icon-meaningful-action.svg"
+                    src={"/images/icon-meaningful-action.svg"}
                     width={77}
                     height={77}
                     alt="meaningful action"
@@ -136,7 +136,7 @@ export default function page() {
               <div className="content-group has-inner-text-yellow">
                 <div className="section-symbol">
                   <Image
-                    src="/images/icon-entity-extraction.svg"
+                    src={"/images/icon-entity-extraction.svg"}
                     width={77}
                     height={77}
                     alt="entity extraction"
@@ -154,7 +154,7 @@ export default function page() {
             </div>
             <div className="col">
               <Image
-                src="/images/illustration-entity-extraction.png"
+                src={"/images/illustration-entity-extraction.png"}
                 width={726}
                 height={524}
                 alt="entity extraction"
@@ -170,7 +170,7 @@ export default function page() {
           <div className="container">
             <div className="col">
               <Image
-                src="/images/illustration-prioritize.png"
+                src={"/images/illustration-prioritize.png"}
                 width={726}
                 height={524}
                 alt="prioritize"
@@ -180,7 +180,7 @@ export default function page() {
               <div className="content-group has-inner-text-blue">
                 <div className="section-symbol">
                   <Image
-                    src="/images/icon-prioritize.svg"
+                    src={"/images/icon-prioritize.svg"}
                     width={77}
                     height={77}
                     alt="prioritize"

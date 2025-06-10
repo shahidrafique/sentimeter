@@ -54,6 +54,67 @@
     }
 }
 
+.single-platform {
+
+    &-left {
+        flex: 1.4;
+        position: relative;
+        padding-right: scale(100);
+        border-right: 1px solid $gray-light;
+
+
+        h3 {
+            color: $dark-blue;
+        }
+
+        h2 {
+            color: $yellow;
+            font-style: italic;
+        }
+
+        .content {
+            font-size: scale(20);
+            max-width: 90%;
+            font-weight: 500;
+            margin-bottom: 30px;
+
+            ul {
+                li {
+                    list-style: disc;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+
+    }
+
+    &-right {
+        flex: 2.6;
+        padding-left: scale(100);
+
+        h3 {
+            color: $dark-blue;
+            margin-bottom: 30px;
+        }
+
+        .benefit {
+            display: flex;
+            font-size: scale(20);
+            gap: scale(15);
+            margin-bottom: scale(30);
+
+            .content {
+                @include layout-row(column);
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
 .phases {
     padding: scale(120) 0;
     background-color: $dark-blue;
@@ -130,6 +191,10 @@
                         background: $yellow;
                     }
 
+                    &.blue {
+                        background: $blue;
+                    }
+
                     &.light-blue {
                         background: $blue-light;
                     }
@@ -159,6 +224,89 @@
     }
 }
 
+// real-time-trend-detection
+.real-time-trend-detection {
+
+    .card {
+        @extend .gradient;
+        color: $white;
+    }
+
+    h3 {
+
+        span {
+            color: $yellow;
+        }
+    }
+
+    .card-blocks {
+        @extend .container;
+        margin-top: scale(50);
+
+        &-item {
+            border-width: 10px 0 0;
+            box-shadow: none;
+            padding: scale(40);
+
+            h5 {
+                color: $dark-blue;
+            }
+
+            p {
+                color: $black;
+            }
+        }
+    }
+}
+
+// customer-centric-culture
+.customer-centric-culture {
+
+    .container {
+
+        h2 {
+            color: $dark-blue;
+        }
+
+        .screenshot {
+
+            img {
+                width: scale(668);
+                height: auto;
+            }
+        }
+
+        hr {
+            width: 100%;
+        }
+    }
+
+    .card-blocks {
+        max-width: clamp(1200px, scale(1612), 2200px);
+        margin: scale(40) auto 0;
+        padding: 0 20px;
+
+        &-item {
+            border: 0;
+            box-shadow: none;
+            background: $blue-lightest;
+            border-top-color: $dark-blue;
+            position: relative;
+            overflow: hidden;
+            padding: scale(60);
+
+            &::before {
+                content: '';
+                width: 100%;
+                height: 10px;
+                @extend .gradient;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}
 
 // empowering-employee
 .empowering-employee {

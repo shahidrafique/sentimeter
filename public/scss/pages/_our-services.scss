@@ -41,18 +41,17 @@
     'yellow': $yellow,
     'blue': $blue
   );
-
-@each $name, $color in $colors {
-  .section.#{$name} .section-header h3 {
-    span {
-      background: $color;
-
-      &::before {
+  @each $name, $color in $colors {
+    .section.#{$name} .section-header h3 {
+      span {
         background: $color;
+
+        &::before {
+          background: $color;
+        }
       }
     }
   }
-}
 }
 
 .right-path-for-org {
@@ -274,9 +273,9 @@
       padding-left: scale(50);
       border-left: 1px solid $gray-light;
 
-      .container {
-        gap: 30px;
-        align-items: center;
+      img {
+        width: scale(930);
+        height: auto
       }
     }
   }

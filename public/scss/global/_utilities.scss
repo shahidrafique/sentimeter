@@ -58,8 +58,16 @@ $class-suffixes: 100, 90, 80, 70, 60;
 
 
 // Text Color
+.text-black {
+    color: $black;
+}
+
 .text-blue {
     color: $blue;
+}
+
+.text-dark-blue {
+    color: $dark-blue;
 }
 
 .text-green {
