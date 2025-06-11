@@ -3,7 +3,7 @@ import Clients from "./components/clients";
 import Problems from "./components/home/problems";
 import PowerInsights from "./components/home/power-insights";
 import StrategyPath from "./components/home/strategy-path";
-import Senticx from "./components/home/senticx";
+import SentiInsightsTabs from "./components/home/senti-insights-tabs";
 import DriveDecisions from "./components/home/drive-decisions";
 import Testimonials from "./components/testimonials";
 import Compliance from "./components/home/compliance";
@@ -17,7 +17,7 @@ export default function Home() {
       <Problems />
       <PowerInsights />
       <StrategyPath />
-      <Senticx />
+      <SentiInsightsTabs />
       <DriveDecisions />
       <Testimonials />
       <Compliance />

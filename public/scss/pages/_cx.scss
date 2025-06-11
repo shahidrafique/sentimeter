@@ -56,6 +56,10 @@
 
 .single-platform {
 
+    .container {
+        gap: 0;
+    }
+
     &-left {
         flex: 1.4;
         position: relative;
@@ -77,13 +81,6 @@
             max-width: 90%;
             font-weight: 500;
             margin-bottom: 30px;
-
-            ul {
-                li {
-                    list-style: disc;
-                    margin-left: 30px;
-                }
-            }
         }
 
 

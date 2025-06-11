@@ -72,10 +72,7 @@ export default function page() {
                 enabling faster and smarter decisions.”
               </p>
               <div className="row">
-                <Link href="#" className="link">
-                  <span>Turn Data</span>
-                  <span>Into Clarity</span>
-                </Link>
+                <p>Turn Data Into Clarity</p>
                 <Link href="#" className="button">
                   Book a Demo
                 </Link>
