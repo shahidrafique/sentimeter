@@ -65,7 +65,7 @@ export default function page() {
               <div className="analyze-features">
                 <div className="feature blue">
                   <Image
-                    src={"/images/icon-priority-ranking.svg"}
+                    src={"/images/cx/phase4/icon-priority-ranking.svg"}
                     width={80}
                     height={80}
                     alt="icon priority ranking"
@@ -77,7 +77,7 @@ export default function page() {
                 </div>
                 <div className="feature">
                   <Image
-                    src={"/images/icon-transactional-analytics.svg"}
+                    src={"/images/cx/phase4/icon-transactional-analytics.svg"}
                     width={80}
                     height={80}
                     alt="icon transactional analytics"
@@ -89,7 +89,7 @@ export default function page() {
                 </div>
                 <div className="feature">
                   <Image
-                    src={"/images/icon-high-value-customer.svg"}
+                    src={"/images/cx/phase4/icon-high-value-customer.svg"}
                     width={80}
                     height={80}
                     alt="icon high value customer"
@@ -110,7 +110,7 @@ export default function page() {
         <div className="container">
           <div className="col">
             <Image
-              src={"/images/screenshot-automated-workflow.png"}
+              src={"/images/cx/phase4/screenshot-automated-workflow.png"}
               width={772}
               height={414}
               alt="screenshot automated workflow"
@@ -154,7 +154,7 @@ export default function page() {
           <div className="container">
             <div className="col">
               <Image
-                src={"/images/icon-collaborate.svg"}
+                src={"/images/cx/icon-collaborate.svg"}
                 width={111}
                 height={111}
                 alt="icon collaborate"
@@ -173,7 +173,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/icon-dynamic-filtering.svg"}
+                      src={"/images/cx/icon-dynamic-filtering.svg"}
                       width={88}
                       height={88}
                       alt="icon dynamic filtering"
@@ -187,7 +187,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/icon-unified-dashboard.svg"}
+                      src={"/images/cx/phase4/icon-unified-dashboard.svg"}
                       width={88}
                       height={88}
                       alt="icon unified dashboard"
@@ -201,7 +201,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/icon-role-based-insights.svg"}
+                      src={"/images/cx/phase4/icon-role-based-insights.svg"}
                       width={88}
                       height={88}
                       alt="icon role based insights"
@@ -243,7 +243,7 @@ export default function page() {
               <div className="card-blocks">
                 <div className="card-blocks-item green">
                   <Image
-                    src={"/images/icon-customer-connect.svg"}
+                    src={"/images/cx/phase4/icon-customer-connect.svg"}
                     width={50}
                     height={50}
                     alt="icon customer connect"
@@ -255,7 +255,7 @@ export default function page() {
                 </div>
                 <div className="card-blocks-item yellow">
                   <Image
-                    src={"/images/icon-recovery-confirmation.svg"}
+                    src={"/images/cx/phase4/icon-recovery-confirmation.svg"}
                     width={50}
                     height={50}
                     alt="icon recovery confirmation"
@@ -267,7 +267,7 @@ export default function page() {
                 </div>
                 <div className="card-blocks-item red">
                   <Image
-                    src={"/images/icon-recovery-confirmation.svg"}
+                    src={"/images/cx/phase4/icon-feedback-driven.svg"}
                     width={50}
                     height={50}
                     alt="icon recovery confirmation"
@@ -327,7 +327,7 @@ export default function page() {
           </div>
           <div className="col">
             <Image
-              src={"/images/illustration-continuous-improvement.svg"}
+              src={"/images/cx/phase4/illustration-continuous-improvement.svg"}
               width={750}
               height={500}
               alt="illustration continuous improvement"

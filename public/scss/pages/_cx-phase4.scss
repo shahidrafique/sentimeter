@@ -1,3 +1,31 @@
+.phase4,
+.phase5 {
+
+  .card-blocks-item {
+
+    &.green {
+
+      h5 {
+        color: $green;
+      }
+    }
+
+    &.yellow {
+
+      h5 {
+        color: $yellow;
+      }
+    }
+
+    &.red {
+
+      h5 {
+        color: $red;
+      }
+    }
+  }
+}
+
 .prioritize-what-matters {
 
   .card {

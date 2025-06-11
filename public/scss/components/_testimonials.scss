@@ -2,6 +2,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  margin: scale(100) 0 scale(50);
 
   .section-title {
     color: $dark-blue;
@@ -11,42 +12,75 @@
 
   }
 
-  .card {
-    background: $red-light;
-    box-shadow: none;
+  .container {
+    gap: 0;
+  }
 
-    .container {
-      flex-direction: column;
+  .testimonial {
+    background: $red-light;
+    padding: scale(75) scale(200);
+    border-radius: scale(6);
+
+    &-inner {
+      display: flex;
+      align-items: center;
+      gap: scale(120);
+      margin: 0 auto;
+
+      img {
+        width: scale(430);
+        height: auto;
+      }
     }
 
-    .testimonial {
+    &-text {
+      font-size: scale(24);
+    }
 
-      &-inner {
-        display: flex;
-        align-items: center;
-        gap: scale(120);
-        max-width: scale(1400);
-        margin: 0 auto;
+    &-author {
+      font-size: scale(30);
+      color: #3B4752;
+      font-weight: 500;
+      font-style: italic;
+    }
 
-        img {
-          width: scale(478);
-          height: auto;
-        }
+    &-role {
+      color: $red;
+      font-size: scale(24);
+      font-style: italic;
+    }
+  }
+
+  .embla {
+    overflow: hidden;
+    width: 100%;
+
+    .embla__container {
+      display: flex;
+
+      .embla__slide {
+        flex: 0 0 100%;
       }
+    }
+  }
 
-      &-text {
-        font-size: scale(24);
-      }
+  .embla__dots {
+    display: flex;
+    justify-content: center;
+    gap: scale(15);
+    margin-top: scale(30);
 
-      &-author {
-        font-size: scale(30);
-        color: #3B4752;
-        font-weight: 500;
-      }
+    .embla__dot {
+      width: scale(16);
+      height: scale(16);
+      background-color: $gray-light;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
 
-      &-role {
-        color: $red;
-        font-size: scale(24);
+      &.is-selected {
+        background-color: $dark-blue;
       }
     }
   }

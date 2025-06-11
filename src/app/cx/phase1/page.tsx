@@ -13,7 +13,7 @@ export default function page() {
         <div className="container">
           <div className="sub-header-left">
             <Image
-              src="/images/senti-ex.svg"
+              src={"/images/senti-ex.svg"}
               width={240}
               height={96}
               alt="senti ex"
@@ -46,10 +46,10 @@ export default function page() {
           </div>
           <div className="col">
             <Image
-              src="/images/image-phase1-header.png"
-              width={515}
-              height={515}
-              alt="senti ex"
+              src={"/images/cx/phase1/image-phase1-header.png"}
+              width={500}
+              height={453}
+              alt="image phase1 header"
             />
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function page() {
         <div className="card">
           <div className="container dir-col">
             <Image
-              src={"/images/icon-customer-journey-maping.svg"}
+              src={"/images/cx/phase1/icon-customer-journey-maping.svg"}
               width={88}
               height={88}
               alt="icon customer journey maping"
@@ -77,7 +77,7 @@ export default function page() {
             <div className="col">
               <div className="icon">
                 <Image
-                  src={"/images/icon-gain.svg"}
+                  src={"/images/cx/phase1/icon-gain.svg"}
                   width={86}
                   height={86}
                   alt="icon gain"
@@ -133,13 +133,12 @@ export default function page() {
               (label, index) => (
                 <div
                   key={index}
-                  className={`${"step"} ${activeStage === index ? "active" : ""
-                    }`}
+                  className={`${"step"} ${activeStage === index ? "active" : ""}`}
                   onClick={() => setActiveStage(index)}
                 >
                   <div className="icon">
                     <Image
-                      src={"/images/journey-icon-step1-white.png"}
+                      src={`/images/cx/phase1/journey-icon-step${index+1}-${activeStage === index ? "white" : "red"}.png`}
                       width={46}
                       height={46}
                       alt="journey icon step1 white"
@@ -156,7 +155,7 @@ export default function page() {
               <section className="step-content step1">
                 <div className="col">
                   <Image
-                    src={"/images/journey-icon-step1-red.png"}
+                    src={"/images/cx/phase1/journey-icon-step1-red.png"}
                     width={113}
                     height={113}
                     alt="journey icon step1 red"
@@ -180,7 +179,7 @@ export default function page() {
                 </div>
                 <div className="col">
                   <Image
-                    src={"/images/journey-illustration-step1.svg"}
+                    src={"/images/cx/phase1/journey-illustration-step1.svg"}
                     width={408}
                     height={408}
                     alt="journey illustration step1"
@@ -192,7 +191,7 @@ export default function page() {
               <section className="step-content step2">
                 <div className="col">
                   <Image
-                    src={"/images/journey-icon-step2-red.png"}
+                    src={"/images/cx/phase1/journey-icon-step2-red.png"}
                     width={113}
                     height={113}
                     alt="journey icon step2 red"
@@ -222,7 +221,7 @@ export default function page() {
                 </div>
                 <div className="col">
                   <Image
-                    src={"/images/journey-illustration-step2.svg"}
+                    src={"/images/cx/phase1/journey-illustration-step2.svg"}
                     width={580}
                     height={536}
                     alt="journey illustration step2"
@@ -234,7 +233,7 @@ export default function page() {
               <section className="step-content step3">
                 <div className="col">
                   <Image
-                    src={"/images/journey-icon-step3-red.png"}
+                    src={"/images/cx/phase1/journey-icon-step3-red.png"}
                     width={113}
                     height={113}
                     alt="journey icon step3 red"
@@ -264,7 +263,7 @@ export default function page() {
                 </div>
                 <div className="col">
                   <Image
-                    src={"/images/journey-illustration-step3.svg"}
+                    src={"/images/cx/phase1/journey-illustration-step3.svg"}
                     width={488}
                     height={446}
                     alt="journey illustration step3"
@@ -276,7 +275,7 @@ export default function page() {
               <section className="step-content step4">
                 <div className="col">
                   <Image
-                    src={"/images/journey-icon-step4-red.png"}
+                    src={"/images/cx/phase1/journey-icon-step4-red.png"}
                     width={113}
                     height={113}
                     alt="journey icon step4 red"
@@ -311,7 +310,7 @@ export default function page() {
                 </div>
                 <div className="col">
                   <Image
-                    src={"/images/journey-illustration-step4.svg"}
+                    src={"/images/cx/phase1/journey-illustration-step4.svg"}
                     width={488}
                     height={446}
                     alt="journey illustration step4"
@@ -323,7 +322,7 @@ export default function page() {
               <section className="step-content step5">
                 <div className="col">
                   <Image
-                    src={"/images/journey-icon-step5-red.png"}
+                    src={"/images/cx/phase1/journey-icon-step5-red.png"}
                     width={113}
                     height={113}
                     alt="journey icon step5 red"
@@ -352,7 +351,7 @@ export default function page() {
                 </div>
                 <div className="col">
                   <Image
-                    src={"/images/journey-illustration-step5.svg"}
+                    src={"/images/cx/phase1/journey-illustration-step5.svg"}
                     width={488}
                     height={446}
                     alt="journey illustration step5"
@@ -364,7 +363,7 @@ export default function page() {
               <section className="step-content step6">
                 <div className="col">
                   <Image
-                    src={"/images/journey-icon-step6-red.png"}
+                    src={"/images/cx/phase1/journey-icon-step6-red.png"}
                     width={113}
                     height={113}
                     alt="journey icon step6 red"
@@ -388,7 +387,7 @@ export default function page() {
                 </div>
                 <div className="col">
                   <Image
-                    src={"/images/journey-illustration-step6.svg"}
+                    src={"/images/cx/phase1/journey-illustration-step6.svg"}
                     width={488}
                     height={446}
                     alt="journey illustration step6"
@@ -400,7 +399,7 @@ export default function page() {
               <section className="step-content step7">
                 <div className="col">
                   <Image
-                    src={"/images/journey-icon-step7-red.png"}
+                    src={"/images/cx/phase1/journey-icon-step7-red.png"}
                     width={113}
                     height={113}
                     alt="journey icon step7 red"
@@ -424,7 +423,7 @@ export default function page() {
                 </div>
                 <div className="col">
                   <Image
-                    src={"/images/journey-illustration-step7.svg"}
+                    src={"/images/cx/phase1/journey-illustration-step7.svg"}
                     width={488}
                     height={446}
                     alt="journey illustration step7"
@@ -436,7 +435,7 @@ export default function page() {
               <section className="step-content step8">
                 <div className="col">
                   <Image
-                    src={"/images/journey-icon-step8-red.png"}
+                    src={"/images/cx/phase1/journey-icon-step8-red.png"}
                     width={113}
                     height={113}
                     alt="journey icon step8 red"
@@ -460,7 +459,7 @@ export default function page() {
                 </div>
                 <div className="col">
                   <Image
-                    src={"/images/journey-illustration-step8.svg"}
+                    src={"/images/cx/phase1/journey-illustration-step8.svg"}
                     width={488}
                     height={446}
                     alt="journey illustration step8"
@@ -471,7 +470,7 @@ export default function page() {
             {activeStage === 8 && (
               <section className="step-content step9">
                 <Image
-                  src={"/images/journey-icon-step9-red.png"}
+                  src={"/images/cx/phase1/journey-icon-step9-red.png"}
                   width={113}
                   height={113}
                   alt="journey icon step9 red"
@@ -484,7 +483,7 @@ export default function page() {
                 <div className="row">
                   <div className="col">
                     <Image
-                      src={"/images/icon-review-with-team.svg"}
+                      src={"/images/cx/phase1/icon-review-with-team.svg"}
                       width={86}
                       height={86}
                       alt="icon review with team"
@@ -494,7 +493,7 @@ export default function page() {
                   </div>
                   <div className="col">
                     <Image
-                      src={"/images/icon-facilitate-workshops.svg"}
+                      src={"/images/cx/phase1/icon-facilitate-workshops.svg"}
                       width={86}
                       height={86}
                       alt="icon review with team"
@@ -504,7 +503,7 @@ export default function page() {
                   </div>
                   <div className="col">
                     <Image
-                      src={"/images/icon-incorporate-feedback.svg"}
+                      src={"/images/cx/phase1/icon-incorporate-feedback.svg"}
                       width={86}
                       height={86}
                       alt="icon incorporate feedback"
@@ -521,7 +520,7 @@ export default function page() {
 
       {/* Dive Deeper Into the Journey-First Approach */}
       <section className="section">
-        <div className="container">
+        <div className="container align-center">
           <div className="content-group has-inner-text-red">
             <h2>
               Dive Deeper Into the <span>Journey-First</span> Approach
@@ -553,7 +552,7 @@ export default function page() {
           <div className="container">
             <div className="content-group has-inner-text-yellow">
               <Image
-                src={"/images/icon-business-impact.png"}
+                src={"/images/cx/phase1/icon-business-impact.png"}
                 width={118}
                 height={118}
                 alt="icon business impact"
@@ -565,11 +564,11 @@ export default function page() {
                 Customer journey mapping isn’t just about visualizing—it’s about understanding and improving. This foundational exercise enables you to see your business through your customers’ eyes, identify hidden opportunities, and create strategies that matter.
               </p>
               <h5>Begin Your Customer Journey Optimization Now</h5>
-              <Link href="#" className="button">Request a Demo</Link>
+              <Link href="#" className="button button--outline">Request a Demo</Link>
             </div>
             <div className="col">
               <Image
-                src={"/images/illustration-business-impact.svg"}
+                src={"/images/cx/phase1/illustration-business-impact.svg"}
                 width={500}
                 height={500}
                 alt="illustration business impact"
