@@ -11,8 +11,8 @@
 				}
 
 				img {
-					width: scale(515);
-					height: scale(515);
+					width: scale(500);
+					height: auto;
 				}
 			}
 		}
@@ -478,6 +478,7 @@
 	}
 
 	.journey-first-approach {
+		margin-bottom: scale(40);
 
 		.section-title {
 			margin-bottom: scale(20);
@@ -516,6 +517,10 @@
 						background: $red-light;
 						padding: scale(20) scale(40) scale(20) scale(30);
 						border-radius: 0 50px 50px 0;
+
+						img {
+							opacity: 0.25;
+						}
 					}
 
 					&.active {
@@ -526,6 +531,10 @@
 						.icon {
 							padding: 0;
 							background: transparent;
+
+							img {
+								opacity: 1;
+							}
 						}
 					}
 				}
@@ -593,6 +602,10 @@
 		.card {
 			@extend .gradient;
 			color: white;
+
+			.button {
+				margin-top: scale(30);
+			}
 		}
 	}
 

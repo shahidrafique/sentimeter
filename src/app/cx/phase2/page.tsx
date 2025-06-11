@@ -9,7 +9,7 @@ export default function page() {
         <div className="container">
           <div className="sub-header-left">
             <Image
-              src="/images/senti-ex.svg"
+              src={"/images/senti-ex.svg"}
               width={240}
               height={96}
               alt="senti ex"
@@ -134,7 +134,7 @@ export default function page() {
           <div className="container">
             <div className="col">
               <Image
-                src={"/images/image-smart-survey.png"}
+                src={"/images/cx/phase2/image-smart-survey.png"}
                 width={125}
                 height={125}
                 alt="benefit"
@@ -155,7 +155,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/smart-survey-icon-1.svg"}
+                      src={"/images/cx/phase2/smart-survey-icon-1.svg"}
                       width={86}
                       height={86}
                       alt="benefit"
@@ -171,7 +171,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/smart-survey-icon-2.svg"}
+                      src={"/images/cx/phase2/smart-survey-icon-2.svg"}
                       width={86}
                       height={86}
                       alt="benefit"
@@ -186,7 +186,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/smart-survey-icon-3.svg"}
+                      src={"/images/cx/phase2/smart-survey-icon-3.svg"}
                       width={86}
                       height={86}
                       alt="benefit"
@@ -198,7 +198,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/smart-survey-icon-4.svg"}
+                      src={"/images/cx/phase2/smart-survey-icon-4.svg"}
                       width={86}
                       height={86}
                       alt="benefit"
@@ -248,7 +248,7 @@ export default function page() {
                 <h5>solicit feedback</h5>
                 <div className="icon">
                   <Image
-                    src={"/images/omnichannel-icon-1.svg"}
+                    src={"/images/cx/phase2/omnichannel-icon-1.svg"}
                     width={72}
                     height={72}
                     alt="Senti CX"
@@ -271,7 +271,7 @@ export default function page() {
                 <h5>welcome insights 24/7</h5>
                 <div className="icon">
                   <Image
-                    src={"/images/omnichannel-icon-2.svg"}
+                    src={"/images/cx/phase2/omnichannel-icon-2.svg"}
                     width={72}
                     height={72}
                     alt="Senti CX"
@@ -294,7 +294,7 @@ export default function page() {
                 <h5>streamline workflows</h5>
                 <div className="icon">
                   <Image
-                    src={"/images/omnichannel-icon-3.svg"}
+                    src={"/images/cx/phase2/omnichannel-icon-3.svg"}
                     width={72}
                     height={72}
                     alt="Senti CX"
@@ -366,7 +366,7 @@ export default function page() {
           </div>
           <div className="col">
             <Image
-              src={"/images/image-customer-feedback.svg"}
+              src={"/images/cx/phase2/image-customer-feedback.svg"}
               width={500}
               height={500}
               alt="ternado"

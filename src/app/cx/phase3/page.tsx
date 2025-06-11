@@ -10,7 +10,7 @@ export default function page() {
         <div className="container">
           <div className="sub-header-left">
             <Image
-              src="/images/senti-ex.svg"
+              src={"/images/senti-ex.svg"}
               width={240}
               height={96}
               alt="senti ex"
@@ -93,7 +93,7 @@ export default function page() {
           <div className="container">
             <div className="col">
               <Image
-                src={"/images/icon-emotions.svg"}
+                src={"/images/cx/phase3/icon-emotions.svg"}
                 width={133}
                 height={133}
                 alt="icon emotions"
@@ -112,7 +112,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/icon-ai-powered.svg"}
+                      src={"/images/cx/phase3/icon-ai-powered.svg"}
                       width={88}
                       height={88}
                       alt="icon ai powered"
@@ -126,7 +126,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/icon-identify-system-issue.svg"}
+                      src={"/images/cx/phase3/icon-identify-system-issue.svg"}
                       width={88}
                       height={88}
                       alt="icon identify system issue"
@@ -140,7 +140,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/icon-understand-behavior.svg"}
+                      src={"/images/cx/phase3/icon-understand-behavior.svg"}
                       width={88}
                       height={88}
                       alt="icon understand behavior"
@@ -182,7 +182,7 @@ export default function page() {
               <div className="card-blocks">
                 <div className="card-blocks-item yellow">
                   <Image
-                    src={"/images/icon-identify.svg"}
+                    src={"/images/cx/phase3/icon-identify.svg"}
                     width={50}
                     height={50}
                     alt="icon identify"
@@ -194,7 +194,7 @@ export default function page() {
                 </div>
                 <div className="card-blocks-item yellow">
                   <Image
-                    src={"/images/icon-scenario-modeling.svg"}
+                    src={"/images/cx/phase3/icon-scenario-modeling.svg"}
                     width={50}
                     height={50}
                     alt="icon scenario modeling"
@@ -206,7 +206,7 @@ export default function page() {
                 </div>
                 <div className="card-blocks-item yellow">
                   <Image
-                    src={"/images/icon-metric-based-insights.svg"}
+                    src={"/images/cx/phase3/icon-metric-based-insights.svg"}
                     width={50}
                     height={50}
                     alt="icon metric based insights"
@@ -260,7 +260,7 @@ export default function page() {
               <div className="features-capsule-item">
                 <div className="icon">
                   <Image
-                    src={"/images/icon-trend-identification.svg"}
+                    src={"/images/cx/phase3/icon-trend-identification.svg"}
                     width={50}
                     height={50}
                     alt="icon trend identification"
@@ -274,7 +274,7 @@ export default function page() {
               <div className="features-capsule-item">
                 <div className="icon">
                   <Image
-                    src={"/images/icon-proactive-alerts.svg"}
+                    src={"/images/cx/phase3/icon-proactive-alerts.svg"}
                     width={50}
                     height={50}
                     alt="icon proactive alerts"

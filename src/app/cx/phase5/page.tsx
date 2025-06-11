@@ -65,7 +65,7 @@ export default function page() {
               <div className="analyze-features">
                 <div className="feature blue">
                   <Image
-                    src={"/images/icon-pre-build-template.svg"}
+                    src={"/images/cx/phase5/icon-pre-build-template.svg"}
                     width={50}
                     height={50}
                     alt="icon pre-build template"
@@ -77,7 +77,7 @@ export default function page() {
                 </div>
                 <div className="feature">
                   <Image
-                    src={"/images/icon-automated-updates.svg"}
+                    src={"/images/cx/phase5/icon-automated-updates.svg"}
                     width={50}
                     height={50}
                     alt="icon automated updates"
@@ -89,7 +89,7 @@ export default function page() {
                 </div>
                 <div className="feature">
                   <Image
-                    src={"/images/icon-periodic-summaries.svg"}
+                    src={"/images/cx/phase5/icon-periodic-summaries.svg"}
                     width={50}
                     height={50}
                     alt="icon periodic summaries"
@@ -111,7 +111,7 @@ export default function page() {
           <div className="container">
             <div className="col">
               <Image
-                src={"/images/icon-collaborate.svg"}
+                src={"/images/cx/icon-collaborate.svg"}
                 width={111}
                 height={111}
                 alt="icon collaborate"
@@ -130,7 +130,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/icon-dynamic-filtering.svg"}
+                      src={"/images/cx/icon-dynamic-filtering.svg"}
                       width={88}
                       height={88}
                       alt="icon dynamic filtering"
@@ -144,7 +144,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/icon-customizeable-view.svg"}
+                      src={"/images/cx/phase5/icon-customizeable-view.svg"}
                       width={88}
                       height={88}
                       alt="icon customizeable view"
@@ -158,7 +158,7 @@ export default function page() {
                 <div className="col">
                   <div className="icon">
                     <Image
-                      src={"/images/icon-csv-exports.svg"}
+                      src={"/images/cx/phase5/icon-csv-exports.svg"}
                       width={88}
                       height={88}
                       alt="icon csv exports"
@@ -192,7 +192,7 @@ export default function page() {
         <div className="container">
           <div className="col">
             <Image
-              src={"/images/screenshot-insights.png"}
+              src={"/images/cx/phase5/screenshot-insights.png"}
               width={754}
               height={446}
               alt="screenshot insights"
@@ -258,7 +258,7 @@ export default function page() {
           </div>
           <div className="col">
             <Image
-              src={"/images/illustration-customer-journey.svg"}
+              src={"/images/cx/phase5/illustration-customer-journey.svg"}
               width={566}
               height={566}
               alt="illustration customer journey"
@@ -296,7 +296,7 @@ export default function page() {
               <div className="features-capsule-item">
                 <div className="icon">
                   <Image
-                    src={"/images/icon-role-based-permissions.svg"}
+                    src={"/images/cx/phase5/icon-role-based-permissions.svg"}
                     width={50}
                     height={50}
                     alt="icon role based permissions"
@@ -310,7 +310,7 @@ export default function page() {
               <div className="features-capsule-item">
                 <div className="icon">
                   <Image
-                    src={"/images/icon-global-compliance.svg"}
+                    src={"/images/cx/phase5/icon-global-compliance.svg"}
                     width={50}
                     height={50}
                     alt="icon-global-compliance"
@@ -340,7 +340,7 @@ export default function page() {
               <div className="card-blocks">
                 <div className="card-blocks-item green">
                   <Image
-                    src={"/images/icon-churn-predictors.svg"}
+                    src={"/images/cx/phase5/icon-churn-predictors.svg"}
                     width={50}
                     height={50}
                     alt="icon churn predictors"
@@ -352,7 +352,7 @@ export default function page() {
                 </div>
                 <div className="card-blocks-item yellow">
                   <Image
-                    src={"/images/icon-roi-calculators.svg"}
+                    src={"/images/cx/phase5/icon-roi-calculators.svg"}
                     width={50}
                     height={50}
                     alt="icon roi calculators"
@@ -364,7 +364,7 @@ export default function page() {
                 </div>
                 <div className="card-blocks-item red">
                   <Image
-                    src={"/images/icon-scenario-modeling-red.svg"}
+                    src={"/images/cx/phase5/icon-scenario-modeling-red.svg"}
                     width={50}
                     height={50}
                     alt="icon scenario modeling"
@@ -395,7 +395,7 @@ export default function page() {
         <div className="container">
           <div className="col">
             <Image
-              src={"/images/illustration-why-continuous-improvement-matters.svg"}
+              src={"/images/cx/phase5/illustration-why-continuous-improvement-matters.svg"}
               width={541}
               height={541}
               alt="illustration why continuous improvement matters"
