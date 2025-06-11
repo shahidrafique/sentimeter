@@ -1,0 +1,190 @@
+.senti-insights-tabs {
+  @extend .gradient;
+  color: $white;
+  padding: scale(120) 0;
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: scale(25);
+  }
+
+  .section-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .tab-buttons {
+      display: flex;
+      align-items: center;
+
+      button {
+        background: transparent;
+        opacity: 0.74;
+        border: 0;
+
+        &.active {
+          opacity: 1;
+        }
+
+        &:not(.active) {
+
+          img {
+            width: scale(130);
+            height: auto;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .vertical-bar {
+        width: 2px;
+        height: 100px;
+        background: $white;
+        margin: 0 scale(40);
+      }
+
+    }
+
+    a {
+      align-self: flex-start;
+      display: flex;
+      align-items: center;
+      gap: scale(12);
+    }
+  }
+
+  .slide-content {
+    display: flex;
+    margin-top: scale(50);
+
+    img {
+      width: scale(1092);
+      max-width: 100%;
+      height: auto;
+    }
+
+    .content-left,
+    .content-right {
+      max-width: scale(400);
+
+      p {
+        font-size: scale(24);
+        padding-top: scale(20);
+        margin-top: scale(80);
+        border-top: 2px solid $white;
+      }
+    }
+  }
+
+  .senticx-slider,
+  .sentiex-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .nav {
+      justify-content: center;
+
+      display: flex;
+      align-items: center;
+      gap: scale(8);
+
+      li {
+        display: flex;
+        align-items: center;
+
+
+        label {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .number,
+        .text {
+          font-size: scale(24);
+        }
+
+        .number {
+          width: scale(46);
+          height: scale(46);
+          border-radius: 50%;
+          border: 2px solid $white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0.5;
+        }
+
+        .text {
+          max-width: 0;
+          overflow: hidden;
+          transition: 1s;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.6s ease;
+    width: 400%;
+    /* 3 slides */
+  }
+
+  .slide {
+    width: 25%;
+    // flex: 1;
+    box-sizing: border-box;
+  }
+
+  /* Slide navigation using radio buttons */
+  #cxSlide1:checked~.slides,
+  #exSlide1:checked~.slides {
+    transform: translateX(0%);
+  }
+
+  #cxSlide2:checked~.slides,
+  #exSlide2:checked~.slides {
+    transform: translateX(-25%);
+  }
+
+  #cxSlide3:checked~.slides,
+  #exSlide3:checked~.slides {
+    transform: translateX(-50%);
+  }
+
+  #cxSlide4:checked~.slides {
+    transform: translateX(-75%);
+  }
+
+
+
+  input#cxSlide1:checked~.nav label[for="cxSlide1"],
+  input#exSlide1:checked~.nav label[for="exSlide1"],
+  input#cxSlide2:checked~.nav label[for="cxSlide2"],
+  input#exSlide2:checked~.nav label[for="exSlide2"],
+  input#cxSlide3:checked~.nav label[for="cxSlide3"],
+  input#exSlide3:checked~.nav label[for="exSlide3"],
+  input#cxSlide4:checked~.nav label[for="cxSlide4"],
+  input#exSlide4:checked~.nav label[for="exSlide4"] {
+
+    .number {
+      opacity: 1;
+    }
+
+    .text {
+      max-width: scale(230);
+      display: flex;
+    }
+  }
+}

@@ -346,6 +346,10 @@
     display: flex;
     gap: scale(20);
     align-items: center;
+
+    p {
+      margin: 0;
+    }
   }
 
   $colors: (
@@ -470,12 +474,9 @@
   .col {
     flex: 2.4;
 
-    &:not(.content) {
-
-      img {
-        width: scale(726);
-        height: auto;
-      }
+    img {
+      max-width: 100%;
+      height: auto;
     }
 
     &.content {
@@ -506,6 +507,11 @@
           max-width: 80%;
         }
 
+        p {
+          font-size: scale(22);
+          line-height: 1.6;
+        }
+
         $colors: (
           'blue': $blue,
           'blue-light': $blue-light,
@@ -525,6 +531,7 @@
             small {
               opacity: 1;
               color: $color;
+              text-transform: uppercase;
             }
           }
 
@@ -545,9 +552,9 @@
   }
 
   &:last-child {
+    text-align: right;
 
     .content-group {
-      text-align: right;
 
       .section-symbol {
 

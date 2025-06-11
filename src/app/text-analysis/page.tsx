@@ -21,7 +21,7 @@ export default function page() {
       </section>
 
       {/* Unify insights */}
-      <section className="section has-bg blue">
+      <section className="section has-bg blue alternate-content-section">
         <div className="card">
           <div className="container">
             <div className="col">
@@ -57,7 +57,7 @@ export default function page() {
       </section>
 
       {/* Transform text */}
-      <section className="section has-bg green">
+      <section className="section has-bg green alternate-content-section">
         <div className="card">
           <div className="container">
             <div className="col content">
@@ -83,8 +83,8 @@ export default function page() {
             <div className="col">
               <Image
                 src={"/images/illustration-transform-text.png"}
-                width={726}
-                height={524}
+                width={636}
+                height={523}
                 alt="unify insights"
               />
             </div>
@@ -93,14 +93,14 @@ export default function page() {
       </section>
 
       {/* Meaningful Action */}
-      <section className="section has-bg red-light">
+      <section className="section has-bg red-light alternate-content-section">
         <div className="card">
           <div className="container">
             <div className="col">
               <Image
                 src={"/images/illustration-meaningful-action.png"}
-                width={726}
-                height={524}
+                width={565}
+                height={495}
                 alt="meaningful action"
               />
             </div>
@@ -115,11 +115,11 @@ export default function page() {
                   />
                 </div>
                 <h3>
-                  <small>Advanced Natural Language Understanding</small>
-                  Transform Text into <span>Actionable</span> Intelligence
+                  <small>Emotion, Effort, and Intent Analysis</small>
+                  Go Beyond <span>Sentiment</span> to <span>Drive</span> Meaningful Action
                 </h3>
                 <p>
-                  Our state-of-the-art NLP engine extracts meaning from unstructured text, identifying <span>who</span> is speaking, <span>what</span> they are discussing, and <span>how</span> they feel. By converting raw text into structured insights, we empower you to make data-driven decisions with confidence.
+                  <span>Uncover</span> the deeper layers of customer feedback by analyzing expressed <span>intent</span>, perceived <span>effort</span>, and underlying <span>emotions</span>. Gain the <span>insights</span> needed to reduce churn, eliminate friction points, and close the feedback loop with precision.
                 </p>
                 <a href="#" className="button">Learn More</a>
               </div>
@@ -129,7 +129,7 @@ export default function page() {
       </section>
 
       {/* Entity Extraction */}
-      <section className="section has-bg yellow">
+      <section className="section has-bg yellow alternate-content-section">
         <div className="card">
           <div className="container">
             <div className="col content">
@@ -143,11 +143,11 @@ export default function page() {
                   />
                 </div>
                 <h3>
-                  <small>Advanced Natural Language Understanding</small>
-                  Transform Text into <span>Actionable</span> Intelligence
+                  <small>Named Entity Recognition (NER)</small>
+                  Enhance Business Understanding with Intelligent <span>Entity Extraction</span>
                 </h3>
                 <p>
-                  Our state-of-the-art NLP engine extracts meaning from unstructured text, identifying <span>who</span> is speaking, <span>what</span> they are discussing, and <span>how</span> they feel. By converting raw text into structured insights, we empower you to make data-driven decisions with confidence.
+                  Uncover hidden relationships and critical insights as our machine learning model identifies <span>people, organizations, locations, dates, products, job titles, currencies, social handles, hashtags, and more</span>. Customize entity detection with your own lists for even more precise and domain-specific insights.
                 </p>
                 <a href="#" className="button">Learn More</a>
               </div>
@@ -155,8 +155,8 @@ export default function page() {
             <div className="col">
               <Image
                 src={"/images/illustration-entity-extraction.png"}
-                width={726}
-                height={524}
+                width={628}
+                height={457}
                 alt="entity extraction"
               />
             </div>
@@ -165,14 +165,14 @@ export default function page() {
       </section>
 
       {/* Prioritize */}
-      <section className="section has-bg blue">
+      <section className="section has-bg blue alternate-content-section">
         <div className="card">
           <div className="container">
             <div className="col">
               <Image
                 src={"/images/illustration-prioritize.png"}
-                width={726}
-                height={524}
+                width={574}
+                height={457}
                 alt="prioritize"
               />
             </div>
@@ -187,15 +187,34 @@ export default function page() {
                   />
                 </div>
                 <h3>
-                  <small>Advanced Natural Language Understanding</small>
-                  Transform Text into <span>Actionable</span> Intelligence
+                  <small>Intelligent Categorization</small>
+                  Identify and <span>Prioritize</span> What Matters Most
                 </h3>
                 <p>
-                  Our state-of-the-art NLP engine extracts meaning from unstructured text, identifying <span>who</span> is speaking, <span>what</span> they are discussing, and <span>how</span> they feel. By converting raw text into structured insights, we empower you to make data-driven decisions with confidence.
+                  Leverage advanced machine learning and query-based classification to systematically sort incoming feedback into <span>actionable categories</span>. Uncover key themes, surface critical insights, and drive informed decision-making with precision.
                 </p>
                 <a href="#" className="button">Learn More</a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Solutions */}
+      <section className="section has-bg ai-solutions">
+        <div className="card">
+          <div className="container align-center dir-col">
+            <Image
+              src={"/images/icon-ai-solutions.svg"}
+              width={104}
+              height={104}
+              alt="icon ai solutions"
+            />
+            <p>Tailored Customization</p>
+            <h3>AI Solutions Designed for Your Business Needs</h3>
+            <p>
+              Our expert text analytics and AI team fine-tunes your system by customizing entity recognition, refining sentiment analysis, optimizing categorization, and enhancing topic detection. We also develop and train custom machine learning models tailored to your unique business challenges.
+            </p>
           </div>
         </div>
       </section>

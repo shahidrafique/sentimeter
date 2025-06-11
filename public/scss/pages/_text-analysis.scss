@@ -19,14 +19,6 @@
   .col {
     flex: 2.4;
 
-    &:not(.content) {
-
-      img {
-        width: scale(726);
-        height: auto;
-      }
-    }
-
     &.content {
       flex: 2.6;
 
@@ -95,6 +87,35 @@
         h3 {
           margin-left: auto;
         }
+      }
+    }
+  }
+
+  .ai-solutions {
+
+    .card {
+      @extend .gradient;
+      color: white;
+      padding: scale(100);
+    }
+
+    .container {
+      text-align: center;
+      gap: 0;
+      max-width: scale(1020);
+
+      img {
+        width: scale(104);
+        height: auto;
+        margin-bottom: scale(30);
+      }
+
+      h3 {
+        color: $yellow;
+      }
+
+      p {
+        font-size: scale(22);
       }
     }
   }
