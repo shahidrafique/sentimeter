@@ -15,7 +15,17 @@ export default function page() {
               alt="senti ex"
             />
           </div>
-          <div className="sub-header-right">Back to SentiEX</div>
+          <div className="sub-header-right">
+            <a href="/cx">
+              <Image
+                src={"/images/blue-back-arrow.svg"}
+                width={35}
+                height={35}
+                alt="back"
+              />
+              Back to SentiCX
+            </a>
+          </div>
         </div>
       </section>
 

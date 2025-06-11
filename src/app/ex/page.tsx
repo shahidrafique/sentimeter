@@ -28,7 +28,7 @@ export default function page() {
               Listen. Understand. Act. Empower your workforce with insights that
               drive loyalty, productivity, and satisfaction.
             </p>
-            <Link href="#" className="button button--outline">
+            <Link href="/demo-form" className="button button--outline">
               Request a Demo
             </Link>
           </div>
@@ -43,8 +43,10 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="employee-experience-left">
-              <h3>Elevate Employee Experience with</h3>
-              <h2>Data-Driven Precision</h2>
+              <section className="section-header">
+                <h3>Elevate Employee Experience with</h3>
+                <h2>Data-Driven Precision</h2>
+              </section>
               <div className="content">
                 <p>Get a quick snapshot of your organization’s</p>
 
@@ -59,12 +61,14 @@ export default function page() {
                   satisfaction.
                 </p>
               </div>
-              <Link href="#" className="button">
-                Explore Why Sentimeter
-              </Link>
+              <section className="section-footer">
+                <Link href="#" className="button">
+                  Explore Why Sentimeter
+                </Link>
+              </section>
             </div>
             <div className="employee-experience-right">
-              <h3>Key Benefits:</h3>
+              <h3 className="features-heading">Key Benefits:</h3>
               <div className="benefit">
                 <Image
                   src={"/images/icon-benefit-1.svg"}
@@ -135,7 +139,7 @@ export default function page() {
                   Simplify feedback with automated surveys while ensuring
                   anonymity for honest responses.
                 </p>
-                <a href="#" className="button">
+                <a href="/ex/phase1" className="button">
                   Discover Seamless Feedback Tools
                 </a>
               </div>
@@ -151,13 +155,13 @@ export default function page() {
                 />
               </div>
               <div className="content">
-                <h4>Make Feedback Fearless and Effortless</h4>
+                <h4>Understand Employee Relationships</h4>
                 <p>
-                  Simplify feedback with automated surveys while ensuring
-                  anonymity for honest responses.
+                  Visualize trends and insights across the employee lifecycle to
+                  optimize every touchpoint.
                 </p>
-                <a href="#" className="button green">
-                  Discover Seamless Feedback Tools
+                <a href="/ex/phase2" className="button green">
+                  Explore Lifecycle Insights
                 </a>
               </div>
             </div>
@@ -172,13 +176,13 @@ export default function page() {
                 />
               </div>
               <div className="content">
-                <h4>Make Feedback Fearless and Effortless</h4>
+                <h4>Decode Feedback Into Insights</h4>
                 <p>
-                  Simplify feedback with automated surveys while ensuring
-                  anonymity for honest responses.
+                  Leverage advanced analytics to uncover sentiment, identify
+                  root causes, and refine strategies.
                 </p>
-                <a href="#" className="button yellow">
-                  Discover Seamless Feedback Tools
+                <a href="/ex/phase3" className="button yellow">
+                  Uncover Data Insights
                 </a>
               </div>
             </div>
@@ -193,13 +197,13 @@ export default function page() {
                 />
               </div>
               <div className="content">
-                <h4>Make Feedback Fearless and Effortless</h4>
+                <h4>Turn Insights Into Action</h4>
                 <p>
-                  Simplify feedback with automated surveys while ensuring
-                  anonymity for honest responses.
+                  Close the loop with impactful actions that drive employee
+                  engagement, retention, and loyalty.
                 </p>
-                <a href="#" className="button light-blue">
-                  Discover Seamless Feedback Tools
+                <a href="/ex/phase4" className="button light-blue">
+                  See Impact in Action
                 </a>
               </div>
             </div>
@@ -211,14 +215,16 @@ export default function page() {
       <section className="section has-bg empowering-employee">
         <div className="card">
           <div className="container">
-            <h3>Empowering Employee Experience at Every Stage</h3>
-            <h4>
-              From recruitment to retention, Sentimeter drives engagement and
-              actionable insights.
-            </h4>
-            <div className="row">
-              <div className="col">
-                <div className="col-content">
+            <section className="section-header">
+              <h3>Empowering Employee Experience at Every Stage</h3>
+              <h4>
+                From recruitment to retention, Sentimeter drives engagement and
+                actionable insights.
+              </h4>
+            </section>
+            <div className="features">
+              <div className="cards no-border">
+                <div className="card">
                   <div className="icon">
                     <Image
                       src={"/images/employee-icon-1.svg"}
@@ -227,14 +233,14 @@ export default function page() {
                       alt="icon"
                     />
                   </div>
-                  <h4>Omnichannel Surveys</h4>
-                  <p>
-                    Meet employees where they are with tools they already use.
-                  </p>
+                  <div className="card-content">
+                    <h4>Omnichannel Surveys</h4>
+                    <p>
+                      Meet employees where they are with tools they already use.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="col">
-                <div className="col-content">
+                <div className="card">
                   <div className="icon">
                     <Image
                       src={"/images/employee-icon-2.svg"}
@@ -243,12 +249,12 @@ export default function page() {
                       alt="icon"
                     />
                   </div>
-                  <h4>Guaranteed Anonymity</h4>
-                  <p>Build trust with fearless feedback mechanisms.</p>
+                  <div className="card-content">
+                    <h4>Guaranteed Anonymity</h4>
+                    <p>Build trust with fearless feedback mechanisms.</p>
+                  </div>
                 </div>
-              </div>
-              <div className="col">
-                <div className="col-content">
+                <div className="card">
                   <div className="icon">
                     <Image
                       src={"/images/employee-icon-3.svg"}
@@ -257,15 +263,15 @@ export default function page() {
                       alt="icon"
                     />
                   </div>
-                  <h4>Advanced Analytics</h4>
-                  <p>
-                    Decode trends, emotions, and root causes with AI-powered
-                    insights.
-                  </p>
+                  <div className="card-content">
+                    <h4>Advanced Analytics</h4>
+                    <p>
+                      Decode trends, emotions, and root causes with AI-powered
+                      insights.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="col">
-                <div className="col-content">
+                <div className="card">
                   <div className="icon">
                     <Image
                       src={"/images/employee-icon-4.svg"}
@@ -274,8 +280,10 @@ export default function page() {
                       alt="icon"
                     />
                   </div>
-                  <h4>Real-Time Dashboards</h4>
-                  <p>Monitor feedback and act on live data.</p>
+                  <div className="card-content">
+                    <h4>Real-Time Dashboards</h4>
+                    <p>Monitor feedback and act on live data.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -291,11 +299,13 @@ export default function page() {
       <section className="section has-bg blue supporting-team">
         <div className="card">
           <div className="container">
-            <h3>Empowering Employee Experience at Every Stage</h3>
-            <h4>
-              From recruitment to retention, Sentimeter drives engagement and
-              actionable insights.
-            </h4>
+            <div className="section-header">
+              <h3>Supporting Your Team Across the Employee Lifecycle</h3>
+              <h4>
+                Sentimeter ensures every stage of the employee journey is
+                seamless, engaging, and productive.
+              </h4>
+            </div>
             <div className="image-holder">
               <Image
                 src={"/images/supporting-team-process.png"}
@@ -317,25 +327,34 @@ export default function page() {
         <div className="container">
           <div className="col">
             <div className="content">
-              <h3>Feedback That Powers Transformation</h3>
-              <h4>
-                Sentimeter turns employee feedback into meaningful actions,
-                helping you
-              </h4>
-              <ul>
-                <li>Enhance satisfaction and retention rates.</li>
-                <li>Build a more inclusive and engaging workplace culture.</li>
-                <li>
+              <div className="section-header">
+                <h3>Feedback That Powers Transformation</h3>
+                <h4>
+                  Sentimeter turns employee feedback into meaningful actions,
+                  helping you
+                </h4>
+              </div>
+
+              <ul className="checklist yellow">
+                <li className="checklist-item">
+                  Enhance satisfaction and retention rates.
+                </li>
+                <li className="checklist-item">
+                  Build a more inclusive and engaging workplace culture.
+                </li>
+                <li className="checklist-item">
                   Align employee experience strategies with business objectives.
                 </li>
               </ul>
-              <p>
-                “A happy, engaged workforce isn’t just better for employees—it
-                drives business success.”
-              </p>
-              <Link href="#" className="button">
-                See Success Stories
-              </Link>
+              <div className="section-footer">
+                <p className="note">
+                  “A happy, engaged workforce isn’t just better for employees—it
+                  drives business success.”
+                </p>
+                <Link href="#" className="button">
+                  See Success Stories
+                </Link>
+              </div>
             </div>
           </div>
           <div className="col">

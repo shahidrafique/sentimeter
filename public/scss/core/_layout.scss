@@ -229,10 +229,34 @@
     justify-content: space-between;
   }
 
+  .sub-header-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .page-title {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: scale(24);
+      color: $dark-blue;
+      max-width: scale(350);
+      font-weight: 500;
+
+    }
+  }
+
   .sub-header-right {
     color: $blue;
     font-size: scale(18);
     font-weight: 500;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: $dark-blue;
+    }
   }
 }
 
@@ -332,18 +356,18 @@
     'red': $red
   );
 
-  @each $name, $color in $colors {
-    &.has-inner-text-#{$name} {
+@each $name, $color in $colors {
+  &.has-inner-text-#{$name} {
 
-      h2,
-      h3,
-      p {
-        span {
-          color: $color;
-        }
+    h2,
+    h3,
+    p {
+      span {
+        color: $color;
       }
     }
   }
+}
 }
 
 

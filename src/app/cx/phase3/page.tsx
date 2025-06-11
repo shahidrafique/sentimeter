@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function page() {
   return (
     <article className="phase3">
-
       {/* Sub Header */}
       <section className="sub-header">
         <div className="container">
@@ -16,7 +15,17 @@ export default function page() {
               alt="senti ex"
             />
           </div>
-          <div className="sub-header-right">Back to SentiEX</div>
+          <div className="sub-header-right">
+            <a href="/cx">
+              <Image
+                src={"/images/blue-back-arrow.svg"}
+                width={35}
+                height={35}
+                alt="back"
+              />
+              Back to SentiCX
+            </a>
+          </div>
         </div>
       </section>
 
@@ -25,14 +34,17 @@ export default function page() {
         <div className="container">
           <div className="col">
             <div className="content">
-              <h3>
-                Analyze and Refine
-              </h3>
+              <h3>Analyze and Refine</h3>
               <h2 className="title">
-                Leverage <span>AI-Driven Data</span> Insights for Smarter Decisions
+                Leverage <span>AI-Driven Data</span> Insights for Smarter
+                Decisions
               </h2>
               <p>
-                Leverage the power of Sentimeter’s advanced analytics to decode customer emotions, uncover trends, and refine customer journeys. With tools that map feedback touchpoints onto your journeys, you’ll address gaps and drive actionable improvements across every interaction.
+                Leverage the power of Sentimeter’s advanced analytics to decode
+                customer emotions, uncover trends, and refine customer journeys.
+                With tools that map feedback touchpoints onto your journeys,
+                you’ll address gaps and drive actionable improvements across
+                every interaction.
               </p>
             </div>
           </div>
@@ -50,36 +62,54 @@ export default function page() {
                 Unify Your Data for a <span>Comprehensive View</span>
               </h2>
               <p>
-                Unify Feedback Channels for a Complete Customer View — emails, surveys, chat logs, social media, and more — into one centralized dashboard. Sentimeter provides a seamless, real-time integration of data streams to simplify decision-making.
+                Unify Feedback Channels for a Complete Customer View — emails,
+                surveys, chat logs, social media, and more — into one
+                centralized dashboard. Sentimeter provides a seamless, real-time
+                integration of data streams to simplify decision-making.
               </p>
               <p>
-                <span>Why It Matters:</span> “Unified data reduces complexity, enabling faster and smarter decisions.”
+                <span>Why It Matters:</span> “Unified data reduces complexity,
+                enabling faster and smarter decisions.”
               </p>
               <div className="row">
                 <Link href="#" className="link">
                   <span>Turn Data</span>
                   <span>Into Clarity</span>
                 </Link>
-                <Link href="#" className="button">Book a Demo</Link>
+                <Link href="#" className="button">
+                  Book a Demo
+                </Link>
               </div>
             </div>
             <div className="comprehensive-view-right">
               <h3>Key Features:</h3>
               <ul className="checklist yellow">
                 <li className="checklist-item">
-                  <span>Create a Single Source of Truth for CX Data:</span> Bring every feedback channel together for easier analysis.
+                  <span>Create a Single Source of Truth for CX Data:</span>{" "}
+                  Bring every feedback channel together for easier analysis.
                 </li>
                 <li className="checklist-item">
-                  <span>Segment Customer Feedback by Sentiment, Location & Behavior:</span> Analyze trends by sentiment, geography, or customer segment.
+                  <span>
+                    Segment Customer Feedback by Sentiment, Location & Behavior:
+                  </span>{" "}
+                  Analyze trends by sentiment, geography, or customer segment.
                 </li>
                 <li className="checklist-item">
-                  <span>Multi-Source Data Integration:</span> Connect siloed datasets, including CRMs, social media, chat logs, and call transcripts.
+                  <span>Multi-Source Data Integration:</span> Connect siloed
+                  datasets, including CRMs, social media, chat logs, and call
+                  transcripts.
                 </li>
                 <li className="checklist-item">
-                  <span>Custom Dashboards for CX, Marketing & Product Teams:</span> Tailored insights for CX, marketing, and product teams.
+                  <span>
+                    Custom Dashboards for CX, Marketing & Product Teams:
+                  </span>{" "}
+                  Tailored insights for CX, marketing, and product teams.
                 </li>
                 <li className="checklist-item">
-                  <span>Access Real-Time Customer Insights Anytime, Anywhere:</span> Access real-time insights anytime, anywhere.
+                  <span>
+                    Access Real-Time Customer Insights Anytime, Anywhere:
+                  </span>{" "}
+                  Access real-time insights anytime, anywhere.
                 </li>
               </ul>
             </div>
@@ -105,7 +135,9 @@ export default function page() {
                 Uncover <span>Customer Emotions</span> & Identify Key Issues
               </h3>
               <p>
-                Go beyond surface-level data. Sentimeter’s sentiment analysis and root cause tools uncover the "why" behind customer behavior, helping you focus on the areas that matter most.
+                Go beyond surface-level data. Sentimeter’s sentiment analysis
+                and root cause tools uncover the "why" behind customer behavior,
+                helping you focus on the areas that matter most.
               </p>
               <h5>Key Features:</h5>
               <div className="row">
@@ -133,9 +165,7 @@ export default function page() {
                     />
                   </div>
                   <h4>Identify & Resolve Systemic CX Issues</h4>
-                  <p>
-                    Pinpoint systemic issues and address them directly.
-                  </p>
+                  <p>Pinpoint systemic issues and address them directly.</p>
                 </div>
                 <div className="col">
                   <div className="icon">
@@ -148,12 +178,14 @@ export default function page() {
                   </div>
                   <h4>Understand Customer Behavior Through RFM Analytics</h4>
                   <p>
-                    Understand customer behaviors and identify key recovery needs.
+                    Understand customer behaviors and identify key recovery
+                    needs.
                   </p>
                 </div>
               </div>
               <p>
-                <span>Why It Matters:</span> “Understanding emotions and root causes enables you to resolve pain points effectively.“
+                <span>Why It Matters:</span> “Understanding emotions and root
+                causes enables you to resolve pain points effectively.“
               </p>
               <div className="row">
                 <Link href="#" className="link">
@@ -173,11 +205,11 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="content-group has-inner-text-blue">
-              <h2>
-                Predictive Analytics for Smarter Planning
-              </h2>
+              <h2>Predictive Analytics for Smarter Planning</h2>
               <p>
-                Move from reactive to proactive. Sentimeter’s predictive tools help you anticipate customer needs, loyalty trends, and potential churn before they happen.
+                Move from reactive to proactive. Sentimeter’s predictive tools
+                help you anticipate customer needs, loyalty trends, and
+                potential churn before they happen.
               </p>
               <div className="card-blocks">
                 <div className="card-blocks-item yellow">
@@ -188,9 +220,7 @@ export default function page() {
                     alt="icon identify"
                   />
                   <h5>Identify At-Risk Customers & Reduce Churn</h5>
-                  <p>
-                    Identify at-risk customers for targeted interventions.
-                  </p>
+                  <p>Identify at-risk customers for targeted interventions.</p>
                 </div>
                 <div className="card-blocks-item yellow">
                   <Image
@@ -213,18 +243,22 @@ export default function page() {
                   />
                   <h5>Metric-Based Insights</h5>
                   <p>
-                    Use NPS, CSAT, and CES data to focus efforts on the highest ROI areas.
+                    Use NPS, CSAT, and CES data to focus efforts on the highest
+                    ROI areas.
                   </p>
                 </div>
               </div>
               <p>
-                <span>Why It Matters:</span> “Proactive planning minimizes risks and maximizes opportunities.“
+                <span>Why It Matters:</span> “Proactive planning minimizes risks
+                and maximizes opportunities.“
               </p>
               <div className="row">
                 <Link href="#" className="link">
                   Predict Customer Behavior
                 </Link>
-                <Link href="#" className="button">Schedule a Call</Link>
+                <Link href="#" className="button">
+                  Schedule a Call
+                </Link>
               </div>
             </div>
           </div>
@@ -240,17 +274,22 @@ export default function page() {
                 <span>Spot</span> Trends, Act Fast
               </h2>
               <p>
-                Identify anomalies and trends early to stay agile and proactive. With Sentimeter’s anomaly detection tools, you’ll address potential risks before they escalate.
+                Identify anomalies and trends early to stay agile and proactive.
+                With Sentimeter’s anomaly detection tools, you’ll address
+                potential risks before they escalate.
               </p>
               <p>
-                <span>Why It Matters:</span> “Spotting issues early prevents problems from growing into larger challenges.”
+                <span>Why It Matters:</span> “Spotting issues early prevents
+                problems from growing into larger challenges.”
               </p>
               <div className="row">
                 <Link href="#" className="link">
                   <span>Stay Ahead</span>
                   <span>of Trends</span>
                 </Link>
-                <Link href="#" className="button">Learn More</Link>
+                <Link href="#" className="button">
+                  Learn More
+                </Link>
               </div>
             </div>
           </div>
@@ -268,7 +307,8 @@ export default function page() {
                   <h5>Trend Identification</h5>
                 </div>
                 <div className="content">
-                  Spot unusual patterns like spikes in complaints or drops in satisfaction.
+                  Spot unusual patterns like spikes in complaints or drops in
+                  satisfaction.
                 </div>
               </div>
               <div className="features-capsule-item">
@@ -282,7 +322,8 @@ export default function page() {
                   <h5>Proactive Alerts</h5>
                 </div>
                 <div className="content">
-                  Act fast on emerging issues to protect your brand and customer trust.
+                  Act fast on emerging issues to protect your brand and customer
+                  trust.
                 </div>
               </div>
             </div>
@@ -299,40 +340,49 @@ export default function page() {
                 Why <span>Analyze and Refine</span> with Sentimeter?
               </h2>
               <p>
-                Sentimeter transforms raw data into actionable strategies. By connecting feedback to journeys, refining insights, and leveraging predictive tools, businesses can enhance customer experiences at every touchpoint.
+                Sentimeter transforms raw data into actionable strategies. By
+                connecting feedback to journeys, refining insights, and
+                leveraging predictive tools, businesses can enhance customer
+                experiences at every touchpoint.
               </p>
               <div className="row">
                 <Link href="#" className="link">
                   <span>Turn Feedback Into</span>
                   <span>Smarter Strategies</span>
                 </Link>
-                <Link href="#" className="button">Learn More</Link>
+                <Link href="#" className="button">
+                  Learn More
+                </Link>
               </div>
             </div>
             <div className="analyze-and-refine-right">
               <h3>Key Features:</h3>
               <ul className="checklist yellow">
                 <li className="checklist-item">
-                  <span>Enhanced Journey Mapping:</span> Layer feedback onto journeys for unmatched clarity.
+                  <span>Enhanced Journey Mapping:</span> Layer feedback onto
+                  journeys for unmatched clarity.
                 </li>
                 <li className="checklist-item">
-                  <span>Comprehensive Data Integration:</span> Unify structured and unstructured data from all sources.
+                  <span>Comprehensive Data Integration:</span> Unify structured
+                  and unstructured data from all sources.
                 </li>
                 <li className="checklist-item">
-                  <span>Proactive Insights:</span> Predict and act on trends before they impact loyalty.
+                  <span>Proactive Insights:</span> Predict and act on trends
+                  before they impact loyalty.
                 </li>
                 <li className="checklist-item">
-                  <span>Built-In Recovery Management:</span> Resolve issues seamlessly within the platform.
+                  <span>Built-In Recovery Management:</span> Resolve issues
+                  seamlessly within the platform.
                 </li>
                 <li className="checklist-item">
-                  <span>Continuous Improvement:</span> Iterate based on evolving insights and customer expectations.
+                  <span>Continuous Improvement:</span> Iterate based on evolving
+                  insights and customer expectations.
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-
     </article>
   );
 }

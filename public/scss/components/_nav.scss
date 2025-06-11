@@ -43,4 +43,40 @@
       }
     }
   }
+
+  &--home {
+    ul {
+      display: flex;
+      align-items: center;
+      transition: 0.35s;
+      gap: 8px !important;
+
+
+      #{$self}__item {
+        a {
+          color: white;
+          font-size: scale(18);
+
+          &:hover {
+            color: $yellow;
+          }
+        }
+
+        &--home {
+          aspect-ratio: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50px;
+          background-color: rgba($yellow, .8);
+
+          a {
+            svg {
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

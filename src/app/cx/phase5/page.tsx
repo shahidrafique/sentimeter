@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function page() {
   return (
     <article className="phase5">
-
       {/* Sub Header */}
       <section className="sub-header">
         <div className="container">
@@ -16,7 +15,17 @@ export default function page() {
               alt="senti ex"
             />
           </div>
-          <div className="sub-header-right">Back to SentiEX</div>
+          <div className="sub-header-right">
+            <a href="/cx">
+              <Image
+                src={"/images/blue-back-arrow.svg"}
+                width={35}
+                height={35}
+                alt="back"
+              />
+              Back to SentiCX
+            </a>
+          </div>
         </div>
       </section>
 
@@ -30,7 +39,10 @@ export default function page() {
                 Improve <span>Experiences</span> With Smarter Actions
               </h2>
               <p>
-                From prioritizing critical feedback to automating workflows, Sentimeter empowers your team to act where it matters most. Resolve issues, close the loop with customers, and refine experiences at every touchpoint.
+                From prioritizing critical feedback to automating workflows,
+                Sentimeter empowers your team to act where it matters most.
+                Resolve issues, close the loop with customers, and refine
+                experiences at every touchpoint.
               </p>
             </div>
           </div>
@@ -48,17 +60,22 @@ export default function page() {
                 Ready-Made <span>Reports</span> That Write Themselves
               </h2>
               <p>
-                Gone are the days of manually compiling data. Sentimeter’s pre-built templates offer actionable insights tailored to your team’s needs, ensuring you stay focused on what matters most.
+                Gone are the days of manually compiling data. Sentimeter’s
+                pre-built templates offer actionable insights tailored to your
+                team’s needs, ensuring you stay focused on what matters most.
               </p>
               <p>
-                <span>Why It Matters:</span> “Spend less time compiling reports and more time driving smarter decisions.”
+                <span>Why It Matters:</span> “Spend less time compiling reports
+                and more time driving smarter decisions.”
               </p>
               <div className="row">
                 <a href="#" className="link">
                   <span>See Ready-Made</span>
                   <span>Reports in Action</span>
                 </a>
-                <Link href="#" className="button">Book a Demo</Link>
+                <Link href="#" className="button">
+                  Book a Demo
+                </Link>
               </div>
             </div>
             <div className="col">
@@ -123,7 +140,9 @@ export default function page() {
                 <span>Dashboards</span> Built for Every Team
               </h3>
               <p>
-                Empower every department with dashboards that deliver what they need most. Sentimeter’s role-specific insights make data accessible, actionable, and impactful.
+                Empower every department with dashboards that deliver what they
+                need most. Sentimeter’s role-specific insights make data
+                accessible, actionable, and impactful.
               </p>
               <h5>Key Features:</h5>
               <div className="row">
@@ -137,9 +156,7 @@ export default function page() {
                     />
                   </div>
                   <h4>Dynamic Filters</h4>
-                  <p>
-                    Segment data by sentiment, geography, or customer type.
-                  </p>
+                  <p>Segment data by sentiment, geography, or customer type.</p>
                 </div>
                 <div className="col">
                   <div className="icon">
@@ -152,7 +169,8 @@ export default function page() {
                   </div>
                   <h4>Customizable Views</h4>
                   <p>
-                    Dashboards tailored to the unique goals of CX, marketing, and product teams.
+                    Dashboards tailored to the unique goals of CX, marketing,
+                    and product teams.
                   </p>
                 </div>
                 <div className="col">
@@ -166,19 +184,21 @@ export default function page() {
                   </div>
                   <h4>CSV Exports</h4>
                   <p>
-                    Generate datasheets filtered by custom criteria for offline analysis and distribution.
+                    Generate datasheets filtered by custom criteria for offline
+                    analysis and distribution.
                   </p>
                 </div>
               </div>
               <p>
-                <span>Why It Matters:</span> “Custom dashboards turn insights into strategies everyone can use.“
+                <span>Why It Matters:</span> “Custom dashboards turn insights
+                into strategies everyone can use.“
               </p>
               <div className="row">
                 <Link href="#" className="link">
                   <span>Explore</span>
                   <span>Custom Dashboards</span>
                 </Link>
-                <Link href="#" className="button button--outline">
+                <Link href="/demo-form" className="button button--outline">
                   Request a Demo
                 </Link>
               </div>
@@ -203,25 +223,32 @@ export default function page() {
               <span>Insights</span> on the Go
             </h2>
             <p>
-              Your data should work wherever you are. Sentimeter’s mobile-friendly dashboards keep you agile, ensuring informed decisions anytime, anywhere.
+              Your data should work wherever you are. Sentimeter’s
+              mobile-friendly dashboards keep you agile, ensuring informed
+              decisions anytime, anywhere.
             </p>
             <ul className="checklist blue">
               <li className="checklist-item">
-                <span>Mobile Accessibility:</span> Access real-time insights on the move.
+                <span>Mobile Accessibility:</span> Access real-time insights on
+                the move.
               </li>
               <li className="checklist-item">
-                <span>Optimized Dashboards:</span> Fast, intuitive interfaces for quick decision-making.
+                <span>Optimized Dashboards:</span> Fast, intuitive interfaces
+                for quick decision-making.
               </li>
             </ul>
             <p>
-              <span>Why It Matters:</span> "Agile decisions need agile tools. Stay ahead wherever you are.”
+              <span>Why It Matters:</span> "Agile decisions need agile tools.
+              Stay ahead wherever you are.”
             </p>
             <div className="row">
               <a href="#" className="link">
                 <span>Take Your</span>
                 <span>Insights Mobile</span>
               </a>
-              <Link href="#" className="button">Schedule a Call</Link>
+              <Link href="#" className="button">
+                Schedule a Call
+              </Link>
             </div>
           </div>
         </div>
@@ -235,25 +262,32 @@ export default function page() {
               See the Full <span>Customer Journey</span>
             </h2>
             <p>
-              Customer experiences span multiple channels—your insights should, too. Sentimeter unifies every interaction into a cohesive view for better strategies.
+              Customer experiences span multiple channels—your insights should,
+              too. Sentimeter unifies every interaction into a cohesive view for
+              better strategies.
             </p>
             <ul className="checklist blue">
               <li className="checklist-item">
-                <span>Omnichannel Tracking:</span> Connect insights from social media, emails, in-store visits, apps, and more.
+                <span>Omnichannel Tracking:</span> Connect insights from social
+                media, emails, in-store visits, apps, and more.
               </li>
               <li className="checklist-item">
-                <span>Cross-Channel Analytics:</span> Uncover trends and refine customer journeys holistically.analysis.
+                <span>Cross-Channel Analytics:</span> Uncover trends and refine
+                customer journeys holistically.analysis.
               </li>
             </ul>
             <p>
-              <span>Why It Matters:</span> “A complete view of the journey helps you improve every step.“
+              <span>Why It Matters:</span> “A complete view of the journey helps
+              you improve every step.“
             </p>
             <div className="row">
               <a href="#" className="link">
                 <span>Explore Omnichannel</span>
                 <span>Tracking</span>
               </a>
-              <Link href="#" className="button">Book a Demo</Link>
+              <Link href="#" className="button">
+                Book a Demo
+              </Link>
             </div>
           </div>
           <div className="col">
@@ -276,17 +310,22 @@ export default function page() {
                 <span>Share</span> Insights Securely
               </h2>
               <p>
-                Data security isn’t optional. Sentimeter ensures your reports and dashboards are both secure and accessible to the right stakeholders.
+                Data security isn’t optional. Sentimeter ensures your reports
+                and dashboards are both secure and accessible to the right
+                stakeholders.
               </p>
               <p>
-                <span>Why It Matters:</span> "Trust starts with keeping your data secure and accessible only to authorized users.”
+                <span>Why It Matters:</span> "Trust starts with keeping your
+                data secure and accessible only to authorized users.”
               </p>
               <div className="row">
                 <Link href="#" className="link">
                   <span>Learn About</span>
                   <span>Secure Sharing</span>
                 </Link>
-                <Link href="#" className="button">Learn More</Link>
+                <Link href="#" className="button">
+                  Learn More
+                </Link>
               </div>
             </div>
           </div>
@@ -304,7 +343,8 @@ export default function page() {
                   <h5>Role-Based Permissions</h5>
                 </div>
                 <div className="content">
-                  <span>Role-Based Permissions:</span> Control access based on roles and responsibilities.
+                  <span>Role-Based Permissions:</span> Control access based on
+                  roles and responsibilities.
                 </div>
               </div>
               <div className="features-capsule-item">
@@ -318,7 +358,8 @@ export default function page() {
                   <h5>Global Compliance</h5>
                 </div>
                 <div className="content">
-                  <span>Global Compliance:</span> Built-in adherence to GDPR, ISO 27001, and other privacy standards.
+                  <span>Global Compliance:</span> Built-in adherence to GDPR,
+                  ISO 27001, and other privacy standards.
                 </div>
               </div>
             </div>
@@ -335,7 +376,9 @@ export default function page() {
                 Prove <span>ROI and Predict</span> the Future
               </h2>
               <p>
-                Move beyond the present. Sentimeter’s advanced tools help you forecast trends, measure success, and connect actions to measurable business outcomes.
+                Move beyond the present. Sentimeter’s advanced tools help you
+                forecast trends, measure success, and connect actions to
+                measurable business outcomes.
               </p>
               <div className="card-blocks">
                 <div className="card-blocks-item green">
@@ -346,9 +389,7 @@ export default function page() {
                     alt="icon churn predictors"
                   />
                   <h5>Churn Predictors</h5>
-                  <p>
-                    Spot at-risk customers before it’s too late.
-                  </p>
+                  <p>Spot at-risk customers before it’s too late.</p>
                 </div>
                 <div className="card-blocks-item yellow">
                   <Image
@@ -358,9 +399,7 @@ export default function page() {
                     alt="icon roi calculators"
                   />
                   <h5>ROI Calculators</h5>
-                  <p>
-                    Link customer insights directly to business impact.
-                  </p>
+                  <p>Link customer insights directly to business impact.</p>
                 </div>
                 <div className="card-blocks-item red">
                   <Image
@@ -370,20 +409,21 @@ export default function page() {
                     alt="icon scenario modeling"
                   />
                   <h5>Scenario Modeling</h5>
-                  <p>
-                    Test initiatives and predict their outcomes.
-                  </p>
+                  <p>Test initiatives and predict their outcomes.</p>
                 </div>
               </div>
               <p>
-                <span>Why It Matters:</span> “Proving ROI isn’t just about numbers—it’s about building trust in your strategy.“
+                <span>Why It Matters:</span> “Proving ROI isn’t just about
+                numbers—it’s about building trust in your strategy.“
               </p>
               <div className="row">
                 <a href="#" className="link">
                   <span>Learn How to</span>
                   <span>Close the Loop</span>
                 </a>
-                <Link href="#" className="button">Request a Demo</Link>
+                <Link href="#" className="button">
+                  Request a Demo
+                </Link>
               </div>
             </div>
           </div>
@@ -395,7 +435,9 @@ export default function page() {
         <div className="container">
           <div className="col">
             <Image
-              src={"/images/cx/phase5/illustration-why-continuous-improvement-matters.svg"}
+              src={
+                "/images/cx/phase5/illustration-why-continuous-improvement-matters.svg"
+              }
               width={541}
               height={541}
               alt="illustration why continuous improvement matters"
@@ -407,13 +449,15 @@ export default function page() {
             </h2>
             <ul className="checklist blue">
               <li className="checklist-item">
-                Build stronger customer relationships through iterative feedback.
+                Build stronger customer relationships through iterative
+                feedback.
               </li>
               <li className="checklist-item">
                 Empower smarter, faster decisions with actionable insights.
               </li>
               <li className="checklist-item">
-                Foster a culture of innovation by continuously refining strategies.
+                Foster a culture of innovation by continuously refining
+                strategies.
               </li>
             </ul>
             <div className="row">
@@ -421,12 +465,13 @@ export default function page() {
                 <span>See How Reporting</span>
                 <span>Fuels Innovation</span>
               </a>
-              <Link href="#" className="button">Learn More</Link>
+              <Link href="#" className="button">
+                Learn More
+              </Link>
             </div>
           </div>
         </div>
       </section>
-
     </article>
   );
 }

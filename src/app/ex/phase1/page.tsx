@@ -14,8 +14,27 @@ export default function page() {
               height={96}
               alt="senti ex"
             />
+            <div className="page-title">
+              <Image
+                src={"/images/icon-phase-1.svg"}
+                width={80}
+                height={80}
+                alt="icon"
+              />
+              Make Feedback Fearless and Effortless
+            </div>
           </div>
-          <div className="sub-header-right">Back to SentiEX</div>
+          <div className="sub-header-right">
+            <a href="/ex">
+              <Image
+                src={"/images/blue-back-arrow.svg"}
+                width={35}
+                height={35}
+                alt="back"
+              />
+              Back to SentiEX
+            </a>
+          </div>
         </div>
       </section>
 
@@ -35,7 +54,7 @@ export default function page() {
                 the insights needed to drive real employee satisfaction and
                 retention.
               </p>
-              <Link href="#" className="button button--outline">
+              <Link href="/demo-form" className="button button--outline">
                 Request a Demo
               </Link>
             </div>

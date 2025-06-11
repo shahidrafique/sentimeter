@@ -16,8 +16,27 @@ export default function page() {
               height={96}
               alt="senti ex"
             />
+            <div className="page-title">
+              <Image
+                src={"/images/icon-phase-4.svg"}
+                width={80}
+                height={80}
+                alt="icon"
+              />
+              Turn Insights Into Action
+            </div>
           </div>
-          <div className="sub-header-right">Back to SentiEX</div>
+          <div className="sub-header-right">
+            <a href="/ex">
+              <Image
+                src={"/images/blue-back-arrow.svg"}
+                width={35}
+                height={35}
+                alt="back"
+              />
+              Back to SentiEX
+            </a>
+          </div>
         </div>
       </section>
 
@@ -34,7 +53,7 @@ export default function page() {
                 measurable strategies, fostering continuous improvement and
                 employee satisfaction.
               </p>
-              <Link href="#" className="button button--outline">
+              <Link href="/demo-form" className="button button--outline">
                 Request a Demo
               </Link>
             </div>
@@ -68,7 +87,7 @@ export default function page() {
                   </p>
                   <div className="button-wrapper">
                     <p>See Ready-Made Reports in Action</p>
-                    <Link href="#" className="button">
+                    <Link href="/demo-form" className="button">
                       Request a Demo
                     </Link>
                   </div>
@@ -205,7 +224,7 @@ export default function page() {
                 </p>
                 <div className="button-wrapper">
                   <p>See Ready-Made Reports in Action</p>
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Request a Demo
                   </Link>
                 </div>
@@ -367,7 +386,7 @@ export default function page() {
                 </div>
                 <div className="button-wrapper">
                   <p>Learn About Secure Sharing</p>
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Request a Demo
                   </Link>
                 </div>
@@ -456,7 +475,7 @@ export default function page() {
                 </div>
                 <div className="button-wrapper">
                   <p>Discover Predictive Analytics</p>
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Request a Demo
                   </Link>
                 </div>

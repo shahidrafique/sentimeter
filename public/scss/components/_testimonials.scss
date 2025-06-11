@@ -18,8 +18,9 @@
 
   .testimonial {
     background: $red-light;
-    padding: scale(75) scale(200);
+    padding: scale(75);
     border-radius: scale(6);
+    margin-right: 50px;
 
     &-inner {
       display: flex;

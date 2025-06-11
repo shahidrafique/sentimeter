@@ -18,8 +18,27 @@ export default function page() {
               height={96}
               alt="senti ex"
             />
+            <div className="page-title">
+              <Image
+                src={"/images/icon-phase-2.svg"}
+                width={80}
+                height={80}
+                alt="icon"
+              />
+              Understand Employee Relationships
+            </div>
           </div>
-          <div className="sub-header-right">Back to SentiEX</div>
+          <div className="sub-header-right">
+            <a href="/ex">
+              <Image
+                src={"/images/blue-back-arrow.svg"}
+                width={35}
+                height={35}
+                alt="back"
+              />
+              Back to SentiEX
+            </a>
+          </div>
         </div>
       </section>
 
@@ -40,7 +59,7 @@ export default function page() {
                 addressing pain points, and elevating employee experience (EX)
                 at every stage.
               </p>
-              <Link href="#" className="button button--outline">
+              <Link href="/demo-form" className="button button--outline">
                 Request a Demo
               </Link>
             </div>
@@ -282,7 +301,7 @@ export default function page() {
                   <p className="text-yellow">
                     Start Mapping Your Employee Lifecycle Today
                   </p>
-                  <Link href="#" className="button button--outline">
+                  <Link href="/demo-form" className="button button--outline">
                     Request a Demo
                   </Link>
                 </div>
