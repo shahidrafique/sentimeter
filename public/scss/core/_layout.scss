@@ -171,8 +171,8 @@
 
       .icon {
         img {
-          height: scale(72);
-          width: scale(72);
+          height: clamp(76px, scale(86), 96px);
+          width: clamp(76px, scale(86), 96px);
         }
       }
 

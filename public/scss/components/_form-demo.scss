@@ -118,7 +118,15 @@
             .logos {
                 display: flex;
                 align-items: center;
-                gap: scale(12);
+                justify-content: space-between;
+
+                img {
+                    height: scale(60);
+                    width: scale(120);
+                    object-fit: contain;
+                    vertical-align: top;
+                }
+
             }
         }
     }

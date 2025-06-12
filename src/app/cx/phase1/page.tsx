@@ -79,50 +79,61 @@ export default function page() {
             <h3>The Key to CX Success</h3>
           </div>
           <div className="container">
-            <div className="col">
-              <div className="icon">
-                <Image
-                  src={"/images/cx/phase1/icon-gain.svg"}
-                  width={86}
-                  height={86}
-                  alt="icon gain"
-                />
-              </div>
-              <h5>Gain a Holistic View of Customer Interactions</h5>
-              <p>
-                Understand how customers interact with your brand at every
-                stage.
-              </p>
-            </div>
-            <div className="col">
-              <div className="icon">
-                <Image
-                  src={"/images/icon-build-trust2.svg"}
-                  width={86}
-                  height={86}
-                  alt="benefit"
-                />
-              </div>
-              <h5>Identify & Resolve Customer Friction Points</h5>
-              <p>
-                Foster trust by demonstrating how feedback drives real
-                improvements.
-              </p>
-            </div>
-            <div className="col">
-              <div className="icon">
-                <Image
-                  src={"/images/icon-build-trust3.svg"}
-                  width={86}
-                  height={86}
-                  alt="benefit"
-                />
-              </div>
-              <h5>Trust-Building Analytics</h5>
-              <p>
-                Build stronger relationships between employees and leadership.
-              </p>
-            </div>
+            <section className="features">
+              <section className="cards no-border yellow">
+                <div className="card">
+                  <div className="icon">
+                    <Image
+                      src={"/images/cx/phase1/icon-gain.svg"}
+                      width={86}
+                      height={86}
+                      alt="icon gain"
+                    />
+                  </div>
+                  <div className="card-content">
+                    <h4>Gain a Holistic View of Customer Interactions</h4>
+                    <p>
+                      Understand how customers interact with your brand at every
+                      stage.
+                    </p>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="icon">
+                    <Image
+                      src={"/images/icon-build-trust2.svg"}
+                      width={86}
+                      height={86}
+                      alt="benefit"
+                    />
+                  </div>
+                  <div className="card-content">
+                    <h4>Identify & Resolve Customer Friction Points</h4>
+                    <p>
+                      Foster trust by demonstrating how feedback drives real
+                      improvements.
+                    </p>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="icon">
+                    <Image
+                      src={"/images/icon-build-trust3.svg"}
+                      width={86}
+                      height={86}
+                      alt="benefit"
+                    />
+                  </div>
+                  <div className="card-content">
+                    <h4>Trust-Building Analytics</h4>
+                    <p>
+                      Build stronger relationships between employees and
+                      leadership.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </section>
           </div>
         </div>
       </section>

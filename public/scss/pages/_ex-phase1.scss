@@ -408,18 +408,8 @@
 			>.container {
 				gap: scale(10);
 
-				img {
-					margin-bottom: scale(20);
-					width: scale(88);
-					height: auto;
-				}
-
-				h5 {
-					color: $yellow;
-				}
-
-				.col {
-					max-width: scale(350);
+				.cards {
+					max-width: scale(1200);
 				}
 			}
 		}
@@ -438,52 +428,83 @@
 		}
 
 		.card {
-			padding-left: scale(220);
+			// padding-left: scale(220);
 			position: relative;
-			overflow: hidden;
-			min-height: scale(900);
+			// overflow: hidden;
+			// min-height: scale(1050);
+			// height: scale(720);
+			display: flex;
+			align-items: center;
+			gap: scale(50);
+
+			.container {
+				flex: 1;
+			}
 
 			.progress-steps {
-				position: absolute;
+				// position: absolute;
 				left: 0;
 				top: 0;
 				display: flex;
 				flex-direction: column;
 				gap: 2px;
 
+
 				.step {
 					display: flex;
 					align-items: center;
-					gap: scale(15);
+					gap: scale(50);
 					border-radius: 0 50px 50px 0;
 					position: relative;
 					font-size: scale(20);
 					font-weight: 600;
 					color: rgba($red, 0.28);
+					z-index: 1;
+					transition: .35s;
+
+					padding: scale(20) scale(40) scale(20) scale(30);
 
 					.icon {
-						background: $red-light;
-						padding: scale(20) scale(40) scale(20) scale(30);
-						border-radius: 0 50px 50px 0;
-
 						img {
 							opacity: 0.25;
+							width: scale(56);
+							height: scale(56);
+							object-fit: contain;
+							vertical-align: top;
+							transition: .35s;
 						}
 					}
 
 					&.active {
 						color: $white;
-						background: $red;
-						padding: scale(20) scale(40) scale(20) scale(30);
+						gap: scale(15);
 
 						.icon {
-							padding: 0;
-							background: transparent;
 
 							img {
 								opacity: 1;
 							}
 						}
+
+						&:before {
+							width: 90%;
+							background: $red;
+						}
+					}
+
+					&:before {
+						content: "";
+						background: $red-light;
+						position: absolute;
+						left: 0;
+						top: 0;
+						height: 100%;
+						width: 50%;
+						border-radius: 0 100px 100px 0;
+						z-index: -1;
+						transition: .35s;
+
+
 					}
 				}
 			}
