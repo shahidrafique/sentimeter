@@ -88,7 +88,7 @@
     gap: scale(30);
     flex-direction: column;
 
-    > .row {
+    >.row {
       display: flex;
       gap: scale(30);
       max-width: 50%;
@@ -114,7 +114,6 @@
       max-width: 80%;
 
       p {
-        font-size: scale(20);
 
         span {
           color: $yellow;
@@ -150,7 +149,6 @@
           }
 
           p {
-            font-size: scale(20);
             margin-top: 0;
           }
         }

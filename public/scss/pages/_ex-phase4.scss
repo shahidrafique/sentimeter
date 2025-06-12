@@ -29,6 +29,14 @@
 				padding-right: scale(50);
 				border-right: 1px solid $gray-light;
 				align-content: center;
+
+				.button {
+					background: $blue-light;
+
+					&:before {
+						background-color: white;
+					}
+				}
 			}
 
 			&:nth-child(2) {
@@ -122,6 +130,14 @@
 		.col-left,
 		.col-right {
 			flex: 1;
+
+			.button {
+				background: $blue-light;
+
+				&:before {
+					background-color: white;
+				}
+			}
 		}
 
 		.col-left {
@@ -168,6 +184,14 @@
 			.col {
 				flex: 1;
 				align-content: center;
+
+				.button {
+					background: $blue-light;
+
+					&:before {
+						background-color: white;
+					}
+				}
 			}
 		}
 
@@ -242,6 +266,14 @@
 		.col {
 			align-content: center;
 			flex: 1;
+
+			.button {
+				background: $blue-light;
+
+				&:before {
+					background-color: white;
+				}
+			}
 		}
 
 		.col-left {
@@ -253,6 +285,17 @@
 			img {
 				width: scale(571);
 				height: scale(365);
+			}
+		}
+	}
+
+	.prove-impact {
+
+		.button {
+			background: $blue-light;
+
+			&:before {
+				background-color: white;
 			}
 		}
 	}
@@ -273,7 +316,7 @@
 				}
 
 				.col-content {
-					max-width: 50%;
+					max-width: 70%;
 
 				}
 			}

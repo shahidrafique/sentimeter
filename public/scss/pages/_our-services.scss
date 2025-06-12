@@ -41,17 +41,18 @@
     'yellow': $yellow,
     'blue': $blue
   );
-  @each $name, $color in $colors {
-    .section.#{$name} .section-header h3 {
-      span {
-        background: $color;
 
-        &::before {
-          background: $color;
-        }
+@each $name, $color in $colors {
+  .section.#{$name} .section-header h3 {
+    span {
+      background: $color;
+
+      &::before {
+        background: $color;
       }
     }
   }
+}
 }
 
 .right-path-for-org {
@@ -308,13 +309,13 @@
 
       h3 {
         margin-bottom: scale(40);
+
         span {
           color: $yellow;
         }
       }
 
       p {
-        font-size: scale(20);
 
         span {
           color: $yellow;
@@ -350,7 +351,6 @@
           }
 
           p {
-            font-size: scale(20);
             margin-top: 0;
           }
         }

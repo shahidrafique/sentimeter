@@ -6,7 +6,7 @@
   top: 0;
   backdrop-filter: blur(20px);
   border-top: 16px solid $yellow;
-  padding: 20px 0;
+  padding: scale(20) 0;
 
   .container {
     justify-content: space-between;
@@ -21,9 +21,11 @@
 
       img {
         margin-right: 8px;
+        width: scale(56);
+        width: scale(56);
       }
 
-      font-size: 38px;
+      font-size: scale(38);
 
       b {
         font-weight: 600;

@@ -61,7 +61,7 @@
 
 			.row {
 				p {
-					font-size: scale(20);
+
 					font-weight: 600;
 					color: $green;
 				}
@@ -93,7 +93,7 @@
 
 					p {
 						margin: 8px 0;
-						font-size: scale(20);
+
 
 						span {
 							font-weight: 600;
@@ -150,7 +150,7 @@
 				}
 
 				p {
-					font-size: scale(20);
+
 					max-width: 60%;
 
 					span {
@@ -187,7 +187,7 @@
 						}
 
 						p {
-							font-size: scale(20);
+
 							margin-top: 0;
 						}
 					}
@@ -201,7 +201,7 @@
 
 				p {
 					max-width: scale(180);
-					font-size: scale(20);
+
 					font-weight: 500;
 					color: $yellow;
 				}
@@ -251,7 +251,6 @@
 
 			p {
 				margin: 10px 0 0;
-				font-size: scale(20);
 			}
 		}
 
@@ -278,9 +277,6 @@
 		}
 
 		.content {
-			p {
-				font-size: scale(20);
-			}
 
 			ul {
 				margin: scale(10) 0;
@@ -297,7 +293,6 @@
 
 					p {
 						margin: 8px 0;
-						font-size: scale(20);
 
 						span {
 							font-weight: 600;
@@ -374,7 +369,6 @@
 
 				p {
 					max-width: scale(220);
-					font-size: scale(20);
 					font-weight: 500;
 					color: $green;
 				}

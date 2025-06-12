@@ -1,5 +1,9 @@
 // demo-form
 .demo-form {
+    >.container {
+        gap: 0;
+    }
+
     .feedback-content {
         @extend .gradient;
         color: $white;
@@ -7,6 +11,8 @@
         border-radius: 8px 0 0 8px;
         margin: scale(40) 0;
         padding: scale(100);
+        align-content: center;
+
 
         .section-title {
 

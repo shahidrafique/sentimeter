@@ -60,10 +60,10 @@
     h2 {
       font-size: scale(50);
       font-weight: 500;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: scale(22);
       margin-top: 0;
     }
 
@@ -112,10 +112,9 @@
     margin-top: scale(30);
 
     .note {
-      font-size: scale(20);
+      font-size: clamp(16px, scale(20), 22px);
       font-style: italic;
-      font-weight: 500;
-      margin-bottom: 8px;
+      margin-bottom: 16px;
 
       span {
         font-weight: 600;
@@ -128,13 +127,13 @@
       display: flex;
       gap: scale(16);
       align-items: center;
+      flex-wrap: wrap;
 
       p {
-        font-size: scale(20);
         font-weight: 600;
         color: $dark-blue;
-        margin: 10px 0;
-        max-width: scale(240);
+        margin: 10px 0 0;
+        // max-width: scale(240);
       }
     }
 
@@ -179,12 +178,12 @@
 
       .card-content {
         h4 {
-          font-size: scale(22);
+          font-size: clamp(18px, scale(22), 24px);
         }
 
         p {
           margin: 10px 0 0;
-          font-size: scale(18);
+          font-size: clamp(16px, scale(18), 20px);
         }
       }
 
@@ -207,6 +206,18 @@
         background: transparent;
         box-shadow: none;
       }
+
+      &.yellow {
+        h4 {
+          color: $yellow;
+        }
+      }
+
+      &.light-blue {
+        h4 {
+          color: $blue-light;
+        }
+      }
     }
   }
 }
@@ -215,7 +226,7 @@
   border-radius: 16px;
   background-color: $white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: scale(100) 0;
+  padding: scale(50) 0;
 }
 
 
@@ -229,10 +240,23 @@
     justify-content: space-between;
   }
 
+
   .sub-header-left {
     display: flex;
     align-items: center;
     gap: 30px;
+
+    .header-logo {
+      width: scale(240);
+      height: scale(96);
+    }
+
+    img {
+      &:first-child {
+        width: scale(240);
+        height: scale(96);
+      }
+    }
 
     .page-title {
       display: flex;
@@ -240,8 +264,13 @@
       gap: 16px;
       font-size: scale(24);
       color: $dark-blue;
-      max-width: scale(350);
-      font-weight: 500;
+      max-width: scale(400);
+      font-weight: 600;
+
+      img {
+        width: scale(80);
+        height: scale(80);
+      }
 
     }
   }
@@ -271,7 +300,7 @@
     position: relative;
     padding-left: scale(50);
     line-height: 1.6;
-    font-size: scale(20);
+    font-size: clamp(16px, scale(18), 20px);
 
     span {
       font-weight: 600;
@@ -338,7 +367,6 @@
   }
 
   p {
-    font-size: scale(20);
     font-weight: 500;
   }
 
@@ -508,7 +536,6 @@
         }
 
         p {
-          font-size: scale(22);
           line-height: 1.6;
         }
 

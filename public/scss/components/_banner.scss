@@ -1,7 +1,9 @@
 .banner {
     @extend .gradient;
     color: $white;
-    height: scale(680);
+    min-height: scale(680);
+    padding: scale(80) 0;
+    align-content: center;
 
     .container {
         height: 100%;
@@ -12,28 +14,29 @@
     .content {
         max-width: 70%;
 
+
         .subtitle {
             color: $yellow;
             font-size: scale(24);
             font-weight: 500;
+            margin-bottom: 10px;
         }
 
         h2 {
             text-transform: uppercase;
             margin: 0;
             line-height: 1.2;
+            font-size: clamp(42px, scale(50), 60px);
+            font-weight: 500;
 
             span {
                 color: $yellow;
-                font-style: italic;
             }
         }
 
         p {
-            font-size: clamp(16px, scale(20), 30px);
-            font-weight: 400;
-            margin-bottom: 40px;
-            max-width: scale(700);
+            margin-bottom: 30px;
+            max-width: 700px;
         }
     }
 }

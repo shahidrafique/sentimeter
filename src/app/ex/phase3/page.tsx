@@ -228,7 +228,7 @@ export default function page() {
               </section>
               <h5 className="features-heading">Key Features:</h5>
               <div className="features">
-                <div className="cards no-border">
+                <div className="cards no-border yellow">
                   <div className="card">
                     <div className="icon">
                       <Image
@@ -339,7 +339,7 @@ export default function page() {
               <div className="button-wrapper">
                 <p>Close Feedback Gaps Across the Lifecycle</p>
                 <Link href={"#"} className="button">
-                  Discover Sentiment Analytics for EX
+                  Request a Demo
                 </Link>
               </div>
             </section>
@@ -496,7 +496,7 @@ export default function page() {
               <div className="button-wrapper">
                 <p>Predict Workforce Trends</p>
                 <Link href={"#"} className="button ">
-                  Discover Sentiment Analytics for EX
+                  Schedule a Call
                 </Link>
               </div>
             </section>
@@ -540,7 +540,7 @@ export default function page() {
               <div className="button-wrapper">
                 <p>Stay Ahead of Workforce Trends</p>
                 <Link href="#" className="button">
-                  Experience Smarter Employee Surveys
+                   Learn More
                 </Link>
               </div>
             </section>

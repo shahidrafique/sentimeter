@@ -327,6 +327,10 @@
 //compliance
 .compliance {
 
+    .container {
+        gap: 0;
+    }
+
     .compliance-header {
         width: 100%;
         display: flex;

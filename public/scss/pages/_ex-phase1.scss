@@ -25,25 +25,13 @@
 			position: relative;
 			padding-right: scale(100);
 			border-right: 1px solid $gray-light;
+			align-content: center;
 
 			h2 {
-				font-size: scale(54);
+				color: $dark-blue;
 
 				span {
 					color: $red;
-				}
-			}
-
-			.content {
-				font-size: scale(20);
-				max-width: 90%;
-				font-weight: 500;
-				margin-bottom: 30px;
-
-				p {
-					span {
-						color: $red;
-					}
 				}
 			}
 
@@ -62,15 +50,18 @@
 
 			h3 {
 				color: $dark-blue;
-				margin-bottom: 30px;
+				margin-bottom: 20px;
+				@extend .features-heading;
 			}
 
 			.benefit {
 				display: flex;
-				align-items: center;
-				// max-width: 90%;
-				font-size: scale(20);
 				gap: 12px;
+				margin-bottom: 16px;
+
+				p {
+					margin: 0;
+				}
 
 				img {
 					width: scale(60);
@@ -124,7 +115,6 @@
 				}
 
 				p {
-					font-size: scale(20);
 
 					span {
 						color: $yellow;
@@ -160,7 +150,6 @@
 						}
 
 						p {
-							font-size: scale(20);
 							margin-top: 0;
 						}
 					}
@@ -178,13 +167,10 @@
 				flex-direction: column;
 				gap: 0;
 
-				h3 {
+				h2 {
 					color: $dark-blue;
 				}
 
-				p {
-					font-size: scale(22);
-				}
 			}
 
 			&:nth-child(2) {
@@ -203,6 +189,8 @@
 
 		h5 {
 			color: $dark-blue;
+			@extend .features-heading;
+			margin-bottom: 10px;
 		}
 
 		ul {
@@ -213,54 +201,18 @@
 			gap: 8px;
 
 			li {
-				font-size: scale(20);
+
 				color: rgba($black, .7);
-				display: flex;
-				align-items: center;
-				gap: 16px;
 
 				p {
-					margin: 8px 0;
-					font-size: scale(20);
-
-					span {
-						font-weight: 600;
-					}
+					margin: 0;
 				}
-
-				&:before {
-					content: '';
-					flex: 0 0 auto;
-					width: scale(32);
-					height: scale(32);
-					display: inline-block;
-					background: url('/images/yellow-tick.svg') no-repeat center;
-					background-size: contain;
-
-				}
-
 			}
 		}
-
-		.note {
-			span {
-				color: $dark-blue;
-				font-style: normal;
-				font-weight: 600;
-			}
-
-			font-style: italic;
-			font-size: scale(20);
-		}
-
-
-
-
 	}
 
 	// Proactive
 	.proactive {
-
 		.card {
 			>.container {
 				align-items: center;
@@ -290,9 +242,7 @@
 					color: $dark-blue;
 				}
 
-				p {
-					font-size: scale(20);
-				}
+
 
 				.note {
 					font-style: italic;
@@ -374,9 +324,8 @@
 			align-items: center;
 		}
 
-		h3 {
+		h2 {
 			color: $dark-blue;
-			margin-bottom: scale(30);
 
 			span {
 				color: $red;
@@ -428,7 +377,6 @@
 				}
 
 				p {
-					font-size: scale(22);
 					margin: 0;
 
 				}
@@ -457,7 +405,7 @@
 			flex-direction: column;
 			gap: scale(50);
 
-			> .container {
+			>.container {
 				gap: scale(10);
 
 				img {

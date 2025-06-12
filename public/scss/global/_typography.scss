@@ -22,3 +22,8 @@ h4 {
 h5 {
     font-size: scale(22);
 }
+
+p {
+    font-size: clamp(16px, scale(20), 22px);
+    font-weight: 400;
+}

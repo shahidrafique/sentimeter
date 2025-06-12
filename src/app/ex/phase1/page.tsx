@@ -13,6 +13,7 @@ export default function page() {
               width={240}
               height={96}
               alt="senti ex"
+              className="header-logo"
             />
             <div className="page-title">
               <Image
@@ -76,27 +77,26 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="comprehensive-feedback-left">
-              <h2>
-                Comprehensive <span>Feedback</span> at Every Corner
-              </h2>
-              <div className="content">
+              <div className="section-header">
+                <h2>
+                  Comprehensive <span>Feedback</span> at Every Corner
+                </h2>
                 <p>
                   Sentimeter collects feedback across multiple channels, giving
                   you a complete view of the employee experience. Whether
                   through pulse surveys or unsolicited comments, our tools
                   ensure no signal is missed.
                 </p>
-
-                <p>
-                  <i>
+                <div className="section-footer">
+                  <p className="note">
                     <span>Why It Matters:</span> "When feedback is easy to give,
                     employees are eager to share it."
-                  </i>
-                </p>
+                  </p>
+                </div>
+                <Link href="#" className="button">
+                  Discover Seamless Feedback Solutions
+                </Link>
               </div>
-              <Link href="#" className="button">
-                Explore Why Sentimeter
-              </Link>
             </div>
             <div className="comprehensive-feedback-right">
               <h3>Key Features:</h3>
@@ -243,44 +243,41 @@ export default function page() {
       {/* Automation */}
       <section className="section automation">
         <div className="container">
-          <h3>Automation That Works for You</h3>
-          <p>
-            Save time and improve participation with automated surveys and
-            response tracking. Sentimeter ensures you ask the right questions at
-            the right time.
-          </p>
+          <div className="section-header">
+            <h2>Automation That Works for You</h2>
+            <p>
+              Save time and improve participation with automated surveys and
+              response tracking. Sentimeter ensures you ask the right questions
+              at the right time.
+            </p>
+          </div>
         </div>
         <div className="container">
           <div className="col">
             <h5>Key Features:</h5>
-            <ul>
-              <li>
-                <p>
-                  <span>Timely Pulse Surveys:</span> Automate feedback
-                  collection after key moments like onboarding or performance
-                  reviews.
-                </p>
+            <ul className="checklist yellow">
+              <li className="checklist-item">
+                <span>Timely Pulse Surveys:</span> Automate feedback collection
+                after key moments like onboarding or performance reviews.
               </li>
-              <li>
-                <p>
-                  <span>Smart Sampling:</span> Avoid survey fatigue with
-                  optimized distribution strategies.
-                </p>
+              <li className="checklist-item">
+                <span>Smart Sampling:</span> Avoid survey fatigue with optimized
+                distribution strategies.
               </li>
-              <li>
-                <p>
-                  <span>Real-Time Feedback:</span> Act on insights as they come
-                  in, with minimal effort.
-                </p>
+              <li className="checklist-item">
+                <span>Real-Time Feedback:</span> Act on insights as they come
+                in, with minimal effort.
               </li>
             </ul>
-            <p className="note">
-              <span>Why It Matters:</span> "Automation eliminates friction and
-              ensures you capture meaningful feedback every time"
-            </p>
-            <Link href="#" className="button">
-              Experience Smarter Employee Surveys
-            </Link>
+            <div className="section-footer">
+              <p className="note">
+                <span>Why It Matters:</span> "Automation eliminates friction and
+                ensures you capture meaningful feedback every time"
+              </p>
+              <Link href="#" className="button">
+                Experience Smarter Employee Surveys
+              </Link>
+            </div>
           </div>
           <div className="col">
             <Image
@@ -299,19 +296,23 @@ export default function page() {
           <div className="container">
             <div className="col">
               <div className="content">
-                <h2>Proactive Listening Across the Lifecycle</h2>
-                <p>
-                  Capture feedback throughout the employee journey with tools
-                  tailored to each stage—from recruitment to exit.
-                </p>
-                <p className="note">
-                  <span>Why It Matters:</span> "Understanding employees
-                  holistically ensures every stage of their journey is
-                  impactful."
-                </p>
-                <Link href={"#"} className="button">
-                  See Lifecycle Insights in Action
-                </Link>
+                <section className="section-header">
+                  <h2>Proactive Listening Across the Lifecycle</h2>
+                  <p>
+                    Capture feedback throughout the employee journey with tools
+                    tailored to each stage—from recruitment to exit.
+                  </p>
+                </section>
+                <section className="section-footer">
+                  <p className="note">
+                    <span>Why It Matters:</span> "Understanding employees
+                    holistically ensures every stage of their journey is
+                    impactful."
+                  </p>
+                  <Link href={"#"} className="button">
+                    See Lifecycle Insights in Action
+                  </Link>
+                </section>
               </div>
             </div>
             <div className="col">
@@ -385,9 +386,11 @@ export default function page() {
 
       <section className="section why">
         <div className="container">
-          <h3>
-            Why <span>Sentimeter</span> for Feedback?
-          </h3>
+          <section className="section-header">
+            <h2>
+              Why <span>Sentimeter</span> for Feedback?
+            </h2>
+          </section>
           <div className="row">
             <div className="col">
               <div className="feature feature-1">

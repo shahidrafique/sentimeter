@@ -54,69 +54,66 @@
           'green': $green,
           'red': $red
         );
-        @each $name, $color in $colors {
-          &.has-inner-text-#{$name} {
 
-            .section-symbol::before {
-              background: $color;
-            }
+      @each $name, $color in $colors {
+        &.has-inner-text-#{$name} {
 
-            h3 {
-              small {
-                opacity: 1;
-                color: $color;
-              }
+          .section-symbol::before {
+            background: $color;
+          }
+
+          h3 {
+            small {
+              opacity: 1;
+              color: $color;
             }
           }
-        }
-      }
-    }
-
-    &:last-child {
-
-      .content-group {
-        text-align: right;
-
-        .section-symbol {
-
-          &::before {
-            left: calc(100% + 20px);
-          }
-        }
-
-        h3 {
-          margin-left: auto;
         }
       }
     }
   }
 
-  .ai-solutions {
+  &:last-child {
 
-    .card {
-      @extend .gradient;
-      color: white;
-      padding: scale(100);
-    }
+    .content-group {
+      text-align: right;
 
-    .container {
-      text-align: center;
-      gap: 0;
-      max-width: scale(1020);
+      .section-symbol {
 
-      img {
-        width: scale(104);
-        height: auto;
-        margin-bottom: scale(30);
+        &::before {
+          left: calc(100% + 20px);
+        }
       }
 
       h3 {
-        color: $yellow;
-      }
-
-      p {
-        font-size: scale(22);
+        margin-left: auto;
       }
     }
   }
+}
+
+.ai-solutions {
+
+  .card {
+    @extend .gradient;
+    color: white;
+    padding: scale(100);
+  }
+
+  .container {
+    text-align: center;
+    gap: 0;
+    max-width: scale(1020);
+
+    img {
+      width: scale(104);
+      height: auto;
+      margin-bottom: scale(30);
+    }
+
+    h3 {
+      color: $yellow;
+    }
+  }
+}
 }

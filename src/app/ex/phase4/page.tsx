@@ -163,7 +163,7 @@ export default function page() {
               </div>
 
               <div className="features">
-                <div className="cards no-border">
+                <div className="cards no-border light-blue">
                   <div className="card">
                     <div className="icon">
                       <Image
@@ -223,9 +223,9 @@ export default function page() {
                   more time focusing on strategies that matter.”
                 </p>
                 <div className="button-wrapper">
-                  <p>See Ready-Made Reports in Action</p>
+                  <p>Explore Custom Dashboards</p>
                   <Link href="/demo-form" className="button">
-                    Request a Demo
+                    Learn More
                   </Link>
                 </div>
               </section>
@@ -280,7 +280,7 @@ export default function page() {
                 <div className="button-wrapper">
                   <p>Take Your Insights Anywhere</p>
                   <Link href={"#"} className="button button--outline">
-                    Discover Sentiment Analytics for EX
+                    Schedule a Demo
                   </Link>
                 </div>
               </section>
@@ -360,7 +360,7 @@ export default function page() {
         <section className="card">
           <div className="container">
             <div className="col col-left">
-              <div className="features-heading text-center">Key Features:</div>
+              <h4 className="features-heading text-center">Key Features:</h4>
               <Image
                 src={"/images/ex/phase4/secure-sharing-illustration.svg"}
                 width={571}
@@ -440,10 +440,9 @@ export default function page() {
                       />
                     </div>
                     <div className="card-content">
-                      <h4>Retention Predictors</h4>
+                      <h4>ROI Calculators</h4>
                       <p>
-                         Identify employees at risk of disengagement and
-                        turnover.
+                        Quantify the business impact of engagement initiatives.
                       </p>
                     </div>
                   </div>
@@ -458,11 +457,8 @@ export default function page() {
                       />
                     </div>
                     <div className="card-content">
-                      <h4>Retention Predictors</h4>
-                      <p>
-                         Identify employees at risk of disengagement and
-                        turnover.
-                      </p>
+                      <h4>Scenario Modeling</h4>
+                      <p>Simulate initiatives to predict future outcomes. </p>
                     </div>
                   </div>
                 </div>
@@ -476,7 +472,7 @@ export default function page() {
                 <div className="button-wrapper">
                   <p>Discover Predictive Analytics</p>
                   <Link href="/demo-form" className="button">
-                    Request a Demo
+                     Book a Demo
                   </Link>
                 </div>
               </section>

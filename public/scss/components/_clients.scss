@@ -1,6 +1,7 @@
 // clients
 .clients {
     overflow: hidden;
+    padding: scale(30) 0;
 
     .row {
         display: flex;
@@ -18,13 +19,13 @@
     .client-logos-container {
         display: flex;
         align-items: center;
-        gap: scale(100);
+        gap: scale(50);
         animation: scroll 20s linear infinite;
-        padding-right: scale(100);
+        padding-right: scale(50);
 
         img {
-            height: scale(50px);
-            width: auto;
+            height: scale(100);
+            width: scale(175);
             object-fit: contain;
             transition: .35s;
             filter: grayscale(1);

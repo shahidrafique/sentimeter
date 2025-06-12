@@ -18,7 +18,6 @@
         }
 
         .content {
-            font-size: scale(20);
             max-width: 90%;
             font-weight: 500;
             margin-bottom: 30px;
@@ -27,6 +26,7 @@
                 li {
                     list-style: disc;
                     margin-left: 30px;
+                    font-size: clamp(16px, scale(20), 22px);
                 }
             }
         }
@@ -119,7 +119,7 @@
 
     .container {
         flex-direction: column;
-        max-width: scale(800);
+        max-width: 800px;
     }
 
     .content {
@@ -131,9 +131,7 @@
             }
         }
 
-        p {
-            font-size: scale(20);
-        }
+
     }
 
     .cards-holder {
@@ -167,7 +165,6 @@
 
                 p {
                     margin-top: scale(15);
-                    font-size: clamp(18px, scale(20), 24px);
                     max-width: 90%;
                 }
 
@@ -352,9 +349,7 @@
                     color: $yellow;
                 }
 
-                p {
-                    font-size: clamp(18px, scale(20), 24px);
-                }
+
             }
         }
     }
@@ -421,7 +416,6 @@
 
 
         p {
-            font-size: scale(20);
             padding-left: scale(55);
             font-style: italic;
         }
@@ -445,6 +439,11 @@
         align-items: center;
         display: flex;
 
+        img {
+            width: scale(792);
+            height: scale(412);
+        }
+
         &:nth-child(2) {
             flex-direction: column;
 
@@ -463,10 +462,7 @@
             color: $dark-blue;
         }
 
-        p {
-            font-size: scale(22);
-            font-weight: 500;
-        }
+
     }
 }
 
@@ -500,10 +496,7 @@
             color: $dark-blue;
         }
 
-        p {
-            font-size: scale(22);
-            font-weight: 500;
-        }
+
     }
 }
 
@@ -516,7 +509,7 @@
     }
 
     .content {
-        max-width: scale(700);
+        max-width: 700px;
 
         h3 {
             span {

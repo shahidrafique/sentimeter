@@ -1,12 +1,11 @@
 .senti-insights-tabs {
   @extend .gradient;
   color: $white;
-  padding: scale(120) 0;
 
   .container {
     flex-direction: column;
     align-items: center;
-    gap: scale(25);
+    gap: 0;
   }
 
   .section-header {
@@ -59,10 +58,9 @@
 
   .slide-content {
     display: flex;
-    margin-top: scale(50);
 
     img {
-      width: scale(1092);
+      width: scale(1000);
       max-width: 100%;
       height: auto;
     }
@@ -71,13 +69,32 @@
     .content-right {
       max-width: scale(400);
 
+
       p {
         font-size: scale(24);
-        padding-top: scale(20);
-        margin-top: scale(80);
         border-top: 2px solid $white;
+        margin-top: scale(80);
+        padding-top: scale(20);
       }
     }
+
+    .content-left {
+      position: relative;
+
+      p {
+        width: 120%;
+      }
+    }
+
+    .content-right {
+      position: relative;
+
+      p {
+        margin-left: -30%;
+        width: 120%;
+      }
+    }
+
   }
 
   .senticx-slider,
