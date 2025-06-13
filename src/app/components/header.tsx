@@ -3,9 +3,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 export default function Header() {
   const pathname = usePathname();
-  const isHomePage = pathname === "/";
+  const [activeTab, setActiveTab] = useState("customer");
   return (
     <>
       {pathname === "/" ? null : (
@@ -33,212 +34,209 @@ export default function Header() {
                     <div className="sub-nav">
                       <div className="container">
                         <div className="left-tabs">
-                          <a href="#" className="active">
+                          <a
+                            href="#"
+                            className={activeTab === "customer" ? "active" : ""}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setActiveTab("customer");
+                            }}
+                          >
                             Customer Experience
                           </a>
-                          <a href="#">Employee Experience</a>
+                          <a
+                            href="#"
+                            className={activeTab === "employee" ? "active" : ""}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setActiveTab("employee");
+                            }}
+                          >
+                            Employee Experience
+                          </a>
                         </div>
+
                         <div className="right-nav">
-                          <div className="logo">
-                            <Image
-                              src={"/images/senti-ex.svg"}
-                              width={237}
-                              height={88}
-                              alt="senti ex"
-                            />
-                          </div>
                           <nav className="nav-links">
-                            <div className="sentiex">
-                              <ul>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Explore SentiCX
-                                    </div>
-                                    <div className="link-sub-title">
-                                      CX at the core of Retention & growth
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Map Customer Journey with precision
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Build a strong foundation
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Capture Insights Everywhere
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Collect Feedback that matters
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Actionable Insights
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Turn Data into Actionable Insights
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Take Meaningful Action to Improve CX
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Improve Experience wih smarter ctions
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Report and Iterte
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Drive continuous improvement
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Net Promoter Score (NPs)
-                                    </div>
-                                    <div className="link-sub-title">
-                                      CX at the core of Retention & growth
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Recovery Management
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Empower your recover strategy
-                                    </div>
-                                  </a>
-                                </li>{" "}
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Text Analysis
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Smarter Text Analysis for Smarter Business
-                                      Decisions
-                                    </div>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                            {/* Senti CX */}
-                            <div className="senticx">
-                              <ul>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Explore SentiCX
-                                    </div>
-                                    <div className="link-sub-title">
-                                      CX at the core of Retention & growth
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Map Customer Journey with precision
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Build a strong foundation
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Capture Insights Everywhere
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Collect Feedback that matters
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Actionable Insights
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Turn Data into Actionable Insights
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Take Meaningful Action to Improve CX
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Improve Experience wih smarter ctions
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Report and Iterte
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Drive continuous improvement
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Net Promoter Score (NPs)
-                                    </div>
-                                    <div className="link-sub-title">
-                                      CX at the core of Retention & growth
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Recovery Management
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Empower your recover strategy
-                                    </div>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#">
-                                    <div className="link-title">
-                                      Text Analysis
-                                    </div>
-                                    <div className="link-sub-title">
-                                      Smarter Text Analysis for Smarter Business
-                                      Decisions
-                                    </div>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
+                            {/* Employee Experience menu */}
+                            {activeTab === "employee" && (
+                              <div className="sentiex">
+                                <div className="logo">
+                                  <Image
+                                    src="/images/senti-ex.svg"
+                                    width={237}
+                                    height={88}
+                                    alt="senti ex"
+                                  />
+                                </div>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Explore SentiEX
+                                      </div>
+                                      <div className="link-sub-title">
+                                        Revolutionize employee engagement
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Make Feedback Fearless and Effortless
+                                      </div>
+                                      <div className="link-sub-title">
+                                        Create a safe & seamless feedback
+                                        culture
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Understand employee relationship
+                                      </div>
+                                      <div className="link-sub-title">
+                                        Decode feedback into insights
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Actionable Insights
+                                      </div>
+                                      <div className="link-sub-title">
+                                        Turn Data into Actionable Insights
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Turn insights into action
+                                      </div>
+                                      <div className="link-sub-title">
+                                        Ensure your organization with actionable
+                                        insights
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">Pricing</div>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            )}
+
+                            {/* Customer Experience menu */}
+                            {activeTab === "customer" && (
+                              <div className="senticx">
+                                <div className="logo">
+                                  <Image
+                                    src="/images/senti-ex.svg"
+                                    width={237}
+                                    height={88}
+                                    alt="senti ex"
+                                  />
+                                </div>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Explore SentiCX
+                                      </div>
+                                      <div className="link-sub-title">
+                                        CX at the core of Retention & growth
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Map Customer Journey with precision
+                                      </div>
+                                      <div className="link-sub-title">
+                                        Build a strong foundation
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Capture Insights Everywhere
+                                      </div>
+                                      <div className="link-sub-title">
+                                        Collect Feedback that matters
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Actionable Insights
+                                      </div>
+                                      <div className="link-sub-title">
+                                        Turn Data into Actionable Insights
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Take Meaningful Action to Improve CX
+                                      </div>
+                                      <div className="link-sub-title">
+                                        Improve Experience wih smarter ctions
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Report and Iterte
+                                      </div>
+                                      <div className="link-sub-title">
+                                        Drive continuous improvement
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Net Promoter Score (NPs)
+                                      </div>
+                                      <div className="link-sub-title">
+                                        CX at the core of Retention & growth
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Recovery Management
+                                      </div>
+                                      <div className="link-sub-title">
+                                        Empower your recover strategy
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <div className="link-title">
+                                        Text Analysis
+                                      </div>
+                                      <div className="link-sub-title">
+                                        Smarter Text Analysis for Smarter
+                                        Business Decisions
+                                      </div>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            )}
                           </nav>
                         </div>
                       </div>
