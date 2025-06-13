@@ -165,13 +165,57 @@
 }
 
 .home-nav {
-    position: absolute;
+    position: fixed;
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-    background: $dark-blue;
-    border: 1px solid $yellow;
-    padding: 8px 24px 8px 10px;
-    border-radius: 50px;
+
+    z-index: 99999;
+
+    .wrapper {
+
+
+
+
+
+        .home-sub-nav {
+            position: fixed;
+            z-index: -1;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: $dark-blue;
+            border: 1px solid $yellow;
+            width: clamp(420px, scale(450), 550px);
+            border-radius: 20px;
+            padding-bottom: 100px;
+            display: none;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-top: 50px;
+                margin-left: 50px;
+                gap: 0;
+                border: 0;
+                background: none;
+
+                li {
+                    margin-bottom: 10px;
+
+                    a {
+                        opacity: .5;
+                        background: none;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 
 }

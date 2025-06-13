@@ -1,24 +1,33 @@
 .nav {
   $self: &;
 
+  height: clamp(80px, scale(126), 130px);
+  align-content: center;
+  margin-top: scale(-20);
+  margin-bottom: scale(-20);
 
   ul {
     display: flex;
-    align-items: center;
+    align-content: center;
     transition: 0.35s;
     gap: 30px;
+    height: 100%;
+    align-content: center;
 
     #{$self}__item {
       font-size: clamp(16px, scale(18), 20px);
       padding: 0 10px;
       transition: 0.35s;
       color: $black;
+      align-content: center;
 
       &:hover {
         color: $dark-blue;
+
+        .sub-nav {
+          display: block;
+        }
       }
-
-
     }
 
     @include md {
@@ -45,20 +54,39 @@
   }
 
   &--home {
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
     ul {
       display: flex;
       align-items: center;
       transition: 0.35s;
-      gap: 8px !important;
+      gap: 0px !important;
+      justify-content: space-between;
+      background: $dark-blue;
+      border: 1px solid $yellow;
+      padding: 0px 24px 0px 6px;
+      border-radius: 50px;
+      width: clamp(420px, scale(450), 550px);
 
 
       #{$self}__item {
+        padding: 14px 10px;
+
         a {
           color: white;
-          font-size: scale(18);
+          font-size: clamp(16px, scale(18), 20px);
+          padding: 4px 10px;
+          border-radius: 20px;
+        }
 
-          &:hover {
-            color: $yellow;
+        &:hover {
+          background: rgba($yellow, .5);
+
+          .home-sub-nav {
+            display: block !important;
+
           }
         }
 
@@ -69,6 +97,7 @@
           align-items: center;
           border-radius: 50px;
           background-color: rgba($yellow, .8);
+          padding: 0 !important;
 
           a {
             svg {
@@ -79,4 +108,117 @@
       }
     }
   }
+}
+
+.sub-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin: auto;
+  background-color: white;
+  max-width: clamp(1200px, scale(1612), 2200px);
+  border-radius: 0 0 25px 25px;
+  overflow: hidden;
+  box-shadow: 0 30px 25px rgba($color: #000000, $alpha: 0.4);
+  display: none;
+
+  .container {
+    align-items: stretch;
+    padding-left: 0;
+
+    .left-tabs {
+      width: 371px;
+      background-color: $dark-blue;
+      align-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      padding-top: 50px;
+
+      a {
+        width: 80%;
+        font-size: 20px;
+        margin-bottom: 5px;
+        padding: 10px;
+        color: white;
+        border-radius: 10px 0 0 10px;
+
+        &.active {
+          color: $dark-blue;
+          background: $yellow;
+          font-weight: 600;
+        }
+      }
+
+    }
+
+    .right-nav {
+
+      padding: 50px 20px;
+      flex: 1;
+
+      .logo {
+        margin-bottom: 50px;
+
+        img {
+          width: clamp(200px, scale(237), 237px);
+          height: auto;
+        }
+      }
+
+      .nav-links {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: start;
+
+          li {
+            width: 30%;
+
+            a {
+              display: block;
+
+              .link-title {
+                position: relative;
+                color: $dark-blue;
+                font-size: clamp(20px, scale(22), 22px);
+                font-weight: 500;
+                margin-bottom: 5px;
+                display: inline-block;
+                padding-right: 30px;
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  right: 0;
+                  top: 2px;
+                  width: 22px;
+                  height: 22px;
+                  background: url('../../images/arrow.svg') no-repeat center;
+                  transition: .35s;
+                }
+              }
+
+              .link-sub-title {
+                font-size: 16px;
+                color: #263238;
+              }
+
+              &:hover {
+                .link-title {
+                  &::after {
+                    right: -10px;
+                  }
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+
 }
