@@ -285,7 +285,8 @@
                 }
 
                 &:before {
-                    width: calc(100% - 2px);
+                    left: 1px;
+                    width: calc(100% - 3px);
                     height: 0;
                     border-bottom: 2px dashed $dark-blue;
                 }
@@ -334,18 +335,21 @@
     .compliance-header {
         width: 100%;
         display: flex;
-        margin-bottom: scale(40);
+        align-items: center;
+        justify-content: space-between;
+        gap: scale(50);
 
         .section-title {
             color: $dark-blue;
-            width: 50%;
+            max-width: 50%;
+            font-size: scale(56);
         }
 
         .awards-container {
             display: flex;
             align-items: center;
             gap: scale(14);
-            width: 50%;
+            max-width: 50%;
 
             img {
                 width: scale(157);
@@ -364,7 +368,7 @@
             flex-direction: column;
             justify-content: space-between;
             background: $dark-blue;
-            border-radius: 20px;
+            border-radius: scale(20);
             padding: scale(50) scale(40);
 
             .title {

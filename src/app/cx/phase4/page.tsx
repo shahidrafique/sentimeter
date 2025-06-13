@@ -14,6 +14,15 @@ export default function page() {
               height={96}
               alt="senti ex"
             />
+            <div className="page-title">
+              <Image
+                src={"/images/icon-cx-phase-4.svg"}
+                width={80}
+                height={80}
+                alt="icon"
+              />
+              Implement Data-Driven CX Enhancements
+            </div>
           </div>
           <div className="sub-header-right">
             <a href="/cx">

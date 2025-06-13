@@ -14,6 +14,15 @@ export default function page() {
               height={96}
               alt="senti ex"
             />
+            <div className="page-title">
+              <Image
+                src={"/images/icon-cx-phase-2.svg"}
+                width={80}
+                height={80}
+                alt="icon"
+              />
+              Understand Employee Relationships
+            </div>
           </div>
           <div className="sub-header-right">
             <a href="/cx">

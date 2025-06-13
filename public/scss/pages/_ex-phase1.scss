@@ -24,7 +24,6 @@
 			flex: 1;
 			position: relative;
 			padding-right: scale(100);
-			border-right: 1px solid $gray-light;
 			align-content: center;
 
 			h2 {
@@ -215,14 +214,13 @@
 	.proactive {
 		.card {
 			>.container {
-				align-items: center;
 
 				>.col {
+					align-content: center;
 
 					&:nth-child(1) {
 						flex: 2.2;
 						padding-right: scale(50);
-						border-right: 1px solid $gray-light;
 					}
 
 					&:nth-child(2) {
@@ -398,7 +396,7 @@
 
 	.customer-journey-mapping {
 
-		.card {
+		> .card {
 			@extend .gradient;
 			color: white;
 			display: flex;
@@ -406,12 +404,23 @@
 			gap: scale(50);
 
 			>.container {
-				gap: scale(10);
+				gap: scale(30);
 
 				.cards {
 					max-width: scale(1200);
 				}
+
+				h3 {
+
+					span {
+						display: block;
+						color: $yellow;
+						font-size: scale(24);
+						margin-bottom: scale(16);
+					}
+				}
 			}
+
 		}
 	}
 
@@ -571,6 +580,14 @@
 		.card {
 			@extend .gradient;
 			color: white;
+
+			> .container {
+				justify-content: space-between;
+			}
+
+			.content-group {
+				max-width: scale(700);
+			}
 
 			.button {
 				margin-top: scale(30);

@@ -32,8 +32,7 @@ export default function page() {
                 <p><span>Why It Matters:</span> “Collecting feedback effectively is the foundation of building actionable recovery strategies.”</p>
                 <div className="row">
                   <a href="#" className="link">
-                    <span>Discover Seamless</span>
-                    <span>Feedback Collection</span>
+                    Discover Seamless Feedback Collection
                   </a>
                   <a href="#" className="button">Learn More</a>
                 </div>

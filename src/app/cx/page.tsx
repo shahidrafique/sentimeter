@@ -178,8 +178,8 @@ export default function page() {
       {/* Single Platform for Centralized Customer Data */}
       <section className="section has-bg red-light single-platform">
         <div className="card">
-          <div className="container">
-            <div className="single-platform-left">
+          <div className="container has-col-border">
+            <div className="col single-platform-left">
               <Image
                 src={"/images/icon-single-platform.svg"}
                 width={85}
@@ -367,7 +367,7 @@ export default function page() {
             <hr />
           </div>
           <div className="card-blocks">
-            <div className="card-blocks-item blue">
+            <div className="card-blocks-item">
               <Image
                 src={"/images/icon-design-experience.svg"}
                 width={48}
@@ -382,7 +382,7 @@ export default function page() {
                 intelligence to drive customer retention and revenue expansion.
               </p>
             </div>
-            <div className="card-blocks-item blue">
+            <div className="card-blocks-item">
               <Image
                 src={"/images/icon-convert-cx-insights.svg"}
                 width={64}

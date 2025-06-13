@@ -29,12 +29,14 @@ export default function DemoForm() {
               <input type="email" name="workEmail" placeholder="Work email*" />
             </div>
             <div className="form-group">
-              <h4>What are you looking to achieve with Sentimeter</h4>
-              <textarea id="message" rows={4} />
+              <h5>
+                What are you looking to achieve with Sentimeter<span>*</span>
+              </h5>
+              <input type="text" name="message" placeholder="message*" />
             </div>
-            <div className="policy-note">
+            <p className="policy-note">
               By submitting, you agree to Sentimeter's <a href="#">privacy policy</a> and agree to receive emails from Sentimeter. You can opt out anytime.
-            </div>
+            </p>
             <a href="#" className="button">Schedule your personalized demo </a>
           </form>
           <div className="trusted-brands">

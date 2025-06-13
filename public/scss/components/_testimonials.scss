@@ -34,12 +34,20 @@
       }
     }
 
+    &-content {
+
+      svg {
+        width: scale(66);
+        height: auto;
+      }
+    }
+
     &-text {
-      font-size: scale(24);
+      font-size: clamp(18px, scale(24), 26px);
     }
 
     &-author {
-      font-size: scale(30);
+      font-size: clamp(20px, scale(30), 32px);
       color: #3B4752;
       font-weight: 500;
       font-style: italic;
@@ -47,7 +55,7 @@
 
     &-role {
       color: $red;
-      font-size: scale(24);
+      font-size: clamp(16px, scale(24), 26px);
       font-style: italic;
     }
   }
@@ -72,10 +80,11 @@
     margin-top: scale(30);
 
     .embla__dot {
-      width: scale(16);
-      height: scale(16);
+      width: clamp(10px, scale(16), 18px);
+      height: clamp(10px, scale(16), 18px);
       background-color: $gray-light;
       border-radius: 50%;
+      padding: 0;
       border: none;
       cursor: pointer;
       transition: background-color 0.3s;

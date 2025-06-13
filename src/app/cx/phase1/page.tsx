@@ -17,6 +17,15 @@ export default function page() {
               height={96}
               alt="senti ex"
             />
+            <div className="page-title">
+              <Image
+                src={"/images/icon-cx-phase-1.svg"}
+                width={80}
+                height={80}
+                alt="icon"
+              />
+              Accurately Map & Optimize Customer Journeys
+            </div>
           </div>
           <div className="sub-header-right">
             <a href="/cx">
@@ -37,16 +46,10 @@ export default function page() {
         <div className="container">
           <div className="col">
             <div className="content">
-              <h3>Make Feedback Fearless and Effortless</h3>
-              <h2 className="title">
-                Create a Safe & Seamless <span>Feedback</span> Culture
-              </h2>
+              <h3>Create a Data-Driven CX Strategy</h3>
+              <h4>Transform the way you understand your customers’ paths to success.</h4>
               <p>
-                Sentimeter empowers organizations to build a culture where
-                feedback is effortless, fearless, and actionable. By ensuring
-                every voice is heard—securely and inclusively—you can uncover
-                the insights needed to drive real employee satisfaction and
-                retention.
+                At Sentimeter, we guide you in crafting customer journeys tailored to your organization’s unique processes. This isn’t just a map; it’s a strategic blueprint for uncovering insights, addressing drop-offs, and elevating experiences.
               </p>
               <Link href="/demo-form" className="button button--outline">
                 Request a Demo
@@ -75,8 +78,10 @@ export default function page() {
               height={88}
               alt="icon customer journey maping"
             />
-            <h5>Customer Journey Mapping:</h5>
-            <h3>The Key to CX Success</h3>
+            <h3>
+              <span>Customer Journey Mapping:</span>
+              The Key to CX Success
+            </h3>
           </div>
           <div className="container">
             <section className="features">
@@ -598,25 +603,29 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="content-group has-inner-text-yellow">
-              <Image
-                src={"/images/cx/phase1/icon-business-impact.png"}
-                width={118}
-                height={118}
-                alt="icon business impact"
-              />
-              <h2>
-                <span>The Business Impact of Customer Journey Mapping</span>
-              </h2>
-              <p>
-                Customer journey mapping isn’t just about visualizing—it’s about
-                understanding and improving. This foundational exercise enables
-                you to see your business through your customers’ eyes, identify
-                hidden opportunities, and create strategies that matter.
-              </p>
-              <h5>Begin Your Customer Journey Optimization Now</h5>
-              <Link href="/demo-form" className="button button--outline">
-                Request a Demo
-              </Link>
+              <div className="section-header">
+                <Image
+                  src={"/images/cx/phase1/icon-business-impact.png"}
+                  width={118}
+                  height={118}
+                  alt="icon business impact"
+                />
+                <h2>
+                  <span>The Business Impact of Customer Journey Mapping</span>
+                </h2>
+              </div>
+              <div className="section-header">
+                <p>
+                  Customer journey mapping isn’t just about visualizing—it’s about
+                  understanding and improving. This foundational exercise enables
+                  you to see your business through your customers’ eyes, identify
+                  hidden opportunities, and create strategies that matter.
+                </p>
+                <h5>Begin Your Customer Journey Optimization Now</h5>
+                <Link href="/demo-form" className="button button--outline">
+                  Request a Demo
+                </Link>
+              </div>
             </div>
             <div className="col">
               <Image

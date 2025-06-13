@@ -27,6 +27,24 @@
     align-items: center;
   }
 
+  &.has-col-border {
+
+    > .col {
+      &:first-child {
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 1px;
+          height: 100%;
+          background: $gray-light;
+          position: absolute;
+          right: scale(-25);
+          top: 0;
+        }
+      }
+    }
+  }
 }
 
 .section {
@@ -364,10 +382,6 @@
 
   h2 {
     font-size: scale(50);
-  }
-
-  p {
-    font-weight: 500;
   }
 
   .row {

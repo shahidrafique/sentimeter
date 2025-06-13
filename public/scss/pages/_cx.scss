@@ -3,8 +3,6 @@
         flex: 3;
         position: relative;
         padding-right: scale(100);
-        border-right: 1px solid $gray-light;
-
 
         h3 {
             // font-size: scale(34);
@@ -64,7 +62,6 @@
         flex: 1.4;
         position: relative;
         padding-right: scale(100);
-        border-right: 1px solid $gray-light;
 
 
         h3 {
@@ -135,7 +132,6 @@
     }
 
     .cards-holder {
-        margin-top: scale(50);
 
         .phase-card {
             display: flex;
@@ -283,11 +279,12 @@
         &-item {
             border: 0;
             box-shadow: none;
-            background: $blue-lightest;
+            background: rgba($blue-lightest, 50%);
             border-top-color: $dark-blue;
             position: relative;
             overflow: hidden;
             padding: scale(60);
+            gap: scale(20);
 
             &::before {
                 content: '';
