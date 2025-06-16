@@ -14,6 +14,9 @@
     .content {
         max-width: 70%;
 
+        @include xs {
+            max-width: none;
+        }
 
         .subtitle {
             color: $yellow;
@@ -26,8 +29,12 @@
             text-transform: uppercase;
             margin: 0;
             line-height: 1.2;
-            font-size: clamp(42px, scale(50), 60px);
+            font-size: clamp(24px, scale(50), 60px);
             font-weight: 500;
+
+            @include xs {
+                text-align: center;
+            }
 
             span {
                 color: $yellow;
@@ -35,7 +42,7 @@
         }
 
         p {
-            margin-bottom: 30px;
+            margin-bottom: scale(30);
             max-width: 700px;
         }
     }

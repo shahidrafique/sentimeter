@@ -1,7 +1,7 @@
-$phone-width: 767px;
-$tablet-width: 991px;
-$desktop-width: 1024px;
-$desktop-screen: 1280px;
+$phone-width: 767px;      // xs
+$tablet-width: 991px;     // sm
+$desktop-width: 1024px;   // md
+$desktop-screen: 1280px;  // lg
 
 @mixin lg {
   @media (max-width: #{$desktop-screen}) {

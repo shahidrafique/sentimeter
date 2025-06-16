@@ -51,7 +51,7 @@
                     .col {
                         display: flex;
                         flex-direction: column;
-                        gap: scale(30);
+                        gap: clamp(20px, scale(30), 35px);
                         justify-content: space-around;
                     }
 
@@ -267,7 +267,7 @@
     }
 
     .container {
-        gap: scale(30);
+        gap: clamp(20px, scale(30), 35px);
     }
 
 

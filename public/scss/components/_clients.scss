@@ -19,7 +19,7 @@
     .client-logos-container {
         display: flex;
         align-items: center;
-        gap: scale(50);
+        gap: clamp(30px, scale(50), 55px);
         animation: scroll 20s linear infinite;
         padding-right: scale(50);
 

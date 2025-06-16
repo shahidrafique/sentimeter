@@ -83,7 +83,7 @@
 		}
 
 		.container {
-			gap: scale(30);
+			gap: clamp(20px, scale(30), 35px);
 		}
 
 
@@ -370,10 +370,9 @@
 			color: white;
 			display: flex;
 			flex-direction: column;
-			gap: scale(50);
+			gap: clamp(30px, scale(50), 55px);
 
 			>.container {
-				gap: scale(30);
 
 				.cards {
 					max-width: scale(1200);
@@ -384,7 +383,7 @@
 					span {
 						display: block;
 						color: $yellow;
-						font-size: scale(24);
+						font-size: clamp(12px, scale(24), 26px);
 						margin-bottom: scale(16);
 					}
 				}
@@ -489,6 +488,10 @@
 				gap: scale(200);
 				width: 100%;
 				align-items: center;
+
+				@include xs {
+					flex-direction: column;
+				}
 
 				.col {
 

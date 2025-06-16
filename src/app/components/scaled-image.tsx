@@ -18,6 +18,7 @@ export default function ScaledImage({
   alt,
   className = "",
   style = {},
+  min,
   ...rest
 }: ScaledImageProps) {
   const minWidth = width - width * 0.3; // 5% less

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import ScaledImage from "../scaled-image";
 
 export default function Hero() {
   return (
@@ -58,7 +59,7 @@ export default function Hero() {
         </div>
         <div className="col">
           <div className="image-holder">
-            <Image
+            <ScaledImage
               src="/images/laptop.png"
               width={844}
               height={511}

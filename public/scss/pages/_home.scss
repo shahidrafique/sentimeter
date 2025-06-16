@@ -137,6 +137,9 @@
     @extend .gradient;
 
     .section-title {
+        @include xs {
+            text-align: center;
+        }
 
         span {
             color: $yellow;
@@ -167,7 +170,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: scale(50);
+        gap: clamp(30px, scale(50), 55px);
 
         .section-title {
             text-align: center;
@@ -321,7 +324,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: scale(50);
+        gap: clamp(30px, scale(50), 55px);
         margin-bottom: scale(30);
 
         .section-title {
@@ -345,7 +348,7 @@
 
     .compliance-blocks {
         display: flex;
-        gap: scale(30);
+        gap: clamp(20px, scale(30), 35px);
 
         .box {
             flex: 1;

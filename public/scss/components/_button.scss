@@ -92,8 +92,8 @@
   background: #003B6D;
   background: linear-gradient(134deg, rgba(0, 59, 109, 1) 0%, rgba(0, 114, 211, 1) 100%);
   color: $white;
-  font-size: clamp(16px, scale(18), 24px);
-  padding: scale(5) scale(20) scale(5) scale(5);
+  font-size: clamp(14px, scale(18), 24px);
+  padding: 5px 20px 5px 5px;
   border-radius: 100px;
   position: relative;
   align-items: center;
@@ -106,7 +106,7 @@
   &:before {
     content: "";
     display: block;
-    height: clamp(28px, scale(30), 36px);
+    height: clamp(22px, scale(30), 36px);
     aspect-ratio: 1;
     border-radius: clamp(20px, scale(24), 28px);
     background: url("/images/arrow.svg") no-repeat center $yellow;

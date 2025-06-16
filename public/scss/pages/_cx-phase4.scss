@@ -80,7 +80,7 @@
   }
 
   .container {
-    gap: scale(30);
+    gap: clamp(20px, scale(30), 35px);
   }
 
   .col {
@@ -113,7 +113,7 @@
 
       .row {
         display: flex;
-        gap: scale(30);
+        gap: clamp(20px, scale(30), 35px);
 
         .col {
           flex: 1;

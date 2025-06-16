@@ -14,7 +14,7 @@ export default function Home() {
     <article className="home">
       <Hero />
       <Clients showHeader />
-      <Problems />
+      {/* <Problems /> */}
       <PowerInsights />
       <StrategyPath />
       <SentiInsightsTabs />

@@ -36,7 +36,7 @@ footer {
 
   .row {
     display: flex;
-    gap: scale(30);
+    gap: clamp(20px, scale(30), 35px);
 
     .row-cell {
       flex: 0 1 50%;

@@ -44,7 +44,7 @@
           overflow: hidden;
           box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
           text-align: center;
-          gap: scale(50);
+          gap: clamp(30px, scale(50), 55px);
 
           h4 {
             font-size: scale(26);

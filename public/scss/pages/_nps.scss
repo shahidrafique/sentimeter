@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     max-width: scale(1230);
-    gap: scale(50);
+    gap: clamp(30px, scale(50), 55px);
 
     .header-copy {
       text-align: center;
@@ -13,12 +13,12 @@
 
     .nps-platform-points {
       display: flex;
-      gap: scale(30);
+      gap: clamp(20px, scale(30), 35px);
 
       .col {
         display: flex;
         flex-direction: column;
-        gap: scale(30);
+        gap: clamp(20px, scale(30), 35px);
         justify-content: space-around;
 
         p {
@@ -80,7 +80,7 @@
   }
 
   .container {
-    gap: scale(30);
+    gap: clamp(20px, scale(30), 35px);
     flex-direction: column;
   }
 

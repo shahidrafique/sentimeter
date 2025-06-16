@@ -8,21 +8,21 @@ h5 {
 }
 
 h2 {
-    font-size: clamp(48px, scale(56), 66px);
+    font-size: clamp(32px, scale(56), 66px);
     line-height: 1.2;
 }
 
 h3 {
-    font-size: clamp(32px, scale(42), 48px);
+    font-size: clamp(24px, scale(42), 48px);
     line-height: 1.2;
 }
 
 h4 {
-    font-size: scale(30);
+    font-size: clamp(20px, scale(30), 32px);
 }
 
 h5 {
-    font-size: scale(22);
+    font-size: clamp(18px, scale(22), 24px);
 }
 
 p {

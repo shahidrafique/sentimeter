@@ -5,10 +5,21 @@
   padding: 0 20px;
   display: flex;
   position: relative;
-  gap: scale(50);
+  gap: clamp(30px, scale(50), 55px);
 
   @include md {
     max-width: none;
+  }
+
+  @include xs {
+    flex-direction: column;
+  }
+
+  > .col {
+    @include xs {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
   }
 
   &.w-full {
@@ -44,13 +55,19 @@
           right: scale(-25);
           top: 0;
         }
+
+        @include xs {
+          &::after {
+            content: none;
+          }
+        }
       }
     }
   }
 }
 
 .section {
-  padding: scale(60) 0;
+  padding: clamp(30px, scale(60), 68px) 0;
 
   &.blue {
     background: $blue-lightest;
@@ -82,7 +99,7 @@
     }
 
     h2 {
-      font-size: scale(50);
+      font-size: clamp(26px, scale(50), 56px);
       margin-bottom: 10px;
     }
 
@@ -180,7 +197,12 @@
 .features {
   .cards {
     display: flex;
-    gap: scale(30);
+    gap: clamp(20px, scale(30), 35px);
+
+    @include xs {
+      flex-direction: column;
+      max-width: none !important;
+    }
 
     .card {
       border: 1px solid $green;
@@ -249,7 +271,7 @@
   border-radius: 16px;
   background-color: $white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: scale(50) 0;
+  padding: clamp(20px, scale(50), 55px) 0;
 }
 
 
@@ -257,7 +279,7 @@
 .analyze-features {
   display: flex;
   flex-direction: column;
-  gap: scale(30);
+  gap: clamp(20px, scale(30), 35px);
   margin-top: scale(30);
 
   .feature {
@@ -498,20 +520,25 @@
 // Card Blocks
 .card-blocks {
   display: flex;
-  gap: scale(30);
+  gap: clamp(15px, scale(30), 32px);
+
+  @include xs {
+    flex-direction: column;
+  }
 
   &-item {
     background: $white;
     border-style: solid;
     border-width: scale(10) 1px 1px;
     border-color: $blue;
-    padding: scale(25) scale(40);
+    padding: clamp(15px, scale(25), 30px) clamp(20px, scale(40), 35px);
     border-radius: 10px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: scale(15);
+    gap: clamp(10px, scale(15), 20px);
 
     p {
       margin: 0;

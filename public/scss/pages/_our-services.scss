@@ -83,12 +83,12 @@
   }
 
   .checklist {
-    gap: scale(50);
+    gap: clamp(30px, scale(50), 55px);
   }
 
   .row {
     display: flex;
-    gap: scale(50);
+    gap: clamp(30px, scale(50), 55px);
     margin: scale(20) 0 scale(50);
 
     .col {
@@ -141,7 +141,7 @@
 
     .row {
       display: flex;
-      gap: scale(50);
+      gap: clamp(30px, scale(50), 55px);
       margin: scale(20) 0;
 
       .col {
@@ -173,7 +173,7 @@
     margin-top: scale(50);
 
     &-item {
-      gap: scale(30);
+      gap: clamp(20px, scale(30), 35px);
 
       .row {
         display: flex;
@@ -286,7 +286,7 @@
   }
 
   .container {
-    gap: scale(30);
+    gap: clamp(20px, scale(30), 35px);
   }
 
   .col {
