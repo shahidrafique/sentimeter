@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 import Clients from "../components/clients";
 import Link from "next/link";
 import ScaledImage from "../components/scaled-image";
