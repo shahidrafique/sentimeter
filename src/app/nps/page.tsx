@@ -1,5 +1,6 @@
 import Image from "next/image";
 import StrategyPath from "../components/home/strategy-path";
+import ScaledImage from "../components/scaled-image";
 
 export default function page() {
   return (
@@ -32,7 +33,7 @@ export default function page() {
               </div>
             </div>
             <div className="col">
-              <Image
+              <ScaledImage
                 src={"/images/illustration-nps-survey-platform.svg"}
                 width={370}
                 height={370}
@@ -61,7 +62,7 @@ export default function page() {
             <div className="card-blocks">
               <div className="card-blocks-item blue">
                 <div className="row">
-                  <Image
+                  <ScaledImage
                     src={"/images/nps-icon-add-segment.svg"}
                     width={92}
                     height={82}
@@ -75,7 +76,7 @@ export default function page() {
               </div>
               <div className="card-blocks-item blue">
                 <div className="row">
-                  <Image
+                  <ScaledImage
                     src={"/images/nps-icon-automate.svg"}
                     width={92}
                     height={82}
@@ -89,7 +90,7 @@ export default function page() {
               </div>
               <div className="card-blocks-item blue">
                 <div className="row">
-                  <Image
+                  <ScaledImage
                     src={"/images/nps-icon-analyze.svg"}
                     width={92}
                     height={82}
@@ -103,7 +104,7 @@ export default function page() {
               </div>
               <div className="card-blocks-item blue">
                 <div className="row">
-                  <Image
+                  <ScaledImage
                     src={"/images/nps-icon-share.svg"}
                     width={92}
                     height={82}
@@ -117,7 +118,7 @@ export default function page() {
               </div>
               <div className="card-blocks-item blue">
                 <div className="row">
-                  <Image
+                  <ScaledImage
                     src={"/images/nps-icon-distribute.svg"}
                     width={92}
                     height={82}
@@ -131,7 +132,7 @@ export default function page() {
               </div>
               <div className="card-blocks-item blue">
                 <div className="row">
-                  <Image
+                  <ScaledImage
                     src={"/images/nps-icon-conduct-sentiment.svg"}
                     width={92}
                     height={82}
@@ -153,7 +154,7 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="row">
-              <Image
+              <ScaledImage
                 src={"/images/icon-dashboard.svg"}
                 width={90}
                 height={90}
@@ -164,57 +165,68 @@ export default function page() {
               </h3>
             </div>
             <div className="col content">
-              <div className="row">
-                <div className="col">
-                  <div className="icon">
-                    <Image
-                      src={"/images/icon-loop.svg"}
-                      width={86}
-                      height={86}
-                      alt="icon loop"
-                    />
+              <div className="features">
+                <div className="cards no-border yellow">
+                  <div className="card">
+                    <div className="icon">
+                      <ScaledImage
+                        src={"/images/icon-loop.svg"}
+                        width={86}
+                        height={86}
+                        alt="icon loop"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <h4>Close the loop with Response Management</h4>
+                      <p>
+                        Centralize customer feedback management with a streamlined workflow. Assign tickets, track progress, and ensure resolution—seamlessly integrating NPS® insights into your daily operations.
+                      </p>
+                    </div>
                   </div>
-                  <h4>Close the loop with Response Management</h4>
-                  <p>
-                    Centralize customer feedback management with a streamlined workflow. Assign tickets, track progress, and ensure resolution—seamlessly integrating NPS® insights into your daily operations.
-                  </p>
-                </div>
-
-                <div className="col">
-                  <div className="icon">
-                    <Image
-                      src={"/images/icon-setup.svg"}
-                      width={86}
-                      height={86}
-                      alt="icon setup"
-                    />
+                  <div className="card">
+                    <div className="icon">
+                      <ScaledImage
+                        src={"/images/icon-setup.svg"}
+                        width={86}
+                        height={86}
+                        alt="icon setup"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <h4>Set-up your NPS® Survey Platform at one go</h4>
+                      <p>
+                        Customize every aspect of your NPS® survey—incorporate your brand identity, tailor email content, and preview surveys instantly to ensure a professional, engaging experience.
+                      </p>
+                    </div>
                   </div>
-                  <h4>Set-up your NPS® Survey Platform at one go</h4>
-                  <p>
-                    Customize every aspect of your NPS® survey—incorporate your brand identity, tailor email content, and preview surveys instantly to ensure a professional, engaging experience.
-                  </p>
-                </div>
-
-                <div className="col">
-                  <div className="icon">
-                    <Image
-                      src={"/images/icon-integrate.svg"}
-                      width={86}
-                      height={86}
-                      alt="icon integrate"
-                    />
+                  <div className="card">
+                    <div className="icon">
+                      <ScaledImage
+                        src={"/images/icon-integrate.svg"}
+                        width={86}
+                        height={86}
+                        alt="icon integrate"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <h4>Integrate with your existing system using Workflows & Alerts</h4>
+                      <p>
+                        Automate response management with intelligent alerts and rule-based assignments. Ensure timely follow-ups, enhance customer support efficiency, and proactively address concerns.
+                      </p>
+                    </div>
                   </div>
-                  <h4>Integrate with your existing system using Workflows & Alerts</h4>
-                  <p>
-                    Automate response management with intelligent alerts and rule-based assignments. Ensure timely follow-ups, enhance customer support efficiency, and proactively address concerns.
-                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="col text-center">
-          <h3>What’s more to our <span>NPS®</span> Survey Platform?</h3>
+        <div className="more-to-nps">
+          <h3>
+            What’s more to our
+            <span className="text-blue">NPS®</span>
+            {" "}
+            <span className="text-dark-blue">Survey Platform?</span>
+          </h3>
           <p>
             Discover the essential features that make our NPS® survey platform a game-changer in customer experience management.
           </p>
@@ -228,23 +240,27 @@ export default function page() {
             <div className="col content">
               <div className="content-group has-inner-text-green">
                 <div className="section-symbol">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-segment-audience.svg"}
                     width={84}
                     height={84}
                     alt="icon segment audience"
                   />
                 </div>
-                <h3>
-                  <span>Segment audience</span> with custom fields
-                </h3>
-                <p>
-                  Uncover deeper insights by sorting your Net Promoter Score℠ using custom fields like location, date of feedback submission, etc. Segment your customers instantly and adopt different follow-up strategies. With our NPS® platform, it’s as easy as things can get.
-                </p>
+                <div className="section-header">
+                  <h3>
+                    <span>Segment audience</span> with custom fields
+                  </h3>
+                </div>
+                <div className="content">
+                  <p>
+                    Uncover deeper insights by sorting your Net Promoter Score℠ using custom fields like location, date of feedback submission, etc. Segment your customers instantly and adopt different follow-up strategies. With our NPS® platform, it’s as easy as things can get.
+                  </p>
+                </div>
               </div>
             </div>
             <div className="col">
-              <Image
+              <ScaledImage
                 src={"/images/illustration-segment-audience.png"}
                 width={500}
                 height={452}
@@ -260,7 +276,7 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="col">
-              <Image
+              <ScaledImage
                 src={"/images/illustration-collect-feedback-periodically.png"}
                 width={542}
                 height={476}
@@ -270,19 +286,23 @@ export default function page() {
             <div className="col content">
               <div className="content-group has-inner-text-yellow">
                 <div className="section-symbol">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-collect-feedback.svg"}
                     width={84}
                     height={84}
                     alt="icon collect feedback"
                   />
                 </div>
-                <h3>
-                  Collect <span>feedback</span> periodically
-                </h3>
-                <p>
-                  Schedule surveys for periodic intervals. Configure the survey settings once and forget about it. Set up a cyclic feedback system. Automate the process; save your time and efforts with our NPS® survey platform.
-                </p>
+                <div className="section-header">
+                  <h3>
+                    Collect <span>feedback</span> periodically
+                  </h3>
+                </div>
+                <div className="content">
+                  <p>
+                    Schedule surveys for periodic intervals. Configure the survey settings once and forget about it. Set up a cyclic feedback system. Automate the process; save your time and efforts with our NPS® survey platform.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -296,23 +316,27 @@ export default function page() {
             <div className="col content">
               <div className="content-group has-inner-text-red">
                 <div className="section-symbol">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-throttle-surveys.svg"}
                     width={84}
                     height={84}
                     alt="icon throttle surveys"
                   />
                 </div>
-                <h3>
-                  Throttle your <span>surveys</span>
-                </h3>
-                <p>
-                  Don’t bombard your customers with one NPS® survey after another. Why annoy them? Use Sentimeter’s NPS® survey platform’s Throttling feature to ensure no respondent is surveyed until a configured time. Enter the days, 90 for example, and the batch of respondents will be surveyed only after a quarter.
-                </p>
+                <div className="section-header">
+                  <h3>
+                    Throttle your <span>surveys</span>
+                  </h3>
+                </div>
+                <div className="content">
+                  <p>
+                    Don’t bombard your customers with one NPS® survey after another. Why annoy them? Use Sentimeter’s NPS® survey platform’s Throttling feature to ensure no respondent is surveyed until a configured time. Enter the days, 90 for example, and the batch of respondents will be surveyed only after a quarter.
+                  </p>
+                </div>
               </div>
             </div>
             <div className="col">
-              <Image
+              <ScaledImage
                 src={"/images/illustration-throttle-your-surveys.png"}
                 width={641}
                 height={371}
@@ -328,7 +352,7 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="col">
-              <Image
+              <ScaledImage
                 src={"/images/illustration-identify-and-prioritize.png"}
                 width={602}
                 height={476}
@@ -338,19 +362,23 @@ export default function page() {
             <div className="col content">
               <div className="content-group has-inner-text-blue">
                 <div className="section-symbol">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-identify-and-prioritize.svg"}
                     width={84}
                     height={84}
                     alt="icon identify and prioritize"
                   />
                 </div>
-                <h3>
-                  Identify and <span>Prioritize</span> What Matters Most
-                </h3>
-                <p>
-                  Gain a 360-degree view of your customer’s journey—track every interaction, identify pain points, and refine your NPS® strategy for maximum impact.
-                </p>
+                <div className="section-header">
+                  <h3>
+                    Identify and <span>Prioritize</span> What Matters Most
+                  </h3>
+                </div>
+                <div className="content">
+                  <p>
+                    Gain a 360-degree view of your customer’s journey—track every interaction, identify pain points, and refine your NPS® strategy for maximum impact.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

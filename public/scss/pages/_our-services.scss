@@ -9,12 +9,22 @@
     }
   }
 
-  .section-header {
+  .right-path-for-org {
+
+    .card {
+      .strategy-path {
+        background-color: $white;
+      }
+    }
+  }
+
+  .content-header {
     position: relative;
     z-index: 1;
+    margin-bottom: scale(30);
 
-    h3 {
-      margin-bottom: scale(25);
+    .title {
+      font-size: scale(50);
 
       span {
         color: $white;
@@ -43,7 +53,7 @@
   );
 
 @each $name, $color in $colors {
-  .section.#{$name} .section-header h3 {
+  .section.#{$name} .content-header .title {
     span {
       background: $color;
 
@@ -77,17 +87,13 @@
   }
 
   .row {
+    display: flex;
     gap: scale(50);
     margin: scale(20) 0 scale(50);
 
     .col {
       display: flex;
       gap: scale(15);
-
-      img {
-        width: scale(92);
-        height: auto;
-      }
 
       p {
         display: flex;
@@ -110,12 +116,21 @@
 .technology-integration {
   padding-top: 0 !important;
 
+  .section-header {
+    max-width: scale(800);
+
+    p {
+      margin: 0;
+    }
+  }
+
   .card {
     background: $green;
     color: white;
     align-items: flex-start;
 
     .container {
+      gap: 0;
       flex-direction: column;
     }
 
@@ -127,28 +142,25 @@
     .row {
       display: flex;
       gap: scale(50);
-      margin: scale(30) 0;
+      margin: scale(20) 0;
 
       .col {
         display: flex;
         flex-direction: column;
-        gap: scale(20);
+        gap: scale(15);
 
-        img {
-          width: scale(40);
-          height: auto;
+        p {
+          margin: 0;
         }
       }
 
-      &.iintegration-logos {
-        gap: scale(20);
-        margin: scale(10) 0 0;
+    }
 
-        img {
-          width: auto;
-          height: scale(48);
-        }
-      }
+    .integration-logos {
+      display: flex;
+      gap: scale(20);
+      margin: scale(10) 0 0;
+      align-items: center;
     }
   }
 }
@@ -166,11 +178,11 @@
       .row {
         display: flex;
         align-items: center;
-      }
+        gap: scale(10);
 
-      img {
-        width: scale(56);
-        height: auto;
+        h5 {
+          color: $yellow;
+        }
       }
 
       .checklist {
@@ -187,51 +199,49 @@
   .card {
 
     >.container {
-      align-items: center;
 
       >.col {
 
-        >h5 {
-          text-align: center;
-        }
+        &:first-child {
+          flex: 1.6;
+          padding-right: scale(50);
 
-        .managed-services {
-          display: flex;
-          gap: scale(20);
-          margin-top: scale(30);
+          h2 {
+            margin: 0;
+          }
 
-          .col {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            h5 {
-              color: $red;
-            }
-
-            p {
-              margin: scale(10) 0 0;
-            }
-
-            &:first-child {
-              text-align: right;
-            }
+          p {
+            margin: 0;
           }
         }
 
-        &:nth-child(1) {
-          flex: 1.5;
-          padding-right: scale(50);
-        }
-
-        &:nth-child(2) {
-          flex: 3.5;
+        &:last-child {
+          flex: 3.4;
           padding-left: scale(50);
-          border-left: 1px solid $gray-light;
 
-          .container {
-            gap: 30px;
-            align-items: center;
+          .managed-services {
+            display: flex;
+            gap: scale(20);
+            margin-top: scale(30);
+
+            > .col {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              h5 {
+                font-size: scale(20);
+              }
+
+              p {
+                font-size: scale(18);
+                margin: scale(10) 0 0;
+              }
+
+              &:first-child {
+                text-align: right;
+              }
+            }
           }
         }
       }
@@ -252,32 +262,16 @@
 // launch-technology-integration
 .launch-technology-integration {
 
-  h3 {
-    span {
-      color: $blue;
-    }
-  }
-
-  .container {
-    align-items: center;
-  }
-
   .col {
 
-    &:nth-child(1) {
-      flex: 2.3;
-      padding-right: scale(50);
+    &:first-child {
+      flex: 2.4;
+      padding-right: scale(40);
     }
 
-    &:nth-child(2) {
-      flex: 2.7;
-      padding-left: scale(50);
-      border-left: 1px solid $gray-light;
-
-      img {
-        width: scale(930);
-        height: auto
-      }
+    &:last-child {
+      flex: 2.6;
+      padding-left: scale(40);
     }
   }
 }
@@ -285,6 +279,7 @@
 
 // specific-framework
 .specific-framework {
+
   .card {
     @extend .gradient;
     color: white;
@@ -294,65 +289,25 @@
     gap: scale(30);
   }
 
-
-
   .col {
-    &:first-child {
-      img {
-        width: scale(125);
-        height: scale(125);
-      }
-    }
 
     &.content {
       max-width: 60%;
 
-      h3 {
-        margin-bottom: scale(40);
+      .section-header {
+        margin-top: scale(15);
 
-        span {
-          color: $yellow;
-        }
-      }
-
-      p {
-
-        span {
-          color: $yellow;
-        }
-      }
-
-      h5 {
-        font-size: scale(22);
-        color: $yellow;
-        font-weight: 500;
-        font-style: italic;
-        margin: 10px 0;
-      }
-
-      .row {
-        display: flex;
-        gap: 30px;
-
-        .col {
-          flex: 1;
-
-          .icon {
-            img {
-              width: scale(86);
-              height: scale(86);
-            }
-          }
-
-          h4 {
-            font-size: scale(22);
-            margin: 10px 0;
+        h3 {
+          span {
             color: $yellow;
           }
+        }
+      }
 
-          p {
-            margin-top: 0;
-          }
+
+      p {
+        span {
+          color: $yellow;
         }
       }
     }

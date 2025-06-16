@@ -38,12 +38,6 @@
     .feature {
       align-items: center;
 
-      img {
-        max-width: scale(50);
-        max-height: scale(50);
-        height: auto;
-      }
-
       .content {
         border-left: 2px solid $blue;
         padding-left: scale(30);
@@ -79,42 +73,51 @@
 
 // share-insights-securely
 .share-insights-securely {
+  padding-bottom: 0 !important;
 
-  .features-capsule-item {
+  .features-capsule {
+    margin-top: scale(20);
 
-    .icon {
-      background: $blue-light;
-    }
-
-    .content {
-
-      span {
-        color: $blue-light;
-      }
-    }
-
-    &:nth-child(2n + 2) {
+    .features-capsule-item {
 
       .icon {
-        background: $blue;
+        background: $blue-light;
       }
 
       .content {
 
         span {
-          color: $blue;
+          color: $blue-light;
+        }
+      }
+
+      &:nth-child(2n + 2) {
+
+        .icon {
+          background: $blue;
+        }
+
+        .content {
+
+          span {
+            color: $blue;
+          }
         }
       }
     }
   }
 
+  .col {
+    flex: 1;
+  }
+
   &-left {
-    flex: 2.4;
+    flex: 0 0 45%;
     padding-right: scale(80);
   }
 
   &-right {
-    flex: 2.6;
+    flex: 0 0 55%;
     padding-left: scale(80);
     display: flex;
     flex-direction: column;

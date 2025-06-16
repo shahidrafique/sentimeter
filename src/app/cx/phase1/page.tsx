@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Clients from "../../components/clients";
 import Link from "next/link";
+import ScaledImage from "@/app/components/scaled-image";
 export default function page() {
   const [activeStage, setActiveStage] = useState(0);
   return (
@@ -57,7 +58,7 @@ export default function page() {
             </div>
           </div>
           <div className="col">
-            <Image
+            <ScaledImage
               src={"/images/cx/phase1/image-phase1-header.png"}
               width={500}
               height={453}
@@ -72,7 +73,7 @@ export default function page() {
       <section className="section has-bg customer-journey-mapping">
         <div className="card">
           <div className="container dir-col">
-            <Image
+            <ScaledImage
               src={"/images/cx/phase1/icon-customer-journey-maping.svg"}
               width={88}
               height={88}
@@ -88,7 +89,7 @@ export default function page() {
               <section className="cards no-border yellow">
                 <div className="card">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/cx/phase1/icon-gain.svg"}
                       width={86}
                       height={86}
@@ -105,7 +106,7 @@ export default function page() {
                 </div>
                 <div className="card">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/icon-build-trust2.svg"}
                       width={86}
                       height={86}
@@ -122,7 +123,7 @@ export default function page() {
                 </div>
                 <div className="card">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/icon-build-trust3.svg"}
                       width={86}
                       height={86}
@@ -185,7 +186,7 @@ export default function page() {
             {activeStage === 0 && (
               <section className="step-content step1">
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-icon-step1-red.png"}
                     width={113}
                     height={113}
@@ -215,7 +216,7 @@ export default function page() {
                   </ul>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-illustration-step1.svg"}
                     width={408}
                     height={408}
@@ -227,7 +228,7 @@ export default function page() {
             {activeStage === 1 && (
               <section className="step-content step2">
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-icon-step2-red.png"}
                     width={113}
                     height={113}
@@ -249,7 +250,7 @@ export default function page() {
                   </ul>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-illustration-step2.svg"}
                     width={580}
                     height={536}
@@ -261,7 +262,7 @@ export default function page() {
             {activeStage === 2 && (
               <section className="step-content step3">
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-icon-step3-red.png"}
                     width={113}
                     height={113}
@@ -283,7 +284,7 @@ export default function page() {
                   </ul>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-illustration-step3.svg"}
                     width={488}
                     height={446}
@@ -295,7 +296,7 @@ export default function page() {
             {activeStage === 3 && (
               <section className="step-content step4">
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-icon-step4-red.png"}
                     width={113}
                     height={113}
@@ -336,7 +337,7 @@ export default function page() {
                   </ul>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-illustration-step4.svg"}
                     width={488}
                     height={446}
@@ -348,7 +349,7 @@ export default function page() {
             {activeStage === 4 && (
               <section className="step-content step5">
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-icon-step5-red.png"}
                     width={113}
                     height={113}
@@ -382,7 +383,7 @@ export default function page() {
                   </ul>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-illustration-step5.svg"}
                     width={488}
                     height={446}
@@ -394,7 +395,7 @@ export default function page() {
             {activeStage === 5 && (
               <section className="step-content step6">
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-icon-step6-red.png"}
                     width={113}
                     height={113}
@@ -422,7 +423,7 @@ export default function page() {
                   </ul>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-illustration-step6.svg"}
                     width={488}
                     height={446}
@@ -434,7 +435,7 @@ export default function page() {
             {activeStage === 6 && (
               <section className="step-content step7">
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-icon-step7-red.png"}
                     width={113}
                     height={113}
@@ -460,7 +461,7 @@ export default function page() {
                   </ul>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-illustration-step7.svg"}
                     width={488}
                     height={446}
@@ -472,7 +473,7 @@ export default function page() {
             {activeStage === 7 && (
               <section className="step-content step8">
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-icon-step8-red.png"}
                     width={113}
                     height={113}
@@ -501,7 +502,7 @@ export default function page() {
                   </ul>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase1/journey-illustration-step8.svg"}
                     width={488}
                     height={446}
@@ -512,7 +513,7 @@ export default function page() {
             )}
             {activeStage === 8 && (
               <section className="step-content step9">
-                <Image
+                <ScaledImage
                   src={"/images/cx/phase1/journey-icon-step9-red.png"}
                   width={113}
                   height={113}
@@ -527,7 +528,7 @@ export default function page() {
                 <h5>How to Validate:</h5>
                 <div className="row">
                   <div className="col">
-                    <Image
+                    <ScaledImage
                       src={"/images/cx/phase1/icon-review-with-team.svg"}
                       width={86}
                       height={86}
@@ -539,7 +540,7 @@ export default function page() {
                     </p>
                   </div>
                   <div className="col">
-                    <Image
+                    <ScaledImage
                       src={"/images/cx/phase1/icon-facilitate-workshops.svg"}
                       width={86}
                       height={86}
@@ -549,7 +550,7 @@ export default function page() {
                     <p>Collaborate to fill gaps or refine stages.</p>
                   </div>
                   <div className="col">
-                    <Image
+                    <ScaledImage
                       src={"/images/cx/phase1/icon-incorporate-feedback.svg"}
                       width={86}
                       height={86}
@@ -601,10 +602,10 @@ export default function page() {
       {/* Business Impact */}
       <section className="section has-bg business-impact">
         <div className="card">
-          <div className="container">
+          <div className="container align-center">
             <div className="content-group has-inner-text-yellow">
               <div className="section-header">
-                <Image
+                <ScaledImage
                   src={"/images/cx/phase1/icon-business-impact.png"}
                   width={118}
                   height={118}
@@ -614,21 +615,23 @@ export default function page() {
                   <span>The Business Impact of Customer Journey Mapping</span>
                 </h2>
               </div>
-              <div className="section-header">
+              <p>
+                Customer journey mapping isn’t just about visualizing—it’s about
+                understanding and improving. This foundational exercise enables
+                you to see your business through your customers’ eyes, identify
+                hidden opportunities, and create strategies that matter.
+              </p>
+              <div className="section-footer">
                 <p>
-                  Customer journey mapping isn’t just about visualizing—it’s about
-                  understanding and improving. This foundational exercise enables
-                  you to see your business through your customers’ eyes, identify
-                  hidden opportunities, and create strategies that matter.
+                  <span>Begin Your Customer Journey Optimization Now</span>
                 </p>
-                <h5>Begin Your Customer Journey Optimization Now</h5>
                 <Link href="/demo-form" className="button button--outline">
                   Request a Demo
                 </Link>
               </div>
             </div>
             <div className="col">
-              <Image
+              <ScaledImage
                 src={"/images/cx/phase1/illustration-business-impact.svg"}
                 width={500}
                 height={500}

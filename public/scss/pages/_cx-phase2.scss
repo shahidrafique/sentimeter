@@ -9,11 +9,6 @@
 				.content {
 					max-width: none;
 				}
-
-				img {
-					width: scale(515);
-					height: scale(515);
-				}
 			}
 		}
 	}
@@ -21,96 +16,60 @@
 	// Feedback
 	.feedback {
 
-		&-left {
-			flex: 1;
-			position: relative;
-			padding-right: scale(100);
-			align-content: center;
+		.container {
+
+			.col {
+
+				&:first-child {
+					flex: 1.8;
+					position: relative;
+					padding-right: scale(60);
+					align-content: center;
 
 
 
-			h2 {
-				font-size: scale(54);
-
-				span {
-					color: $green;
-				}
-			}
-
-			.content {
-				font-size: scale(20);
-				max-width: 90%;
-				font-weight: 400;
-				margin-bottom: 30px;
-
-				p {
-					span {
-						color: $green;
-					}
-				}
-			}
-
-			.button {
-				background: $green;
-
-				&:before {
-					background-color: $white;
-				}
-			}
-
-			.row {
-				p {
-
-					font-weight: 600;
-					color: $green;
-				}
-			}
-
-
-		}
-
-		&-right {
-			flex: 1;
-			padding-left: scale(100);
-
-			h3 {
-				margin-bottom: 30px;
-			}
-
-			ul {
-				margin: scale(10) 0;
-				display: flex;
-				flex-direction: column;
-				padding-left: scale(10);
-				gap: 8px;
-
-				li {
-					font-size: scale(20);
-					display: flex;
-					align-items: center;
-					gap: 16px;
-
-					p {
-						margin: 8px 0;
-
+					h2 {
+						font-size: scale(54);
 
 						span {
-							font-weight: 600;
 							color: $green;
 						}
 					}
 
-					&:before {
-						content: '';
-						flex: 0 0 auto;
-						width: scale(32);
-						height: scale(32);
-						display: inline-block;
-						background: url('/images/green-tick.svg') no-repeat center;
-						background-size: contain;
+					.content {
+						font-size: scale(20);
+						max-width: 90%;
+						font-weight: 400;
+						margin-bottom: 30px;
 
+						p {
+							span {
+								color: $green;
+							}
+						}
 					}
 
+					.row {
+						p {
+
+							font-weight: 600;
+							color: $green;
+						}
+					}
+				}
+
+				&:last-child {
+					flex: 2.2;
+					padding-left: scale(60);
+
+					.checklist {
+						margin: scale(20) 0 0;
+
+						&-item {
+							font-size: scale(20);
+							line-height: normal;
+						}
+					}
 				}
 			}
 		}
@@ -130,12 +89,6 @@
 
 
 		.col {
-			&:first-child {
-				img {
-					width: scale(125);
-					height: scale(125);
-				}
-			}
 
 			&.content {
 
@@ -171,13 +124,6 @@
 
 					.col {
 						flex: 1;
-
-						.icon {
-							img {
-								width: scale(86);
-								height: scale(86);
-							}
-						}
 
 						h4 {
 							font-size: scale(22);

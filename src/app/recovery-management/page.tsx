@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScaledImage from "../components/scaled-image";
 
 export default function page() {
   return (
@@ -21,29 +22,31 @@ export default function page() {
       {/* Collect Feedback */}
       <section className="section has-bg blue collect-feedback">
         <div className="card">
-          <div className="container">
-            <div className="collect-feedback-left">
-              <div className="content-group has-inner-text-blue">
+          <div className="container has-col-border">
+            <div className="col content-group has-inner-text-blue">
+              <div className="section-header">
                 <h2>
                   <small>The Complaint</small>
                   <span>Collect Feedback</span> Across Multiple Channels
                 </h2>
-                <p>Sentimeter ensures no signal is missed by gathering feedback from diverse channels and mediums.</p>
+              </div>
+              <div className="content">
+              <p>Sentimeter ensures no signal is missed by gathering feedback from diverse channels and mediums.</p>
+              </div>
+              <div className="section-footer">
                 <p><span>Why It Matters:</span> “Collecting feedback effectively is the foundation of building actionable recovery strategies.”</p>
                 <div className="row">
-                  <a href="#" className="link">
-                    Discover Seamless Feedback Collection
-                  </a>
+                  <p>Discover Seamless Feedback Collection</p>
                   <a href="#" className="button">Learn More</a>
                 </div>
               </div>
             </div>
-            <div className="collect-feedback-right">
-              <h3>Key Features:</h3>
+            <div className="col">
+              <h4>Key Features:</h4>
               <div className="row">
                 <div className="col">
                   <div className="feature has-icon-right">
-                    <Image
+                    <ScaledImage
                       src={"/images/icon-feedback-integration.svg"}
                       width={34}
                       height={34}
@@ -53,7 +56,7 @@ export default function page() {
                     <p><span className="text-green">Omnichannel Feedback Integration:</span> Capture feedback from surveys, social media, CRM systems, emails, and call centers.</p>
                   </div>
                   <div className="feature has-icon-right">
-                    <Image
+                    <ScaledImage
                       src={"/images/icon-rich-metadata.svg"}
                       width={34}
                       height={34}
@@ -64,7 +67,7 @@ export default function page() {
                   </div>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/illustration-collect-feedback-features.svg"}
                     width={230}
                     height={308}
@@ -73,7 +76,7 @@ export default function page() {
                 </div>
                 <div className="col">
                   <div className="feature">
-                    <Image
+                    <ScaledImage
                       src={"/images/icon-feedback-access.svg"}
                       width={34}
                       height={34}
@@ -101,7 +104,7 @@ export default function page() {
               <p>Sentimeter accelerates response times with automation and intelligent prioritization.</p>
               <div className="automate-responses-row">
                 <div className="automate-responses-point">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-alert.svg"}
                     width={50}
                     height={50}
@@ -113,7 +116,7 @@ export default function page() {
                   </div>
                 </div>
                 <div className="automate-responses-point">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-assignment.svg"}
                     width={50}
                     height={50}
@@ -125,7 +128,7 @@ export default function page() {
                   </div>
                 </div>
                 <div className="automate-responses-point">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-complaint.svg"}
                     width={50}
                     height={50}
@@ -152,17 +155,17 @@ export default function page() {
 
       {/* assign-tickets */}
       <section className="section assign-tickets">
-        <div className="container align-center">
-          <div className="assign-tickets-left">
-            <Image
+        <div className="container has-col-border align-center">
+          <div className="col">
+            <ScaledImage
               src={"/images/assign-tasks-filter.svg"}
               width={244}
               height={373}
               alt="assign tasks filter"
             />
-            <div>
+            <div className="filter-point-container">
               <div className="filter-point priority">
-                <Image
+                <ScaledImage
                   src={"/images/filter-icon-priority.svg"}
                   width={48}
                   height={48}
@@ -173,7 +176,7 @@ export default function page() {
                 </div>
               </div>
               <div className="filter-point dynamic">
-                <Image
+                <ScaledImage
                   src={"/images/filter-icon-dynamic.svg"}
                   width={48}
                   height={48}
@@ -184,7 +187,7 @@ export default function page() {
                 </div>
               </div>
               <div className="filter-point assignment">
-                <Image
+                <ScaledImage
                   src={"/images/filter-icon-assignment.svg"}
                   width={48}
                   height={48}
@@ -196,16 +199,19 @@ export default function page() {
               </div>
             </div>
           </div>
-          <div className="assign-tickets-right">
-            <div className="content-group has-inner-text-blue">
-              <h2><small>Ticketing</small><span>Assign Tickets</span> to Individuals or Teams</h2>
+          <div className="col content-group has-inner-text-blue">
+            <div className="section-header">
+              <h2>
+                <small>Ticketing</small><span>Assign Tickets</span> to Individuals or Teams
+              </h2>
+            </div>
+            <div className="content">
               <p>Sentimeter's robust ticketing capabilities streamline issue management with precision.</p>
+            </div>
+            <div className="section-footer">
               <p><span>Why It Matters:</span> “Structured ticketing processes improve accountability and resolution efficiency.”</p>
               <div className="row">
-                <a href="#" className="link">
-                  <span>Simplify Ticketing</span>
-                  <span>with Sentimeter</span>
-                </a>
+                <p>Simplify Ticketing with Sentimeter</p>
                 <a href="#" className="button">Learn More</a>
               </div>
             </div>
@@ -216,49 +222,54 @@ export default function page() {
       {/* Communication */}
       <section className="section has-bg blue communication">
         <div className="card">
-          <div className="container">
+          <div className="container align-center">
             <div className="content-group has-inner-text-blue">
-              <h2><small>Communication</small> Prioritize and Personalize Responses</h2>
-              <p>Sentimeter enables teams to tailor communication for a better recovery experience.</p>
-              <div className="card-blocks">
-                <div className="card-blocks-item green">
-                  <Image
-                    src={"/images/icon-connect.svg"}
-                    width={50}
-                    height={50}
-                    alt="icon connect"
-                  />
-                  <h5>Connect Box Technology</h5>
-                  <p>Engage in one-way or two-way SMS or email communication directly from the case management module.</p>
-                </div>
-                <div className="card-blocks-item red">
-                  <Image
-                    src={"/images/icon-escalation.svg"}
-                    width={50}
-                    height={50}
-                    alt="icon escalation"
-                  />
-                  <h5>Escalation Tools</h5>
-                  <p>Seamlessly escalate issues beyond designated individuals when necessary.</p>
-                </div>
-                <div className="card-blocks-item yellow">
-                  <Image
-                    src={"/images/icon-confirmation.svg"}
-                    width={50}
-                    height={50}
-                    alt="icon confirmation"
-                  />
-                  <h5>Feedback Confirmation</h5>
-                  <p>Close the loop with customer satisfaction confirmation.</p>
+              <div className="section-header">
+                <h2>
+                  <small>Communication</small> Prioritize and Personalize Responses
+                </h2>
+              </div>
+              <div className="content">
+                <p>Sentimeter enables teams to tailor communication for a better recovery experience.</p>
+                <div className="card-blocks">
+                  <div className="card-blocks-item green">
+                    <ScaledImage
+                      src={"/images/icon-connect.svg"}
+                      width={50}
+                      height={50}
+                      alt="icon connect"
+                    />
+                    <h5>Connect Box Technology</h5>
+                    <p>Engage in one-way or two-way SMS or email communication directly from the case management module.</p>
+                  </div>
+                  <div className="card-blocks-item red">
+                    <ScaledImage
+                      src={"/images/icon-escalation.svg"}
+                      width={50}
+                      height={50}
+                      alt="icon escalation"
+                    />
+                    <h5>Escalation Tools</h5>
+                    <p>Seamlessly escalate issues beyond designated individuals when necessary.</p>
+                  </div>
+                  <div className="card-blocks-item yellow">
+                    <ScaledImage
+                      src={"/images/icon-confirmation.svg"}
+                      width={50}
+                      height={50}
+                      alt="icon confirmation"
+                    />
+                    <h5>Feedback Confirmation</h5>
+                    <p>Close the loop with customer satisfaction confirmation.</p>
+                  </div>
                 </div>
               </div>
-              <p><span>Why It Matters:</span> “Personalized communication strengthens trust and enhances recovery experiences.”</p>
-              <div className="row">
-                <a href="#" className="link">
-                  <span>Engage Effectively</span>
-                  <span>with Connect Box</span>
-                </a>
-                <a href="#" className="button">Learn More</a>
+              <div className="section-footer">
+                <p><span>Why It Matters:</span> “Personalized communication strengthens trust and enhances recovery experiences.”</p>
+                <div className="row">
+                  <p>Engage Effectively with Connect Box</p>
+                  <a href="#" className="button">Learn More</a>
+                </div>
               </div>
             </div>
           </div>
@@ -267,10 +278,14 @@ export default function page() {
 
       {/* Communication */}
       <section className="section resolution">
-        <div className="container align-center">
-          <div className="resolution-left">
-            <div className="content-group has-inner-text-blue">
-              <h2><small>Resolution</small> <span>Win Over</span> Customers Through Swift Action</h2>
+        <div className="container has-col-border">
+          <div className="col content-group has-inner-text-blue">
+            <div className="section-header">
+              <h2>
+                <small>Resolution</small> <span>Win Over</span> Customers Through Swift Action
+              </h2>
+            </div>
+            <div className="content">
               <p>Sentimeter's recovery tools help resolve complaints quickly while building long-term trust.</p>
               <ul className="checklist blue">
                 <li className="checklist-item">
@@ -283,18 +298,17 @@ export default function page() {
                   <span>Average Recovery Metrics:</span> Monitor recovery rate and time for continuous improvement.
                 </li>
               </ul>
+            </div>
+            <div className="section-footer">
               <p><span>Why It Matters:</span> “Quick and efficient resolution fosters loyalty and prevents churn.”</p>
               <div className="row">
-                <a href="#" className="link">
-                  <span>Transform Resolutions</span>
-                  <span>into Relationships</span>
-                </a>
+                <p>Transform Resolutions into Relationships</p>
                 <a href="#" className="button">Learn More</a>
               </div>
             </div>
           </div>
-          <div className="resolution-right">
-            <Image
+          <div className="col">
+            <ScaledImage
               src={"/images/illustration-win-over.svg"}
               width={596}
               height={596}
@@ -307,26 +321,31 @@ export default function page() {
       {/* Communication */}
       <section className="section has-bg blue analyze">
         <div className="card">
-          <div className="container">
-            <div className="analyze-left">
-              <div className="content-group has-inner-text-blue">
-                <h2><small>Analyze</small> <span>Track Trends</span> to Spot Future Issues</h2>
-                <p>Sentimeter's analytics suite empowers teams to learn from past feedback and prevent recurring challenges.</p>
+          <div className="container has-col-border">
+            <div className="col content-group has-inner-text-blue">
+              <div className="section-header">
+                <h2>
+                  <small>Analyze</small> <span>Track Trends</span> to Spot Future Issues
+                </h2>
+              </div>
+              <div className="content">
+                <p>
+                  Sentimeter's analytics suite empowers teams to learn from past feedback and prevent recurring challenges.
+                </p>
+              </div>
+              <div className="section-footer">
                 <p><span>Why It Matters:</span> “Analyzing trends ensures continuous improvement and builds a proactive recovery strategy.”</p>
                 <div className="row">
-                  <a href="#" className="link">
-                    <span>Transform Resolutions</span>
-                    <span>into Relationships</span>
-                  </a>
+                  <p>Transform Resolutions into Relationships</p>
                   <a href="#" className="button">Learn More</a>
                 </div>
               </div>
             </div>
-            <div className="analyze-right">
-              <h3>Key Features:</h3>
+            <div className="col">
+              <h4>Key Features:</h4>
               <div className="analyze-features">
                 <div className="feature green">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-performance.svg"}
                     width={80}
                     height={80}
@@ -338,7 +357,7 @@ export default function page() {
                   </div>
                 </div>
                 <div className="feature yellow">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-trend.svg"}
                     width={80}
                     height={80}
@@ -350,7 +369,7 @@ export default function page() {
                   </div>
                 </div>
                 <div className="feature red">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-scenario.svg"}
                     width={80}
                     height={80}
@@ -372,7 +391,7 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="col">
-              <Image
+              <ScaledImage
                 src={"/images/icon-recovery.svg"}
                 width={103}
                 height={103}
@@ -388,7 +407,7 @@ export default function page() {
 
               <div className="row">
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-integrated-ticketing.svg"}
                     width={52}
                     height={52}
@@ -402,7 +421,7 @@ export default function page() {
                   </div>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-proactive-alert.svg"}
                     width={52}
                     height={52}
@@ -416,7 +435,7 @@ export default function page() {
                   </div>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-dynamic-reporting.svg"}
                     width={52}
                     height={52}
@@ -430,7 +449,7 @@ export default function page() {
                   </div>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-secure-system.svg"}
                     width={52}
                     height={52}
@@ -444,7 +463,7 @@ export default function page() {
                   </div>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/icon-close-loop.svg"}
                     width={52}
                     height={52}
