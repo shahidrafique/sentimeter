@@ -28,11 +28,6 @@
           position: relative;
           margin-bottom: scale(20);
 
-          img {
-            width: scale(77);
-            height: auto;
-          }
-
           &::before {
             content: '';
             width: 100%;
@@ -106,8 +101,6 @@
     max-width: scale(1020);
 
     img {
-      width: scale(104);
-      height: auto;
       margin-bottom: scale(30);
     }
 

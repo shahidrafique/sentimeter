@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Clients from "../../components/clients";
 import Link from "next/link";
+import ScaledImage from "@/app/components/scaled-image";
 export default function page() {
   return (
     <article className="phase2">
@@ -26,11 +27,12 @@ export default function page() {
           </div>
           <div className="sub-header-right">
             <a href="/cx">
-              <Image
+              <ScaledImage
                 src={"/images/blue-back-arrow.svg"}
                 width={35}
                 height={35}
                 alt="back"
+                min={20}
               />
               Back to SentiCX
             </a>
@@ -59,87 +61,78 @@ export default function page() {
       <Clients />
 
       {/* Feedback */}
-
       <section className="section has-bg green feedback">
         <div className="card">
-          <div className="container">
-            <div className="feedback-left">
-              <h2>
-                <span>Feedback</span> That Covers Every Corner
-              </h2>
-              <div className="content">
-                <p>
-                  Complete Your Customer Experience Puzzle with AI-Powered
-                  Insights. Sentimeter consolidates feedback from every channel,
-                  providing a complete view of your customer’s journey.
-                </p>
+          <div className="container has-col-border">
 
+
+            <div className="col content-group has-inner-text-green">
+              <div className="section-header">
+                <h2>
+                  <span>Feedback</span> That Covers Every Corner
+                </h2>
+              </div>
+              <p>
+                Complete Your Customer Experience Puzzle with AI-Powered
+                Insights. Sentimeter consolidates feedback from every channel,
+                providing a complete view of your customer’s journey.
+              </p>
+              <div className="section-footer">
                 <p>
+                  <span>Why It Matters:</span>
                   <i>
-                    <span>Why It Matters:</span> "Listening everywhere helps you
-                    understand what your customers really need.”
+                    “Listening everywhere helps you understand what your customers really need.“
                   </i>
                 </p>
-              </div>
-              <div className="row">
-                <p>Discover Smarter Feedback Collection</p>
-                <Link href="#" className="button">
-                  Schedule a Demo
-                </Link>
+                <div className="row dir-col">
+                  <p>Discover Smarter Feedback Collection</p>
+                  <Link href="#" className="button">
+                    Schedule a Demo
+                  </Link>
+                </div>
               </div>
             </div>
-            <div className="feedback-right">
-              <h3>Key Features:</h3>
-              <ul>
-                <li>
-                  <p>
-                    <span>Multi-Region Customer Feedback Collection:</span>{" "}
+
+            <div className="col">
+              <h4>Key Features:</h4>
+              <ul className="checklist green">
+                <li className="checklist-item">
+                  <span>Multi-Region Customer Feedback Collection:</span>{" "}
                     Multi-lingual, multi-modal feedback collection ensures
                     inclusivity across regions.
-                  </p>
                 </li>
-                <li>
-                  <p>
-                    <span>
+                <li className="checklist-item">
+                  <span>
                       Omnichannel Feedback Collection for Holistic Insights:
                     </span>{" "}
                     Gather insights from surveys, social media, emails, CRM
                     systems, chat logs, support calls, and more.
-                  </p>
                 </li>
-                <li>
-                  <p>
-                    <span>
+                <li className="checklist-item">
+                  <span>
                       Leverage Passive Feedback for Deeper Customer Insights:
                     </span>{" "}
                     Include passive inputs like online reviews and social
                     mentions for deeper insights.
-                  </p>
                 </li>
-                <li>
-                  <p>
-                    <span>
+                <li className="checklist-item">
+                  <span>
                       Enhance Feedback with Video, Images & Voice Notes:
                     </span>{" "}
                     Collect rich feedback through videos, images, and voice
                     notes.
-                  </p>
                 </li>
-                <li>
-                  <p>
-                    <span>
+                <li className="checklist-item">
+                  <span>
                       Integrate with CRM & Support Systems Effortlessly:
                     </span>{" "}
                     Works with tools you love, like Salesforce, Zendesk, and
                     HubSpot.
-                  </p>
                 </li>
-                <li>
-                  <p>
-                    <span>Track NPS, CSAT & CES for Customer Success:</span>{" "}
+                <li className="checklist-item">
+                  <span>Track NPS, CSAT & CES for Customer Success:</span>{" "}
                     Track NPS for customer loyalty, CSAT for satisfaction, and
                     CES for process simplicity.
-                  </p>
                 </li>
               </ul>
             </div>
@@ -152,7 +145,7 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="col">
-              <Image
+              <ScaledImage
                 src={"/images/cx/phase2/image-smart-survey.png"}
                 width={125}
                 height={125}
@@ -173,7 +166,7 @@ export default function page() {
               <div className="row">
                 <div className="col">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/cx/phase2/smart-survey-icon-1.svg"}
                       width={86}
                       height={86}
@@ -189,7 +182,7 @@ export default function page() {
 
                 <div className="col">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/cx/phase2/smart-survey-icon-2.svg"}
                       width={86}
                       height={86}
@@ -204,7 +197,7 @@ export default function page() {
 
                 <div className="col">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/cx/phase2/smart-survey-icon-3.svg"}
                       width={86}
                       height={86}
@@ -216,7 +209,7 @@ export default function page() {
                 </div>
                 <div className="col">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/cx/phase2/smart-survey-icon-4.svg"}
                       width={86}
                       height={86}
@@ -233,8 +226,8 @@ export default function page() {
               <p>
                 <span>Why It Matters: </span>
                 <i>
-                  "Timely surveys bring in authentic answers without survey
-                  fatigue."
+                  “Timely surveys bring in authentic answers without survey
+                  fatigue.“
                 </i>
               </p>
               <div className="row-button">
@@ -251,11 +244,12 @@ export default function page() {
         <div className="card">
           <div className="container">
             <h3>
-              <Image
+              <ScaledImage
                 src={"/images/logo-senticx.svg"}
                 width={197}
                 height={72}
                 alt="Senti CX"
+                min={120}
               />
               enables omnichannel engagement
             </h3>
@@ -266,7 +260,7 @@ export default function page() {
               <section className="content-card">
                 <h5>solicit feedback</h5>
                 <div className="icon">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase2/omnichannel-icon-1.svg"}
                     width={72}
                     height={72}
@@ -289,7 +283,7 @@ export default function page() {
               <section className="content-card">
                 <h5>welcome insights 24/7</h5>
                 <div className="icon">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase2/omnichannel-icon-2.svg"}
                     width={72}
                     height={72}
@@ -312,7 +306,7 @@ export default function page() {
               <section className="content-card">
                 <h5>streamline workflows</h5>
                 <div className="icon">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase2/omnichannel-icon-3.svg"}
                     width={72}
                     height={72}
@@ -372,8 +366,8 @@ export default function page() {
               </ul>
 
               <p className="note">
-                <span>Why It Matters:</span> "Understanding employees
-                holistically ensures every stage of their journey is impactful."
+                <span>Why It Matters:</span> “Understanding employees
+                holistically ensures every stage of their journey is impactful.“
               </p>
               <div className="row">
                 <p>See How Feedback Fuels Smarter Actions</p>
@@ -384,7 +378,7 @@ export default function page() {
             </div>
           </div>
           <div className="col">
-            <Image
+            <ScaledImage
               src={"/images/cx/phase2/image-customer-feedback.svg"}
               width={500}
               height={500}

@@ -387,7 +387,7 @@ export default function page() {
             <div className="col">
               <h4>Core Pillars</h4>
               <Image
-                src={"/images/core-pillar.png"}
+                src={"/images/core-pillars.svg"}
                 width={792}
                 height={412}
                 alt="core pillars"

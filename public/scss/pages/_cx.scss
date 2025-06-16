@@ -55,58 +55,47 @@
 .single-platform {
 
     .container {
-        gap: 0;
-    }
 
-    &-left {
-        flex: 1.4;
-        position: relative;
-        padding-right: scale(100);
+        .col {
 
+            &:first-child {
+                flex: 1.6;
+                position: relative;
+                padding-right: scale(40);
 
-        h3 {
-            color: $dark-blue;
-        }
+                h3 {
+                    color: $dark-blue;
+                }
+            }
 
-        h2 {
-            color: $yellow;
-            font-style: italic;
-        }
-
-        .content {
-            font-size: scale(20);
-            max-width: 90%;
-            font-weight: 500;
-            margin-bottom: 30px;
-        }
+            &:last-child {
+                flex: 2.4;
+                padding-left: scale(40);
+                display: flex;
+                flex-direction: column;
+                gap: scale(30);
 
 
-    }
+                .benefit {
+                    display: flex;
+                    align-items: flex-start;
+                    font-size: scale(20);
+                    gap: scale(15);
 
-    &-right {
-        flex: 2.6;
-        padding-left: scale(100);
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: scale(6);
 
-        h3 {
-            color: $dark-blue;
-            margin-bottom: 30px;
-        }
-
-        .benefit {
-            display: flex;
-            font-size: scale(20);
-            gap: scale(15);
-            margin-bottom: scale(30);
-
-            .content {
-                @include layout-row(column);
-
-                p {
-                    margin: 0;
+                        p {
+                            margin: 0;
+                        }
+                    }
                 }
             }
         }
     }
+
 }
 
 .phases {
@@ -127,8 +116,6 @@
                 color: $yellow;
             }
         }
-
-
     }
 
     .cards-holder {
@@ -170,7 +157,7 @@
                     padding: 5px 5px 5px 20px;
 
                     &:before {
-                        background: url(/images/arrow.svg) no-repeat center $white;
+                        background: url(/images/icon-arrow-right-circled.svg) no-repeat center;
                     }
 
                     &.green {
@@ -258,23 +245,14 @@
             color: $dark-blue;
         }
 
-        .screenshot {
-
-            img {
-                width: scale(668);
-                height: auto;
-            }
-        }
-
         hr {
             width: 100%;
         }
     }
 
     .card-blocks {
-        max-width: clamp(1200px, scale(1612), 2200px);
-        margin: scale(40) auto 0;
-        padding: 0 20px;
+        padding: scale(40) 0 0;
+        border-top: 2px solid $gray-light;
 
         &-item {
             border: 0;
@@ -284,7 +262,11 @@
             position: relative;
             overflow: hidden;
             padding: scale(60);
-            gap: scale(20);
+            gap: scale(15);
+
+            h5 {
+                color: $dark-blue;
+            }
 
             &::before {
                 content: '';
@@ -432,7 +414,7 @@
     }
 
     .col {
-        flex: 1;
+        flex: 1.6;
         align-items: center;
         display: flex;
 
@@ -442,6 +424,7 @@
         }
 
         &:nth-child(2) {
+            flex: 2.4;
             flex-direction: column;
 
             h4 {

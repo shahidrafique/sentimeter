@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Clients from "../components/clients";
 import Link from "next/link";
+import ScaledImage from "../components/scaled-image";
 
 export default function page() {
   return (
@@ -60,7 +61,7 @@ export default function page() {
           <div className="cards-holder">
             <div className="phase-card">
               <div className="icon">
-                <Image
+                <ScaledImage
                   src={"/images/icon-cx-phase-1.svg"}
                   width={80}
                   height={80}
@@ -83,7 +84,7 @@ export default function page() {
 
             <div className="phase-card">
               <div className="icon">
-                <Image
+                <ScaledImage
                   src={"/images/icon-cx-phase-2.svg"}
                   width={80}
                   height={80}
@@ -106,7 +107,7 @@ export default function page() {
 
             <div className="phase-card">
               <div className="icon">
-                <Image
+                <ScaledImage
                   src={"/images/icon-cx-phase-3.svg"}
                   width={80}
                   height={80}
@@ -129,7 +130,7 @@ export default function page() {
 
             <div className="phase-card">
               <div className="icon">
-                <Image
+                <ScaledImage
                   src={"/images/icon-cx-phase-4.svg"}
                   width={80}
                   height={80}
@@ -152,7 +153,7 @@ export default function page() {
 
             <div className="phase-card">
               <div className="icon">
-                <Image
+                <ScaledImage
                   src={"/images/icon-cx-phase-5.svg"}
                   width={80}
                   height={80}
@@ -179,14 +180,16 @@ export default function page() {
       <section className="section has-bg red-light single-platform">
         <div className="card">
           <div className="container has-col-border">
-            <div className="col single-platform-left">
-              <Image
-                src={"/images/icon-single-platform.svg"}
-                width={85}
-                height={85}
-                alt="icon single platform"
-              />
-              <h3>Single Platform for Centralized Customer Data</h3>
+            <div className="col">
+              <div className="section-header">
+                <ScaledImage
+                  src={"/images/icon-single-platform.svg"}
+                  width={85}
+                  height={85}
+                  alt="icon single platform"
+                />
+                <h3>Single Platform for Centralized Customer Data</h3>
+              </div>
               <div className="content">
                 <p>
                   A single, intelligent source of customer truth—powered by
@@ -194,13 +197,15 @@ export default function page() {
                   channels.
                 </p>
               </div>
-              <Link href="#" className="button">
-                Get Started
-              </Link>
+              <div className="section-footer">
+                <Link href="#" className="button">
+                  Get Started
+                </Link>
+              </div>
             </div>
-            <div className="single-platform-right">
+            <div className="col">
               <div className="benefit">
-                <Image
+                <ScaledImage
                   src={"/images/icon-unify-the-voice.svg"}
                   width={73}
                   height={73}
@@ -220,7 +225,7 @@ export default function page() {
               </div>
 
               <div className="benefit">
-                <Image
+                <ScaledImage
                   src={"/images/icon-data-driven.svg"}
                   width={73}
                   height={73}
@@ -241,7 +246,7 @@ export default function page() {
               </div>
 
               <div className="benefit">
-                <Image
+                <ScaledImage
                   src={"/images/icon-categorization.svg"}
                   width={73}
                   height={73}
@@ -270,7 +275,7 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="col">
-              <Image
+              <ScaledImage
                 src={"/images/icon-real-time.svg"}
                 width={96}
                 height={96}
@@ -295,7 +300,7 @@ export default function page() {
           </div>
           <div className="card-blocks">
             <div className="card-blocks-item yellow">
-              <Image
+              <ScaledImage
                 src={"/images/icon-predict-and-prevent.svg"}
                 width={62}
                 height={62}
@@ -310,9 +315,9 @@ export default function page() {
               </p>
             </div>
             <div className="card-blocks-item yellow">
-              <Image
+              <ScaledImage
                 src={"/images/icon-leverage-customer-data.svg"}
-                width={62}
+                width={48}
                 height={62}
                 alt="icon leverage customer data"
               />
@@ -332,30 +337,34 @@ export default function page() {
       <section className="section has-bg blue customer-centric-culture">
         <div className="card">
           <div className="container">
-            <div className="content-group">
-              <Image
-                src={"/images/icon-centric-culture.svg"}
-                width={72}
-                height={72}
-                alt="icon centric culture"
-              />
-              <h2>
-                <span>Create a Data-Driven Customer-Centric Culture</span>
-              </h2>
-              <p>
-                Break down silos and create a shared, data-driven view of
-                customer needs. Identify gaps in your product, logistics, and
-                experiences, and make strategic decisions based on real customer
-                expectations, not assumptions.
-              </p>
-              <div className="row">
+            <div className="col">
+              <div className="section-header blue-dark">
+                <ScaledImage
+                  src={"/images/icon-centric-culture.svg"}
+                  width={72}
+                  height={72}
+                  alt="icon centric culture"
+                />
+                <h2>
+                  <span>Create a Data-Driven Customer-Centric Culture</span>
+                </h2>
+              </div>
+              <div className="content">
+                <p>
+                  Break down silos and create a shared, data-driven view of
+                  customer needs. Identify gaps in your product, logistics, and
+                  experiences, and make strategic decisions based on real customer
+                  expectations, not assumptions.
+                </p>
+              </div>
+              <div className="section-footer">
                 <Link href="#" className="button">
                   Get Started
                 </Link>
               </div>
             </div>
-            <div className="screenshot">
-              <Image
+            <div className="col screenshot">
+              <ScaledImage
                 src={"/images/screenshot-customer-centric-culture.png"}
                 width={668}
                 height={380}
@@ -364,38 +373,31 @@ export default function page() {
             </div>
           </div>
           <div className="container">
-            <hr />
-          </div>
-          <div className="card-blocks">
-            <div className="card-blocks-item">
-              <Image
-                src={"/images/icon-design-experience.svg"}
-                width={48}
-                height={72}
-                alt="icon design experience"
-              />
-              <h5>Predict & Prevent Churn with Data-Driven CX</h5>
-              <p>
-                Leverage product usage insights and customer behavior signals to
-                predict churn risks and uncover upsell opportunities. Track
-                trends, identify anomalies, and empower teams with actionable
-                intelligence to drive customer retention and revenue expansion.
-              </p>
-            </div>
-            <div className="card-blocks-item">
-              <Image
-                src={"/images/icon-convert-cx-insights.svg"}
-                width={64}
-                height={64}
-                alt="icon convert cx insights"
-              />
-              <h5>Leverage Customer Data for Business Expansion</h5>
-              <p>
-                Unlock what different customer segments and cohorts truly want.
-                Identify demand signals, validate roadmap priorities, and align
-                innovation with real customer needs—fueling strategic
-                decision-making and revenue growth.
-              </p>
+            <div className="card-blocks">
+              <div className="card-blocks-item">
+                <ScaledImage
+                  src={"/images/icon-design-experience.svg"}
+                  width={48}
+                  height={72}
+                  alt="icon design experience"
+                />
+                <h5>Design Experiences That Drive Loyalty</h5>
+                <p>
+                  Leverage real-time customer intelligence to understand what truly matters. Enhance satisfaction, strengthen retention, and maximize revenue by continuously optimizing the customer journey.
+                </p>
+              </div>
+              <div className="card-blocks-item">
+                <ScaledImage
+                  src={"/images/icon-convert-cx-insights.svg"}
+                  width={64}
+                  height={64}
+                  alt="icon convert cx insights"
+                />
+                <h5>Convert CX Insights into Measurable Engagement</h5>
+                <p>
+                  Take the right actions at the right time—whether it’s reaching out to the right customer, selecting participants for beta programs, or proactively resolving friction points. Close the loop and foster lasting customer relationships.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -407,20 +409,26 @@ export default function page() {
           <div className="container">
             <div className="col">
               <div className="content">
-                <h3>Smarter Surveys for Better Insights</h3>
-                <p>
-                  Go beyond collecting data to deliver actionable insights that
-                  matter.
-                </p>
-                <Link href="#" className="button">
-                  Learn More About Smarter Surveys
-                </Link>
+                <div className="section-header">
+                  <h3>Smarter Surveys for Better Insights</h3>
+                </div>
+                <div className="content">
+                  <p>
+                    Go beyond collecting data to deliver actionable insights that
+                    matter.
+                  </p>
+                </div>
+                <div className="section-header">
+                  <Link href="#" className="button">
+                    Learn More About Smarter Surveys
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="col">
               <h4>Core Pillars</h4>
-              <Image
-                src={"/images/core-pillar.png"}
+              <ScaledImage
+                src={"/images/core-pillars.svg"}
                 width={792}
                 height={412}
                 alt="core pillars"
@@ -435,26 +443,31 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="content">
-              <Image
-                src={"/images/icon-transform-employee.svg"}
-                width={87}
-                height={75}
-                alt="core pillars"
-              />
-              <h3>
-                Transform Your Customer Experience with <span>Sentimeter</span>
-              </h3>
+              <div className="section-header">
+                <ScaledImage
+                  src={"/images/icon-transform-employee.svg"}
+                  width={87}
+                  height={75}
+                  alt="core pillars"
+                />
+                <h3>
+                  Transform Your Customer Experience with <span>Sentimeter</span>
+                </h3>
+              </div>
               <p>
                 Begin building a more engaged, satisfied, and productive
                 workforce with Sentimeter.
               </p>
-              <Link href="#" className="button button--outline">
-                Start Your Journey
-              </Link>
+              <div className="section-footer">
+                <Link href="#" className="button button--outline">
+                  Start Your Journey
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
     </article>
   );
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Clients from "../../components/clients";
 import Link from "next/link";
+import ScaledImage from "@/app/components/scaled-image";
 export default function page() {
   return (
     <article className="phase3">
@@ -65,30 +66,36 @@ export default function page() {
       {/* Comprehensive View */}
       <section className="section has-bg yellow comprehensive-view">
         <div className="card">
-          <div className="container">
-            <div className="content-group has-inner-text-yellow comprehensive-view-left">
-              <h2>
-                Unify Your Data for a <span>Comprehensive View</span>
-              </h2>
-              <p>
-                Unify Feedback Channels for a Complete Customer View — emails,
-                surveys, chat logs, social media, and more — into one
-                centralized dashboard. Sentimeter provides a seamless, real-time
-                integration of data streams to simplify decision-making.
-              </p>
-              <p>
-                <span>Why It Matters:</span> “Unified data reduces complexity,
-                enabling faster and smarter decisions.”
-              </p>
-              <div className="row">
-                <p>Turn Data Into Clarity</p>
-                <Link href="#" className="button">
-                  Book a Demo
-                </Link>
+          <div className="container has-col-border">
+            <div className="col content-group has-inner-text-yellow comprehensive-view-left">
+              <div className="section-header">
+                <h2>
+                  Unify Your Data for a <span>Comprehensive View</span>
+                </h2>
+              </div>
+              <div className="content">
+                <p>
+                  Unify Feedback Channels for a Complete Customer View — emails,
+                  surveys, chat logs, social media, and more — into one
+                  centralized dashboard. Sentimeter provides a seamless, real-time
+                  integration of data streams to simplify decision-making.
+                </p>
+              </div>
+              <div className="section-footer">
+                <p>
+                  <span>Why It Matters:</span> “Unified data reduces complexity,
+                  enabling faster and smarter decisions.”
+                </p>
+                <div className="row">
+                  <p>Turn Data Into Clarity</p>
+                  <Link href="#" className="button">
+                    Book a Demo
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="comprehensive-view-right">
-              <h3>Key Features:</h3>
+              <h4>Key Features:</h4>
               <ul className="checklist yellow">
                 <li className="checklist-item">
                   <span>Create a Single Source of Truth for CX Data:</span>{" "}
@@ -128,7 +135,7 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="col">
-              <Image
+              <ScaledImage
                 src={"/images/cx/phase3/icon-emotions.svg"}
                 width={133}
                 height={133}
@@ -149,7 +156,7 @@ export default function page() {
               <div className="row">
                 <div className="col">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/cx/phase3/icon-ai-powered.svg"}
                       width={88}
                       height={88}
@@ -163,7 +170,7 @@ export default function page() {
                 </div>
                 <div className="col">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/cx/phase3/icon-identify-system-issue.svg"}
                       width={88}
                       height={88}
@@ -175,7 +182,7 @@ export default function page() {
                 </div>
                 <div className="col">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/cx/phase3/icon-understand-behavior.svg"}
                       width={88}
                       height={88}
@@ -207,19 +214,21 @@ export default function page() {
       </section>
 
       {/* Predictive Analytics */}
-      <section className="section has-bg blue">
+      <section className="section has-bg blue predictive-analytics">
         <div className="card">
           <div className="container">
             <div className="content-group has-inner-text-blue">
-              <h2>Predictive Analytics for Smarter Planning</h2>
-              <p>
-                Move from reactive to proactive. Sentimeter’s predictive tools
-                help you anticipate customer needs, loyalty trends, and
-                potential churn before they happen.
-              </p>
+              <div className="section-header">
+                <h2>Predictive Analytics for Smarter Planning</h2>
+                <p>
+                  Move from reactive to proactive. Sentimeter’s predictive tools
+                  help you anticipate customer needs, loyalty trends, and
+                  potential churn before they happen.
+                </p>
+              </div>
               <div className="card-blocks">
                 <div className="card-blocks-item yellow">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase3/icon-identify.svg"}
                     width={50}
                     height={50}
@@ -229,7 +238,7 @@ export default function page() {
                   <p>Identify at-risk customers for targeted interventions.</p>
                 </div>
                 <div className="card-blocks-item yellow">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase3/icon-scenario-modeling.svg"}
                     width={50}
                     height={50}
@@ -241,7 +250,7 @@ export default function page() {
                   </p>
                 </div>
                 <div className="card-blocks-item yellow">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase3/icon-metric-based-insights.svg"}
                     width={50}
                     height={50}
@@ -254,17 +263,17 @@ export default function page() {
                   </p>
                 </div>
               </div>
-              <p>
-                <span>Why It Matters:</span> “Proactive planning minimizes risks
-                and maximizes opportunities.“
-              </p>
-              <div className="row">
-                <Link href="#" className="link">
-                  Predict Customer Behavior
-                </Link>
-                <Link href="#" className="button">
-                  Schedule a Call
-                </Link>
+              <div className="section-footer">
+                <p>
+                  <span>Why It Matters:</span> “Proactive planning minimizes risks
+                  and maximizes opportunities.“
+                </p>
+                <div className="row">
+                  <p>Predict Customer Behavior</p>
+                  <Link href="#" className="button">
+                    Schedule a Call
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -276,26 +285,29 @@ export default function page() {
         <div className="container">
           <div className="spot-trends-left">
             <div className="content-group has-inner-text-yellow">
-              <h2>
-                <span>Spot</span> Trends, Act Fast
-              </h2>
-              <p>
-                Identify anomalies and trends early to stay agile and proactive.
-                With Sentimeter’s anomaly detection tools, you’ll address
-                potential risks before they escalate.
-              </p>
-              <p>
-                <span>Why It Matters:</span> “Spotting issues early prevents
-                problems from growing into larger challenges.”
-              </p>
-              <div className="row">
-                <Link href="#" className="link">
-                  <span>Stay Ahead</span>
-                  <span>of Trends</span>
-                </Link>
-                <Link href="#" className="button">
-                  Learn More
-                </Link>
+              <div className="section-header">
+                <h2>
+                  <span>Spot</span> Trends, Act Fast
+                </h2>
+              </div>
+              <div className="content">
+                <p>
+                  Identify anomalies and trends early to stay agile and proactive.
+                  With Sentimeter’s anomaly detection tools, you’ll address
+                  potential risks before they escalate.
+                </p>
+              </div>
+              <div className="section-footer">
+                <p>
+                  <span>Why It Matters:</span> “Spotting issues early prevents
+                  problems from growing into larger challenges.”
+                </p>
+                <div className="row">
+                  <p>Stay Ahead of Trends</p>
+                  <Link href="#" className="button">
+                    Learn More
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -304,7 +316,7 @@ export default function page() {
             <div className="features-capsule">
               <div className="features-capsule-item">
                 <div className="icon">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase3/icon-trend-identification.svg"}
                     width={50}
                     height={50}
@@ -319,7 +331,7 @@ export default function page() {
               </div>
               <div className="features-capsule-item">
                 <div className="icon">
-                  <Image
+                  <ScaledImage
                     src={"/images/cx/phase3/icon-proactive-alerts.svg"}
                     width={50}
                     height={50}
@@ -340,29 +352,32 @@ export default function page() {
       {/* Analyze and Refine */}
       <section className="section has-bg yellow analyze-and-refine">
         <div className="card">
-          <div className="container">
-            <div className="content-group has-inner-text-yellow analyze-and-refine-left">
-              <h2>
-                Why <span>Analyze and Refine</span> with Sentimeter?
-              </h2>
-              <p>
-                Sentimeter transforms raw data into actionable strategies. By
-                connecting feedback to journeys, refining insights, and
-                leveraging predictive tools, businesses can enhance customer
-                experiences at every touchpoint.
-              </p>
-              <div className="row">
-                <Link href="#" className="link">
-                  <span>Turn Feedback Into</span>
-                  <span>Smarter Strategies</span>
-                </Link>
-                <Link href="#" className="button">
-                  Learn More
-                </Link>
+          <div className="container has-col-border">
+            <div className="col content-group has-inner-text-yellow analyze-and-refine-left">
+              <div className="section-header">
+                <h2>
+                  Why <span>Analyze and Refine</span> with Sentimeter?
+                </h2>
+              </div>
+              <div className="content">
+                <p>
+                  Sentimeter transforms raw data into actionable strategies. By
+                  connecting feedback to journeys, refining insights, and
+                  leveraging predictive tools, businesses can enhance customer
+                  experiences at every touchpoint.
+                </p>
+              </div>
+              <div className="section-footer">
+                <div className="row">
+                  <p>Turn Feedback Into Smarter Strategies</p>
+                  <Link href="#" className="button">
+                    Learn More
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="analyze-and-refine-right">
-              <h3>Key Features:</h3>
+              <h4>Key Features:</h4>
               <ul className="checklist yellow">
                 <li className="checklist-item">
                   <span>Enhanced Journey Mapping:</span> Layer feedback onto

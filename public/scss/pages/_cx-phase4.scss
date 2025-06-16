@@ -31,7 +31,6 @@
   .card {
 
     >.container {
-      align-items: center;
 
       >.col {
 
@@ -58,17 +57,12 @@
 
     >.col {
 
-      &:nth-child(1) {
+      &:first-child {
         flex: 1;
         padding-right: scale(50);
-
-        img {
-          width: scale(772);
-          height: auto;
-        }
       }
 
-      &:nth-child(2) {
+      &:last-child {
         flex: 1;
         padding-left: scale(50);
       }
@@ -90,12 +84,6 @@
   }
 
   .col {
-    &:first-child {
-      img {
-        width: scale(125);
-        height: scale(125);
-      }
-    }
 
     &.content {
       max-width: 80%;
@@ -120,26 +108,19 @@
         color: $yellow;
         font-weight: 500;
         font-style: italic;
-        margin: 10px 0;
+        margin: scale(10) 0;
       }
 
       .row {
         display: flex;
-        gap: 30px;
+        gap: scale(30);
 
         .col {
           flex: 1;
 
-          .icon {
-            img {
-              width: scale(86);
-              height: scale(86);
-            }
-          }
-
           h4 {
             font-size: scale(22);
-            margin: 10px 0;
+            margin: scale(10) 0;
             color: $yellow;
           }
 

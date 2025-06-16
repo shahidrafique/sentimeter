@@ -29,67 +29,64 @@
 // collect-feedback
 .collect-feedback {
 
-    &-left {
-        flex: 2.2;
-        padding-right: scale(60);
-        border-right: 2px solid $gray-light;
-    }
+    .container {
 
-    &-right {
-        flex: 2.8;
-        padding-left: scale(60);
-        min-width: 0;
+        >.col {
 
-        .row {
-            display: flex;
-            gap: scale(5);
-
-            .col {
-                display: flex;
-                flex-direction: column;
-                gap: scale(30);
-                justify-content: space-around;
+            &:first-child {
+                flex: 2.1;
+                padding-right: scale(50);
             }
 
-            .feature {
-                display: flex;
-                align-items: flex-start;
-                gap: scale(15);
+            &:last-child {
+                flex: 2.9;
+                padding-left: scale(50);
+                min-width: 0;
 
-                p {
-                    margin: 0;
-                    max-width: scale(280);
+                .row {
+                    display: flex;
+                    gap: scale(5);
+                    margin-top: scale(20);
 
-                    span {
+                    .col {
+                        display: flex;
+                        flex-direction: column;
+                        gap: scale(30);
+                        justify-content: space-around;
+                    }
 
-                        &.text-green {
-                            color: $green;
+                    .feature {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: scale(15);
+
+                        p {
+                            font-size: scale(18);
+                            margin: 0;
+                            max-width: scale(280);
+
+                            span {
+
+                                &.text-green {
+                                    color: $green;
+                                }
+
+                                &.text-red {
+                                    color: $red;
+                                }
+
+                                &.text-yellow {
+                                    color: $yellow;
+                                }
+                            }
                         }
 
-                        &.text-red {
-                            color: $red;
-                        }
-
-                        &.text-yellow {
-                            color: $yellow;
+                        &.has-icon-right {
+                            flex-direction: row-reverse;
+                            text-align: right;
                         }
                     }
                 }
-
-                &.has-icon-right {
-                    flex-direction: row-reverse;
-                    text-align: right;
-                }
-            }
-        }
-
-        img {
-            width: scale(230);
-            height: auto;
-            max-width: 100%;
-
-            &.icon {
-                width: scale(34);
             }
         }
     }
@@ -114,10 +111,6 @@
         display: flex;
         gap: scale(15);
         margin: scale(20) 0 scale(40);
-
-        img {
-            max-width: scale(50);
-        }
 
         .text {
 
@@ -151,59 +144,57 @@
     padding-top: scale(100);
     padding-bottom: scale(150);
 
-    &-left {
-        flex: 1;
-        display: flex;
-        padding-right: scale(90);
-        border-right: 2px solid $gray-light;
-        gap: scale(35);
-        align-items: flex-end;
+    .container {
 
-        img {
-            max-width: scale(244);
-            height: auto;
+        >.col {
+            flex: 1;
+
+            &:first-child {
+                display: flex;
+                padding-right: scale(90);
+                gap: scale(40);
+                align-items: flex-end;
+
+                .filter-point-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: scale(40);
+
+                    .filter-point {
+                        display: flex;
+                        gap: scale(20);
+                        font-size: scale(18);
+
+                        span {
+                            font-weight: 600;
+                        }
+
+                        &.priority {
+                            span {
+                                color: $green;
+                            }
+                        }
+
+                        &.dynamic {
+                            span {
+                                color: $yellow;
+                            }
+                        }
+
+                        &.assignment {
+                            span {
+                                color: $red;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            &:last-child {
+                padding-left: scale(90);
+            }
         }
-
-        .filter-point {
-            display: flex;
-            gap: scale(20);
-            font-size: scale(18);
-            margin-bottom: scale(40);
-
-            img {
-                max-width: scale(50);
-                height: auto;
-            }
-
-            span {
-                font-weight: 600;
-            }
-
-            &.priority {
-                span {
-                    color: $green;
-                }
-            }
-
-            &.dynamic {
-                span {
-                    color: $yellow;
-                }
-            }
-
-            &.assignment {
-                margin-bottom: 0;
-
-                span {
-                    color: $red;
-                }
-            }
-        }
-    }
-
-    &-right {
-        flex: 1;
-        padding-left: scale(90);
     }
 }
 
@@ -214,9 +205,8 @@
     .card-blocks {
         gap: scale(80);
 
-        img {
-            max-width: scale(50);
-            height: auto;
+        p {
+            margin-top: auto;
         }
     }
 }
@@ -224,84 +214,43 @@
 // communication
 .resolution {
 
-    &-left {
-        flex: 1;
-        padding-right: scale(90);
-        border-right: 2px solid $gray-light;
+    .container {
 
-        .checklist {
-            margin-left: scale(20);
+        > .col {
+            flex: 1;
+
+            &:first-child {
+                padding-right: scale(90);
+
+                .checklist {
+                    margin-left: scale(20);
+                }
+            }
+
+            &:last-child {
+                padding-left: scale(90);
+            }
         }
     }
 
-    &-right {
-        flex: 1;
-        padding-left: scale(90);
-
-        img {
-            max-width: scale(596);
-            height: auto;
-        }
-    }
 }
 
 
 // analyze
 .analyze {
 
-    &-left {
-        flex: 1;
-        padding-right: scale(100);
-        border-right: 2px solid $gray-light;
-    }
+    .container {
 
-    &-right {
-        flex: 1;
-        padding-left: scale(100);
-    }
+        > .col {
 
-    &-features {
-        display: flex;
-        flex-direction: column;
-        gap: scale(30);
-        margin-top: scale(30);
-
-        .feature {
-            display: flex;
-            gap: scale(15);
-            align-items: flex-start;
-
-            img {
-                width: scale(80);
-                height: auto;
+            &:first-child {
+                flex: 1;
+                padding-right: scale(100);
             }
 
-            .content {
-                display: flex;
-                flex-direction: column;
-                gap: scale(10);
-
-                p {
-                    margin: 0;
-                }
-            }
-
-            &.green {
-                h5 {
-                    color: $green;
-                }
-            }
-
-            &.yellow {
-                h5 {
-                    color: $yellow;
-                }
-            }
-
-            &.red {
-                h5 {
-                    color: $red;
-                }
+            &:last-child {
+                flex: 1;
+                padding-left: scale(100);
             }
         }
     }
@@ -324,12 +273,6 @@
 
 
     .col {
-        &:first-child {
-            img {
-                width: scale(125);
-                height: scale(125);
-            }
-        }
 
         &.content {
 
@@ -355,11 +298,6 @@
                 .col {
                     display: flex;
                     gap: scale(15);
-
-                    img {
-                        width: clamp(30px, scale(52), 52px);
-                        height: auto;
-                    }
 
                     .content {
                         display: flex;
