@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Problems() {
-  useEffect(() => {
+  useLayoutEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
         scrub: true,
@@ -15,7 +15,7 @@ export default function Problems() {
         pinSpacing: true,
         trigger: ".problems",
         start: "50% 50%",
-        end: "+=11000",
+        end: "+=6000",
       },
     });
 
