@@ -1,3 +1,4 @@
+// import Image from "../components/-image";
 import Image from "next/image";
 
 export default function Clients({ showHeader }) {

@@ -27,7 +27,7 @@ export default function page() {
           </div>
           <div className="sub-header-right">
             <a href="/cx">
-              <Image
+              <ScaledImage
                 src={"/images/blue-back-arrow.svg"}
                 width={35}
                 height={35}
@@ -80,8 +80,8 @@ export default function page() {
               </div>
               <div className="section-footer">
                 <p>
-                  <span>Why It Matters:</span> “Spend less time compiling reports
-                  and more time driving smarter decisions.”
+                  <span>Why It Matters:</span> “Spend less time compiling
+                  reports and more time driving smarter decisions.”
                 </p>
                 <div className="row">
                   <p>See Ready-Made Reports in Action</p>
@@ -246,8 +246,8 @@ export default function page() {
               </p>
               <ul className="checklist blue">
                 <li className="checklist-item">
-                  <span>Mobile Accessibility:</span> Access real-time insights on
-                  the move.
+                  <span>Mobile Accessibility:</span> Access real-time insights
+                  on the move.
                 </li>
                 <li className="checklist-item">
                   <span>Optimized Dashboards:</span> Fast, intuitive interfaces
@@ -282,25 +282,25 @@ export default function page() {
             </div>
             <div className="content">
               <p>
-                Customer experiences span multiple channels—your insights should,
-                too. Sentimeter unifies every interaction into a cohesive view for
-                better strategies.
+                Customer experiences span multiple channels—your insights
+                should, too. Sentimeter unifies every interaction into a
+                cohesive view for better strategies.
               </p>
               <ul className="checklist blue">
                 <li className="checklist-item">
-                  <span>Omnichannel Tracking:</span> Connect insights from social
-                  media, emails, in-store visits, apps, and more.
+                  <span>Omnichannel Tracking:</span> Connect insights from
+                  social media, emails, in-store visits, apps, and more.
                 </li>
                 <li className="checklist-item">
-                  <span>Cross-Channel Analytics:</span> Uncover trends and refine
-                  customer journeys holistically.analysis.
+                  <span>Cross-Channel Analytics:</span> Uncover trends and
+                  refine customer journeys holistically.analysis.
                 </li>
               </ul>
             </div>
             <div className="section-footer">
               <p>
-                <span>Why It Matters:</span> “A complete view of the journey helps
-                you improve every step.“
+                <span>Why It Matters:</span> “A complete view of the journey
+                helps you improve every step.“
               </p>
               <div className="row">
                 <p>Explore Omnichannel Tracking</p>
@@ -334,9 +334,9 @@ export default function page() {
                 </div>
                 <div className="content">
                   <p>
-                    Data security isn’t optional. Sentimeter ensures your reports
-                    and dashboards are both secure and accessible to the right
-                    stakeholders.
+                    Data security isn’t optional. Sentimeter ensures your
+                    reports and dashboards are both secure and accessible to the
+                    right stakeholders.
                   </p>
                 </div>
                 <div className="section-footer">

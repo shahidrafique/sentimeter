@@ -29,7 +29,7 @@
 
   &.has-col-border {
 
-    > .col {
+    >.col {
       align-content: center;
 
       &:first-child {
@@ -78,7 +78,7 @@
     margin-bottom: scale(30);
 
     img {
-        margin-bottom: scale(15);
+      margin-bottom: scale(15);
     }
 
     h2 {
@@ -255,44 +255,44 @@
 
 // cx phase4, 5
 .analyze-features {
+  display: flex;
+  flex-direction: column;
+  gap: scale(30);
+  margin-top: scale(30);
+
+  .feature {
     display: flex;
-    flex-direction: column;
-    gap: scale(30);
-    margin-top: scale(30);
+    gap: scale(15);
+    align-items: flex-start;
 
-    .feature {
-        display: flex;
-        gap: scale(15);
-        align-items: flex-start;
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: scale(10);
 
-        .content {
-            display: flex;
-            flex-direction: column;
-            gap: scale(10);
-
-            p {
-                margin: 0;
-            }
-        }
-
-        &.green {
-            h5 {
-                color: $green;
-            }
-        }
-
-        &.yellow {
-            h5 {
-                color: $yellow;
-            }
-        }
-
-        &.red {
-            h5 {
-                color: $red;
-            }
-        }
+      p {
+        margin: 0;
+      }
     }
+
+    &.green {
+      h5 {
+        color: $green;
+      }
+    }
+
+    &.yellow {
+      h5 {
+        color: $yellow;
+      }
+    }
+
+    &.red {
+      h5 {
+        color: $red;
+      }
+    }
+  }
 }
 
 
@@ -312,17 +312,6 @@
     align-items: center;
     gap: 30px;
 
-    .header-logo {
-      width: scale(240);
-      height: scale(96);
-    }
-
-    img {
-      &:first-child {
-        width: scale(240);
-        height: scale(96);
-      }
-    }
 
     .page-title {
       display: flex;

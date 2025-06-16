@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import Image, { ImageProps } from 'next/image';
+import Image, { ImageProps } from "next/image";
 
-interface ScaledImageProps extends Omit<ImageProps, 'alt'> {
+interface ScaledImageProps extends Omit<ImageProps, "alt"> {
   alt: string;
   width: number;
   height?: number;
@@ -10,21 +10,20 @@ interface ScaledImageProps extends Omit<ImageProps, 'alt'> {
   max?: number; // Optional max width in px
 }
 
-const BASE_SCREEN_WIDTH = 1440;
+const BASE_SCREEN_WIDTH = 1920;
 
 export default function ScaledImage({
   width,
   height,
   alt,
-  className = '',
+  className = "",
   style = {},
-  min = 26,
-  max,
   ...rest
 }: ScaledImageProps) {
-  const finalMax = max ?? width;
+  const minWidth = width - width * 0.3; // 5% less
+  const maxWidth = width + width * 0.05; // 5% more
   const preferred = (width / BASE_SCREEN_WIDTH) * 100;
-  const fluidWidth = `clamp(${min}px, ${preferred}vw, ${finalMax}px)`;
+  const fluidWidth = `clamp(${minWidth}px, ${preferred}vw, ${maxWidth}px)`;
 
   return (
     <Image
@@ -36,9 +35,9 @@ export default function ScaledImage({
       style={{
         ...style,
         width: fluidWidth,
-        height: 'auto',
-        objectFit: 'contain',
-        maxWidth: '100%',
+        height: "auto",
+        objectFit: "contain",
+        maxWidth: "100%",
       }}
     />
   );

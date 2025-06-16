@@ -27,7 +27,7 @@ export default function page() {
           </div>
           <div className="sub-header-right">
             <a href="/cx">
-              <Image
+              <ScaledImage
                 src={"/images/blue-back-arrow.svg"}
                 width={35}
                 height={35}
@@ -77,8 +77,9 @@ export default function page() {
                 <p>
                   Unify Feedback Channels for a Complete Customer View — emails,
                   surveys, chat logs, social media, and more — into one
-                  centralized dashboard. Sentimeter provides a seamless, real-time
-                  integration of data streams to simplify decision-making.
+                  centralized dashboard. Sentimeter provides a seamless,
+                  real-time integration of data streams to simplify
+                  decision-making.
                 </p>
               </div>
               <div className="section-footer">
@@ -265,8 +266,8 @@ export default function page() {
               </div>
               <div className="section-footer">
                 <p>
-                  <span>Why It Matters:</span> “Proactive planning minimizes risks
-                  and maximizes opportunities.“
+                  <span>Why It Matters:</span> “Proactive planning minimizes
+                  risks and maximizes opportunities.“
                 </p>
                 <div className="row">
                   <p>Predict Customer Behavior</p>
@@ -292,9 +293,9 @@ export default function page() {
               </div>
               <div className="content">
                 <p>
-                  Identify anomalies and trends early to stay agile and proactive.
-                  With Sentimeter’s anomaly detection tools, you’ll address
-                  potential risks before they escalate.
+                  Identify anomalies and trends early to stay agile and
+                  proactive. With Sentimeter’s anomaly detection tools, you’ll
+                  address potential risks before they escalate.
                 </p>
               </div>
               <div className="section-footer">

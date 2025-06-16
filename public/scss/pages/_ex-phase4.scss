@@ -9,11 +9,6 @@
 				.content {
 					max-width: none;
 				}
-
-				img {
-					width: scale(515);
-					height: scale(515);
-				}
 			}
 		}
 	}
@@ -57,8 +52,6 @@
 				margin: auto;
 
 				img {
-					width: scale(516);
-					height: scale(350);
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -138,14 +131,6 @@
 				}
 			}
 		}
-
-		.col-left {
-			img {
-				width: scale(732);
-				height: scale(443);
-			}
-		}
-
 	}
 
 
@@ -162,12 +147,6 @@
 		}
 
 		.col {
-			&:first-child {
-				img {
-					width: scale(125);
-					height: scale(125);
-				}
-			}
 
 			&.content {
 				max-width: 50%;
@@ -280,11 +259,6 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-
-			img {
-				width: scale(571);
-				height: scale(365);
-			}
 		}
 	}
 
@@ -307,12 +281,6 @@
 			@extend .gradient;
 
 			.container {
-				.col-icon {
-					img {
-						width: scale(95);
-						height: scale(95);
-					}
-				}
 
 				.col-content {
 					max-width: 70%;
@@ -321,7 +289,4 @@
 			}
 		}
 	}
-
-
-
 }

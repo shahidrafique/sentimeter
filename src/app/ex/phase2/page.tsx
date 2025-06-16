@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
+import ScaledImage from "@/app/components/scaled-image";
 import Clients from "../../components/clients";
 import Link from "next/link";
 export default function page() {
@@ -12,14 +12,14 @@ export default function page() {
       <section className="sub-header">
         <div className="container">
           <div className="sub-header-left">
-            <Image
+            <ScaledImage
               src="/images/senti-ex.svg"
               width={240}
               height={96}
               alt="senti ex"
             />
             <div className="page-title">
-              <Image
+              <ScaledImage
                 src={"/images/icon-phase-2.svg"}
                 width={80}
                 height={80}
@@ -30,7 +30,7 @@ export default function page() {
           </div>
           <div className="sub-header-right">
             <a href="/ex">
-              <Image
+              <ScaledImage
                 src={"/images/blue-back-arrow.svg"}
                 width={35}
                 height={35}
@@ -65,7 +65,7 @@ export default function page() {
             </div>
           </div>
           <div className="col">
-            <Image
+            <ScaledImage
               src="/images/ex/phase2/ex-phase2-header.svg"
               width={515}
               height={515}
@@ -94,7 +94,7 @@ export default function page() {
                 {/* Col Start */}
                 <section className="card">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/ex/phase2/lifecycle-icon-1.svg"}
                       width={72}
                       height={72}
@@ -113,7 +113,7 @@ export default function page() {
 
                 <section className="card  red">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/ex/phase2/lifecycle-icon-2.svg"}
                       width={72}
                       height={72}
@@ -131,7 +131,7 @@ export default function page() {
                 {/* Col Start */}
                 <section className="card yellow">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/ex/phase2/lifecycle-icon-3.svg"}
                       width={72}
                       height={72}
@@ -193,7 +193,7 @@ export default function page() {
                   </Link>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/ex/phase2/stage1-illustration.svg"}
                     width={1050}
                     height={574}
@@ -216,7 +216,7 @@ export default function page() {
                   </Link>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/ex/phase2/stage2-illustration.svg"}
                     width={1050}
                     height={574}
@@ -239,7 +239,7 @@ export default function page() {
                   </Link>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/ex/phase2/stage3-illustration.svg"}
                     width={1050}
                     height={574}
@@ -261,7 +261,7 @@ export default function page() {
                   </Link>
                 </div>
                 <div className="col">
-                  <Image
+                  <ScaledImage
                     src={"/images/ex/phase2/stage4-illustration.svg"}
                     width={1050}
                     height={574}
@@ -279,7 +279,7 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="content">
-              <Image
+              <ScaledImage
                 src={"/images/ex/phase2/mapping-icon.png"}
                 width={124}
                 height={124}

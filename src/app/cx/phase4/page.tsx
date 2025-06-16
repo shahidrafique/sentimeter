@@ -27,7 +27,7 @@ export default function page() {
           </div>
           <div className="sub-header-right">
             <a href="/cx">
-              <Image
+              <ScaledImage
                 src={"/images/blue-back-arrow.svg"}
                 width={35}
                 height={35}
@@ -73,12 +73,15 @@ export default function page() {
               </div>
               <div className="content">
                 <p>
-                  Overwhelmed by feedback? Sentimeter’s AI-powered prioritization ensures you focus on what truly matters by ranking feedback based on urgency and impact.
+                  Overwhelmed by feedback? Sentimeter’s AI-powered
+                  prioritization ensures you focus on what truly matters by
+                  ranking feedback based on urgency and impact.
                 </p>
               </div>
               <div className="section-footer">
                 <p>
-                  <span>Why It Matters:</span> “Focusing on what truly matters lets you create meaningful change without wasting resources.”
+                  <span>Why It Matters:</span> “Focusing on what truly matters
+                  lets you create meaningful change without wasting resources.”
                 </p>
                 <div className="row">
                   <p>See How Prioritization Works</p>
@@ -160,9 +163,9 @@ export default function page() {
             </div>
             <div className="content">
               <p>
-                Ensure no feedback is left unaddressed with Sentimeter’s automated
-                workflows. Streamline processes to track, assign, and resolve
-                every concern efficiently.
+                Ensure no feedback is left unaddressed with Sentimeter’s
+                automated workflows. Streamline processes to track, assign, and
+                resolve every concern efficiently.
               </p>
               <ul className="checklist blue">
                 <li className="checklist-item">
@@ -170,8 +173,8 @@ export default function page() {
                   critical feedback.
                 </li>
                 <li className="checklist-item">
-                  <span>Auto-Assign Cases:</span> Route issues to the right teams
-                  for faster resolutions.
+                  <span>Auto-Assign Cases:</span> Route issues to the right
+                  teams for faster resolutions.
                 </li>
                 <li className="checklist-item">
                   <span>Resolution Tracking:</span> Monitor issue progress from
@@ -181,8 +184,8 @@ export default function page() {
             </div>
             <div className="section-footer">
               <p>
-                <span>Why It Matters:</span> “Monitor issue progress from start to
-                finish, ensuring accountability.“
+                <span>Why It Matters:</span> “Monitor issue progress from start
+                to finish, ensuring accountability.“
               </p>
               <div className="row">
                 <p>Explore Workflow Automation</p>
@@ -307,7 +310,9 @@ export default function page() {
                       alt="icon customer connect"
                     />
                     <h5>Customer Connect Box</h5>
-                    <p>Engage directly with customers using branded messaging.</p>
+                    <p>
+                      Engage directly with customers using branded messaging.
+                    </p>
                   </div>
                   <div className="card-blocks-item yellow">
                     <ScaledImage
@@ -328,7 +333,8 @@ export default function page() {
                     />
                     <h5>Feedback-Driven Updates</h5>
                     <p>
-                      Highlight how customer input leads to tangible improvements.
+                      Highlight how customer input leads to tangible
+                      improvements.
                     </p>
                   </div>
                 </div>
@@ -336,7 +342,8 @@ export default function page() {
               <div className="section-footer">
                 <p>
                   <span>Why It Matters:</span> “Closing the loop builds trust,
-                  strengthens relationships, and turns customers into advocates.“
+                  strengthens relationships, and turns customers into
+                  advocates.“
                 </p>
                 <div className="row">
                   <p>Learn How to Close the Loop</p>
@@ -367,12 +374,12 @@ export default function page() {
               </p>
               <ul className="checklist blue">
                 <li className="checklist-item">
-                  <span>Live Dashboards:</span> Monitor metrics like NPS and CSAT
-                  in real time.
+                  <span>Live Dashboards:</span> Monitor metrics like NPS and
+                  CSAT in real time.
                 </li>
                 <li className="checklist-item">
-                  <span>Automated Reporting:</span> Generate periodic huddle-ready
-                  reports or export CSVs for detailed analysis.
+                  <span>Automated Reporting:</span> Generate periodic
+                  huddle-ready reports or export CSVs for detailed analysis.
                 </li>
                 <li className="checklist-item">
                   <span>Ongoing Analysis:</span> Use dynamic filtering and
@@ -417,8 +424,8 @@ export default function page() {
               <div className="content">
                 <p>
                   Sentimeter transforms insights into actions by automating
-                  processes, prioritizing feedback, and aligning teams to deliver
-                  exceptional customer experiences.
+                  processes, prioritizing feedback, and aligning teams to
+                  deliver exceptional customer experiences.
                 </p>
               </div>
               <div className="section-footer">

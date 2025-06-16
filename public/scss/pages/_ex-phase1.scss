@@ -9,11 +9,6 @@
 				.content {
 					max-width: none;
 				}
-
-				img {
-					width: scale(500);
-					height: auto;
-				}
 			}
 		}
 	}
@@ -62,10 +57,7 @@
 					margin: 0;
 				}
 
-				img {
-					width: scale(60);
-					height: scale(60);
-				}
+
 
 				$class-suffixes: 100, 90, 80, 70;
 
@@ -97,12 +89,7 @@
 
 
 		.col {
-			&:first-child {
-				img {
-					width: scale(125);
-					height: scale(125);
-				}
-			}
+
 
 			&.content {
 				max-width: 60%;
@@ -135,12 +122,7 @@
 					.col {
 						flex: 1;
 
-						.icon {
-							img {
-								width: scale(86);
-								height: scale(86);
-							}
-						}
+
 
 						h4 {
 							font-size: scale(22);
@@ -177,14 +159,7 @@
 			}
 		}
 
-		.col {
-			&:nth-child(2) {
-				img {
-					width: scale(708);
-					height: scale(444);
-				}
-			}
-		}
+
 
 		h5 {
 			color: $dark-blue;
@@ -272,10 +247,7 @@
 					display: flex;
 					gap: 20px;
 
-					img {
-						width: scale(60);
-						height: scale(60);
-					}
+
 
 					.content {
 
@@ -343,10 +315,7 @@
 					flex: none;
 					text-align: center;
 
-					img {
-						width: scale(366);
-						height: auto;
-					}
+
 				}
 
 				&:nth-child(1) {
@@ -396,7 +365,7 @@
 
 	.customer-journey-mapping {
 
-		> .card {
+		>.card {
 			@extend .gradient;
 			color: white;
 			display: flex;
@@ -476,9 +445,6 @@
 					.icon {
 						img {
 							opacity: 0.25;
-							width: scale(56);
-							height: scale(56);
-							object-fit: contain;
 							vertical-align: top;
 							transition: .35s;
 						}
@@ -581,7 +547,7 @@
 			@extend .gradient;
 			color: white;
 
-			> .container {
+			>.container {
 				justify-content: space-between;
 			}
 

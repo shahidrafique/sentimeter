@@ -30,7 +30,7 @@ export default function page() {
           </div>
           <div className="sub-header-right">
             <a href="/cx">
-              <Image
+              <ScaledImage
                 src={"/images/blue-back-arrow.svg"}
                 width={35}
                 height={35}
@@ -48,9 +48,15 @@ export default function page() {
           <div className="col">
             <div className="content">
               <h3>Create a Data-Driven CX Strategy</h3>
-              <h4>Transform the way you understand your customers’ paths to success.</h4>
+              <h4>
+                Transform the way you understand your customers’ paths to
+                success.
+              </h4>
               <p>
-                At Sentimeter, we guide you in crafting customer journeys tailored to your organization’s unique processes. This isn’t just a map; it’s a strategic blueprint for uncovering insights, addressing drop-offs, and elevating experiences.
+                At Sentimeter, we guide you in crafting customer journeys
+                tailored to your organization’s unique processes. This isn’t
+                just a map; it’s a strategic blueprint for uncovering insights,
+                addressing drop-offs, and elevating experiences.
               </p>
               <Link href="/demo-form" className="button button--outline">
                 Request a Demo

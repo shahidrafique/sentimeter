@@ -24,8 +24,8 @@
         padding-right: scale(50);
 
         img {
-            height: scale(100);
-            width: scale(175);
+            height: scale(100) !important;
+            width: scale(175) !important;
             object-fit: contain;
             transition: .35s;
             filter: grayscale(1);

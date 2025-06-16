@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import ScaledImage from "../../components/scaled-image";
 import Clients from "../../components/clients";
 import Link from "next/link";
 export default function page() {
@@ -10,14 +10,14 @@ export default function page() {
       <section className="sub-header">
         <div className="container">
           <div className="sub-header-left">
-            <Image
+            <ScaledImage
               src="/images/senti-ex.svg"
               width={240}
               height={96}
               alt="senti ex"
             />
             <div className="page-title">
-              <Image
+              <ScaledImage
                 src={"/images/icon-phase-3.svg"}
                 width={80}
                 height={80}
@@ -28,7 +28,7 @@ export default function page() {
           </div>
           <div className="sub-header-right">
             <a href="/ex">
-              <Image
+              <ScaledImage
                 src={"/images/blue-back-arrow.svg"}
                 width={35}
                 height={35}
@@ -63,7 +63,7 @@ export default function page() {
             </div>
           </div>
           <div className="col">
-            <Image
+            <ScaledImage
               src="/images/ex/phase3/ex-phase3-header.svg"
               width={782}
               height={389}
@@ -111,7 +111,7 @@ export default function page() {
                 <li>
                   <div className="feature">
                     <div className="icon">
-                      <Image
+                      <ScaledImage
                         src="/images/ex/phase3/holistic-icon-1.svg"
                         width={72}
                         height={84}
@@ -128,7 +128,7 @@ export default function page() {
                 <li>
                   <div className="feature">
                     <div className="icon">
-                      <Image
+                      <ScaledImage
                         src="/images/ex/phase3/holistic-icon-2.svg"
                         width={72}
                         height={84}
@@ -147,7 +147,7 @@ export default function page() {
                 <li>
                   <div className="feature">
                     <div className="icon">
-                      <Image
+                      <ScaledImage
                         src="/images/ex/phase3/holistic-icon-3.svg"
                         width={72}
                         height={84}
@@ -164,7 +164,7 @@ export default function page() {
                 <li>
                   <div className="feature">
                     <div className="icon">
-                      <Image
+                      <ScaledImage
                         src="/images/ex/phase3/holistic-icon-4.svg"
                         width={72}
                         height={84}
@@ -183,7 +183,7 @@ export default function page() {
                 <li>
                   <div className="feature">
                     <div className="icon">
-                      <Image
+                      <ScaledImage
                         src="/images/ex/phase3/holistic-icon-5.svg"
                         width={72}
                         height={84}
@@ -208,7 +208,7 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="col col-icon">
-              <Image
+              <ScaledImage
                 src={"/images/ex/phase3/decode-icon.png"}
                 width={125}
                 height={125}
@@ -231,7 +231,7 @@ export default function page() {
                 <div className="cards no-border yellow">
                   <div className="card">
                     <div className="icon">
-                      <Image
+                      <ScaledImage
                         src={"/images/ex/phase3/decode-icon-1.svg"}
                         width={86}
                         height={86}
@@ -249,7 +249,7 @@ export default function page() {
 
                   <div className="card">
                     <div className="icon">
-                      <Image
+                      <ScaledImage
                         src={"/images/ex/phase3/decode-icon-2.svg"}
                         width={86}
                         height={86}
@@ -267,7 +267,7 @@ export default function page() {
 
                   <div className="card">
                     <div className="icon">
-                      <Image
+                      <ScaledImage
                         src={"/images/ex/phase3/decode-icon-3.svg"}
                         width={86}
                         height={86}
@@ -284,7 +284,7 @@ export default function page() {
                   </div>
                   <div className="card">
                     <div className="icon">
-                      <Image
+                      <ScaledImage
                         src={"/images/ex/phase3/decode-icon-4.svg"}
                         width={86}
                         height={86}
@@ -349,7 +349,7 @@ export default function page() {
             <div className="features">
               <div className="feature">
                 <div className="icon">
-                  <Image
+                  <ScaledImage
                     src={"/images/ex/phase3/overlay-icon-1.svg"}
                     width={32}
                     height={32}
@@ -365,7 +365,7 @@ export default function page() {
 
               <div className="feature">
                 <div className="icon">
-                  <Image
+                  <ScaledImage
                     src={"/images/ex/phase3/overlay-icon-2.svg"}
                     width={32}
                     height={32}
@@ -381,7 +381,7 @@ export default function page() {
 
               <div className="feature">
                 <div className="icon">
-                  <Image
+                  <ScaledImage
                     src={"/images/ex/phase3/overlay-icon-3.svg"}
                     width={32}
                     height={32}
@@ -397,7 +397,7 @@ export default function page() {
 
               <div className="feature">
                 <div className="icon">
-                  <Image
+                  <ScaledImage
                     src={"/images/ex/phase3/overlay-icon-4.svg"}
                     width={32}
                     height={32}
@@ -433,7 +433,7 @@ export default function page() {
               <div className="cards">
                 <section className="card  yellow">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/ex/phase3/leverage-icon-1.svg"}
                       width={72}
                       height={72}
@@ -451,7 +451,7 @@ export default function page() {
 
                 <section className="card yellow">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/ex/phase3/leverage-icon-2.svg"}
                       width={72}
                       height={72}
@@ -469,7 +469,7 @@ export default function page() {
 
                 <section className="card  yellow">
                   <div className="icon">
-                    <Image
+                    <ScaledImage
                       src={"/images/ex/phase3/leverage-icon-3.svg"}
                       width={72}
                       height={72}
@@ -546,7 +546,7 @@ export default function page() {
             </section>
           </div>
           <div className="col image-container">
-            <Image
+            <ScaledImage
               src={"/images/ex/phase3/spot-illustrations.svg"}
               width={689}
               height={437}

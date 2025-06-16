@@ -132,10 +132,6 @@
             .icon {
                 flex-shrink: 0;
 
-                img {
-                    width: scale(80);
-                    height: scale(80);
-                }
             }
 
             .content {
@@ -316,11 +312,6 @@
                 // gap: 20px;
                 .icon {
                     margin-bottom: scale(16);
-
-                    img {
-                        width: scale(86);
-                        height: scale(86);
-                    }
                 }
 
                 h4 {
@@ -356,11 +347,6 @@
 
     .image-holder {
         margin: scale(30) 0;
-
-        img {
-            width: scale(1136);
-            height: scale(338);
-        }
     }
 }
 
@@ -375,10 +361,7 @@
         display: flex;
         align-items: center;
 
-        img {
-            width: scale(799);
-            height: scale(387);
-        }
+
     }
 
     .content {
@@ -418,10 +401,6 @@
         align-items: center;
         display: flex;
 
-        img {
-            width: scale(792);
-            height: scale(412);
-        }
 
         &:nth-child(2) {
             flex: 2.4;
@@ -460,12 +439,7 @@
 
         }
 
-        &.image-holder {
-            img {
-                width: scale(887);
-                height: scale(476);
-            }
-        }
+
     }
 
     .content {

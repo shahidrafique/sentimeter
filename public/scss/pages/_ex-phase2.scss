@@ -9,11 +9,6 @@
 				.content {
 					max-width: none;
 				}
-
-				img {
-					width: scale(515);
-					height: scale(515);
-				}
 			}
 		}
 	}
@@ -121,35 +116,6 @@
 					flex: 2;
 				}
 			}
-
-			&.stage1 {
-				img {
-					width: scale(1050);
-					height: scale(574);
-				}
-			}
-
-			&.stage2 {
-				img {
-					width: scale(993);
-					height: scale(487);
-				}
-			}
-
-			&.stage3 {
-				img {
-					width: scale(946);
-					height: scale(447);
-				}
-			}
-
-			&.stage3 {
-				img {
-					width: scale(991);
-					height: scale(418);
-				}
-			}
-
 		}
 
 	}
