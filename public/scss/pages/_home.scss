@@ -152,11 +152,6 @@
         align-items: flex-start;
         margin-top: scale(50);
         margin-bottom: scale(80);
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
     }
 }
 
@@ -180,15 +175,17 @@
             position: relative;
             margin-bottom: scale(60);
 
-            img {
-                width: scale(530);
-                height: auto;
-            }
-
             .strategy-path-point {
                 position: absolute;
-                width: scale(370);
+                width: clamp(130px, scale(370), 400px);
                 max-width: 100%;
+
+                img {
+                    display: none;
+                    @include xs {
+                        display: block;
+                    }
+                }
 
                 h5 {
                     margin: 0 0 scale(5);
@@ -218,6 +215,50 @@
                 &:nth-of-type(4) {
                     left: calc(100% + scale(10));
                     top: scale(64);
+                }
+            }
+
+            @include xs {
+                display: flex;
+
+                > img {
+                    display: none;
+                }
+
+                .strategy-path-point {
+                    border: 1px solid red;
+                    position: relative;
+                    width: 80px;
+                    top: 0 !important;
+                    left: 0 !important;
+                    right: 0 !important;
+                    text-align: left !important;
+                    padding-top: 190px;
+
+                    &::before,
+                    &::after {
+                        content: '';
+                        position: absolute;
+                    }
+
+                    &::before {
+                        width: 14px;
+                        height: 174px;
+                        background-color: $red;
+                        display: block;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    &::after {
+                        width: 0px;
+                        height: 0px;
+                        border-left: 16px solid transparent;
+                        border-right: 16px solid transparent;
+                        border-top: 16px solid $red;
+                        top: 173px;
+                        left: -9px;
+                    }
                 }
             }
         }

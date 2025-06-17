@@ -15,18 +15,46 @@ export default function StrategyPath() {
               alt="strategy path"
             />
             <div className="strategy-path-point">
+              <ScaledImage
+                src={"/images/icon-rewamp.svg"}
+                width={24}
+                height={24}
+                alt="icon rewamp"
+                min={24}
+              />
               <h5 className="text-red">REVAMP</h5>
               <p>Transform underperforming feedback programs for ROI</p>
             </div>
             <div className="strategy-path-point">
+              <ScaledImage
+                src={"/images/icon-simplify.svg"}
+                width={24}
+                height={24}
+                alt="icon rewamp"
+                min={24}
+              />
               <h5 className="text-yellow">SIMPLIFY & LAUNCH</h5>
               <p>Streamline CX implementation for quick wins</p>
             </div>
             <div className="strategy-path-point">
+              <ScaledImage
+                src={"/images/icon-adopt.svg"}
+                width={24}
+                height={24}
+                alt="icon rewamp"
+                min={24}
+              />
               <h5 className="text-green">ADOPT CUSTOMER CENTRICITY</h5>
               <p>Build continuous improvement culture</p>
             </div>
             <div className="strategy-path-point">
+              <ScaledImage
+                src={"/images/icon-launch.svg"}
+                width={24}
+                height={24}
+                alt="icon rewamp"
+                min={24}
+              />
               <h5 className="text-blue">LAUNCH STRUCTURED CX</h5>
               <p>Implement organized feedback systems</p>
             </div>
