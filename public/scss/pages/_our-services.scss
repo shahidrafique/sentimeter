@@ -14,6 +14,45 @@
     .card {
       .strategy-path {
         background-color: $white;
+
+        .strategy-illustration-container {
+
+          @include xs {
+
+            .strategy-path-point {
+              width: 130px;
+
+              h5 { font-size: 14px; }
+
+              p { font-size: 12px; }
+
+              &.rewamp {
+                padding-top: 400px;
+
+                &::before {
+                  height: 380px;
+                  background-color: $green;
+                }
+
+                &::after {
+                  top: 378px;
+                  border-top-color: $green;
+                }
+              }
+
+              &.adopt {
+                &::before {
+                  background-color: $red;
+                }
+
+                &::after {
+                  border-top-color: $red;
+                }
+              }
+            }
+          }
+
+        }
       }
     }
   }

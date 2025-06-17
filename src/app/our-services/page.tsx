@@ -29,22 +29,51 @@ export default function page() {
                     width={530}
                     height={285}
                     alt="strategy path"
+                    min={300}
                   />
-                  <div className="strategy-path-point">
+                  <div className="strategy-path-point rewamp">
+                    <ScaledImage
+                      src={"/images/icon-rewamp-green.svg"}
+                      width={24}
+                      height={24}
+                      alt="icon rewamp"
+                      min={24}
+                    />
                     <h5 className="text-green">REVAMP</h5>
-                    <p>Transform underperforming feedback programs for ROI</p>
+                    <p>When your program is in place but not delivering value</p>
                   </div>
-                  <div className="strategy-path-point">
-                    <h5 className="text-yellow">SIMPLIFY & LAUNCH</h5>
-                    <p>Streamline CX implementation for quick wins</p>
+                  <div className="strategy-path-point simplify">
+                    <ScaledImage
+                      src={"/images/icon-adopt-yellow.svg"}
+                      width={24}
+                      height={24}
+                      alt="icon simplify"
+                      min={24}
+                    />
+                    <h5 className="text-yellow">ADOPT CUSTOMER CENTRICITY</h5>
+                    <p>When you need to make your organization adopt continuous improvement & customer-centric framework</p>
                   </div>
-                  <div className="strategy-path-point">
-                    <h5 className="text-red">ADOPT CUSTOMER CENTRICITY</h5>
-                    <p>Build continuous improvement culture</p>
+                  <div className="strategy-path-point adopt">
+                    <ScaledImage
+                      src={"/images/icon-simplify-red.svg"}
+                      width={24}
+                      height={24}
+                      alt="icon adopt"
+                      min={24}
+                    />
+                    <h5 className="text-red">SIMPLIFY & LAUNCH</h5>
+                    <p>When CX is important but you find it daunting - simplify and start</p>
                   </div>
-                  <div className="strategy-path-point">
+                  <div className="strategy-path-point launch">
+                    <ScaledImage
+                      src={"/images/icon-launch-blue.svg"}
+                      width={24}
+                      height={24}
+                      alt="icon launch"
+                      min={24}
+                    />
                     <h5 className="text-blue">LAUNCH STRUCTURED CX</h5>
-                    <p>Implement organized feedback systems</p>
+                    <p>When you're collecting feedback but want to launch structured CX</p>
                   </div>
                 </div>
                 <a href="#" className="button">Learn More</a>
