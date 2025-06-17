@@ -13,7 +13,7 @@
     align-items: center;
     position: static;
 
-    @include xs {
+    @include sm {
       flex-direction: row;
     }
   }
@@ -32,11 +32,8 @@
 
       font-size: clamp(24px, scale(38), 42px);
 
-      }
-
       b {
         font-weight: 600;
-
       }
     }
   }
@@ -45,11 +42,11 @@
     display: flex;
     align-items: center;
     gap: 30px;
-  }
 
-  @include sm {
-    .container {
-      flex-direction: row;
+    @include sm {
+      .button {
+        display: none;
+      }
     }
   }
-
+}

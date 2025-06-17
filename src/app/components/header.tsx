@@ -8,6 +8,10 @@ import ScaledImage from "./scaled-image";
 export default function Header() {
   const pathname = usePathname();
   const [activeTab, setActiveTab] = useState("customer");
+  const [isActive, setIsActive] = useState(false);
+  const handleClick = () => {
+    setIsActive(!isActive);
+  };
   return (
     <>
       {pathname === "/" ? null : (
@@ -22,11 +26,13 @@ export default function Header() {
                   alt="Sentimeter"
                   min={30}
                 />
-                <b>Senti</b>meter
+                <span>
+                  <b>Senti</b>meter
+                </span>
               </Link>
             </div>
             <div className="header-right">
-              <nav className="nav">
+              <nav className={isActive ? "nav show" : "nav"}>
                 <ul>
                   {/* <li className="nav__item">
                     <Link href="/solution">Solutions</Link>
@@ -265,6 +271,12 @@ export default function Header() {
                 Request for Demo
               </Link>
             </div>
+          </div>
+
+          <div className="menu-button" onClick={handleClick}>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </header>
       )}

@@ -46,7 +46,9 @@
 
     @include sm {
         padding: 40px 0;
+    }
 
-
+    img {
+        max-width: none !important;
     }
 }
