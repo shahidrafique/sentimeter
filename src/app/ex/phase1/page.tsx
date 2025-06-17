@@ -169,72 +169,85 @@ export default function page() {
             </div>
 
             <div className="col content">
-              <h3>
-                Build <span>Trust</span> Through Anonymity
-              </h3>
-              <p>
-                Honest feedback is fearless feedback. Sentimeter ensures
-                confidentiality, allowing employees to share their thoughts
-                openly without fear of repercussions.
-              </p>
-              <h5>Key Features:</h5>
-              <div className="row">
-                <div className="col">
-                  <div className="icon">
-                    <ScaledImage
-                      src={"/images/icon-build-trust1.svg"}
-                      width={86}
-                      height={86}
-                      alt="benefit"
-                    />
+              <div className="section-header">
+                <h2>
+                  Build <span>Trust</span> Through Anonymity
+                </h2>
+                <p>
+                  Honest feedback is fearless feedback. Sentimeter ensures
+                  confidentiality, allowing employees to share their thoughts
+                  openly without fear of repercussions.
+                </p>
+              </div>
+              <h4 className="features-heading">Key Features:</h4>
+              <div className="features ">
+                <div className="cards no-border yellow">
+                  <div className="card">
+                    <div className="icon">
+                      <ScaledImage
+                        src={"/images/icon-build-trust1.svg"}
+                        width={86}
+                        height={86}
+                        alt="benefit"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <h4>Guaranteed Anonymity</h4>
+                      <p>
+                        Secure systems ensure privacy for fearless
+                        participation.
+                      </p>
+                    </div>
                   </div>
-                  <h4>Guaranteed Anonymity</h4>
-                  <p>
-                    Secure systems ensure privacy for fearless participation.
-                  </p>
-                </div>
 
-                <div className="col">
-                  <div className="icon">
-                    <ScaledImage
-                      src={"/images/icon-build-trust2.svg"}
-                      width={86}
-                      height={86}
-                      alt="benefit"
-                    />
+                  <div className="card">
+                    <div className="icon">
+                      <ScaledImage
+                        src={"/images/icon-build-trust2.svg"}
+                        width={86}
+                        height={86}
+                        alt="benefit"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <h4>Transparency Tools</h4>
+                      <p>
+                        Foster trust by demonstrating how feedback drives real
+                        improvements.
+                      </p>
+                    </div>
                   </div>
-                  <h4>Transparency Tools</h4>
-                  <p>
-                    Foster trust by demonstrating how feedback drives real
-                    improvements.
-                  </p>
-                </div>
 
-                <div className="col">
-                  <div className="icon">
-                    <ScaledImage
-                      src={"/images/icon-build-trust3.svg"}
-                      width={86}
-                      height={86}
-                      alt="benefit"
-                    />
+                  <div className="card">
+                    <div className="icon">
+                      <ScaledImage
+                        src={"/images/icon-build-trust3.svg"}
+                        width={86}
+                        height={86}
+                        alt="benefit"
+                      />
+                    </div>
+                    <div className="card-content">
+                      <h4>Trust-Building Analytics</h4>
+                      <p>
+                        Build stronger relationships between employees and
+                        leadership.
+                      </p>
+                    </div>
                   </div>
-                  <h4>Trust-Building Analytics</h4>
-                  <p>
-                    Build stronger relationships between employees and
-                    leadership.
-                  </p>
                 </div>
               </div>
-              <p>
-                <span>Why It Matters: </span>
-                <i>
-                  "When feedback is easy to give, employees are eager to share
-                  it."
-                </i>
-              </p>
-              <div className="button button--outline">
-                Create a Safe Feedback Space
+              <div className="section-footer">
+                <div className="note">
+                  <p>
+                    <span>Why It Matters: </span>
+                    "When feedback is easy to give, employees are eager to share
+                    it."
+                  </p>
+                </div>
+                <div className="button button--outline">
+                  Create a Safe Feedback Space
+                </div>
               </div>
             </div>
           </div>
@@ -329,51 +342,55 @@ export default function page() {
                   />
                 </div>
                 <div className="col features">
-                  <div className="feature">
-                    <div className="icon">
-                      <ScaledImage
-                        src={"/images/icon-proactive-1.svg"}
-                        width={60}
-                        height={60}
-                        alt="ternado"
-                      />
+                  <div className="cards no-border ">
+                    <div className="card">
+                      <div className="icon">
+                        <ScaledImage
+                          src={"/images/icon-proactive-1.svg"}
+                          width={60}
+                          height={60}
+                          alt="ternado"
+                        />
+                      </div>
+                      <div className="content">
+                        <h5>Lifecycle Feedback Mapping</h5>
+                        <p>
+                          Monitor experiences across all touchpoints, including
+                          onboarding, training, and performance reviews.
+                        </p>
+                      </div>
                     </div>
-                    <div className="content">
-                      <h5>Lifecycle Feedback Mapping</h5>
-                      <p>
-                        Monitor experiences across all touchpoints, including
-                        onboarding, training, and performance reviews.
-                      </p>
+                    <div className="card">
+                      <div className="icon">
+                        <ScaledImage
+                          src={"/images/icon-proactive-2.svg"}
+                          width={60}
+                          height={60}
+                          alt="ternado"
+                        />
+                      </div>
+                      <div className="content">
+                        <h5>End-to-End Analytics</h5>
+                        <p>
+                          Track trends and patterns to see the bigger picture.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="feature">
-                    <div className="icon">
-                      <ScaledImage
-                        src={"/images/icon-proactive-2.svg"}
-                        width={60}
-                        height={60}
-                        alt="ternado"
-                      />
-                    </div>
-                    <div className="content">
-                      <h5>End-to-End Analytics</h5>
-                      <p>
-                        Track trends and patterns to see the bigger picture.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="feature">
-                    <div className="icon">
-                      <ScaledImage
-                        src={"/images/icon-proactive-3.svg"}
-                        width={60}
-                        height={60}
-                        alt="ternado"
-                      />
-                    </div>
-                    <div className="content">
-                      <h5>Responsive Listening</h5>
-                      <p>Stay open to feedback when employees need it most.</p>
+                    <div className="card">
+                      <div className="icon">
+                        <ScaledImage
+                          src={"/images/icon-proactive-3.svg"}
+                          width={60}
+                          height={60}
+                          alt="ternado"
+                        />
+                      </div>
+                      <div className="content">
+                        <h5>Responsive Listening</h5>
+                        <p>
+                          Stay open to feedback when employees need it most.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -427,7 +444,7 @@ export default function page() {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col why-image">
               <ScaledImage
                 src={"/images/image-why.svg"}
                 width={366}

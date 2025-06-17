@@ -22,11 +22,10 @@
 
       img {
         margin-right: 8px;
-        width: scale(56);
-        width: scale(56);
+        width: clamp(50px, scale(56), 72px);
       }
 
-      font-size: scale(38);
+      font-size: clamp(24px, scale(38), 42px);
 
       b {
         font-weight: 600;
@@ -41,81 +40,10 @@
     gap: 30px;
   }
 
-
-
-
-
-
-  .menu-button {
-    position: absolute;
-
-    right: 20px;
-    top: 31px;
-    display: none !important;
-    width: 27px;
-    height: 18px;
-    transition: 0.35s;
-
-    span {
-      width: 27px;
-      height: 3px;
-      background: $black;
-      display: block;
-      margin-bottom: 3px;
-      transition: 0.35s;
-      pointer-events: none;
-    }
-
-    &.show {
-      span {
-        &:first-child {
-          opacity: 0;
-        }
-
-        &:nth-child(2) {
-          background: $red;
-          transform: rotate(45deg);
-        }
-
-        &:nth-child(3) {
-          background: $red;
-          transform: rotate(-45deg);
-          margin-top: -6px;
-        }
-      }
-    }
-
-    @include md {
-      display: block !important;
+  @include sm {
+    .container {
+      flex-direction: row;
     }
   }
 
-  &.show {
-    .nav {
-      @include md {
-        max-height: 500px;
-      }
-    }
-  }
-
-  @include md {
-    >.container {
-      padding: 30px 16px;
-    }
-
-    .nav {
-      height: auto;
-    }
-  }
-
-  &.show--notification {
-    .notification-bar {
-      height: 75px;
-      padding: 1rem 0;
-    }
-
-    .menu-button {
-      top: 106px;
-    }
-  }
 }

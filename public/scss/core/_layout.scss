@@ -15,7 +15,7 @@
     flex-direction: column;
   }
 
-  > .col {
+  >.col {
     @include xs {
       padding-left: 0 !important;
       padding-right: 0 !important;
@@ -99,8 +99,9 @@
     }
 
     h2 {
-      font-size: clamp(26px, scale(50), 56px);
+      font-size: clamp(32px, scale(50), 60px);
       margin-bottom: 10px;
+      font-weight: 500;
     }
 
     p {
@@ -190,8 +191,8 @@
 }
 
 .features-heading {
-  font-size: scale(32);
-  margin-bottom: 30px;
+  font-size: clamp(20px, scale(30), 32px);
+  margin-bottom: clamp(8px, scale(30), 36px);
 }
 
 .features {
@@ -207,7 +208,7 @@
     .card {
       border: 1px solid $green;
       border-top-width: 10px;
-      border-radius: scale(12);
+      border-radius: 12px;
       padding: scale(36);
       display: flex;
       flex-direction: column;
@@ -215,6 +216,8 @@
       flex: 1;
 
       .icon {
+        flex-shrink: 0;
+
         img {
           height: clamp(76px, scale(86), 96px);
           width: clamp(76px, scale(86), 96px);
@@ -265,13 +268,34 @@
       }
     }
   }
+
+  @include sm {
+    .cards {
+      &.no-border {
+        .card {
+          flex-direction: row;
+          gap: 18px;
+
+          .icon {
+            flex-shrink: 0;
+          }
+
+          .card-content {
+            p {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .card {
   border-radius: 16px;
   background-color: $white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: clamp(20px, scale(50), 55px) 0;
+  padding: clamp(32px, scale(50), 55px) 0;
 }
 
 
@@ -339,22 +363,19 @@
       display: flex;
       align-items: center;
       gap: 16px;
-      font-size: scale(24);
+      font-size: clamp(20px, scale(24), 28px);
       color: $dark-blue;
       max-width: scale(400);
       font-weight: 600;
 
-      img {
-        width: scale(80);
-        height: scale(80);
-      }
+
 
     }
   }
 
   .sub-header-right {
     color: $blue;
-    font-size: scale(18);
+    font-size: clamp(16px, scale(18), 20px);
     font-weight: 500;
 
     a {
@@ -364,6 +385,33 @@
       color: $dark-blue;
     }
   }
+
+  @include md {
+
+    .container {
+      gap: 8px;
+    }
+
+    .sub-header-left {
+      flex-direction: column;
+      width: 100%;
+      align-items: start;
+      gap: 8px;
+
+      .page-title {
+        width: 100%;
+        max-width: none;
+      }
+    }
+
+    .sub-header-right {
+      align-items: start;
+      justify-content: start;
+      width: 100%;
+    }
+
+  }
+
 }
 
 

@@ -19,6 +19,10 @@ h3 {
 
 h4 {
     font-size: clamp(20px, scale(30), 32px);
+
+    @include sm {
+        font-weight: 500;
+    }
 }
 
 h5 {

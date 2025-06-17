@@ -3,7 +3,6 @@ import { useLayoutEffect } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Problems() {
@@ -158,7 +157,7 @@ export default function Problems() {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       tl.kill();
     };
-  }, []);
+  }, []); // Re-run effect on route change
 
   return (
     <section className="section problems">

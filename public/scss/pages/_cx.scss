@@ -5,12 +5,10 @@
         padding-right: scale(100);
 
         h3 {
-            // font-size: scale(34);
             color: $dark-blue;
         }
 
         h2 {
-            // font-size: scale(54);
             color: $yellow;
             font-style: italic;
         }
@@ -24,7 +22,6 @@
                 li {
                     list-style: disc;
                     margin-left: 30px;
-                    font-size: clamp(16px, scale(20), 22px);
                 }
             }
         }
@@ -37,9 +34,7 @@
         padding-left: scale(100);
 
         h3 {
-            // font-size: scale(34);
             color: $dark-blue;
-            margin-bottom: 30px;
         }
 
         .benefit {
@@ -48,6 +43,32 @@
             max-width: 80%;
             font-size: scale(20);
             gap: 12px;
+
+
+        }
+    }
+
+    @include sm {
+        &-left {
+            padding-right: 0;
+
+            .content {
+                max-width: none;
+            }
+        }
+
+
+        &-right {
+            padding-left: 0;
+
+            .benefit {
+                gap: 8px;
+                max-width: 100%;
+
+                p {
+                    margin: 8px 0;
+                }
+            }
         }
     }
 }
@@ -121,9 +142,9 @@
 
         .phase-card {
             display: flex;
-            padding: clamp(28px, scale(30), 40px);
+            padding: clamp(16px, scale(30), 40px);
             background: $darkest-blue;
-            border-radius: scale(18);
+            border-radius: 18px;
             gap: clamp(20px, scale(24), 30px);
             position: relative;
             margin-bottom: 74px;
@@ -196,6 +217,22 @@
 
                 &:after {
                     display: none;
+                }
+            }
+        }
+    }
+
+    @include sm {
+        .cards-holder {
+            .phase-card {
+                // flex-direction: column;
+                border-radius: 16px;
+
+
+                .content {
+                    p {
+                        max-width: none
+                    }
                 }
             }
         }
@@ -288,8 +325,8 @@
         align-items: center;
     }
 
-    h4 {
-        font-size: scale(26);
+    .section-header h4 {
+        font-size: clamp(20px, scale(26), 32px);
         color: $yellow;
         margin-top: scale(8);
     }
@@ -298,34 +335,6 @@
         // @extend .gradient;
         background: $dark-blue;
         color: $white;
-    }
-
-    .row {
-        margin: scale(60) 0;
-        display: flex;
-        width: 100%;
-        gap: scale(80);
-
-        .col {
-            flex: 1;
-
-            .col-content {
-                display: flex;
-                flex-direction: column;
-
-                // gap: 20px;
-                .icon {
-                    margin-bottom: scale(16);
-                }
-
-                h4 {
-                    font-size: clamp(24px, scale(24), 28px);
-                    color: $yellow;
-                }
-
-
-            }
-        }
     }
 }
 
@@ -338,19 +347,27 @@
         gap: 0;
     }
 
-    h3 {
+    h2 {
         color: $dark-blue;
         text-align: center;
     }
 
     h4 {
-        font-size: scale(26);
+        font-size: clamp(20px, scale(26), 28px);
         margin-top: scale(8);
         text-align: center;
     }
 
     .image-holder {
         margin: scale(30) 0;
+    }
+
+    @include sm {
+
+        h2,
+        h4 {
+            text-align: left;
+        }
     }
 }
 
@@ -369,15 +386,13 @@
     }
 
     .content {
-        h3 {
-            font-size: scale(38);
+        h2 {
             color: $dark-blue
         }
 
         h4 {
-            font-size: scale(22);
+            font-size: clamp(20px, scale(26), 28px);
             margin-top: 8px;
-            max-width: 80%;
         }
 
 
@@ -413,6 +428,10 @@
             h4 {
                 margin-bottom: scale(24);
             }
+
+            h2 {
+                color: $dark-blue;
+            }
         }
     }
 
@@ -440,19 +459,21 @@
             justify-content: center;
 
         }
-
-
     }
 
     .content {
         max-width: 80%;
 
         h3 {
-            font-size: scale(50);
+            // font-size: scale(50);
             color: $dark-blue;
         }
+    }
 
-
+    @include sm {
+        .container {
+            flex-direction: column-reverse
+        }
     }
 }
 
@@ -464,7 +485,7 @@
         color: $white;
     }
 
-    .content {
+    .section-header {
         max-width: 700px;
 
         h3 {
@@ -472,10 +493,6 @@
                 color: $yellow;
                 font-style: italic;
             }
-        }
-
-        p {
-            font-size: clamp(16px, scale(28), 30px);
         }
     }
 }

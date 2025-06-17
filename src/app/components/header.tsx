@@ -26,9 +26,9 @@ export default function Header() {
             <div className="header-right">
               <nav className="nav">
                 <ul>
-                  <li className="nav__item">
+                  {/* <li className="nav__item">
                     <Link href="/solution">Solutions</Link>
-                  </li>
+                  </li> */}
                   <li className="nav__item">
                     <Link href="/cx">Product</Link>
                     <div className="sub-nav">
@@ -71,7 +71,7 @@ export default function Header() {
                                 </div>
                                 <ul>
                                   <li>
-                                    <a href="#">
+                                    <a href="/ex">
                                       <div className="link-title">
                                         Explore SentiEX
                                       </div>
@@ -81,7 +81,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="/ex/phase1">
                                       <div className="link-title">
                                         Make Feedback Fearless and Effortless
                                       </div>
@@ -92,7 +92,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="/ex/phase2">
                                       <div className="link-title">
                                         Understand employee relationship
                                       </div>
@@ -102,7 +102,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="/ex/phase3">
                                       <div className="link-title">
                                         Actionable Insights
                                       </div>
@@ -112,7 +112,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="/ex/phase4">
                                       <div className="link-title">
                                         Turn insights into action
                                       </div>
@@ -123,7 +123,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="/pricing-plan">
                                       <div className="link-title">Pricing</div>
                                     </a>
                                   </li>
@@ -144,7 +144,7 @@ export default function Header() {
                                 </div>
                                 <ul>
                                   <li>
-                                    <a href="#">
+                                    <a href="/cx">
                                       <div className="link-title">
                                         Explore SentiCX
                                       </div>
@@ -154,7 +154,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="/cx/phase1">
                                       <div className="link-title">
                                         Map Customer Journey with precision
                                       </div>
@@ -164,7 +164,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="/cx/phase2">
                                       <div className="link-title">
                                         Capture Insights Everywhere
                                       </div>
@@ -174,7 +174,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="/cx/phase3">
                                       <div className="link-title">
                                         Actionable Insights
                                       </div>
@@ -184,7 +184,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="/cx/phase4">
                                       <div className="link-title">
                                         Take Meaningful Action to Improve CX
                                       </div>
@@ -194,7 +194,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="/cx/phase5">
                                       <div className="link-title">
                                         Report and Iterte
                                       </div>
@@ -204,7 +204,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="/nps">
                                       <div className="link-title">
                                         Net Promoter Score (NPs)
                                       </div>
@@ -214,7 +214,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="/recovery-management">
                                       <div className="link-title">
                                         Recovery Management
                                       </div>
@@ -224,7 +224,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#">
+                                    <a href="text-analysis">
                                       <div className="link-title">
                                         Text Analysis
                                       </div>
@@ -243,14 +243,20 @@ export default function Header() {
                     </div>
                   </li>
                   <li className="nav__item">
-                    <Link href="/solution">Pricing</Link>
+                    <Link href="/our-services">Our Services</Link>
                   </li>
                   <li className="nav__item">
+                    <Link href="/text-analysis">Text Analysis</Link>
+                  </li>
+                  <li className="nav__item">
+                    <Link href="/pricing-plan">Pricing</Link>
+                  </li>
+                  {/* <li className="nav__item">
                     <Link href="/text-analysis">Customers</Link>
-                  </li>
-                  <li className="nav__item">
+                  </li> */}
+                  {/* <li className="nav__item">
                     <Link href="/recovery-management">Resources</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </nav>
               <Link href="/demo-form" className="button">

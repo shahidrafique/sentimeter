@@ -86,54 +86,28 @@
 			gap: clamp(20px, scale(30), 35px);
 		}
 
-
-
 		.col {
-
-
 			&.content {
 				max-width: 60%;
 
-				h3 {
+				h2 {
 					span {
 						color: $yellow;
 					}
 				}
 
-				p {
-
-					span {
-						color: $yellow;
-					}
-				}
-
-				h5 {
-					font-size: scale(22);
+				h4 {
 					color: $yellow;
-					font-weight: 500;
-					font-style: italic;
-					margin: 10px 0;
 				}
 
-				.row {
-					display: flex;
-					gap: 30px;
-
-					.col {
-						flex: 1;
-
-
-
-						h4 {
-							font-size: scale(22);
-							margin: 10px 0;
-							color: $yellow;
-						}
-
-						p {
-							margin-top: 0;
-						}
+				.note {
+					span {
+						color: $yellow;
 					}
+				}
+
+				@include sm {
+					max-width: none;
 				}
 			}
 		}
@@ -214,18 +188,6 @@
 				h2 {
 					color: $dark-blue;
 				}
-
-
-
-				.note {
-					font-style: italic;
-
-					span {
-						font-weight: 600;
-						color: $dark-blue;
-						font-style: normal;
-					}
-				}
 			}
 
 			.key-features {
@@ -234,8 +196,8 @@
 			}
 
 			.ternado {
-				width: scale(303);
-				height: scale(341);
+				flex-shrink: 0;
+				max-width: none !important;
 			}
 
 			.features {
@@ -243,41 +205,42 @@
 				flex-direction: column;
 				gap: 22px;
 
-				.feature {
-					display: flex;
-					gap: 20px;
+				.cards {
+					flex-direction: column;
 
+					.card {
+						display: flex;
+						gap: 20px;
+						flex-direction: row;
 
-
-					.content {
-
-						h5 {
-							font-size: scale(20);
-							margin-bottom: 8px;
+						.icon {
+							flex-shrink: 0;
 						}
 
-						p {
-							margin: 0;
-							font-size: scale(18);
-							color: rgba($black, .7)
-						}
-					}
+						.content {
 
-					&:nth-child(1) {
-						h5 {
-							color: $green;
+							p {
+								margin: 0;
+								color: rgba($black, .7)
+							}
 						}
-					}
 
-					&:nth-child(2) {
-						h5 {
-							color: $red;
+						&:nth-child(1) {
+							h5 {
+								color: $green;
+							}
 						}
-					}
 
-					&:nth-child(3) {
-						h5 {
-							color: $yellow;
+						&:nth-child(2) {
+							h5 {
+								color: $red;
+							}
+						}
+
+						&:nth-child(3) {
+							h5 {
+								color: $yellow;
+							}
 						}
 					}
 				}
@@ -287,7 +250,6 @@
 
 
 	.why {
-
 		.container {
 			flex-direction: column;
 			gap: scale(30);
@@ -314,8 +276,6 @@
 					width: scale(380);
 					flex: none;
 					text-align: center;
-
-
 				}
 
 				&:nth-child(1) {
@@ -324,14 +284,20 @@
 						text-align: right;
 					}
 				}
+
+
+			}
+
+			@include sm {
+				flex-direction: column;
+				margin-bottom: 0;
+				gap: 0;
+
+				.why-image {
+					display: none;
+				}
 			}
 		}
-
-		h3 {
-			text-align: center;
-		}
-
-
 
 		.feature {
 			display: flex;
@@ -359,6 +325,29 @@
 
 			&.feature-4 {
 				transform: translateX(scale(-40));
+			}
+
+			@include sm {
+				text-align: left !important;
+				transform: none !important;
+				margin: 0 0 16px !important;
+				gap: 16px;
+
+				.icon {
+					flex-shrink: 0;
+				}
+
+				.content {
+					h5 {
+						font-size: 18px;
+					}
+				}
+
+
+				&.feature-1,
+				&.feature-2 {
+					flex-direction: row-reverse;
+				}
 			}
 		}
 	}
