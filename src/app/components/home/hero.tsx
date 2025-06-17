@@ -93,26 +93,28 @@ export default function Hero() {
                 </Link>
               </li>
               <li className="nav__item">
-                <Link href="/solution">AI Text Analytics</Link>
+                <Link href="/text-analysis">AI Text Analytics</Link>
               </li>
               <li className="nav__item">
-                <Link href="/cx">Product</Link>
+                <Link href="#">Product</Link>
                 <div className="home-sub-nav">
                   <ul>
                     <li>
                       <Link href="/cx">Customer Experience </Link>
                     </li>
                     <li>
-                      <Link href="/cx">Employee Experience </Link>
+                      <Link href="/ex">Employee Experience </Link>
                     </li>
                     <li>
-                      <Link href="/cx">CX Strategy & Execution</Link>
+                      <Link href="/recovery-management">
+                        CX Strategy & Execution
+                      </Link>
                     </li>
                   </ul>
                 </div>
               </li>
               <li className="nav__item">
-                <Link href="/solution">Pricing</Link>
+                <Link href="/pricing-plan">Pricing</Link>
               </li>
             </ul>
           </div>

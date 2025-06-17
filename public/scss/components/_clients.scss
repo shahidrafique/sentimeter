@@ -24,8 +24,8 @@
         padding-right: scale(50);
 
         img {
-            height: scale(100) !important;
-            width: scale(175) !important;
+            height: clamp(60px, scale(100), 120px) !important;
+            width: clamp(110px, scale(175), 190px) !important;
             object-fit: contain;
             transition: .35s;
             filter: grayscale(1);
@@ -36,6 +36,10 @@
                 opacity: 1;
             }
         }
+    }
+
+    @include sm {
+        padding: 20px 0;
     }
 }
 

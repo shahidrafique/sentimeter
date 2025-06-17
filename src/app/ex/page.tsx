@@ -89,9 +89,7 @@ export default function page() {
                   height={60}
                   alt="benefit"
                 />
-                <p>
-                  Capture feedback at every stage of the employee lifecycle.
-                </p>
+                <p>Decode emotions and trends with advanced analytics.</p>
               </div>
 
               <div className="benefit">
@@ -102,7 +100,8 @@ export default function page() {
                   alt="benefit"
                 />
                 <p>
-                  Capture feedback at every stage of the employee lifecycle.
+                  Foster collaboration with automated tools and actionable
+                  plans.
                 </p>
               </div>
             </div>
@@ -217,14 +216,14 @@ export default function page() {
         <div className="card">
           <div className="container">
             <section className="section-header">
-              <h3>Empowering Employee Experience at Every Stage</h3>
+              <h2>Empowering Employee Experience at Every Stage</h2>
               <h4>
                 From recruitment to retention, Sentimeter drives engagement and
                 actionable insights.
               </h4>
             </section>
             <div className="features">
-              <div className="cards no-border">
+              <div className="cards no-border yellow">
                 <div className="card">
                   <div className="icon">
                     <ScaledImage
@@ -301,7 +300,7 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="section-header">
-              <h3>Supporting Your Team Across the Employee Lifecycle</h3>
+              <h2>Supporting Your Team Across the Employee Lifecycle</h2>
               <h4>
                 Sentimeter ensures every stage of the employee journey is
                 seamless, engaging, and productive.
@@ -329,7 +328,7 @@ export default function page() {
           <div className="col">
             <div className="content">
               <div className="section-header">
-                <h3>Feedback That Powers Transformation</h3>
+                <h2>Feedback That Powers Transformation</h2>
                 <h4>
                   Sentimeter turns employee feedback into meaningful actions,
                   helping you
@@ -374,8 +373,8 @@ export default function page() {
         <div className="card">
           <div className="container">
             <div className="col">
-              <div className="content">
-                <h3>Smarter Surveys for Better Insights</h3>
+              <div className="section-header">
+                <h2>Smarter Surveys for Better Insights</h2>
                 <p>
                   Go beyond collecting data to deliver actionable insights that
                   matter.
@@ -411,14 +410,14 @@ export default function page() {
               />
             </div>
             <div className="col">
-              <div className="content">
-                <h3>Real Results, Real Impact</h3>
+              <div className="section-header">
+                <h2>Real Results, Real Impact</h2>
                 <p>
                   Leading organizations trust Sentimeter to elevate their
                   employee experience and foster growth.
                 </p>
                 <Link href="#" className="button">
-                  Learn More About Smarter Surveys
+                  Learn More
                 </Link>
               </div>
             </div>
@@ -430,16 +429,16 @@ export default function page() {
       <section className="section has-bg transform-employee">
         <div className="card">
           <div className="container">
-            <div className="content">
+            <div className="section-header">
               <ScaledImage
                 src={"/images/icon-transform-employee.svg"}
                 width={87}
                 height={75}
                 alt="core pillars"
               />
-              <h3>
+              <h2>
                 Transform Your Employee Experience with <span>Sentimeter</span>
-              </h3>
+              </h2>
               <p>
                 Begin building a more engaged, satisfied, and productive
                 workforce with Sentimeter.
