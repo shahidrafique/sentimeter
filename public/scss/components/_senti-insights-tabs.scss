@@ -209,4 +209,33 @@
       display: flex;
     }
   }
+
+  @include sm {
+    .slides {
+      .slide {
+        .slide-content {
+          flex-direction: column;
+
+          img {
+            width: 100% !important;
+          }
+
+          .content-left,
+          .content-right {
+            max-width: none;
+
+            p {
+              display: block;
+              box-sizing: border-box;
+              width: 80%;
+              font-size: 18px;
+              margin: 0 auto;
+              text-align: center;
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
