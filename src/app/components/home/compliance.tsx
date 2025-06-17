@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScaledImage from "../scaled-image";
 
 export default function Compliance() {
   return (
@@ -7,31 +8,31 @@ export default function Compliance() {
         <div className="compliance-header">
           <h2 className="section-title">Enterprise Security with Top Compliance Standards</h2>
           <div className="awards-container">
-            <Image
+            <ScaledImage
               src="/images/compliance-awards/aicpa.png"
               width={157}
               height={157}
               alt="aicpa"
             />
-            <Image
+            <ScaledImage
               src="/images/compliance-awards/gdpr.png"
               width={157}
               height={157}
               alt="gdpr"
             />
-            <Image
+            <ScaledImage
               src="/images/compliance-awards/iso-27001.png"
               width={157}
               height={157}
               alt="iso-27001"
             />
-            <Image
+            <ScaledImage
               src="/images/compliance-awards/amazon-ec2.png"
               width={157}
               height={157}
               alt="amazon-ec2"
             />
-            <Image
+            <ScaledImage
               src="/images/compliance-awards/amazozn-s3.png"
               width={157}
               height={157}

@@ -14,13 +14,16 @@
 
   .container {
     gap: 0;
+
+    @include xs {
+      padding: 0;
+    }
   }
 
   .testimonial {
     background: $red-light;
-    padding: scale(75);
-    border-radius: scale(6);
-    margin-right: 50px;
+    padding: clamp(20px, scale(75), 80px);
+    border-radius: 6px;
 
     &-inner {
       display: flex;
@@ -28,18 +31,13 @@
       gap: scale(120);
       margin: 0 auto;
 
-      img {
-        width: scale(430);
-        height: auto;
+      @include xs {
+        flex-direction: column;
       }
     }
 
     &-content {
-
-      svg {
-        width: scale(66);
-        height: auto;
-      }
+      position: relative;
     }
 
     &-text {
@@ -51,13 +49,21 @@
       color: #3B4752;
       font-weight: 500;
       font-style: italic;
+
+      @include xs {
+        position: absolute;
+        left: 80px;
+        top: 5px;
+      }
+
+      .role {
+        color: $red;
+        font-size: clamp(16px, scale(24), 26px);
+        font-style: italic;
+        display: block;
+      }
     }
 
-    &-role {
-      color: $red;
-      font-size: clamp(16px, scale(24), 26px);
-      font-style: italic;
-    }
   }
 
   .embla {
