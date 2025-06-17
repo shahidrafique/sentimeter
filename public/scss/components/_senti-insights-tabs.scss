@@ -133,7 +133,6 @@
         .number {
           width: clamp(36px, scale(46), 46px);
           height: clamp(36px, scale(46), 46px);
-          border: 1px solid red;
           border-radius: 50%;
           border: 2px solid $white;
           display: flex;
