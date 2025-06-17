@@ -219,7 +219,7 @@
 
     .card-blocks {
         @extend .container;
-        margin-top: scale(50);
+        margin-top: clamp(30px, scale(50), 55px);
 
         &-item {
             border-width: 10px 0 0;
@@ -243,10 +243,6 @@
 
         h2 {
             color: $dark-blue;
-        }
-
-        hr {
-            width: 100%;
         }
     }
 

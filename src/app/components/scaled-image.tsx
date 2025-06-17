@@ -19,10 +19,11 @@ export default function ScaledImage({
   className = "",
   style = {},
   min,
+  max,
   ...rest
 }: ScaledImageProps) {
-  const minWidth = width - width * 0.3; // 5% less
-  const maxWidth = width + width * 0.05; // 5% more
+  const minWidth = min ?? width - width * 0.3;     // 5% smaller than original width
+  const maxWidth = max ?? width + width * 0.05;    // 5% larger than original width
   const preferred = (width / BASE_SCREEN_WIDTH) * 100;
   const fluidWidth = `clamp(${minWidth}px, ${preferred}vw, ${maxWidth}px)`;
 

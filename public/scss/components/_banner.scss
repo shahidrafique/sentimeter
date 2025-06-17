@@ -2,7 +2,7 @@
     @extend .gradient;
     color: $white;
     min-height: scale(580);
-    padding: scale(80) 0;
+    padding: clamp(40px, scale(80), 90px) 0;
     align-content: center;
 
     .container {
@@ -16,6 +16,7 @@
 
         @include xs {
             max-width: none;
+            text-align: center;
         }
 
         .subtitle {

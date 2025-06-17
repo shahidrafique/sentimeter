@@ -3,7 +3,6 @@
 	// Banner
 	.banner {
 		.container {
-			gap: scale(50);
 
 			.col {
 				.content {
@@ -89,7 +88,6 @@
 
 
 		.col {
-
 
 			&.content {
 				max-width: 60%;
@@ -376,6 +374,10 @@
 
 				.cards {
 					max-width: scale(1200);
+
+					@include lg {
+						max-width: none;
+					}
 				}
 
 				h3 {
@@ -489,7 +491,7 @@
 				width: 100%;
 				align-items: center;
 
-				@include xs {
+				@include sm {
 					flex-direction: column;
 				}
 
@@ -552,10 +554,19 @@
 
 			>.container {
 				justify-content: space-between;
+
+				.col {
+					// flex: 1;
+				}
 			}
 
 			.content-group {
-				max-width: scale(700);
+				flex: 1;
+				max-width: clamp(550px, scale(700), 750px);
+
+				@include md {
+					max-width: none;
+				}
 			}
 
 			.button {

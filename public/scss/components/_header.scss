@@ -12,6 +12,10 @@
     justify-content: space-between;
     align-items: center;
     position: static;
+
+    @include xs {
+      flex-direction: row;
+    }
   }
 
   &-left {
@@ -22,11 +26,9 @@
 
       img {
         margin-right: 8px;
-        width: scale(56);
-        width: scale(56);
       }
 
-      font-size: scale(38);
+      font-size: clamp(20px, scale(38), 40px);
 
       b {
         font-weight: 600;
