@@ -3,6 +3,8 @@
     background: linear-gradient(134deg, rgba(0, 59, 109, 1) 0%, rgba(0, 114, 211, 1) 100%);
     color: $white;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 
     .lines {
         position: absolute;
@@ -14,6 +16,10 @@
         img {
             width: 100%;
             height: auto;
+
+            @include xs {
+                width: 400%;
+            }
         }
     }
 
@@ -32,12 +38,13 @@
     }
 
 
-    .container {
+    >.container {
         height: 100%;
 
         .col {
             flex: 1;
             position: relative;
+            align-content: center;
 
 
             .content {
@@ -53,9 +60,8 @@
                         &:nth-child(1) {
                             span {
                                 &:nth-child(1) {
-                                    font-size: scale(57);
+                                    font-size: clamp(20px, scale(57), 60px);
                                     font-weight: 400;
-                                    line-height: 1;
                                 }
                             }
                         }
@@ -65,18 +71,18 @@
 
                             span {
                                 &:nth-child(1) {
-                                    font-size: scale(120);
+                                    font-size: clamp(50px, scale(120), 120px);
                                     line-height: 1;
                                     color: $yellow;
                                     font-weight: 600;
                                 }
 
                                 &:nth-child(2) {
-                                    font-size: scale(57);
+                                    font-size: clamp(20px, scale(57), 60px);
                                     font-weight: 400;
-                                    line-height: 1;
-                                    margin-left: scale(20);
-                                    width: scale(480);
+                                    line-height: 1.1;
+                                    margin-left: clamp(10px, scale(20), 20px);
+                                    width: clamp(190px, scale(480), 500px);
                                     display: inline-block;
                                 }
                             }
@@ -85,15 +91,15 @@
                         &:nth-child(3) {
                             span {
                                 &:nth-child(1) {
-                                    font-size: scale(57);
+                                    font-size: clamp(20px, scale(57), 60px);
                                     font-weight: 400;
                                     line-height: 1;
-                                    width: scale(300);
+                                    width: clamp(110px, scale(300), 300px);
                                     display: inline-block;
                                 }
 
                                 &:nth-child(2) {
-                                    font-size: scale(120);
+                                    font-size: clamp(50px, scale(120), 120px);
                                     line-height: 1;
                                     color: $yellow;
                                     font-weight: 600;
@@ -110,7 +116,7 @@
 
 
                                 &:nth-child(1) {
-                                    font-size: scale(57);
+                                    font-size: clamp(20px, scale(57), 60px);
                                     font-weight: 400;
                                     line-height: 1;
                                     display: inline-block;
@@ -129,6 +135,21 @@
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
+
+                @include sm {
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    transform: none;
+                }
+
+                img {
+                    max-width: none !important;
+
+                    @include sm {
+                        max-width: 100% !important;
+                    }
+                }
             }
         }
     }
