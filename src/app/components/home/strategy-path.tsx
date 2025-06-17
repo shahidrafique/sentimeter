@@ -12,6 +12,7 @@ export default function StrategyPath() {
               width={530}
               height={285}
               alt="strategy path"
+              min={300}
             />
             <div className="strategy-path-point rewamp">
               <ScaledImage
