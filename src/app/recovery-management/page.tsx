@@ -72,6 +72,7 @@ export default function page() {
                     width={230}
                     height={308}
                     alt="collect feedback features"
+                    min={100}
                   />
                 </div>
                 <div className="col">

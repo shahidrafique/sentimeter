@@ -12,18 +12,20 @@ export default function page() {
       <section className="sub-header">
         <div className="container">
           <div className="sub-header-left">
-            <Image
-              src={"/images/senti-ex.svg"}
+            <ScaledImage
+              src={"/images/cx/senti-cx.svg"}
               width={240}
               height={96}
-              alt="senti ex"
+              alt="senti cx"
+              min={144}
             />
             <div className="page-title">
-              <Image
+              <ScaledImage
                 src={"/images/icon-cx-phase-1.svg"}
                 width={80}
                 height={80}
                 alt="icon"
+                min={30}
               />
               Accurately Map & Optimize Customer Journeys
             </div>
@@ -609,7 +611,7 @@ export default function page() {
       <section className="section has-bg business-impact">
         <div className="card">
           <div className="container align-center">
-            <div className="content-group has-inner-text-yellow">
+            <div className="col content-group has-inner-text-yellow">
               <div className="section-header">
                 <ScaledImage
                   src={"/images/cx/phase1/icon-business-impact.png"}
@@ -642,6 +644,7 @@ export default function page() {
                 width={500}
                 height={500}
                 alt="illustration business impact"
+                min={300}
               />
             </div>
           </div>

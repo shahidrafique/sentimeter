@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import ScaledImage from "./scaled-image";
 export default function Header() {
   const pathname = usePathname();
   const [activeTab, setActiveTab] = useState("customer");
@@ -14,11 +15,12 @@ export default function Header() {
           <div className="container">
             <div className="header-left">
               <Link href="/" className="logo">
-                <Image
+                <ScaledImage
                   src="/images/logo-icon.svg"
                   width={56}
                   height={56}
                   alt="Sentimeter"
+                  min={30}
                 />
                 <b>Senti</b>meter
               </Link>

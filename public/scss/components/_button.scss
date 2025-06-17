@@ -178,7 +178,7 @@
 .link {
   color: $blue;
   font-weight: 600;
-  font-size: scale(20);
+  font-size: clamp(16px, scale(20), 20px);
   display: flex;
   flex-direction: column;
 

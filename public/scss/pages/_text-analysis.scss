@@ -38,10 +38,6 @@
           }
         }
 
-        h3 {
-          max-width: 80%;
-        }
-
         $colors: (
           'blue': $blue,
           'blue-light': $blue-light,
@@ -99,6 +95,10 @@
     text-align: center;
     gap: 0;
     max-width: scale(1020);
+
+    @include sm {
+      max-width: none;
+    }
 
     img {
       margin-bottom: scale(30);

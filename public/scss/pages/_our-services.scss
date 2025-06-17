@@ -24,7 +24,7 @@
     margin-bottom: scale(30);
 
     .title {
-      font-size: scale(50);
+      font-size: clamp(20px, scale(50), 58px);
 
       span {
         color: $white;
@@ -83,7 +83,11 @@
   }
 
   .checklist {
-    gap: clamp(30px, scale(50), 55px);
+    gap: clamp(20px, scale(50), 55px);
+
+    @include sm {
+      flex-direction: column;
+    }
   }
 
   .row {
@@ -91,9 +95,13 @@
     gap: clamp(30px, scale(50), 55px);
     margin: scale(20) 0 scale(50);
 
+    @include xs {
+      flex-direction: column;
+    }
+
     .col {
       display: flex;
-      gap: scale(15);
+      gap: clamp(10px, scale(15), 16px);
 
       p {
         display: flex;
@@ -102,7 +110,7 @@
         margin: 0;
 
         span {
-          font-size: scale(22);
+          font-size: clamp(18px, scale(22), 22px);
           font-weight: 600;
           text-transform: uppercase;
         }
@@ -118,6 +126,10 @@
 
   .section-header {
     max-width: scale(800);
+
+    @include sm {
+      max-width: none;
+    }
 
     p {
       margin: 0;
@@ -143,6 +155,10 @@
       display: flex;
       gap: clamp(30px, scale(50), 55px);
       margin: scale(20) 0;
+
+      @include sm {
+        flex-direction: column;
+      }
 
       .col {
         display: flex;
@@ -171,6 +187,10 @@
 
   .card-blocks {
     margin-top: scale(50);
+
+    @include sm {
+      flex-direction: column;
+    }
 
     &-item {
       gap: clamp(20px, scale(30), 35px);
@@ -230,11 +250,11 @@
               justify-content: space-between;
 
               h5 {
-                font-size: scale(20);
+                font-size: clamp(14px, scale(20), 20px);
               }
 
               p {
-                font-size: scale(18);
+                font-size: clamp(12px, scale(18), 18px);
                 margin: scale(10) 0 0;
               }
 
@@ -293,6 +313,10 @@
 
     &.content {
       max-width: 60%;
+
+      @include sm {
+        max-width: none;
+      }
 
       .section-header {
         margin-top: scale(15);

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScaledImage from "./scaled-image";
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <footer className="footer">
         <div className="container">
           <div className="col">
-            <Image
+            <ScaledImage
               src="/images/sentimeter-logo-white.svg"
               width={388}
               height={97}
@@ -136,31 +137,34 @@ export default function Footer() {
               <ul className="socialmedia-list">
                 <li>
                   <a href="#">
-                    <Image
+                    <ScaledImage
                       src="/images/instagram-icon.svg"
                       width={22}
                       height={22}
                       alt="instagram icon"
+                      min={16}
                     />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <Image
+                    <ScaledImage
                       src="/images/twitter-icon.svg"
                       width={22}
                       height={22}
                       alt="twitter icon"
+                      min={16}
                     />
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <Image
+                    <ScaledImage
                       src="/images/linkedin-icon.svg"
                       width={22}
                       height={22}
                       alt="linkedin icon"
+                      min={16}
                     />
                   </a>
                 </li>

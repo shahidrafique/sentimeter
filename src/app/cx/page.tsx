@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Clients from "../components/clients";
 import Link from "next/link";
 import ScaledImage from "../components/scaled-image";
@@ -10,11 +9,12 @@ export default function page() {
       <section className="sub-header">
         <div className="container">
           <div className="sub-header-left">
-            <Image
-              src="/images/senti-ex.svg"
+            <ScaledImage
+              src={"/images/cx/senti-cx.svg"}
               width={240}
               height={96}
-              alt="senti ex"
+              alt="senti cx"
+              min={144}
             />
           </div>
           <div className="sub-header-right">Employee Experience Management</div>

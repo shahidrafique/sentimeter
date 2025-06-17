@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Clients from "../../components/clients";
 import Link from "next/link";
 import ScaledImage from "@/app/components/scaled-image";
@@ -9,18 +8,20 @@ export default function page() {
       <section className="sub-header">
         <div className="container">
           <div className="sub-header-left">
-            <Image
-              src={"/images/senti-ex.svg"}
+            <ScaledImage
+              src={"/images/cx/senti-cx.svg"}
               width={240}
               height={96}
-              alt="senti ex"
+              alt="senti cx"
+              min={144}
             />
             <div className="page-title">
-              <Image
+              <ScaledImage
                 src={"/images/icon-cx-phase-3.svg"}
                 width={80}
                 height={80}
                 alt="icon"
+                min={30}
               />
               Turn Customer Feedback into Data-Driven Insights
             </div>
