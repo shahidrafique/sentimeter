@@ -5,6 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback, useEffect, useState } from 'react';
 
 import QuotesIcon from '@/app/components/icons/QuotesIcon';
+import ScaledImage from './scaled-image';
 
 const testimonials = [
   {
@@ -74,18 +75,21 @@ export default function Testimonials() {
               <div className="embla__slide" key={i}>
                 <div className="testimonial">
                   <div className="testimonial-inner">
-                    <Image
+                    <ScaledImage
                       src={t.image}
                       width={430}
                       height={430}
                       alt={`${t.author} testimonial image`}
+                      min={200}
                     />
                     <div className="testimonial-content">
                       <QuotesIcon color={t.quotesColor} />
                       <p className="testimonial-text">{t.text}</p>
-                      <div className="testimonial-author">-{t.author}</div>
-                      <div className="testimonial-role" style={{ color: t.roleColor }}>
-                        {t.role}
+                      <div className="testimonial-author">
+                        -{t.author}
+                        <span className="role" style={{ color: t.roleColor }}>
+                          {t.role}
+                        </span>
                       </div>
                     </div>
                   </div>

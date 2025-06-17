@@ -8,9 +8,13 @@ export default function DemoForm() {
           <h2 className="section-title">Dive deep into your <span>feedback data</span> for valuable insights.</h2>
           <p>Join us for a conversation to uncover solutions to your challenges and learn why top brands choose our feedback analytics platform.</p>
           <p>What to expect:</p>
-          <ul>
-            <li><span>A quick 15-minute call</span> to discuss your specific requirements.</li>
-            <li><span>A Guide to</span> Pricing and Implementation</li>
+          <ul className="checklist yellow">
+            <li className="checklist-item">
+              <span>A quick 15-minute call</span> to discuss your specific requirements.
+            </li>
+            <li className="checklist-item">
+              <span>A Guide to</span> Pricing and Implementation
+            </li>
           </ul>
         </div>
         <div className="form-content">

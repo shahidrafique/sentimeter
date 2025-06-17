@@ -9,10 +9,18 @@
         color: $white;
         width: 55%;
         border-radius: 8px 0 0 8px;
-        margin: scale(40) 0;
+        margin: clamp(20px, scale(40), 40px) 0;
         padding: scale(100);
         align-content: center;
 
+        @include xs {
+            margin-top: 0;
+        }
+
+        @include xs {
+            width: auto;
+            border-radius: 8px;
+        }
 
         .section-title {
 
@@ -22,39 +30,7 @@
         }
 
         p {
-            font-size: scale(24);
-        }
-
-        ul {
-            margin: scale(30) 0;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-
-            li {
-                font-size: scale(20);
-                color: rgba($black, .7);
-                color: $white;
-                font-size: scale(24);
-                position: relative;
-                padding-left: scale(44);
-
-                &:before {
-                    content: '';
-                    width: scale(32);
-                    height: scale(32);
-                    display: inline-block;
-                    background: url('/images/yellow-tick.svg') no-repeat center;
-                    background-size: contain;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                }
-
-                span {
-                    color: $yellow;
-                }
-            }
+            font-size: clamp(16px, scale(24), 26px);
         }
     }
 
@@ -64,13 +40,17 @@
         box-shadow: 0 0 14px 7px rgba(0, 0, 0, 0.17);
         padding: scale(50);
 
+        @include xs {
+            width: auto;
+        }
+
         sentimeter-logo {
             width: scale(232);
             height: auto;
         }
 
         .section-title {
-            font-size: scale(30);
+            font-size: clamp(16px, scale(30), 30px);
             color: $dark-blue;
             margin: scale(20) 0 scale(40);
 
@@ -80,19 +60,19 @@
         }
 
         form {
-            margin-bottom: scale(30);
+            margin-bottom: clamp(20px, scale(30), 20px);
 
             .form-group {
-                margin-bottom: scale(20);
+                margin-bottom: clamp(15px, scale(20), 20px);
                 display: flex;
                 flex-direction: column;
-                gap: scale(6);
+                gap: 6px;
 
                 input,
                 textarea {
                     background: #FAFAFA;
                     border: 1px solid #D7D9EC;
-                    padding: scale(12) scale(30);
+                    padding: clamp(10px, scale(12), 12px) clamp(20px, scale(30), 30px);
                     border-radius: 5px;
                     width: 100%;
                 }
@@ -119,14 +99,21 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                gap: 10px;
 
-                img {
-                    height: scale(60);
-                    width: scale(120);
-                    object-fit: contain;
-                    vertical-align: top;
+                @include sm {
+                    flex-wrap: wrap;
                 }
 
+                img {
+                    max-width: 80%;
+                    vertical-align: top;
+
+                    @include sm {
+                        display: inline-block;
+                        margin: 0 auto;
+                    }
+                }
             }
         }
     }

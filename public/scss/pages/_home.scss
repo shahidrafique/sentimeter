@@ -195,24 +195,24 @@
                     margin: 0;
                 }
 
-                &:nth-of-type(1) {
+                &.rewamp {
                     right: calc(100% + scale(10));
                     top: scale(64);
                     text-align: right;
                 }
 
-                &:nth-of-type(2) {
+                &.simplify {
                     right: calc(100% - scale(90));
                     top: calc(100% - scale(30));
                     text-align: right;
                 }
 
-                &:nth-of-type(3) {
+                &.adopt {
                     left: calc(100% - scale(90));
                     top: calc(100% - scale(30));
                 }
 
-                &:nth-of-type(4) {
+                &.launch {
                     left: calc(100% + scale(10));
                     top: scale(64);
                 }
@@ -295,12 +295,7 @@
             .image-wrapper {
                 position: relative;
                 z-index: 1;
-                height: scale(110);
-
-                img {
-                    width: scale(110);
-                    height: auto;
-                }
+                height: clamp(40px, scale(110), 110px);
 
                 &::before,
                 &::after {
@@ -332,13 +327,21 @@
 
             p {
                 max-width: scale(380);
-                font-size: scale(28);
+                font-size: clamp(12px, scale(28), 20px);
                 margin-top: scale(20);
                 margin-bottom: 0;
+
+                @include xs {
+                    max-width: none;
+                }
             }
 
             &:last-child {
                 flex: 0 1 auto;
+
+                @include xs {
+                    flex: 1;
+                }
 
                 .image-wrapper {
 
@@ -368,10 +371,19 @@
         gap: clamp(30px, scale(50), 55px);
         margin-bottom: scale(30);
 
+        @include xs {
+            flex-direction: column;
+        }
+
         .section-title {
             color: $dark-blue;
             max-width: 50%;
-            font-size: scale(56);
+            font-size: clamp(30px, scale(56), 58px);
+
+            @include xs {
+                text-align: center;
+                max-width: none;
+            }
         }
 
         .awards-container {
@@ -379,6 +391,13 @@
             align-items: center;
             gap: scale(14);
             max-width: 50%;
+
+            @include xs {
+                gap: 15px;
+                max-width: none;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
 
             img {
                 width: scale(157);
@@ -390,6 +409,11 @@
     .compliance-blocks {
         display: flex;
         gap: clamp(20px, scale(30), 35px);
+        flex-wrap: wrap;
+
+        @include xs {
+            flex-direction: column;
+        }
 
         .box {
             flex: 1;
@@ -397,17 +421,27 @@
             flex-direction: column;
             justify-content: space-between;
             background: $dark-blue;
-            border-radius: scale(20);
-            padding: scale(50) scale(40);
+            border-radius: clamp(10px, scale(20), 20px);
+            padding: clamp(30px, scale(50), 50px) clamp(25px, scale(40), 40px);
+            min-height: 180px;
+
+            @include sm {
+                flex: 1 0 40%;
+            }
+
+            @include xs {
+                flex: 1;
+                justify-content: flex-start;
+            }
 
             .title {
                 color: $yellow;
-                margin-bottom: scale(15);
+                margin-bottom: clamp(15px, scale(15), 18px);
             }
 
             .copy {
                 color: $white;
-                font-size: scale(26);
+                font-size: clamp(18px, scale(26), 28px);
             }
         }
     }

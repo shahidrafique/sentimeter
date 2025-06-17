@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ScaledImage from "../scaled-image";
 
 export default function StrategyPath() {
@@ -14,7 +13,7 @@ export default function StrategyPath() {
               height={285}
               alt="strategy path"
             />
-            <div className="strategy-path-point">
+            <div className="strategy-path-point rewamp">
               <ScaledImage
                 src={"/images/icon-rewamp.svg"}
                 width={24}
@@ -25,34 +24,34 @@ export default function StrategyPath() {
               <h5 className="text-red">REVAMP</h5>
               <p>Transform underperforming feedback programs for ROI</p>
             </div>
-            <div className="strategy-path-point">
+            <div className="strategy-path-point simplify">
               <ScaledImage
                 src={"/images/icon-simplify.svg"}
                 width={24}
                 height={24}
-                alt="icon rewamp"
+                alt="icon simplify"
                 min={24}
               />
               <h5 className="text-yellow">SIMPLIFY & LAUNCH</h5>
               <p>Streamline CX implementation for quick wins</p>
             </div>
-            <div className="strategy-path-point">
+            <div className="strategy-path-point adopt">
               <ScaledImage
                 src={"/images/icon-adopt.svg"}
                 width={24}
                 height={24}
-                alt="icon rewamp"
+                alt="icon adopt"
                 min={24}
               />
               <h5 className="text-green">ADOPT CUSTOMER CENTRICITY</h5>
               <p>Build continuous improvement culture</p>
             </div>
-            <div className="strategy-path-point">
+            <div className="strategy-path-point launch">
               <ScaledImage
                 src={"/images/icon-launch.svg"}
                 width={24}
                 height={24}
-                alt="icon rewamp"
+                alt="icon launch"
                 min={24}
               />
               <h5 className="text-blue">LAUNCH STRUCTURED CX</h5>

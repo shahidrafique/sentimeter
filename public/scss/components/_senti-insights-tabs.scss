@@ -12,6 +12,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: clamp(40px, scale(80), 80px);
 
     .tab-buttons {
       display: flex;
@@ -22,6 +23,10 @@
         opacity: 0.74;
         border: 0;
 
+        img {
+          margin: 0;
+        }
+
         &.active {
           opacity: 1;
         }
@@ -29,8 +34,7 @@
         &:not(.active) {
 
           img {
-            width: scale(130);
-            height: auto;
+            max-width: 75px !important;
           }
         }
 
@@ -41,7 +45,7 @@
 
       .vertical-bar {
         width: 2px;
-        height: 100px;
+        height: clamp(60px, scale(100), 100px);
         background: $white;
         margin: 0 scale(40);
       }
@@ -60,7 +64,7 @@
     display: flex;
 
     img {
-      width: scale(1000);
+      width: scale(1000) !important;
       max-width: 100%;
       height: auto;
     }
@@ -71,7 +75,7 @@
 
 
       p {
-        font-size: scale(24);
+        font-size: clamp(14px, scale(24), 24px);
         border-top: 2px solid $white;
         margin-top: scale(80);
         padding-top: scale(20);
@@ -108,7 +112,7 @@
 
       display: flex;
       align-items: center;
-      gap: scale(8);
+      gap: 12px;
 
       li {
         display: flex;
@@ -123,12 +127,13 @@
 
         .number,
         .text {
-          font-size: scale(24);
+          font-size: clamp(14px, scale(24), 24px);
         }
 
         .number {
-          width: scale(46);
-          height: scale(46);
+          width: clamp(36px, scale(46), 46px);
+          height: clamp(36px, scale(46), 46px);
+          border: 1px solid red;
           border-radius: 50%;
           border: 2px solid $white;
           display: flex;
@@ -200,7 +205,7 @@
     }
 
     .text {
-      max-width: scale(230);
+      max-width: clamp(130px, scale(230), 250px);
       display: flex;
     }
   }

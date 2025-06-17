@@ -4,6 +4,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ScaledImage from "../scaled-image";
 
 const SentiInsightsTabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"sentiCxTab" | "sentiExTab">("sentiCxTab");
@@ -18,11 +19,12 @@ const SentiInsightsTabs: React.FC = () => {
               className={activeTab === "sentiCxTab" ? "active" : ""}
               onClick={() => setActiveTab("sentiCxTab")}
             >
-              <Image
+              <ScaledImage
                 src={"/images/senti-cx-white.svg"}
                 width={193}
                 height={95}
                 alt="Senticx logo"
+                min={100}
               />
             </button>
             <span className="vertical-bar" />
@@ -30,17 +32,18 @@ const SentiInsightsTabs: React.FC = () => {
               className={activeTab === "sentiExTab" ? "active" : ""}
               onClick={() => setActiveTab("sentiExTab")}
             >
-              <Image
+              <ScaledImage
                 src={"/images/senti-ex-white.svg"}
                 width={193}
                 height={95}
                 alt="Sentiex logo"
+                min={100}
               />
             </button>
           </div>
           <Link href="#">
             Explore More
-            <Image
+            <ScaledImage
               src={"/images/arrow-right-white.svg"}
               width={16}
               height={15}
@@ -64,7 +67,7 @@ const SentiInsightsTabs: React.FC = () => {
                         Track NPS, feedback, and essential KPIs instantly.
                       </p>
                     </div>
-                    <Image
+                    <ScaledImage
                       src={"/images/senti-insights/cx-overview.png"}
                       width={1092}
                       height={737}
@@ -82,7 +85,7 @@ const SentiInsightsTabs: React.FC = () => {
                     <div className="content-left">
                       {" "}
                     </div>
-                    <Image
+                    <ScaledImage
                       src={"/images/senti-insights/cx-comparison.png"}
                       width={1092}
                       height={737}
@@ -102,7 +105,7 @@ const SentiInsightsTabs: React.FC = () => {
                         Easily review customer comments, contact details, and transaction history to categorize concerns and follow up on unresolved feedback.
                       </p>
                     </div>
-                    <Image
+                    <ScaledImage
                       src={"/images/senti-insights/cx-customer-recovery.png"}
                       width={1092}
                       height={737}
@@ -120,7 +123,7 @@ const SentiInsightsTabs: React.FC = () => {
                         Track customer sentiment over time, highlighting trends across key areas like product availability, pricing, and service.
                       </p>
                     </div>
-                    <Image
+                    <ScaledImage
                       src={"/images/senti-insights/cx-text-analysis.png"}
                       width={1092}
                       height={737}
@@ -179,7 +182,7 @@ const SentiInsightsTabs: React.FC = () => {
                         Turn employee feedback into real action with our people-first experience platform.
                       </p>
                     </div>
-                    <Image
+                    <ScaledImage
                       src={"/images/senti-insights/ex-satisfaction.png"}
                       width={1092}
                       height={737}
@@ -203,7 +206,7 @@ const SentiInsightsTabs: React.FC = () => {
                         Discover how each department performs in communication, leadership, and trust.
                       </p>
                     </div>
-                    <Image
+                    <ScaledImage
                       src={"/images/senti-insights/ex-department.png"}
                       width={1092}
                       height={737}
@@ -223,7 +226,7 @@ const SentiInsightsTabs: React.FC = () => {
                         Track store-level performance across key metrics like communication, respect, and leadership.
                       </p>
                     </div>
-                    <Image
+                    <ScaledImage
                       src={"/images/senti-insights/ex-store.png"}
                       width={1092}
                       height={737}
