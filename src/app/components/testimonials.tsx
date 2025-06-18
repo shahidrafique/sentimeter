@@ -25,7 +25,7 @@ const testimonials = [
   },
   {
     image: "/images/testimonials/testimonial-metro.png",
-    text: `They’ve helped me give daily visibility on how our divisions and stores are performing. And what we needs to improve department-wise, and the exact impact of those changes.`,
+    text: `They've helped me give daily visibility on how our divisions and stores are performing. And what we needs to improve department-wise, and the exact impact of those changes.`,
     author: "Marek Minkiewicz",
     role: "CEO",
     quotesColor: "#FFE338",

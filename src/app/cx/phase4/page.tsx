@@ -74,7 +74,7 @@ export default function page() {
               </div>
               <div className="content">
                 <p>
-                  Overwhelmed by feedback? Sentimeter’s AI-powered
+                  Overwhelmed by feedback? Sentimeter's AI-powered
                   prioritization ensures you focus on what truly matters by
                   ranking feedback based on urgency and impact.
                 </p>
@@ -164,7 +164,7 @@ export default function page() {
             </div>
             <div className="content">
               <p>
-                Ensure no feedback is left unaddressed with Sentimeter’s
+                Ensure no feedback is left unaddressed with Sentimeter's
                 automated workflows. Streamline processes to track, assign, and
                 resolve every concern efficiently.
               </p>
@@ -217,7 +217,7 @@ export default function page() {
                 <span>Collaborate</span> Across Teams Without Chaos
               </h3>
               <p>
-                Break down silos with Sentimeter’s unified dashboards. Empower
+                Break down silos with Sentimeter's unified dashboards. Empower
                 CX, marketing, and operations teams to collaborate effectively
                 and align on customer priorities.
               </p>
@@ -297,7 +297,7 @@ export default function page() {
               </div>
               <div className="content">
                 <p>
-                  Show customers that their voices are heard. Sentimeter’s
+                  Show customers that their voices are heard. Sentimeter's
                   recovery management tools ensure you close the loop by
                   addressing concerns and sharing how their feedback drives
                   improvements.
@@ -369,7 +369,7 @@ export default function page() {
             </div>
             <div className="content">
               <p>
-                Sentimeter’s real-time dashboards and automated reporting keep
+                Sentimeter's real-time dashboards and automated reporting keep
                 your team on top of progress, enabling constant refinement of
                 strategies.
               </p>
@@ -391,7 +391,7 @@ export default function page() {
             <div className="section-footer">
               <p>
                 <span>Why It Matters:</span> “Continuous improvement ensures
-                you’re always delivering what your customers need.”
+                you're always delivering what your customers need.”
               </p>
               <div className="row">
                 <p>Discover Continuous Improvement Tools</p>

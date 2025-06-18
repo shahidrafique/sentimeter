@@ -51,11 +51,11 @@ export default function page() {
                 Understand Employee <span>Relationships</span>
               </h2>
               <p>
-                Transform the way you understand and support your employees’
+                Transform the way you understand and support your employees'
                 journey to success. At Sentimeter, we guide you in crafting
                 tailored employee lifecycle maps that align with your
-                organization’s unique culture and processes. This isn’t just a
-                map; it’s a strategic framework for uncovering opportunities,
+                organization's unique culture and processes. This isn't just a
+                map; it's a strategic framework for uncovering opportunities,
                 addressing pain points, and elevating employee experience (EX)
                 at every stage.
               </p>
@@ -290,9 +290,9 @@ export default function page() {
                   Why <span>Lifecycle</span> Mapping Matters
                 </h2>
                 <p>
-                  Employee lifecycle mapping is more than just a framework—it’s
+                  Employee lifecycle mapping is more than just a framework—it's
                   a foundation for continuous improvement. By understanding your
-                  employees’ journey, you can proactively design interventions
+                  employees' journey, you can proactively design interventions
                   that boost morale, engagement, and long-term loyalty.
                 </p>
               </section>

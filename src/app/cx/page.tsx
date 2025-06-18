@@ -193,7 +193,7 @@ export default function page() {
               <div className="content">
                 <p>
                   A single, intelligent source of customer truth—powered by
-                  Sentimeter’s seamless integration across all tools and
+                  Sentimeter's seamless integration across all tools and
                   channels.
                 </p>
               </div>
@@ -288,7 +288,7 @@ export default function page() {
               </h3>
               <p>
                 Detect emerging patterns and customer sentiment shifts in
-                real-time. Identify what’s driving loyalty and retention,
+                real-time. Identify what's driving loyalty and retention,
                 instantly respond to issues impacting customer experience, and
                 gain the intelligence needed to proactively enhance satisfaction
                 and engagement.
@@ -353,8 +353,8 @@ export default function page() {
                 <p>
                   Break down silos and create a shared, data-driven view of
                   customer needs. Identify gaps in your product, logistics, and
-                  experiences, and make strategic decisions based on real customer
-                  expectations, not assumptions.
+                  experiences, and make strategic decisions based on real
+                  customer expectations, not assumptions.
                 </p>
               </div>
               <div className="section-footer">
@@ -383,7 +383,10 @@ export default function page() {
                 />
                 <h5>Design Experiences That Drive Loyalty</h5>
                 <p>
-                  Leverage real-time customer intelligence to understand what truly matters. Enhance satisfaction, strengthen retention, and maximize revenue by continuously optimizing the customer journey.
+                  Leverage real-time customer intelligence to understand what
+                  truly matters. Enhance satisfaction, strengthen retention, and
+                  maximize revenue by continuously optimizing the customer
+                  journey.
                 </p>
               </div>
               <div className="card-blocks-item">
@@ -395,7 +398,10 @@ export default function page() {
                 />
                 <h5>Convert CX Insights into Measurable Engagement</h5>
                 <p>
-                  Take the right actions at the right time—whether it’s reaching out to the right customer, selecting participants for beta programs, or proactively resolving friction points. Close the loop and foster lasting customer relationships.
+                  Take the right actions at the right time—whether it's reaching
+                  out to the right customer, selecting participants for beta
+                  programs, or proactively resolving friction points. Close the
+                  loop and foster lasting customer relationships.
                 </p>
               </div>
             </div>
@@ -414,8 +420,8 @@ export default function page() {
                 </div>
                 <div className="content">
                   <p>
-                    Go beyond collecting data to deliver actionable insights that
-                    matter.
+                    Go beyond collecting data to deliver actionable insights
+                    that matter.
                   </p>
                 </div>
                 <div className="section-header">
@@ -451,7 +457,8 @@ export default function page() {
                   alt="core pillars"
                 />
                 <h3>
-                  Transform Your Customer Experience with <span>Sentimeter</span>
+                  Transform Your Customer Experience with{" "}
+                  <span>Sentimeter</span>
                 </h3>
               </div>
               <p>
@@ -467,7 +474,6 @@ export default function page() {
           </div>
         </div>
       </section>
-
     </article>
   );
 }

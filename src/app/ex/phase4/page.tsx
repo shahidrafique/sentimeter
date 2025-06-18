@@ -77,7 +77,7 @@ export default function page() {
                     Ready-Made <span> Reports</span> That Empower Action
                   </h2>
                   <p>
-                    Stop wasting time on manual data compilation. Sentimeter’s
+                    Stop wasting time on manual data compilation. Sentimeter's
                     pre-built templates provide tailored insights designed to
                     keep you focused on building a thriving workplace.
                   </p>

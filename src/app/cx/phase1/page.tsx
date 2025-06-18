@@ -50,13 +50,13 @@ export default function page() {
             <div className="content">
               <h3>Create a Data-Driven CX Strategy</h3>
               <h4>
-                Transform the way you understand your customers’ paths to
+                Transform the way you understand your customers' paths to
                 success.
               </h4>
               <p>
                 At Sentimeter, we guide you in crafting customer journeys
-                tailored to your organization’s unique processes. This isn’t
-                just a map; it’s a strategic blueprint for uncovering insights,
+                tailored to your organization's unique processes. This isn't
+                just a map; it's a strategic blueprint for uncovering insights,
                 addressing drop-offs, and elevating experiences.
               </p>
               <Link href="/demo-form" className="button button--outline">
@@ -411,7 +411,7 @@ export default function page() {
                   <h3>Identify Feedback Gaps</h3>
                   <p>
                     At each stage, ask, “How do we understand what customers
-                    think and feel here?” If there’s no clear answer, you’ve
+                    think and feel here?” If there's no clear answer, you've
                     found a gap.
                   </p>
                   <h5>How to Address Feedback Gaps:</h5>
@@ -623,9 +623,9 @@ export default function page() {
                 </h2>
               </div>
               <p>
-                Customer journey mapping isn’t just about visualizing—it’s about
+                Customer journey mapping isn't just about visualizing—it's about
                 understanding and improving. This foundational exercise enables
-                you to see your business through your customers’ eyes, identify
+                you to see your business through your customers' eyes, identify
                 hidden opportunities, and create strategies that matter.
               </p>
               <div className="section-footer">

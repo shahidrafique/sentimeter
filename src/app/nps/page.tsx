@@ -269,7 +269,7 @@ export default function page() {
         </div>
         <div className="more-to-nps">
           <h3>
-            What’s more to our
+            What's more to our
             <span className="text-blue">NPS®</span>{" "}
             <span className="text-dark-blue">Survey Platform?</span>
           </h3>
@@ -304,7 +304,7 @@ export default function page() {
                     Uncover deeper insights by sorting your Net Promoter Score℠
                     using custom fields like location, date of feedback
                     submission, etc. Segment your customers instantly and adopt
-                    different follow-up strategies. With our NPS® platform, it’s
+                    different follow-up strategies. With our NPS® platform, it's
                     as easy as things can get.
                   </p>
                 </div>
@@ -384,9 +384,9 @@ export default function page() {
                 </div>
                 <div className="content">
                   <p>
-                    Don’t bombard your customers with one NPS® survey after
-                    another. Why annoy them? Use Sentimeter’s NPS® survey
-                    platform’s Throttling feature to ensure no respondent is
+                    Don't bombard your customers with one NPS® survey after
+                    another. Why annoy them? Use Sentimeter's NPS® survey
+                    platform's Throttling feature to ensure no respondent is
                     surveyed until a configured time. Enter the days, 90 for
                     example, and the batch of respondents will be surveyed only
                     after a quarter.
@@ -435,7 +435,7 @@ export default function page() {
                 </div>
                 <div className="content">
                   <p>
-                    Gain a 360-degree view of your customer’s journey—track
+                    Gain a 360-degree view of your customer's journey—track
                     every interaction, identify pain points, and refine your
                     NPS® strategy for maximum impact.
                   </p>

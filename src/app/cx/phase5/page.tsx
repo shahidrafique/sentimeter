@@ -74,9 +74,9 @@ export default function page() {
               </div>
               <div className="content">
                 <p>
-                  Gone are the days of manually compiling data. Sentimeter’s
+                  Gone are the days of manually compiling data. Sentimeter's
                   pre-built templates offer actionable insights tailored to your
-                  team’s needs, ensuring you stay focused on what matters most.
+                  team's needs, ensuring you stay focused on what matters most.
                 </p>
               </div>
               <div className="section-footer">
@@ -156,7 +156,7 @@ export default function page() {
               </h3>
               <p>
                 Empower every department with dashboards that deliver what they
-                need most. Sentimeter’s role-specific insights make data
+                need most. Sentimeter's role-specific insights make data
                 accessible, actionable, and impactful.
               </p>
               <h5>Key Features:</h5>
@@ -241,7 +241,7 @@ export default function page() {
             </div>
             <div className="content">
               <p>
-                Your data should work wherever you are. Sentimeter’s
+                Your data should work wherever you are. Sentimeter's
                 mobile-friendly dashboards keep you agile, ensuring informed
                 decisions anytime, anywhere.
               </p>
@@ -335,7 +335,7 @@ export default function page() {
                 </div>
                 <div className="content">
                   <p>
-                    Data security isn’t optional. Sentimeter ensures your
+                    Data security isn't optional. Sentimeter ensures your
                     reports and dashboards are both secure and accessible to the
                     right stakeholders.
                   </p>
@@ -405,7 +405,7 @@ export default function page() {
               </div>
               <div className="content">
                 <p>
-                  Move beyond the present. Sentimeter’s advanced tools help you
+                  Move beyond the present. Sentimeter's advanced tools help you
                   forecast trends, measure success, and connect actions to
                   measurable business outcomes.
                 </p>
@@ -418,7 +418,7 @@ export default function page() {
                       alt="icon churn predictors"
                     />
                     <h5>Churn Predictors</h5>
-                    <p>Spot at-risk customers before it’s too late.</p>
+                    <p>Spot at-risk customers before it's too late.</p>
                   </div>
                   <div className="card-blocks-item yellow">
                     <ScaledImage
@@ -444,8 +444,8 @@ export default function page() {
               </div>
               <div className="section-footer">
                 <p>
-                  <span>Why It Matters:</span> “Proving ROI isn’t just about
-                  numbers—it’s about building trust in your strategy.“
+                  <span>Why It Matters:</span> “Proving ROI isn't just about
+                  numbers—it's about building trust in your strategy.“
                 </p>
                 <div className="row">
                   <p>Learn How to Close the Loop</p>

@@ -13,7 +13,7 @@ export default function page() {
             </h2>
             <p>
               Timely communication, effective collaboration, and structured
-              resolution are at the heart of Sentimeter’s case management
+              resolution are at the heart of Sentimeter's case management
               module. Address complaints across channels, resolve issues
               efficiently, and build trust by closing the loop effectively.
             </p>

@@ -65,8 +65,6 @@ export default function page() {
       <section className="section has-bg green feedback">
         <div className="card">
           <div className="container has-col-border">
-
-
             <div className="col content-group has-inner-text-green">
               <div className="section-header">
                 <h2>
@@ -76,13 +74,14 @@ export default function page() {
               <p>
                 Complete Your Customer Experience Puzzle with AI-Powered
                 Insights. Sentimeter consolidates feedback from every channel,
-                providing a complete view of your customer’s journey.
+                providing a complete view of your customer's journey.
               </p>
               <div className="section-footer">
                 <p>
                   <span>Why It Matters:</span>
                   <i>
-                    “Listening everywhere helps you understand what your customers really need.“
+                    “Listening everywhere helps you understand what your
+                    customers really need.“
                   </i>
                 </p>
                 <div className="row dir-col">
@@ -99,41 +98,40 @@ export default function page() {
               <ul className="checklist green">
                 <li className="checklist-item">
                   <span>Multi-Region Customer Feedback Collection:</span>{" "}
-                    Multi-lingual, multi-modal feedback collection ensures
-                    inclusivity across regions.
+                  Multi-lingual, multi-modal feedback collection ensures
+                  inclusivity across regions.
                 </li>
                 <li className="checklist-item">
                   <span>
-                      Omnichannel Feedback Collection for Holistic Insights:
-                    </span>{" "}
-                    Gather insights from surveys, social media, emails, CRM
-                    systems, chat logs, support calls, and more.
+                    Omnichannel Feedback Collection for Holistic Insights:
+                  </span>{" "}
+                  Gather insights from surveys, social media, emails, CRM
+                  systems, chat logs, support calls, and more.
                 </li>
                 <li className="checklist-item">
                   <span>
-                      Leverage Passive Feedback for Deeper Customer Insights:
-                    </span>{" "}
-                    Include passive inputs like online reviews and social
-                    mentions for deeper insights.
+                    Leverage Passive Feedback for Deeper Customer Insights:
+                  </span>{" "}
+                  Include passive inputs like online reviews and social mentions
+                  for deeper insights.
                 </li>
                 <li className="checklist-item">
                   <span>
-                      Enhance Feedback with Video, Images & Voice Notes:
-                    </span>{" "}
-                    Collect rich feedback through videos, images, and voice
-                    notes.
+                    Enhance Feedback with Video, Images & Voice Notes:
+                  </span>{" "}
+                  Collect rich feedback through videos, images, and voice notes.
                 </li>
                 <li className="checklist-item">
                   <span>
-                      Integrate with CRM & Support Systems Effortlessly:
-                    </span>{" "}
-                    Works with tools you love, like Salesforce, Zendesk, and
-                    HubSpot.
+                    Integrate with CRM & Support Systems Effortlessly:
+                  </span>{" "}
+                  Works with tools you love, like Salesforce, Zendesk, and
+                  HubSpot.
                 </li>
                 <li className="checklist-item">
-                  <span>Track NPS, CSAT & CES for Customer Success:</span>{" "}
-                    Track NPS for customer loyalty, CSAT for satisfaction, and
-                    CES for process simplicity.
+                  <span>Track NPS, CSAT & CES for Customer Success:</span> Track
+                  NPS for customer loyalty, CSAT for satisfaction, and CES for
+                  process simplicity.
                 </li>
               </ul>
             </div>

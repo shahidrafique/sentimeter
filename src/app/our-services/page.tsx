@@ -3,7 +3,6 @@ import ScaledImage from "../components/scaled-image";
 export default function page() {
   return (
     <article className="our-services">
-
       {/* Banner */}
       <section className="banner">
         <div className="container">
@@ -22,10 +21,14 @@ export default function page() {
           <section className="section strategy-path">
             <div className="container">
               <div className="content">
-                <h2 className="section-title">Find Your Ideal CX <br /> Strategy Path</h2>
+                <h2 className="section-title">
+                  Find Your Ideal CX <br /> Strategy Path
+                </h2>
                 <div className="strategy-illustration-container">
                   <ScaledImage
-                    src={"/images/illustration-strategy-path-our-services-page.svg"}
+                    src={
+                      "/images/illustration-strategy-path-our-services-page.svg"
+                    }
                     width={530}
                     height={285}
                     alt="strategy path"
@@ -40,7 +43,9 @@ export default function page() {
                       min={24}
                     />
                     <h5 className="text-green">REVAMP</h5>
-                    <p>When your program is in place but not delivering value</p>
+                    <p>
+                      When your program is in place but not delivering value
+                    </p>
                   </div>
                   <div className="strategy-path-point simplify">
                     <ScaledImage
@@ -51,7 +56,10 @@ export default function page() {
                       min={24}
                     />
                     <h5 className="text-yellow">ADOPT CUSTOMER CENTRICITY</h5>
-                    <p>When you need to make your organization adopt continuous improvement & customer-centric framework</p>
+                    <p>
+                      When you need to make your organization adopt continuous
+                      improvement & customer-centric framework
+                    </p>
                   </div>
                   <div className="strategy-path-point adopt">
                     <ScaledImage
@@ -62,7 +70,10 @@ export default function page() {
                       min={24}
                     />
                     <h5 className="text-red">SIMPLIFY & LAUNCH</h5>
-                    <p>When CX is important but you find it daunting - simplify and start</p>
+                    <p>
+                      When CX is important but you find it daunting - simplify
+                      and start
+                    </p>
                   </div>
                   <div className="strategy-path-point launch">
                     <ScaledImage
@@ -73,10 +84,15 @@ export default function page() {
                       min={24}
                     />
                     <h5 className="text-blue">LAUNCH STRUCTURED CX</h5>
-                    <p>When you're collecting feedback but want to launch structured CX</p>
+                    <p>
+                      When you're collecting feedback but want to launch
+                      structured CX
+                    </p>
                   </div>
                 </div>
-                <a href="#" className="button">Learn More</a>
+                <a href="#" className="button">
+                  Learn More
+                </a>
               </div>
             </div>
           </section>
@@ -102,7 +118,9 @@ export default function page() {
               </div>
               <div className="content">
                 <p>
-                  A structured, actionable framework that bridges CX efforts with business goals, enhancing customer journeys and driving measurable outcomes.
+                  A structured, actionable framework that bridges CX efforts
+                  with business goals, enhancing customer journeys and driving
+                  measurable outcomes.
                 </p>
                 <h5>Key Components:</h5>
                 <div className="row">
@@ -113,7 +131,10 @@ export default function page() {
                       height={92}
                       alt="icon align"
                     />
-                    <p><span>Align</span>Link CX strategies to business KPIs and organizational goals.</p>
+                    <p>
+                      <span>Align</span>Link CX strategies to business KPIs and
+                      organizational goals.
+                    </p>
                   </div>
                   <div className="col">
                     <ScaledImage
@@ -122,7 +143,10 @@ export default function page() {
                       height={92}
                       alt="icon analyze"
                     />
-                    <p><span>Analyze</span> Use AI-driven insights to uncover sentiments and root causes.</p>
+                    <p>
+                      <span>Analyze</span> Use AI-driven insights to uncover
+                      sentiments and root causes.
+                    </p>
                   </div>
                   <div className="col">
                     <ScaledImage
@@ -131,17 +155,21 @@ export default function page() {
                       height={92}
                       alt="icon act"
                     />
-                    <p><span>Act</span> Prioritize and implement data-driven actions for significant customer experience improvements.</p>
+                    <p>
+                      <span>Act</span> Prioritize and implement data-driven
+                      actions for significant customer experience improvements.
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="section-footer">
                 <h5>Why It Matters:</h5>
-                <p>Connect CX efforts directly to tangible business results, including:</p>
+                <p>
+                  Connect CX efforts directly to tangible business results,
+                  including:
+                </p>
                 <ul className="checklist inline green">
-                  <li className="checklist-item">
-                    Reduced churn.
-                  </li>
+                  <li className="checklist-item">Reduced churn.</li>
                   <li className="checklist-item">
                     Increased customer lifetime value.
                   </li>
@@ -162,7 +190,9 @@ export default function page() {
                 <span>Technology</span> Integration Services
               </h3>
               <p>
-                Assist organizations in integrating Sentimeter's experience management technologies with their existing systems to enhance feedback collection, data flow, and analysis
+                Assist organizations in integrating Sentimeter's experience
+                management technologies with their existing systems to enhance
+                feedback collection, data flow, and analysis
               </p>
             </div>
             <div className="content">
@@ -175,7 +205,10 @@ export default function page() {
                     alt="icon system integration"
                   />
                   <h5>System Integration Consulting</h5>
-                  <p>Tailor Sentimeter’s platform to fit seamlessly into existing CRMs, ticketing systems, and communication tools.</p>
+                  <p>
+                    Tailor Sentimeter's platform to fit seamlessly into existing
+                    CRMs, ticketing systems, and communication tools.
+                  </p>
                 </div>
                 <div className="col">
                   <ScaledImage
@@ -185,7 +218,10 @@ export default function page() {
                     alt="icon api development"
                   />
                   <h5>API Development and Support</h5>
-                  <p>Build and support custom APIs to ensure smooth data synchronization and workflow automation.</p>
+                  <p>
+                    Build and support custom APIs to ensure smooth data
+                    synchronization and workflow automation.
+                  </p>
                 </div>
                 <div className="col">
                   <ScaledImage
@@ -195,7 +231,10 @@ export default function page() {
                     alt="icon data migration"
                   />
                   <h5>Data Migration Services</h5>
-                  <p>Ensure secure migration of historical feedback data into Sentimeter’s unified hub.</p>
+                  <p>
+                    Ensure secure migration of historical feedback data into
+                    Sentimeter's unified hub.
+                  </p>
                 </div>
                 <div className="col">
                   <ScaledImage
@@ -205,7 +244,10 @@ export default function page() {
                     alt="icon platform customization"
                   />
                   <h5>Platform Customization</h5>
-                  <p>Customize dashboards, reports, and workflows to align with unique organizational needs.</p>
+                  <p>
+                    Customize dashboards, reports, and workflows to align with
+                    unique organizational needs.
+                  </p>
                 </div>
               </div>
             </div>
@@ -257,7 +299,11 @@ export default function page() {
                 </h2>
               </div>
               <div className="content">
-                <p>Provide expert guidance to design, implement, and enhance customer experience strategies, ensuring alignment with business objectives and measurable results.</p>
+                <p>
+                  Provide expert guidance to design, implement, and enhance
+                  customer experience strategies, ensuring alignment with
+                  business objectives and measurable results.
+                </p>
                 <div className="card-blocks">
                   <div className="card-blocks-item yellow">
                     <div className="row">
@@ -271,10 +317,13 @@ export default function page() {
                     </div>
                     <ul className="checklist yellow">
                       <li className="checklist-item">
-                        <span>Purpose:</span> Evaluate your organization's current CX capabilities to uncover actionable improvement opportunities.
+                        <span>Purpose:</span> Evaluate your organization's
+                        current CX capabilities to uncover actionable
+                        improvement opportunities.
                       </li>
                       <li className="checklist-item">
-                        <span>What You Gain:</span> A clear roadmap to enhance CX maturity across processes, tools, and strategy.
+                        <span>What You Gain:</span> A clear roadmap to enhance
+                        CX maturity across processes, tools, and strategy.
                       </li>
                     </ul>
                   </div>
@@ -290,10 +339,12 @@ export default function page() {
                     </div>
                     <ul className="checklist yellow">
                       <li className="checklist-item">
-                        <span>Purpose:</span> Identify and map unique customer journeys to optimize touchpoints and reduce drop-offs.
+                        <span>Purpose:</span> Identify and map unique customer
+                        journeys to optimize touchpoints and reduce drop-offs.
                       </li>
                       <li className="checklist-item">
-                        <span>What You Gain:</span> Tailored solutions for industry-specific pain points and customer needs.
+                        <span>What You Gain:</span> Tailored solutions for
+                        industry-specific pain points and customer needs.
                       </li>
                     </ul>
                   </div>
@@ -309,10 +360,13 @@ export default function page() {
                     </div>
                     <ul className="checklist yellow">
                       <li className="checklist-item">
-                        <span>Purpose:</span> Establish structures and processes for consistent implementation of CX strategies across teams and departments.
+                        <span>Purpose:</span> Establish structures and processes
+                        for consistent implementation of CX strategies across
+                        teams and departments.
                       </li>
                       <li className="checklist-item">
-                        <span>What You Gain:</span> A governance playbook to maintain alignment and accountability in CX initiatives.
+                        <span>What You Gain:</span> A governance playbook to
+                        maintain alignment and accountability in CX initiatives.
                       </li>
                     </ul>
                   </div>
@@ -348,22 +402,30 @@ export default function page() {
                 </div>
                 <div className="content">
                   <p>
-                    Provide end-to-end management of customer experience programs to ensure seamless execution, optimization, and actionable insights.
+                    Provide end-to-end management of customer experience
+                    programs to ensure seamless execution, optimization, and
+                    actionable insights.
                   </p>
                 </div>
               </div>
-              </div>
+            </div>
             <div className="col">
               <h5 className="text-center">Key Offerings</h5>
               <div className="managed-services">
                 <div className="col">
                   <div className="content">
                     <h5 className="red-100">Program Management</h5>
-                    <p>Oversee experience programs, ensuring timely execution and alignment with strategic goals.</p>
+                    <p>
+                      Oversee experience programs, ensuring timely execution and
+                      alignment with strategic goals.
+                    </p>
                   </div>
                   <div className="content">
                     <h5 className="red-70">Survey Design and Optimization</h5>
-                    <p>Create targeted surveys optimized for response rates and insight quality.</p>
+                    <p>
+                      Create targeted surveys optimized for response rates and
+                      insight quality.
+                    </p>
                   </div>
                 </div>
                 <div className="col">
@@ -377,11 +439,18 @@ export default function page() {
                 <div className="col">
                   <div className="content">
                     <h5 className="red-90">Data Analysis and Reporting</h5>
-                    <p>Provide detailed analysis and tailored reports that highlight trends, opportunities, and areas for improvement.</p>
+                    <p>
+                      Provide detailed analysis and tailored reports that
+                      highlight trends, opportunities, and areas for
+                      improvement.
+                    </p>
                   </div>
                   <div className="content">
                     <h5 className="red-80">Continuous Program Improvement</h5>
-                    <p>Regularly review and refine programs to adapt to evolving customer needs and business priorities.</p>
+                    <p>
+                      Regularly review and refine programs to adapt to evolving
+                      customer needs and business priorities.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -404,11 +473,16 @@ export default function page() {
             <div className="content-group has-inner-text-blue">
               <div className="section-header">
                 <h2>
-                  Sentimeter Impact Framework: <span>Structured Implementation</span>
+                  Sentimeter Impact Framework:{" "}
+                  <span>Structured Implementation</span>
                 </h2>
               </div>
               <div className="content">
-                <p>Transform your existing feedback collection into a comprehensive, structured CX program that bridges CX efforts with business goals.</p>
+                <p>
+                  Transform your existing feedback collection into a
+                  comprehensive, structured CX program that bridges CX efforts
+                  with business goals.
+                </p>
                 <h5>Key Components:</h5>
                 <div className="row">
                   <div className="col">
@@ -418,7 +492,10 @@ export default function page() {
                       height={92}
                       alt="icon align"
                     />
-                    <p><span>Align</span>Link CX strategies to business KPIs and organizational goals.</p>
+                    <p>
+                      <span>Align</span>Link CX strategies to business KPIs and
+                      organizational goals.
+                    </p>
                   </div>
                   <div className="col">
                     <ScaledImage
@@ -427,7 +504,10 @@ export default function page() {
                       height={92}
                       alt="icon analyze"
                     />
-                    <p><span>Analyze</span> Use AI-driven insights to uncover sentiments and root causes.</p>
+                    <p>
+                      <span>Analyze</span> Use AI-driven insights to uncover
+                      sentiments and root causes.
+                    </p>
                   </div>
                   <div className="col">
                     <ScaledImage
@@ -436,7 +516,10 @@ export default function page() {
                       height={92}
                       alt="icon act"
                     />
-                    <p><span>Act</span> Prioritize and implement data-driven actions for significant customer experience improvements.</p>
+                    <p>
+                      <span>Act</span> Prioritize and implement data-driven
+                      actions for significant customer experience improvements.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -457,11 +540,15 @@ export default function page() {
                   alt="icon technology integration enhanced"
                 />
                 <div className="section-header">
-                  <h2>Technology Integration: <span>Enhanced Structure</span></h2>
+                  <h2>
+                    Technology Integration: <span>Enhanced Structure</span>
+                  </h2>
                 </div>
                 <div className="content">
                   <p>
-                    Transform your existing feedback collection into a comprehensive, structured CX program that bridges CX efforts with business goals.
+                    Transform your existing feedback collection into a
+                    comprehensive, structured CX program that bridges CX efforts
+                    with business goals.
                   </p>
                 </div>
               </div>
@@ -511,7 +598,8 @@ export default function page() {
                       <div className="card-content">
                         <h4>CX Maturity Assessment</h4>
                         <p>
-                          Evaluate your customer experience strategies to identify growth opportunities.
+                          Evaluate your customer experience strategies to
+                          identify growth opportunities.
                         </p>
                       </div>
                     </div>
@@ -525,9 +613,12 @@ export default function page() {
                         />
                       </div>
                       <div className="card-content">
-                        <h4>Customer Journey Mapping (Journey-First Approach)</h4>
+                        <h4>
+                          Customer Journey Mapping (Journey-First Approach)
+                        </h4>
                         <p>
-                          Map customer journeys to pinpoint pain points and deliver tailored solutions.
+                          Map customer journeys to pinpoint pain points and
+                          deliver tailored solutions.
                         </p>
                       </div>
                     </div>
@@ -543,7 +634,8 @@ export default function page() {
                       <div className="card-content">
                         <h4>Experience Governance Framework</h4>
                         <p>
-                          Establish governance processes to maintain CX alignment organization-wide.
+                          Establish governance processes to maintain CX
+                          alignment organization-wide.
                         </p>
                       </div>
                     </div>
@@ -552,7 +644,9 @@ export default function page() {
               </div>
               <div className="section-footer">
                 <p>
-                  <span>Transform Your CX Strategy With Sentimeter's Expert Services</span>
+                  <span>
+                    Transform Your CX Strategy With Sentimeter's Expert Services
+                  </span>
                 </p>
                 <a href="#" className="button button--outline">
                   Book a Consultation Today
@@ -562,7 +656,6 @@ export default function page() {
           </div>
         </div>
       </section>
-
     </article>
   );
 }

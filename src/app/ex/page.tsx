@@ -49,7 +49,7 @@ export default function page() {
                 <h2>Data-Driven Precision</h2>
               </section>
               <div className="content">
-                <p>Get a quick snapshot of your organization’s</p>
+                <p>Get a quick snapshot of your organization's</p>
 
                 <ul>
                   <li>NPS,</li>
@@ -118,7 +118,7 @@ export default function page() {
               in <span>4 Essential Phases</span>
             </h3>
             <p>
-              Sentimeter’s structured approach empowers your organization to
+              Sentimeter's structured approach empowers your organization to
               listen, understand, and act on employee feedback, creating a
               thriving workplace culture.
             </p>
@@ -289,7 +289,7 @@ export default function page() {
             </div>
 
             <Link href="#" className="button button--outline">
-              Discover Sentimeter’s Features
+              Discover Sentimeter's Features
             </Link>
           </div>
         </div>
@@ -348,7 +348,7 @@ export default function page() {
               </ul>
               <div className="section-footer">
                 <p className="note">
-                  “A happy, engaged workforce isn’t just better for employees—it
+                  “A happy, engaged workforce isn't just better for employees—it
                   drives business success.”
                 </p>
                 <Link href="#" className="button">

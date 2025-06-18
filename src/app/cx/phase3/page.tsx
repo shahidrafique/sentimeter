@@ -51,10 +51,10 @@ export default function page() {
                 Decisions
               </h2>
               <p>
-                Leverage the power of Sentimeter’s advanced analytics to decode
+                Leverage the power of Sentimeter's advanced analytics to decode
                 customer emotions, uncover trends, and refine customer journeys.
                 With tools that map feedback touchpoints onto your journeys,
-                you’ll address gaps and drive actionable improvements across
+                you'll address gaps and drive actionable improvements across
                 every interaction.
               </p>
             </div>
@@ -150,7 +150,7 @@ export default function page() {
                 Uncover <span>Customer Emotions</span> & Identify Key Issues
               </h3>
               <p>
-                Go beyond surface-level data. Sentimeter’s sentiment analysis
+                Go beyond surface-level data. Sentimeter's sentiment analysis
                 and root cause tools uncover the "why" behind customer behavior,
                 helping you focus on the areas that matter most.
               </p>
@@ -223,7 +223,7 @@ export default function page() {
               <div className="section-header">
                 <h2>Predictive Analytics for Smarter Planning</h2>
                 <p>
-                  Move from reactive to proactive. Sentimeter’s predictive tools
+                  Move from reactive to proactive. Sentimeter's predictive tools
                   help you anticipate customer needs, loyalty trends, and
                   potential churn before they happen.
                 </p>
@@ -295,7 +295,7 @@ export default function page() {
               <div className="content">
                 <p>
                   Identify anomalies and trends early to stay agile and
-                  proactive. With Sentimeter’s anomaly detection tools, you’ll
+                  proactive. With Sentimeter's anomaly detection tools, you'll
                   address potential risks before they escalate.
                 </p>
               </div>
