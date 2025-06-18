@@ -1,18 +1,17 @@
-
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import ScaledImage from "../scaled-image";
 
 const SentiInsightsTabs: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<"sentiCxTab" | "sentiExTab">("sentiCxTab");
+  const [activeTab, setActiveTab] = useState<"sentiCxTab" | "sentiExTab">(
+    "sentiCxTab"
+  );
 
   return (
     <section className="section senti-insights-tabs">
       <div className="container">
-
         <div className="section-header">
           <div className="tab-buttons">
             <button
@@ -55,7 +54,12 @@ const SentiInsightsTabs: React.FC = () => {
         {activeTab === "sentiCxTab" && (
           <div className="tab">
             <section className="senticx-slider">
-              <input type="radio" name="cxSlider" id="cxSlide1" defaultChecked />
+              <input
+                type="radio"
+                name="cxSlider"
+                id="cxSlide1"
+                defaultChecked
+              />
               <input type="radio" name="cxSlider" id="cxSlide2" />
               <input type="radio" name="cxSlider" id="cxSlide3" />
               <input type="radio" name="cxSlider" id="cxSlide4" />
@@ -63,9 +67,7 @@ const SentiInsightsTabs: React.FC = () => {
                 <div className="slide" id="cx-s1">
                   <div className="slide-content">
                     <div className="content-left">
-                      <p>
-                        Track NPS, feedback, and essential KPIs instantly.
-                      </p>
+                      <p>Track NPS, feedback, and essential KPIs instantly.</p>
                     </div>
                     <ScaledImage
                       src={"/images/senti-insights/cx-overview.png"}
@@ -75,16 +77,15 @@ const SentiInsightsTabs: React.FC = () => {
                     />
                     <div className="content-right">
                       <p>
-                        Analyze feedback segments and key satisfaction metrics for actionable customer insights.
+                        Analyze feedback segments and key satisfaction metrics
+                        for actionable customer insights.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="slide" id="cx-s2">
                   <div className="slide-content">
-                    <div className="content-left">
-                      {" "}
-                    </div>
+                    <div className="content-left"> </div>
                     <ScaledImage
                       src={"/images/senti-insights/cx-comparison.png"}
                       width={1092}
@@ -93,7 +94,9 @@ const SentiInsightsTabs: React.FC = () => {
                     />
                     <div className="content-right">
                       <p>
-                        Gain insights into key performance metrics and top feedback themes for a quick overview of overall strengths and improvement areas.
+                        Gain insights into key performance metrics and top
+                        feedback themes for a quick overview of overall
+                        strengths and improvement areas.
                       </p>
                     </div>
                   </div>
@@ -102,7 +105,9 @@ const SentiInsightsTabs: React.FC = () => {
                   <div className="slide-content">
                     <div className="content-left">
                       <p>
-                        Easily review customer comments, contact details, and transaction history to categorize concerns and follow up on unresolved feedback.
+                        Easily review customer comments, contact details, and
+                        transaction history to categorize concerns and follow up
+                        on unresolved feedback.
                       </p>
                     </div>
                     <ScaledImage
@@ -111,16 +116,16 @@ const SentiInsightsTabs: React.FC = () => {
                       height={737}
                       alt="Senticx dashboard insights"
                     />
-                    <div className="content-right">
-                      {" "}
-                    </div>
+                    <div className="content-right"> </div>
                   </div>
                 </div>
                 <div className="slide" id="cx-s4">
                   <div className="slide-content">
                     <div className="content-left">
                       <p>
-                        Track customer sentiment over time, highlighting trends across key areas like product availability, pricing, and service.
+                        Track customer sentiment over time, highlighting trends
+                        across key areas like product availability, pricing, and
+                        service.
                       </p>
                     </div>
                     <ScaledImage
@@ -131,7 +136,8 @@ const SentiInsightsTabs: React.FC = () => {
                     />
                     <div className="content-right">
                       <p>
-                        Identify top concerns and appreciation points to drive targeted actions.
+                        Identify top concerns and appreciation points to drive
+                        targeted actions.
                       </p>
                     </div>
                   </div>
@@ -171,7 +177,12 @@ const SentiInsightsTabs: React.FC = () => {
         {activeTab === "sentiExTab" && (
           <div className="tab">
             <section className="sentiex-slider">
-              <input type="radio" name="exSlider" id="exSlide1" defaultChecked />
+              <input
+                type="radio"
+                name="exSlider"
+                id="exSlide1"
+                defaultChecked
+              />
               <input type="radio" name="exSlider" id="exSlide2" />
               <input type="radio" name="exSlider" id="exSlide3" />
               <div className="slides">
@@ -179,7 +190,8 @@ const SentiInsightsTabs: React.FC = () => {
                   <div className="slide-content">
                     <div className="content-left">
                       <p>
-                        Turn employee feedback into real action with our people-first experience platform.
+                        Turn employee feedback into real action with our
+                        people-first experience platform.
                       </p>
                     </div>
                     <ScaledImage
@@ -190,11 +202,13 @@ const SentiInsightsTabs: React.FC = () => {
                     />
                     <div className="content-right">
                       <p>
-                        From quick pulse checks to in-depth iOS reviews, SentiEX delivers the insights you need—without the hassle.
+                        From quick pulse checks to in-depth iOS reviews, SentiEX
+                        delivers the insights you need—without the hassle.
                       </p>
 
                       <p>
-                        Our intuitive tools simplify feedback, helping you create polished reports and drive meaningful change.
+                        Our intuitive tools simplify feedback, helping you
+                        create polished reports and drive meaningful change.
                       </p>
                     </div>
                   </div>
@@ -203,7 +217,8 @@ const SentiInsightsTabs: React.FC = () => {
                   <div className="slide-content">
                     <div className="content-left">
                       <p>
-                        Discover how each department performs in communication, leadership, and trust.
+                        Discover how each department performs in communication,
+                        leadership, and trust.
                       </p>
                     </div>
                     <ScaledImage
@@ -214,7 +229,9 @@ const SentiInsightsTabs: React.FC = () => {
                     />
                     <div className="content-right">
                       <p>
-                        SentiEX highlights key strengths and areas for growth with easy-to-read scores—turning employee feedback into clear, actionable insights.
+                        SentiEX highlights key strengths and areas for growth
+                        with easy-to-read scores—turning employee feedback into
+                        clear, actionable insights.
                       </p>
                     </div>
                   </div>
@@ -223,7 +240,8 @@ const SentiInsightsTabs: React.FC = () => {
                   <div className="slide-content">
                     <div className="content-left">
                       <p>
-                        Track store-level performance across key metrics like communication, respect, and leadership.
+                        Track store-level performance across key metrics like
+                        communication, respect, and leadership.
                       </p>
                     </div>
                     <ScaledImage
@@ -234,7 +252,9 @@ const SentiInsightsTabs: React.FC = () => {
                     />
                     <div className="content-right">
                       <p>
-                        SentiEX empowers regional managers with real-time insights to boost team morale and create a consistent employee experience.
+                        SentiEX empowers regional managers with real-time
+                        insights to boost team morale and create a consistent
+                        employee experience.
                       </p>
                     </div>
                   </div>
@@ -262,12 +282,9 @@ const SentiInsightsTabs: React.FC = () => {
                 </li>
               </ul>
             </section>
-
           </div>
         )}
-
       </div>
-
     </section>
   );
 };

@@ -50,7 +50,7 @@ export default function page() {
               </h2>
               <p>
                 Ensure your organization thrives with actionable insights
-                delivered through Sentimeter’s advanced reporting tools and
+                delivered through Sentimeter's advanced reporting tools and
                 real-time dashboards. Transform employee feedback into
                 measurable strategies, fostering continuous improvement and
                 employee satisfaction.
@@ -255,7 +255,7 @@ export default function page() {
                   <span>Insights</span> Anytime, Anywhere
                 </h2>
                 <p>
-                  Agility is key. Sentimeter’s mobile-friendly dashboards allow
+                  Agility is key. Sentimeter's mobile-friendly dashboards allow
                   decision-makers to stay informed and act swiftly, no matter
                   where they are.
                 </p>
@@ -376,7 +376,7 @@ export default function page() {
                   Secure Sharing for <span> Trusted Insights</span>
                   <p>
                     Ensure all data remains secure and accessible to the right
-                    people with Sentimeter’s robust permissions and compliance
+                    people with Sentimeter's robust permissions and compliance
                     features.
                   </p>
                 </h2>
@@ -406,7 +406,7 @@ export default function page() {
               <section className="section-header">
                 <h2>Prove Impact and Shape the Future</h2>
                 <p>
-                  Sentimeter doesn’t just help you track metrics; it connects
+                  Sentimeter doesn't just help you track metrics; it connects
                   feedback to business outcomes, enabling you to showcase the
                   value of a strong employee experience.
                 </p>
@@ -426,7 +426,7 @@ export default function page() {
                     <div className="card-content">
                       <h4>Retention Predictors</h4>
                       <p>
-                         Identify employees at risk of disengagement and
+                        Identify employees at risk of disengagement and
                         turnover.
                       </p>
                     </div>

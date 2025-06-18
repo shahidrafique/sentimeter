@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ScaledImage from "../scaled-image";
 
 export default function DriveDecisions() {
@@ -6,11 +5,14 @@ export default function DriveDecisions() {
     <section className="section section has-bg blue drive-decisions">
       <div className="card">
         <div className="container dir-col">
-          <h2 className="section-title">Drive decisions with <span>Sentimeter's</span>
+          <h2 className="section-title">
+            Drive decisions with <span>Sentimeter's</span>
             <br />
             data-driven insights
           </h2>
-          <a href="#" className="button">Get Demo</a>
+          <a href="#" className="button">
+            Get Demo
+          </a>
           <div className="steps-row">
             <div className="steps-col">
               <div className="image-wrapper">

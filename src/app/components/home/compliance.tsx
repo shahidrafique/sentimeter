@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ScaledImage from "../scaled-image";
 
 export default function Compliance() {
@@ -6,7 +5,9 @@ export default function Compliance() {
     <section className="section compliance">
       <div className="container dir-col">
         <div className="compliance-header">
-          <h2 className="section-title">Enterprise Security with Top Compliance Standards</h2>
+          <h2 className="section-title">
+            Enterprise Security with Top Compliance Standards
+          </h2>
           <div className="awards-container">
             <ScaledImage
               src="/images/compliance-awards/aicpa.png"
@@ -43,19 +44,27 @@ export default function Compliance() {
         <div className="compliance-blocks">
           <div className="box">
             <h3 className="title">SOC2 Type II Certified</h3>
-            <div className="copy">Industry-leading security and confidentiality standards</div>
+            <div className="copy">
+              Industry-leading security and confidentiality standards
+            </div>
           </div>
           <div className="box">
             <h3 className="title">Full GDPR (DSGVO) Compliance</h3>
-            <div className="copy">Meeting all European data protection requirements</div>
+            <div className="copy">
+              Meeting all European data protection requirements
+            </div>
           </div>
           <div className="box">
             <h3 className="title">US-Based Data Centers</h3>
-            <div className="copy">US-Based Data Centers: Control where your data is stored globally</div>
+            <div className="copy">
+              US-Based Data Centers: Control where your data is stored globally
+            </div>
           </div>
           <div className="box">
             <h3 className="title">Advanced Permission Controls</h3>
-            <div className="copy">Secure collaboration with granular access management</div>
+            <div className="copy">
+              Secure collaboration with granular access management
+            </div>
           </div>
         </div>
       </div>

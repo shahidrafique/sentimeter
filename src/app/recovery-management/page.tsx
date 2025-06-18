@@ -1,19 +1,21 @@
-import Image from "next/image";
 import ScaledImage from "../components/scaled-image";
 
 export default function page() {
   return (
     <article className="recovery-management">
-
       {/* Banner */}
       <section className="banner">
         <div className="container">
           <div className="content">
             <h2 className="title">
-              Straightforward <span>Communication with Sentimeter:</span> Empower Your Recovery Strategy
+              Straightforward <span>Communication with Sentimeter:</span>{" "}
+              Empower Your Recovery Strategy
             </h2>
             <p>
-              Timely communication, effective collaboration, and structured resolution are at the heart of Sentimeter’s case management module. Address complaints across channels, resolve issues efficiently, and build trust by closing the loop effectively.
+              Timely communication, effective collaboration, and structured
+              resolution are at the heart of Sentimeter’s case management
+              module. Address complaints across channels, resolve issues
+              efficiently, and build trust by closing the loop effectively.
             </p>
           </div>
         </div>
@@ -31,13 +33,21 @@ export default function page() {
                 </h2>
               </div>
               <div className="content">
-              <p>Sentimeter ensures no signal is missed by gathering feedback from diverse channels and mediums.</p>
+                <p>
+                  Sentimeter ensures no signal is missed by gathering feedback
+                  from diverse channels and mediums.
+                </p>
               </div>
               <div className="section-footer">
-                <p><span>Why It Matters:</span> “Collecting feedback effectively is the foundation of building actionable recovery strategies.”</p>
+                <p>
+                  <span>Why It Matters:</span> “Collecting feedback effectively
+                  is the foundation of building actionable recovery strategies.”
+                </p>
                 <div className="row">
                   <p>Discover Seamless Feedback Collection</p>
-                  <a href="#" className="button">Learn More</a>
+                  <a href="#" className="button">
+                    Learn More
+                  </a>
                 </div>
               </div>
             </div>
@@ -53,7 +63,13 @@ export default function page() {
                       className="icon"
                       alt="feedback integration"
                     />
-                    <p><span className="text-green">Omnichannel Feedback Integration:</span> Capture feedback from surveys, social media, CRM systems, emails, and call centers.</p>
+                    <p>
+                      <span className="text-green">
+                        Omnichannel Feedback Integration:
+                      </span>{" "}
+                      Capture feedback from surveys, social media, CRM systems,
+                      emails, and call centers.
+                    </p>
                   </div>
                   <div className="feature has-icon-right">
                     <ScaledImage
@@ -63,7 +79,11 @@ export default function page() {
                       className="icon"
                       alt="rich metadata"
                     />
-                    <p><span className="text-red">Rich Metadata:</span> Include details like customer name, contact info, geographic data, and timestamps.</p>
+                    <p>
+                      <span className="text-red">Rich Metadata:</span> Include
+                      details like customer name, contact info, geographic data,
+                      and timestamps.
+                    </p>
                   </div>
                 </div>
                 <div className="col">
@@ -84,7 +104,13 @@ export default function page() {
                       className="icon"
                       alt="feedback access"
                     />
-                    <p><span className="text-yellow">Comprehensive Feedback Access:</span> Review all feedback, including solicited and unsolicited inputs, across customer journeys and touchpoints.</p>
+                    <p>
+                      <span className="text-yellow">
+                        Comprehensive Feedback Access:
+                      </span>{" "}
+                      Review all feedback, including solicited and unsolicited
+                      inputs, across customer journeys and touchpoints.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -102,7 +128,10 @@ export default function page() {
                 <small>Response</small>
                 <span>Automate Responses</span> for Quick Resolution
               </h2>
-              <p>Sentimeter accelerates response times with automation and intelligent prioritization.</p>
+              <p>
+                Sentimeter accelerates response times with automation and
+                intelligent prioritization.
+              </p>
               <div className="automate-responses-row">
                 <div className="automate-responses-point">
                   <ScaledImage
@@ -113,7 +142,10 @@ export default function page() {
                   />
                   <div className="text">
                     <h4>Real-Time Alerts</h4>
-                    <p>Push notifications, SMS, and email alerts for instant response to detractor feedback.</p>
+                    <p>
+                      Push notifications, SMS, and email alerts for instant
+                      response to detractor feedback.
+                    </p>
                   </div>
                 </div>
                 <div className="automate-responses-point">
@@ -125,7 +157,10 @@ export default function page() {
                   />
                   <div className="text">
                     <h4>Rules-Based Assignment</h4>
-                    <p>Automatically assign cases to Directly Responsible Individuals (DRIs) for swift action.</p>
+                    <p>
+                      Automatically assign cases to Directly Responsible
+                      Individuals (DRIs) for swift action.
+                    </p>
                   </div>
                 </div>
                 <div className="automate-responses-point">
@@ -137,17 +172,26 @@ export default function page() {
                   />
                   <div className="text">
                     <h4>Complaint Status Tracking</h4>
-                    <p>Monitor complaint progress with statuses like open, resolved, or escalated.</p>
+                    <p>
+                      Monitor complaint progress with statuses like open,
+                      resolved, or escalated.
+                    </p>
                   </div>
                 </div>
               </div>
-              <p><span>Why It Matters:</span> “Automated response mechanisms reduce resolution time and ensure quick attention to customer concerns.”</p>
+              <p>
+                <span>Why It Matters:</span> “Automated response mechanisms
+                reduce resolution time and ensure quick attention to customer
+                concerns.”
+              </p>
               <div className="row">
                 <a href="#" className="link">
                   <span>Experience Automated</span>
                   <span>Response Solutions</span>
                 </a>
-                <a href="#" className="button button--outline">Learn More</a>
+                <a href="#" className="button button--outline">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
@@ -173,7 +217,8 @@ export default function page() {
                   alt="priority filter"
                 />
                 <div className="text">
-                  <span>Priority Filters:</span> Organize tickets by detractors, promoters, recency, or other criteria.
+                  <span>Priority Filters:</span> Organize tickets by detractors,
+                  promoters, recency, or other criteria.
                 </div>
               </div>
               <div className="filter-point dynamic">
@@ -184,7 +229,8 @@ export default function page() {
                   alt="dynamic filter"
                 />
                 <div className="text">
-                  <span>Priority Filters:</span> Organize tickets by detractors, promoters, recency, or other criteria.
+                  <span>Priority Filters:</span> Organize tickets by detractors,
+                  promoters, recency, or other criteria.
                 </div>
               </div>
               <div className="filter-point assignment">
@@ -195,7 +241,8 @@ export default function page() {
                   alt="assignment filter"
                 />
                 <div className="text">
-                  <span>Priority Filters:</span> Organize tickets by detractors, promoters, recency, or other criteria.
+                  <span>Priority Filters:</span> Organize tickets by detractors,
+                  promoters, recency, or other criteria.
                 </div>
               </div>
             </div>
@@ -203,17 +250,26 @@ export default function page() {
           <div className="col content-group has-inner-text-blue">
             <div className="section-header">
               <h2>
-                <small>Ticketing</small><span>Assign Tickets</span> to Individuals or Teams
+                <small>Ticketing</small>
+                <span>Assign Tickets</span> to Individuals or Teams
               </h2>
             </div>
             <div className="content">
-              <p>Sentimeter's robust ticketing capabilities streamline issue management with precision.</p>
+              <p>
+                Sentimeter's robust ticketing capabilities streamline issue
+                management with precision.
+              </p>
             </div>
             <div className="section-footer">
-              <p><span>Why It Matters:</span> “Structured ticketing processes improve accountability and resolution efficiency.”</p>
+              <p>
+                <span>Why It Matters:</span> “Structured ticketing processes
+                improve accountability and resolution efficiency.”
+              </p>
               <div className="row">
                 <p>Simplify Ticketing with Sentimeter</p>
-                <a href="#" className="button">Learn More</a>
+                <a href="#" className="button">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
@@ -227,11 +283,15 @@ export default function page() {
             <div className="content-group has-inner-text-blue">
               <div className="section-header">
                 <h2>
-                  <small>Communication</small> Prioritize and Personalize Responses
+                  <small>Communication</small> Prioritize and Personalize
+                  Responses
                 </h2>
               </div>
               <div className="content">
-                <p>Sentimeter enables teams to tailor communication for a better recovery experience.</p>
+                <p>
+                  Sentimeter enables teams to tailor communication for a better
+                  recovery experience.
+                </p>
                 <div className="card-blocks">
                   <div className="card-blocks-item green">
                     <ScaledImage
@@ -241,7 +301,10 @@ export default function page() {
                       alt="icon connect"
                     />
                     <h5>Connect Box Technology</h5>
-                    <p>Engage in one-way or two-way SMS or email communication directly from the case management module.</p>
+                    <p>
+                      Engage in one-way or two-way SMS or email communication
+                      directly from the case management module.
+                    </p>
                   </div>
                   <div className="card-blocks-item red">
                     <ScaledImage
@@ -251,7 +314,10 @@ export default function page() {
                       alt="icon escalation"
                     />
                     <h5>Escalation Tools</h5>
-                    <p>Seamlessly escalate issues beyond designated individuals when necessary.</p>
+                    <p>
+                      Seamlessly escalate issues beyond designated individuals
+                      when necessary.
+                    </p>
                   </div>
                   <div className="card-blocks-item yellow">
                     <ScaledImage
@@ -261,15 +327,22 @@ export default function page() {
                       alt="icon confirmation"
                     />
                     <h5>Feedback Confirmation</h5>
-                    <p>Close the loop with customer satisfaction confirmation.</p>
+                    <p>
+                      Close the loop with customer satisfaction confirmation.
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="section-footer">
-                <p><span>Why It Matters:</span> “Personalized communication strengthens trust and enhances recovery experiences.”</p>
+                <p>
+                  <span>Why It Matters:</span> “Personalized communication
+                  strengthens trust and enhances recovery experiences.”
+                </p>
                 <div className="row">
                   <p>Engage Effectively with Connect Box</p>
-                  <a href="#" className="button">Learn More</a>
+                  <a href="#" className="button">
+                    Learn More
+                  </a>
                 </div>
               </div>
             </div>
@@ -283,28 +356,42 @@ export default function page() {
           <div className="col content-group has-inner-text-blue">
             <div className="section-header">
               <h2>
-                <small>Resolution</small> <span>Win Over</span> Customers Through Swift Action
+                <small>Resolution</small> <span>Win Over</span> Customers
+                Through Swift Action
               </h2>
             </div>
             <div className="content">
-              <p>Sentimeter's recovery tools help resolve complaints quickly while building long-term trust.</p>
+              <p>
+                Sentimeter's recovery tools help resolve complaints quickly
+                while building long-term trust.
+              </p>
               <ul className="checklist blue">
                 <li className="checklist-item">
-                  <span>Complaint Status Visibility:</span> Track resolutions, monitor first response times, and ensure transparent progress updates.
+                  <span>Complaint Status Visibility:</span> Track resolutions,
+                  monitor first response times, and ensure transparent progress
+                  updates.
                 </li>
                 <li className="checklist-item">
-                  <span>360-Degree Feedback Integration:</span> Incorporate customer satisfaction checks post-resolution for improved processes.
+                  <span>360-Degree Feedback Integration:</span> Incorporate
+                  customer satisfaction checks post-resolution for improved
+                  processes.
                 </li>
                 <li className="checklist-item">
-                  <span>Average Recovery Metrics:</span> Monitor recovery rate and time for continuous improvement.
+                  <span>Average Recovery Metrics:</span> Monitor recovery rate
+                  and time for continuous improvement.
                 </li>
               </ul>
             </div>
             <div className="section-footer">
-              <p><span>Why It Matters:</span> “Quick and efficient resolution fosters loyalty and prevents churn.”</p>
+              <p>
+                <span>Why It Matters:</span> “Quick and efficient resolution
+                fosters loyalty and prevents churn.”
+              </p>
               <div className="row">
                 <p>Transform Resolutions into Relationships</p>
-                <a href="#" className="button">Learn More</a>
+                <a href="#" className="button">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
@@ -326,19 +413,27 @@ export default function page() {
             <div className="col content-group has-inner-text-blue">
               <div className="section-header">
                 <h2>
-                  <small>Analyze</small> <span>Track Trends</span> to Spot Future Issues
+                  <small>Analyze</small> <span>Track Trends</span> to Spot
+                  Future Issues
                 </h2>
               </div>
               <div className="content">
                 <p>
-                  Sentimeter's analytics suite empowers teams to learn from past feedback and prevent recurring challenges.
+                  Sentimeter's analytics suite empowers teams to learn from past
+                  feedback and prevent recurring challenges.
                 </p>
               </div>
               <div className="section-footer">
-                <p><span>Why It Matters:</span> “Analyzing trends ensures continuous improvement and builds a proactive recovery strategy.”</p>
+                <p>
+                  <span>Why It Matters:</span> “Analyzing trends ensures
+                  continuous improvement and builds a proactive recovery
+                  strategy.”
+                </p>
                 <div className="row">
                   <p>Transform Resolutions into Relationships</p>
-                  <a href="#" className="button">Learn More</a>
+                  <a href="#" className="button">
+                    Learn More
+                  </a>
                 </div>
               </div>
             </div>
@@ -354,7 +449,10 @@ export default function page() {
                   />
                   <div className="content">
                     <h5>Performance Analytics</h5>
-                    <p>Monitor KPIs like average recovery time, first response rate, and unresolved issues.</p>
+                    <p>
+                      Monitor KPIs like average recovery time, first response
+                      rate, and unresolved issues.
+                    </p>
                   </div>
                 </div>
                 <div className="feature yellow">
@@ -366,7 +464,10 @@ export default function page() {
                   />
                   <div className="content">
                     <h5>Trend Analysis</h5>
-                    <p>Detect patterns across feedback to identify systemic issues and improvement opportunities.</p>
+                    <p>
+                      Detect patterns across feedback to identify systemic
+                      issues and improvement opportunities.
+                    </p>
                   </div>
                 </div>
                 <div className="feature red">
@@ -378,7 +479,10 @@ export default function page() {
                   />
                   <div className="content">
                     <h5>Scenario Modeling</h5>
-                    <p>Simulate the impact of proposed changes for proactive decision-making.</p>
+                    <p>
+                      Simulate the impact of proposed changes for proactive
+                      decision-making.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -401,9 +505,12 @@ export default function page() {
             </div>
 
             <div className="col content">
-              <h3>Why <span>Choose</span> Sentimeter for Recovery Management?</h3>
+              <h3>
+                Why <span>Choose</span> Sentimeter for Recovery Management?
+              </h3>
               <p>
-                Sentimeter transforms feedback into action with advanced case management tools:
+                Sentimeter transforms feedback into action with advanced case
+                management tools:
               </p>
 
               <div className="row">
@@ -416,9 +523,7 @@ export default function page() {
                   />
                   <div className="content">
                     <h5>Integrated Ticketing</h5>
-                    <p>
-                      Streamline issue management with automated workflows.
-                    </p>
+                    <p>Streamline issue management with automated workflows.</p>
                   </div>
                 </div>
                 <div className="col">
@@ -430,9 +535,7 @@ export default function page() {
                   />
                   <div className="content">
                     <h5>Proactive Alerts</h5>
-                    <p>
-                      Empower teams with real-time notifications.
-                    </p>
+                    <p>Empower teams with real-time notifications.</p>
                   </div>
                 </div>
                 <div className="col">
@@ -445,7 +548,8 @@ export default function page() {
                   <div className="content">
                     <h5>Dynamic Reporting</h5>
                     <p>
-                      Track performance metrics to continuously refine recovery strategies.
+                      Track performance metrics to continuously refine recovery
+                      strategies.
                     </p>
                   </div>
                 </div>
@@ -478,12 +582,10 @@ export default function page() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </section>
-
     </article>
   );
 }
