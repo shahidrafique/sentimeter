@@ -1,12 +1,71 @@
 "use client";
 import { useLayoutEffect } from "react";
 import Image from "next/image";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Problems() {
   useLayoutEffect(() => {
+    gsap.set(".problems .problem", { scale: 2.5 });
+    gsap.set(".problems .icons-problem .p-one", {
+      x: "-100",
+      y: "-100",
+      opacity: 0,
+    });
+    gsap.set(".problems .icons-problem .p-two", {
+      x: "50",
+      y: "-100",
+      opacity: 0,
+    });
+    gsap.set(".problems .icons-problem .p-three", {
+      x: "200",
+      opacity: 0,
+    });
+    gsap.set(".problems .icons-problem .p-four", {
+      x: "50",
+      y: "100",
+      opacity: 0,
+    });
+    gsap.set(".problems .icons-problem .p-five", {
+      x: "-40",
+      y: "100",
+      opacity: 0,
+    });
+    gsap.set(".problems .icons-problem .p-five", {
+      x: "-40",
+      y: "100",
+      opacity: 0,
+    });
+    gsap.set(".problems .solution", {
+      scale: 2,
+      opacity: 0,
+    });
+    gsap.set(".problems .icons-solution .s-one", {
+      x: "-100",
+      y: "-100",
+      opacity: 0,
+    });
+    gsap.set(".problems .icons-solution .s-two", {
+      x: "50",
+      y: "-100",
+      opacity: 0,
+    });
+    gsap.set(".problems .icons-solution .s-three", {
+      x: "200",
+      opacity: 0,
+    });
+    gsap.set(".problems .icons-solution .s-four", {
+      x: "50",
+      y: "100",
+      opacity: 0,
+    });
+    gsap.set(".problems .icons-solution .s-five", {
+      x: "-40",
+      y: "100",
+      opacity: 0,
+    });
     const tl = gsap.timeline({
       scrollTrigger: {
         scrub: true,
@@ -14,62 +73,66 @@ export default function Problems() {
         pinSpacing: true,
         trigger: ".problems",
         start: "50% 50%",
-        end: "+=6000",
+        end: "+=2000",
       },
     });
 
-    tl.from(".problems .problem", {
-      scale: 2.5,
+    // Start Animation
+
+    tl.to(".problems .problem", {
+      scale: 1,
+      opacity: 1,
     })
-      .from(
-        ".problems .icons-problem .one",
+
+      .to(
+        ".problems .icons-problem .p-one",
         {
-          x: "-100",
-          y: "-100",
-          opacity: 0,
+          x: "0",
+          y: "0",
+          opacity: 1,
         },
         "-=.1"
       )
-      .from(
-        ".problems .icons-problem .two",
+      .to(
+        ".problems .icons-problem .p-two",
         {
-          x: "50",
-          y: "-100",
-          opacity: 0,
+          x: "0",
+          y: "0",
+          opacity: 1,
         },
         "-=.5"
       )
-      .from(
-        ".problems .icons-problem .three",
+      .to(
+        ".problems .icons-problem .p-three",
         {
-          x: "200",
-          opacity: 0,
+          x: "0",
+          opacity: 1,
         },
         "-=.5"
       )
-      .from(
-        ".problems .icons-problem .four",
+      .to(
+        ".problems .icons-problem .p-four",
         {
-          x: "50",
-          y: "100",
-          opacity: 0,
+          x: "0",
+          y: "0",
+          opacity: 1,
         },
         "-=.5"
       )
-      .from(
-        ".problems .icons-problem .five",
+      .to(
+        ".problems .icons-problem .p-five",
         {
-          x: "-40",
-          y: "100",
-          opacity: 0,
+          x: "0",
+          y: "0",
+          opacity: 1,
         },
         "-=.5"
       )
-      .from(
+      .to(
         ".problems .solution",
         {
-          scale: 2,
-          opacity: 0,
+          scale: 1,
+          opacity: 1,
         },
         "+=.5"
       )
@@ -81,73 +144,73 @@ export default function Problems() {
         },
         "-=.6"
       )
-      .from(".problems .icons-solution .one", {
-        x: "-100",
-        y: "-100",
-        opacity: 0,
+      .to(".problems .icons-solution .s-one", {
+        x: "0",
+        y: "0",
+        opacity: 1,
       })
-      .from(
-        ".problems .icons-problem .one",
+      .to(
+        ".problems .icons-problem .p-one",
         {
-          opacity: 1,
+          opacity: 0,
         },
         "-=.5"
       )
 
-      .from(
-        ".problems .icons-solution .two",
+      .to(
+        ".problems .icons-solution .s-two",
         {
-          x: "50",
-          y: "-100",
-          opacity: 0,
-        },
-        "-=.25"
-      )
-      .from(".problems .icons-problem .two", { opacity: 1 }, "-=.5")
-      .from(
-        ".problems .icons-solution .three",
-        {
-          x: "200",
-          opacity: 0,
-        },
-        "-=.25"
-      )
-      .from(
-        ".problems .icons-problem .three",
-        {
+          x: "0",
+          y: "0",
           opacity: 1,
+        },
+        "-=.25"
+      )
+      .to(".problems .icons-problem .p-two", { opacity: 0 }, "-=.5")
+      .to(
+        ".problems .icons-solution .s-three",
+        {
+          x: "0",
+          opacity: 1,
+        },
+        "-=.25"
+      )
+      .to(
+        ".problems .icons-problem .p-three",
+        {
+          opacity: 0,
         },
         "-=.5"
       )
-      .from(
-        ".problems .icons-solution .four",
+      .to(
+        ".problems .icons-solution .s-four",
         {
-          x: "50",
-          y: "100",
-          opacity: 0,
+          x: "0",
+          y: "0",
+          opacity: 1,
         },
         "-=.25"
       )
-      .from(
-        ".problems .icons-problem .four",
+      .to(
+        ".problems .icons-problem .p-four",
         {
-          opacity: 1,
+          opacity: 0,
         },
         "-=.5"
       )
-      .from(
-        ".problems .icons-solution .five",
+      .to(
+        ".problems .icons-solution .s-five",
         {
-          x: "-40",
-          y: "100",
-          opacity: 0,
+          x: "-0",
+          y: "0",
+          opacity: 1,
         },
         "-=.25"
       )
-      .from(
-        ".problems .icons-problem .five",
+      .to(
+        ".problems .icons-problem .p-five",
         {
-          opacity: 1,
+          opacity: 0,
         },
         "-=.5"
       );
@@ -165,7 +228,7 @@ export default function Problems() {
         <h2 className="heading problem">Problems</h2>
         <h2 className="heading solution">Solutions</h2>
         <div className="icons-problem">
-          <div className="icon one">
+          <div className="icon p-one">
             <Image
               src="/images/home/problems/problem-one.svg"
               width={280}
@@ -173,7 +236,7 @@ export default function Problems() {
               alt="Problem One"
             />
           </div>
-          <div className="icon two">
+          <div className="icon p-two">
             <Image
               src={"/images/home/problems/problem-two.svg"}
               width={376}
@@ -181,7 +244,7 @@ export default function Problems() {
               alt="Problem two"
             />
           </div>
-          <div className="icon three">
+          <div className="icon p-three">
             <Image
               src={"/images/home/problems/problem-three.svg"}
               width={397}
@@ -189,7 +252,7 @@ export default function Problems() {
               alt="Problem three"
             />
           </div>
-          <div className="icon four">
+          <div className="icon p-four">
             <Image
               src={"/images/home/problems/problem-four.svg"}
               width={309}
@@ -197,7 +260,7 @@ export default function Problems() {
               alt="Problem four"
             />
           </div>
-          <div className="icon five">
+          <div className="icon p-five">
             <Image
               src={"/images/home/problems/problem-five.svg"}
               width={313}
@@ -208,7 +271,7 @@ export default function Problems() {
         </div>
 
         <div className="icons-solution">
-          <div className="icon one">
+          <div className="icon s-one">
             <Image
               src="/images/home/problems/solution-one.svg"
               width={280}
@@ -216,7 +279,7 @@ export default function Problems() {
               alt="solution One"
             />
           </div>
-          <div className="icon two">
+          <div className="icon s-two">
             <Image
               src={"/images/home/problems/solution-two.svg"}
               width={376}
@@ -224,7 +287,7 @@ export default function Problems() {
               alt="solution two"
             />
           </div>
-          <div className="icon three">
+          <div className="icon s-three">
             <Image
               src={"/images/home/problems/solution-three.svg"}
               width={397}
@@ -232,7 +295,7 @@ export default function Problems() {
               alt="solution three"
             />
           </div>
-          <div className="icon four">
+          <div className="icon s-four">
             <Image
               src={"/images/home/problems/solution-four.svg"}
               width={309}
@@ -240,7 +303,7 @@ export default function Problems() {
               alt="solution four"
             />
           </div>
-          <div className="icon five">
+          <div className="icon s-five">
             <Image
               src={"/images/home/problems/solution-five.svg"}
               width={313}

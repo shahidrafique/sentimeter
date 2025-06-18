@@ -12,14 +12,15 @@
     }
 
     .content {
-        max-width: 70%;
+        max-width: 700px;
 
-        @include xs {
+        @include sm {
             max-width: none;
             text-align: center;
         }
 
-        .subtitle {
+        .subtitle,
+        h3 {
             color: $yellow;
             font-size: clamp(22px, scale(24), 28px);
             font-weight: 500;

@@ -29,7 +29,7 @@
         .icon {
             position: absolute;
 
-            &.one {
+            &.p-one {
                 right: 271px;
                 top: -357px;
 
@@ -38,7 +38,7 @@
                 }
             }
 
-            &.two {
+            &.p-two {
                 left: -84px;
                 top: -500px;
 
@@ -47,7 +47,7 @@
                 }
             }
 
-            &.three {
+            &.p-three {
                 left: 350px;
                 top: -227px;
 
@@ -56,7 +56,7 @@
                 }
             }
 
-            &.four {
+            &.p-four {
                 left: 25px;
                 top: 100px;
 
@@ -65,7 +65,7 @@
                 }
             }
 
-            &.five {
+            &.p-five {
                 left: -489px;
                 top: 66px;
 
@@ -82,7 +82,7 @@
         .icon {
             position: absolute;
 
-            &.one {
+            &.s-one {
                 right: 323px;
                 top: -357px;
 
@@ -91,7 +91,7 @@
                 }
             }
 
-            &.two {
+            &.s-two {
                 left: -136px;
                 top: -500px;
 
@@ -100,7 +100,7 @@
                 }
             }
 
-            &.three {
+            &.s-three {
                 left: 298px;
                 top: -227px;
 
@@ -109,7 +109,7 @@
                 }
             }
 
-            &.four {
+            &.s-four {
                 left: -28px;
                 top: 100px;
 
@@ -118,7 +118,7 @@
                 }
             }
 
-            &.five {
+            &.s-five {
                 left: -542px;
                 top: 66px;
 
@@ -238,9 +238,13 @@
                     text-align: left !important;
                     width: 140px;
 
-                    h5 { font-size: 16px; }
+                    h5 {
+                        font-size: 16px;
+                    }
 
-                    p { font-size: 14px; }
+                    p {
+                        font-size: 14px;
+                    }
 
                     &.rewamp {
                         left: 0;
@@ -268,6 +272,7 @@
                             left: 5px;
                             top: 0;
                         }
+
                         &::after {
                             border-top-color: $yellow;
                             top: 174px;
@@ -286,6 +291,7 @@
                             left: 3px;
                             top: 0;
                         }
+
                         &::after {
                             border-top-color: $green;
                             top: 348px;
@@ -304,6 +310,7 @@
                             left: 6px;
                             top: 0;
                         }
+
                         &::after {
                             border-top-color: $blue;
                             top: 188px;

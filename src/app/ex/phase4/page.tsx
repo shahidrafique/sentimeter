@@ -45,7 +45,9 @@ export default function page() {
         <div className="container">
           <div className="col">
             <div className="content">
-              <h2 className="title">Turn Insights Into Action</h2>
+              <h2 className="title">
+                Turn <span>Insights</span> Into Action
+              </h2>
               <p>
                 Ensure your organization thrives with actionable insights
                 delivered through Sentimeter’s advanced reporting tools and

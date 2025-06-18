@@ -3,8 +3,21 @@
 	// Banner
 	.banner {
 		.container {
+			h3 {
+				color: $yellow;
+				font-size: clamp(20px, scale(30), 32px);
+				font-weight: 500;
+			}
 
 			.col {
+				flex: 1;
+
+
+				&:nth-child(2) {
+					justify-content: center;
+					display: flex;
+				}
+
 				.content {
 					max-width: none;
 				}
@@ -510,7 +523,7 @@
 					align-items: flex-start;
 
 					@include sm {
-						max-width:  none;
+						max-width: none;
 					}
 
 					.row {
