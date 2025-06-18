@@ -176,7 +176,7 @@ export default function page() {
                 onClick={() => setActiveStage(index)}
               >
                 <div className="icon">
-                  <Image
+                  <ScaledImage
                     src={`/images/cx/phase1/journey-icon-step${index + 1}-${
                       activeStage === index ? "white" : "red"
                     }.png`}

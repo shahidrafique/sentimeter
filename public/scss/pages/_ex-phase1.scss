@@ -398,11 +398,7 @@
 		}
 
 		.card {
-			// padding-left: scale(220);
 			position: relative;
-			// overflow: hidden;
-			// min-height: scale(1050);
-			// height: scale(720);
 			display: flex;
 			align-items: center;
 			gap: scale(50);
@@ -412,13 +408,11 @@
 			}
 
 			.progress-steps {
-				// position: absolute;
 				left: 0;
 				top: 0;
 				display: flex;
 				flex-direction: column;
 				gap: 2px;
-
 
 				.step {
 					display: flex;
@@ -426,12 +420,11 @@
 					gap: scale(50);
 					border-radius: 0 50px 50px 0;
 					position: relative;
-					font-size: scale(20);
+					font-size: clamp(14px, scale(20), 20px);
 					font-weight: 600;
 					color: rgba($red, 0.28);
 					z-index: 1;
 					transition: .35s;
-
 					padding: scale(20) scale(40) scale(20) scale(30);
 
 					.icon {
@@ -494,7 +487,11 @@
 					}
 
 					h5 {
-						margin-bottom: scale(10);
+						margin-top: clamp(10px, scale(15), 18px);
+					}
+
+					.checklist {
+						margin: clamp(20px, scale(30), 24px) 0;
 					}
 
 					&:first-child {
@@ -512,9 +509,17 @@
 					gap: scale(10);
 					align-items: flex-start;
 
+					@include sm {
+						max-width:  none;
+					}
+
 					.row {
 						display: flex;
-						gap: scale(100);
+						gap: clamp(20px, scale(100), 100px);
+
+						@include sm {
+							flex-direction: column;
+						}
 
 						.col {
 							flex: 1;
@@ -534,6 +539,36 @@
 					}
 				}
 			}
+
+			@include xs {
+				flex-direction: column;
+				gap: 30px;
+
+				.progress-steps {
+					flex-direction: row;
+					width: 100%;
+					overflow: auto;
+
+					.step {
+						display: flex;
+						flex-direction: column;
+						text-align: center;
+						border-radius: 5px;
+						background: $red-light;
+						padding: 10px 12px;
+						min-width: 70px;
+
+						&.active {
+							background: $red;
+							gap: scale(50);
+						}
+
+						&::before {
+							content: none;
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -545,10 +580,6 @@
 
 			>.container {
 				justify-content: space-between;
-
-				.col {
-					// flex: 1;
-				}
 			}
 
 			.content-group {
