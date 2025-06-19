@@ -51,7 +51,7 @@ export default function page() {
                 Understand Employee <span>Relationships</span>
               </h2>
               <p>
-                Transform the way you understand and support your employees'
+                Transform the way you understand and support your employees
                 journey to success. At Sentimeter, we guide you in crafting
                 tailored employee lifecycle maps that align with your
                 organization's unique culture and processes. This isn't just a

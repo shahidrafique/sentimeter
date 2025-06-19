@@ -22,14 +22,15 @@ export default function ScaledImage({
   max,
   ...rest
 }: ScaledImageProps) {
-  const minWidth = min ?? width - width * 0.3;     // 5% smaller than original width
-  const maxWidth = max ?? width + width * 0.05;    // 5% larger than original width
+  const minWidth = min ?? width - width * 0.3; // 5% smaller than original width
+  const maxWidth = max ?? width + width * 0.05; // 5% larger than original width
   const preferred = (width / BASE_SCREEN_WIDTH) * 100;
   const fluidWidth = `clamp(${minWidth}px, ${preferred}vw, ${maxWidth}px)`;
 
   return (
     <Image
       {...rest}
+      unoptimized={true}
       alt={alt}
       width={width}
       height={height ?? width}
