@@ -95,6 +95,7 @@
   font-size: clamp(14px, scale(18), 24px);
   padding: 5px 20px 5px 5px;
   border-radius: 100px;
+  border: 0;
   position: relative;
   align-items: center;
   justify-content: start;
@@ -115,6 +116,7 @@
   }
 
   &:hover {
+    cursor: pointer;
     background-size: 250%;
     background-position: right;
     // color: $yellow;
