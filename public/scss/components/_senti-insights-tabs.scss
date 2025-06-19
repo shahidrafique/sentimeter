@@ -22,6 +22,7 @@
         background: transparent;
         opacity: 0.74;
         border: 0;
+        padding: 0;
 
         img {
           margin: 0;
@@ -34,7 +35,11 @@
         &:not(.active) {
 
           img {
-            max-width: 75px !important;
+            max-width: 124px !important;
+
+            @include xs {
+              max-width: 75px !important;
+            }
           }
         }
 

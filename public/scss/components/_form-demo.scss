@@ -1,5 +1,7 @@
 // demo-form
 .demo-form {
+    padding-bottom: scale(120);
+
     >.container {
         gap: 0;
     }
@@ -15,9 +17,6 @@
 
         @include xs {
             margin-top: 0;
-        }
-
-        @include xs {
             width: auto;
             border-radius: 8px;
         }
@@ -52,7 +51,7 @@
         .section-title {
             font-size: clamp(16px, scale(30), 30px);
             color: $dark-blue;
-            margin: scale(20) 0 scale(40);
+            margin: scale(40) 0 scale(20);
 
             span {
                 color: $yellow;
@@ -60,7 +59,7 @@
         }
 
         form {
-            margin-bottom: clamp(20px, scale(30), 20px);
+            margin-bottom: clamp(25px, scale(40), 50px);
 
             .form-group {
                 margin-bottom: clamp(15px, scale(20), 20px);
@@ -85,10 +84,6 @@
                     color: $blue;
                 }
             }
-
-            .button {
-                margin-top: scale(20);
-            }
         }
 
         .trusted-brands {
@@ -101,8 +96,9 @@
                 justify-content: space-between;
                 gap: 10px;
 
-                @include sm {
+                @include lg {
                     flex-wrap: wrap;
+                    justify-content: center;
                 }
 
                 img {
@@ -117,4 +113,58 @@
             }
         }
     }
+}
+
+// Animations
+@keyframes slideInFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutFade {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+// Base message style
+.message-box {
+  padding: 6px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: clamp(13px, scale(16), 16px);
+  animation: slideInFade 0.4s ease-out forwards;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+// Success message
+.success-message {
+  @extend .message-box;
+  background-color: #e6f9ed;
+  border: 1px solid #5dc67f;
+  color: #20734a;
+}
+
+// Error message
+.error-message {
+  @extend .message-box;
+  background-color: #fbeaea;
+  border: 1px solid #ff6b6b;
+  color: #a01e1e;
+}
+
+// Slide-out on hide
+.message-hide {
+  animation: slideOutFade 0.4s ease-out forwards !important;
 }
