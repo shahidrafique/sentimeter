@@ -16,6 +16,8 @@
         text-transform: uppercase;
         color: $red;
         position: absolute;
+        top: scale(1);
+        margin-top: scale(-50);
 
         &.solution {
             color: $green;
@@ -30,47 +32,47 @@
             position: absolute;
 
             &.p-one {
-                right: 271px;
-                top: -357px;
+                left: scale(-440);
+                top: scale(-290);
 
                 img {
-                    width: clamp(250px, scale(280), 300px);
+                    width: scale(280)
                 }
             }
 
             &.p-two {
-                left: -84px;
-                top: -500px;
+                left: scale(-50);
+                top: scale(-380);
 
                 img {
-                    width: clamp(325px, scale(376), 400px);
+                    width: scale(376)
                 }
             }
 
             &.p-three {
-                left: 350px;
-                top: -227px;
+                left: scale(290);
+                top: scale(-170);
 
                 img {
-                    width: clamp(350px, scale(397), 440px);
+                    width: scale(397)
                 }
             }
 
             &.p-four {
-                left: 25px;
-                top: 100px;
+                left: scale(30);
+                top: scale(90);
 
                 img {
-                    width: clamp(280px, scale(309), 350px);
+                    width: scale(309)
                 }
             }
 
             &.p-five {
-                left: -489px;
-                top: 66px;
+                left: scale(-389);
+                top: scale(66);
 
                 img {
-                    width: clamp(280px, scale(313), 350px);
+                    width: scale(313)
                 }
             }
         }
@@ -83,47 +85,49 @@
             position: absolute;
 
             &.s-one {
-                right: 323px;
-                top: -357px;
+                left: scale(-480);
+                top: scale(-290);
 
                 img {
-                    width: clamp(250px, scale(280), 300px);
+                    width: scale(280)
                 }
             }
 
             &.s-two {
-                left: -136px;
-                top: -500px;
+                left: scale(-95);
+                top: scale(-380);
 
                 img {
-                    width: clamp(325px, scale(376), 400px);
+                    width: scale(376)
                 }
             }
 
             &.s-three {
-                left: 298px;
-                top: -227px;
+                left: scale(260);
+                top: scale(-170);
 
                 img {
-                    width: clamp(350px, scale(397), 440px);
+                    // width: clamp(320px, scale(397), 440px);
+                    width: scale(397);
+
                 }
             }
 
             &.s-four {
-                left: -28px;
-                top: 100px;
+                left: scale(-10);
+                top: scale(90);
 
                 img {
-                    width: clamp(280px, scale(309), 350px);
+                    width: scale(309)
                 }
             }
 
             &.s-five {
-                left: -542px;
-                top: 66px;
+                left: scale(-429);
+                top: scale(66);
 
                 img {
-                    width: clamp(280px, scale(313), 350px);
+                    width: scale(313)
                 }
             }
         }

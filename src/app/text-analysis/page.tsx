@@ -12,7 +12,7 @@ export default function page() {
               <small>Text Analytics</small>
               Smarter Text Analysis for Smarter <span>Business Decisions</span>
             </h2>
-            <Link href="#" className="button button--outline">
+            <Link href="/demo-form" className="button button--outline">
               Book a Demo
             </Link>
           </div>

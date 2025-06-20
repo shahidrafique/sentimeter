@@ -5,7 +5,9 @@ export default function StrategyPath() {
     <section className="section strategy-path">
       <div className="container">
         <div className="content">
-          <h2 className="section-title">Find Your Ideal CX <br/> Strategy Path</h2>
+          <h2 className="section-title">
+            Find Your Ideal CX <br /> Strategy Path
+          </h2>
           <div className="strategy-illustration-container">
             <ScaledImage
               src={"/images/illustration-strategy-path.svg"}
@@ -59,7 +61,9 @@ export default function StrategyPath() {
               <p>Implement organized feedback systems</p>
             </div>
           </div>
-          <a href="#" className="button">Learn More</a>
+          <a href="/our-services" className="button">
+            Learn More
+          </a>
         </div>
       </div>
     </section>

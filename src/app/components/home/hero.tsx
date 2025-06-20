@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ScaledImage from "../scaled-image";
+import Animation from "../animation";
 
 export default function Hero() {
   return (
@@ -26,7 +27,7 @@ export default function Hero() {
             />
           </div>
           <div className="button-holder">
-            <Link href={"#"} className="button">
+            <Link href="#home-form" className="button">
               See sentimeter in action
             </Link>
           </div>
@@ -59,13 +60,15 @@ export default function Hero() {
         </div>
         <div className="col">
           <div className="image-holder">
-            <ScaledImage
+            {/* <ScaledImage
               src="/images/laptop.png"
               width={844}
               height={511}
               alt="Laptop"
               quality={98}
-            />
+            /> */}
+
+            <Animation />
           </div>
         </div>
       </div>

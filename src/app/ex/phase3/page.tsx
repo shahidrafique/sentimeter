@@ -308,7 +308,7 @@ export default function page() {
                   challenges proactively and build trust."
                 </div>
                 <div className="button-wrapper">
-                  <Link href={"#"} className="button button--outline">
+                  <Link href={"/demo-form"} className="button button--outline">
                     Discover Sentiment Analytics for EX
                   </Link>
                 </div>
@@ -338,7 +338,7 @@ export default function page() {
               </p>
               <div className="button-wrapper">
                 <p>Close Feedback Gaps Across the Lifecycle</p>
-                <Link href={"#"} className="button">
+                <Link href={"/demo-form"} className="button">
                   Request a Demo
                 </Link>
               </div>
@@ -495,7 +495,7 @@ export default function page() {
               </p>
               <div className="button-wrapper">
                 <p>Predict Workforce Trends</p>
-                <Link href={"#"} className="button ">
+                <Link href={"/demo-form"} className="button ">
                   Schedule a Call
                 </Link>
               </div>
@@ -539,8 +539,8 @@ export default function page() {
               </p>
               <div className="button-wrapper">
                 <p>Stay Ahead of Workforce Trends</p>
-                <Link href="#" className="button">
-                   Learn More
+                <Link href="/demo-form" className="button">
+                  Learn More
                 </Link>
               </div>
             </section>

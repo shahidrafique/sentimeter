@@ -90,7 +90,7 @@ export default function page() {
                 </p>
                 <div className="row">
                   <p>Turn Data Into Clarity</p>
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Book a Demo
                   </Link>
                 </div>
@@ -203,10 +203,10 @@ export default function page() {
                 causes enables you to resolve pain points effectively.“
               </p>
               <div className="row">
-                <Link href="#" className="link">
+                <Link href="/demo-form" className="link">
                   Discover Emotional Insights
                 </Link>
-                <Link href="#" className="button button--outline">
+                <Link href="/demo-form" className="button button--outline">
                   Learn More
                 </Link>
               </div>
@@ -272,7 +272,7 @@ export default function page() {
                 </p>
                 <div className="row">
                   <p>Predict Customer Behavior</p>
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Schedule a Call
                   </Link>
                 </div>
@@ -306,7 +306,7 @@ export default function page() {
                 </p>
                 <div className="row">
                   <p>Stay Ahead of Trends</p>
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Learn More
                   </Link>
                 </div>
@@ -372,7 +372,7 @@ export default function page() {
               <div className="section-footer">
                 <div className="row">
                   <p>Turn Feedback Into Smarter Strategies</p>
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Learn More
                   </Link>
                 </div>

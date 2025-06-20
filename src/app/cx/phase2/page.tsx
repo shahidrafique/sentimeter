@@ -86,7 +86,7 @@ export default function page() {
                 </p>
                 <div className="row dir-col">
                   <p>Discover Smarter Feedback Collection</p>
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Schedule a Demo
                   </Link>
                 </div>
@@ -231,7 +231,9 @@ export default function page() {
               </p>
               <div className="row-button">
                 <p>Experience Smarter Surveys</p>
-                <div className="button button--outline">Schedule a Call</div>
+                <Link href={"/demo-form"} className="button button--outline">
+                  Schedule a Call
+                </Link>
               </div>
             </div>
           </div>
@@ -370,7 +372,7 @@ export default function page() {
               </p>
               <div className="row">
                 <p>See How Feedback Fuels Smarter Actions</p>
-                <Link href={"#"} className="button">
+                <Link href={"/demo-form"} className="button">
                   Schedule a Call
                 </Link>
               </div>

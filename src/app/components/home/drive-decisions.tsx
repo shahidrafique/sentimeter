@@ -10,7 +10,7 @@ export default function DriveDecisions() {
             <br />
             data-driven insights
           </h2>
-          <a href="#" className="button">
+          <a href="/demo-form" className="button">
             Get Demo
           </a>
           <div className="steps-row">

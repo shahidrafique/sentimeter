@@ -10,32 +10,32 @@ export default function Problems() {
   useLayoutEffect(() => {
     gsap.set(".problems .problem", { scale: 2.5 });
     gsap.set(".problems .icons-problem .p-one", {
-      x: "-100",
-      y: "-100",
+      x: "-5.2vw",
+      y: "-5.2vw",
       opacity: 0,
     });
     gsap.set(".problems .icons-problem .p-two", {
-      x: "50",
-      y: "-100",
+      x: "2.6vw",
+      y: "-5.2vw",
       opacity: 0,
     });
     gsap.set(".problems .icons-problem .p-three", {
-      x: "200",
+      x: "10.4vw",
       opacity: 0,
     });
     gsap.set(".problems .icons-problem .p-four", {
-      x: "50",
-      y: "100",
+      x: "2.6vw",
+      y: "5.2vw",
       opacity: 0,
     });
     gsap.set(".problems .icons-problem .p-five", {
-      x: "-40",
-      y: "100",
+      x: "-2vw",
+      y: "5.2vw",
       opacity: 0,
     });
     gsap.set(".problems .icons-problem .p-five", {
-      x: "-40",
-      y: "100",
+      x: "-2vw",
+      y: "5.2vw",
       opacity: 0,
     });
     gsap.set(".problems .solution", {
@@ -43,27 +43,27 @@ export default function Problems() {
       opacity: 0,
     });
     gsap.set(".problems .icons-solution .s-one", {
-      x: "-100",
-      y: "-100",
+      x: "-5.2vw",
+      y: "-5.2vw",
       opacity: 0,
     });
     gsap.set(".problems .icons-solution .s-two", {
-      x: "50",
-      y: "-100",
+      x: "2.6",
+      y: "-5.2vw",
       opacity: 0,
     });
     gsap.set(".problems .icons-solution .s-three", {
-      x: "200",
+      x: "10.4vw",
       opacity: 0,
     });
     gsap.set(".problems .icons-solution .s-four", {
-      x: "50",
-      y: "100",
+      x: "2.6",
+      y: "5.2vw",
       opacity: 0,
     });
     gsap.set(".problems .icons-solution .s-five", {
-      x: "-40",
-      y: "100",
+      x: "-2vw",
+      y: "5.2vw",
       opacity: 0,
     });
     const tl = gsap.timeline({

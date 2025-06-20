@@ -90,7 +90,7 @@ export default function page() {
                     </p>
                   </div>
                 </div>
-                <a href="#" className="button">
+                <a href="/demo-form" className="button">
                   Learn More
                 </a>
               </div>
@@ -648,7 +648,7 @@ export default function page() {
                     Transform Your CX Strategy With Sentimeter's Expert Services
                   </span>
                 </p>
-                <a href="#" className="button button--outline">
+                <a href="/demo-form" className="button button--outline">
                   Book a Consultation Today
                 </a>
               </div>

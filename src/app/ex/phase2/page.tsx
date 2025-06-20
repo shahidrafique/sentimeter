@@ -188,7 +188,7 @@ export default function page() {
                     Lay the foundation for an impactful employee experience by
                     defining and visualizing the journey.
                   </p>
-                  <Link href={"#"} className="button button--tertiary">
+                  <Link href={"/demo-form"} className="button button--tertiary">
                     Explore More
                   </Link>
                 </div>
@@ -204,14 +204,13 @@ export default function page() {
             )}
             {activeStage === 1 && (
               <section className="stage stage2">
-                {" "}
                 <div className="col">
                   <h3>Analyze Feedback Architecture</h3>
                   <p>
                     Evaluate the current feedback ecosystem to understand where
                     insights are being captured.
                   </p>
-                  <Link href={"#"} className="button button--tertiary">
+                  <Link href={"/demo-form"} className="button button--tertiary">
                     Explore More
                   </Link>
                 </div>
@@ -227,14 +226,13 @@ export default function page() {
             )}
             {activeStage === 2 && (
               <section className="stage stage3">
-                {" "}
                 <div className="col">
                   <h3>Close Gaps and Prioritize Actions</h3>
                   <p>
                     Bridge the gaps and focus on high-impact areas for
                     measurable improvements.
                   </p>
-                  <Link href={"#"} className="button button--tertiary">
+                  <Link href={"/demo-form"} className="button button--tertiary">
                     Explore More
                   </Link>
                 </div>
@@ -250,13 +248,12 @@ export default function page() {
             )}
             {activeStage === 3 && (
               <section className="stage stage4">
-                {" "}
                 <div className="col">
                   <h3>Validate and Iterate Continuously</h3>
                   <p>
                     Ensure strategies are aligned and refine them over time.
                   </p>
-                  <Link href={"#"} className="button button--tertiary">
+                  <Link href={"/demo-form"} className="button button--tertiary">
                     Explore More
                   </Link>
                 </div>

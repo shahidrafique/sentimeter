@@ -71,9 +71,12 @@ export default function page() {
       <section className="section has-bg blue nps-features">
         <div className="card">
           <div className="container">
-            <h3>
-              <span>NPS®</span> Survey Platform Must-have Features
-            </h3>
+            <div className="section-header blue">
+              <h2>
+                <span>NPS®</span> Survey Platform Must-have Features
+              </h2>
+            </div>
+
             <div className="card-blocks">
               <div className="card-blocks-item blue">
                 <div className="row">
@@ -194,10 +197,12 @@ export default function page() {
                 height={90}
                 alt="icon dashboard"
               />
-              <h3>
-                <span>NPS® Platform</span> that blends into your business
-                routine
-              </h3>
+              <div className="section-header yellow">
+                <h2>
+                  <span>NPS® Platform</span> that blends into your business
+                  routine
+                </h2>
+              </div>
             </div>
             <div className="col content">
               <div className="features">
@@ -295,9 +300,9 @@ export default function page() {
                   />
                 </div>
                 <div className="section-header">
-                  <h3>
+                  <h2>
                     <span>Segment audience</span> with custom fields
-                  </h3>
+                  </h2>
                 </div>
                 <div className="content">
                   <p>
@@ -345,9 +350,9 @@ export default function page() {
                   />
                 </div>
                 <div className="section-header">
-                  <h3>
+                  <h2>
                     Collect <span>feedback</span> periodically
-                  </h3>
+                  </h2>
                 </div>
                 <div className="content">
                   <p>
@@ -378,9 +383,9 @@ export default function page() {
                   />
                 </div>
                 <div className="section-header">
-                  <h3>
+                  <h2>
                     Throttle your <span>surveys</span>
-                  </h3>
+                  </h2>
                 </div>
                 <div className="content">
                   <p>
@@ -429,9 +434,9 @@ export default function page() {
                   />
                 </div>
                 <div className="section-header">
-                  <h3>
+                  <h2>
                     Identify and <span>Prioritize</span> What Matters Most
-                  </h3>
+                  </h2>
                 </div>
                 <div className="content">
                   <p>

@@ -286,6 +286,18 @@
     "@parcel/watcher-win32-ia32" "2.5.1"
     "@parcel/watcher-win32-x64" "2.5.1"
 
+"@rive-app/canvas@2.29.3":
+  version "2.29.3"
+  resolved "https://registry.npmjs.org/@rive-app/canvas/-/canvas-2.29.3.tgz"
+  integrity sha512-tZrKAEMdmjg5ipAAVoOe/CqW9Y+zW/gqZBvFTmWszJGaXbW6wt+hRPkTuHIlpNMLA6oFe57t/5xHsxLoXTq8mA==
+
+"@rive-app/react-canvas@^4.21.3":
+  version "4.21.3"
+  resolved "https://registry.npmjs.org/@rive-app/react-canvas/-/react-canvas-4.21.3.tgz"
+  integrity sha512-DUCVwOF4gX7ZeMmESEu3B2LDeHvkw925mPXqq89tA6aybhwsxZchUktHp0jM6WsI2TAFjNgPSylOgIsa9gSavA==
+  dependencies:
+    "@rive-app/canvas" "2.29.3"
+
 "@swc/counter@0.1.3":
   version "0.1.3"
   resolved "https://registry.npmjs.org/@swc/counter/-/counter-0.1.3.tgz"

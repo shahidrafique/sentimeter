@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import ScaledImage from "../scaled-image";
 
 export default function PowerInsights() {
@@ -12,8 +12,8 @@ export default function PowerInsights() {
     };
 
     handleResize(); // Run on initial load
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const imageSrc = isMobile
@@ -36,7 +36,9 @@ export default function PowerInsights() {
             alt="AI powered insights"
           />
         </div>
-        <a href="#" className="button button--dark">Get Started</a>
+        <a href="/demo-form" className="button button--dark">
+          Get Started
+        </a>
       </div>
     </section>
   );

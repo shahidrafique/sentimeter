@@ -185,11 +185,11 @@ export default function page() {
                 concerns.”
               </p>
               <div className="row">
-                <a href="#" className="link">
+                <a href="/demo-form" className="link">
                   <span>Experience Automated</span>
                   <span>Response Solutions</span>
                 </a>
-                <a href="#" className="button button--outline">
+                <a href="/demo-form" className="button button--outline">
                   Learn More
                 </a>
               </div>
@@ -267,7 +267,7 @@ export default function page() {
               </p>
               <div className="row">
                 <p>Simplify Ticketing with Sentimeter</p>
-                <a href="#" className="button">
+                <a href="/demo-form" className="button">
                   Learn More
                 </a>
               </div>
@@ -340,7 +340,7 @@ export default function page() {
                 </p>
                 <div className="row">
                   <p>Engage Effectively with Connect Box</p>
-                  <a href="#" className="button">
+                  <a href="/demo-form" className="button">
                     Learn More
                   </a>
                 </div>
@@ -389,7 +389,7 @@ export default function page() {
               </p>
               <div className="row">
                 <p>Transform Resolutions into Relationships</p>
-                <a href="#" className="button">
+                <a href="/demo-form" className="button">
                   Learn More
                 </a>
               </div>
@@ -431,7 +431,7 @@ export default function page() {
                 </p>
                 <div className="row">
                   <p>Transform Resolutions into Relationships</p>
-                  <a href="#" className="button">
+                  <a href="/demo-form" className="button">
                     Learn More
                   </a>
                 </div>

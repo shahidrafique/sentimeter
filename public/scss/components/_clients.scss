@@ -41,6 +41,12 @@
     @include sm {
         padding: 20px 0;
     }
+
+    &:hover {
+        .client-logos-container {
+            animation-play-state: paused;
+        }
+    }
 }
 
 

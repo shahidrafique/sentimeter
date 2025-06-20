@@ -293,7 +293,7 @@ export default function page() {
                 gain the intelligence needed to proactively enhance satisfaction
                 and engagement.
               </p>
-              <Link href="#" className="button button--outline">
+              <Link href="/demo-form" className="button button--outline">
                 Get Started
               </Link>
             </div>
@@ -358,7 +358,7 @@ export default function page() {
                 </p>
               </div>
               <div className="section-footer">
-                <Link href="#" className="button">
+                <Link href="/demo-form" className="button">
                   Get Started
                 </Link>
               </div>
@@ -425,7 +425,7 @@ export default function page() {
                   </p>
                 </div>
                 <div className="section-header">
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Learn More About Smarter Surveys
                   </Link>
                 </div>
@@ -466,7 +466,7 @@ export default function page() {
                 workforce with Sentimeter.
               </p>
               <div className="section-footer">
-                <Link href="#" className="button button--outline">
+                <Link href="/demo-form" className="button button--outline">
                   Start Your Journey
                 </Link>
               </div>

@@ -93,7 +93,7 @@ export default function page() {
                     employees are eager to share it."
                   </p>
                 </div>
-                <Link href="#" className="button">
+                <Link href="/demo-form" className="button">
                   Discover Seamless Feedback Solutions
                 </Link>
               </div>
@@ -287,7 +287,7 @@ export default function page() {
                 <span>Why It Matters:</span> "Automation eliminates friction and
                 ensures you capture meaningful feedback every time"
               </p>
-              <Link href="#" className="button">
+              <Link href="/demo-form" className="button">
                 Experience Smarter Employee Surveys
               </Link>
             </div>
@@ -322,7 +322,7 @@ export default function page() {
                     holistically ensures every stage of their journey is
                     impactful."
                   </p>
-                  <Link href={"#"} className="button">
+                  <Link href={"/demo-form"} className="button">
                     See Lifecycle Insights in Action
                   </Link>
                 </section>
@@ -488,7 +488,7 @@ export default function page() {
             </div>
           </div>
 
-          <Link href={"#"} className="button">
+          <Link href={"/demo-form"} className="button">
             Empower Employees Through Feedback
           </Link>
         </div>

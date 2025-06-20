@@ -281,7 +281,7 @@ export default function page() {
 
                 <div className="button-wrapper">
                   <p>Take Your Insights Anywhere</p>
-                  <Link href={"#"} className="button button--outline">
+                  <Link href={"/demo-form"} className="button button--outline">
                     Schedule a Demo
                   </Link>
                 </div>
@@ -312,7 +312,7 @@ export default function page() {
                 </p>
                 <div className="button-wrapper">
                   <p>Explore Lifecycle Analytic</p>
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Learn more
                   </Link>
                 </div>
@@ -557,7 +557,7 @@ export default function page() {
               </section>
               <section className="section-footer">
                 <div className="button-wrapper">
-                  <Link href="#" className="button button--outline">
+                  <Link href="/demo-form" className="button button--outline">
                     See How Reporting Fuels Innovation
                   </Link>
                 </div>

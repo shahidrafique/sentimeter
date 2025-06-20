@@ -27,9 +27,11 @@
         width: 100%;
         transform: translateY(scale(30));
 
+
         .container {
             justify-content: space-between;
             align-items: center;
+            z-index: 1;
         }
 
         .button {
@@ -39,7 +41,7 @@
 
 
     >.container {
-        height: 100%;
+        height: 90%;
 
         .col {
             flex: 1;
@@ -135,6 +137,7 @@
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
+                // width: 1200px;
 
                 @include sm {
                     position: relative;
@@ -143,16 +146,19 @@
                     transform: none;
                 }
 
-                img {
-                    max-width: none !important;
 
-                    @include sm {
-                        max-width: 100% !important;
-                    }
+                canvas {
+                    width: scale(1000) !important;
+                    // height: 800px !important;
+                    height: auto !important;
+                    aspect-ratio: 1.5;
                 }
+
+
             }
         }
     }
+
 }
 
 
@@ -178,7 +184,7 @@
 }
 
 .home-nav {
-    position: fixed;
+    position: absolute;
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
@@ -192,7 +198,7 @@
 
 
         .home-sub-nav {
-            position: fixed;
+            position: absolute;
             z-index: -1;
             bottom: 25px;
             left: 50%;

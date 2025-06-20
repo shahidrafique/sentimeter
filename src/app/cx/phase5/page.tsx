@@ -86,7 +86,7 @@ export default function page() {
                 </p>
                 <div className="row">
                   <p>See Ready-Made Reports in Action</p>
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Book a Demo
                   </Link>
                 </div>
@@ -209,7 +209,7 @@ export default function page() {
                 into strategies everyone can use.“
               </p>
               <div className="row">
-                <Link href="#" className="link">
+                <Link href="/demo-form" className="link">
                   <span>Explore</span>
                   <span>Custom Dashboards</span>
                 </Link>
@@ -263,7 +263,7 @@ export default function page() {
               </p>
               <div className="row">
                 <p>Take Your Insights Mobile</p>
-                <Link href="#" className="button">
+                <Link href="/demo-form" className="button">
                   Schedule a Call
                 </Link>
               </div>
@@ -305,7 +305,7 @@ export default function page() {
               </p>
               <div className="row">
                 <p>Explore Omnichannel Tracking</p>
-                <Link href="#" className="button">
+                <Link href="/demo-form" className="button">
                   Book a Demo
                 </Link>
               </div>
@@ -347,7 +347,7 @@ export default function page() {
                   </p>
                   <div className="row">
                     <p>Learn About Secure Sharing</p>
-                    <Link href="#" className="button">
+                    <Link href="/demo-form" className="button">
                       Learn More
                     </Link>
                   </div>
@@ -449,7 +449,7 @@ export default function page() {
                 </p>
                 <div className="row">
                   <p>Learn How to Close the Loop</p>
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Request a Demo
                   </Link>
                 </div>
@@ -496,7 +496,7 @@ export default function page() {
             <div className="section-footer">
               <div className="row">
                 <p>See How Reporting Fuels Innovation</p>
-                <Link href="#" className="button">
+                <Link href="/demo-form" className="button">
                   Learn More
                 </Link>
               </div>

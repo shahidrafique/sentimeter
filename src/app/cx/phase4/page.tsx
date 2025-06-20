@@ -190,7 +190,7 @@ export default function page() {
               </p>
               <div className="row">
                 <p>Explore Workflow Automation</p>
-                <Link href="#" className="button">
+                <Link href="/demo-form" className="button">
                   Schedule a Call
                 </Link>
               </div>
@@ -273,10 +273,10 @@ export default function page() {
                 experience improves—and everyone wins."
               </p>
               <div className="row">
-                <Link href="#" className="link">
+                <Link href="#/demo-form" className="link">
                   See How Teams Collaborate
                 </Link>
-                <Link href="#" className="button button--outline">
+                <Link href="/demo-form" className="button button--outline">
                   Learn More
                 </Link>
               </div>
@@ -395,7 +395,7 @@ export default function page() {
               </p>
               <div className="row">
                 <p>Discover Continuous Improvement Tools</p>
-                <Link href="#" className="button">
+                <Link href="/demo-form" className="button">
                   Schedule a Demo
                 </Link>
               </div>
@@ -432,7 +432,7 @@ export default function page() {
               <div className="section-footer">
                 <div className="row">
                   <p>See How Actionable Insights Drive Results</p>
-                  <Link href="#" className="button">
+                  <Link href="/demo-form" className="button">
                     Learn More
                   </Link>
                 </div>

@@ -63,7 +63,7 @@ export default function page() {
                 </p>
               </div>
               <section className="section-footer">
-                <Link href="#" className="button">
+                <Link href="/demo-form" className="button">
                   Explore Why Sentimeter
                 </Link>
               </section>
@@ -288,7 +288,7 @@ export default function page() {
               </div>
             </div>
 
-            <Link href="#" className="button button--outline">
+            <Link href="/demo-form" className="button button--outline">
               Discover Sentimeter's Features
             </Link>
           </div>
@@ -315,7 +315,7 @@ export default function page() {
               />
             </div>
 
-            <Link href="#" className="button">
+            <Link href="/demo-form#" className="button">
               Explore Lifecycle Solution
             </Link>
           </div>
@@ -351,7 +351,7 @@ export default function page() {
                   “A happy, engaged workforce isn't just better for employees—it
                   drives business success.”
                 </p>
-                <Link href="#" className="button">
+                <Link href="/demo-form" className="button">
                   See Success Stories
                 </Link>
               </div>
@@ -379,7 +379,7 @@ export default function page() {
                   Go beyond collecting data to deliver actionable insights that
                   matter.
                 </p>
-                <Link href="#" className="button">
+                <Link href="/demo-form" className="button">
                   Learn More About Smarter Surveys
                 </Link>
               </div>
@@ -416,7 +416,7 @@ export default function page() {
                   Leading organizations trust Sentimeter to elevate their
                   employee experience and foster growth.
                 </p>
-                <Link href="#" className="button">
+                <Link href="/demo-form" className="button">
                   Learn More
                 </Link>
               </div>
@@ -443,7 +443,7 @@ export default function page() {
                 Begin building a more engaged, satisfied, and productive
                 workforce with Sentimeter.
               </p>
-              <Link href="#" className="button button--outline">
+              <Link href="/demo-form" className="button button--outline">
                 Start Your Journey
               </Link>
             </div>
