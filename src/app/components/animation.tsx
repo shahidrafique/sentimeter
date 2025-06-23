@@ -3,7 +3,7 @@ import { useRive, Layout, Fit, Alignment } from "@rive-app/react-canvas";
 export default function Animation() {
   const { rive, RiveComponent } = useRive({
     src: "/rive/sentimeter.riv",
-    autoplay: true,
+    autoplay: false,
     // autoplay: true,
     layout: new Layout({
       alignment: Alignment.Center,

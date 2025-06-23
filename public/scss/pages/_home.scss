@@ -16,8 +16,6 @@
         text-transform: uppercase;
         color: $red;
         position: absolute;
-        top: scale(1);
-        margin-top: scale(-50);
 
         &.solution {
             color: $green;
@@ -32,47 +30,47 @@
             position: absolute;
 
             &.p-one {
-                left: scale(-440);
-                top: scale(-290);
+                right: 271px;
+                top: -357px;
 
                 img {
-                    width: scale(280)
+                    width: clamp(250px, scale(280), 300px);
                 }
             }
 
             &.p-two {
-                left: scale(-50);
-                top: scale(-380);
+                left: -84px;
+                top: -500px;
 
                 img {
-                    width: scale(376)
+                    width: clamp(325px, scale(376), 400px);
                 }
             }
 
             &.p-three {
-                left: scale(290);
-                top: scale(-170);
+                left: 350px;
+                top: -227px;
 
                 img {
-                    width: scale(397)
+                    width: clamp(350px, scale(397), 440px);
                 }
             }
 
             &.p-four {
-                left: scale(30);
-                top: scale(90);
+                left: 25px;
+                top: 100px;
 
                 img {
-                    width: scale(309)
+                    width: clamp(280px, scale(309), 350px);
                 }
             }
 
             &.p-five {
-                left: scale(-389);
-                top: scale(66);
+                left: -489px;
+                top: 66px;
 
                 img {
-                    width: scale(313)
+                    width: clamp(280px, scale(313), 350px);
                 }
             }
         }
@@ -85,49 +83,47 @@
             position: absolute;
 
             &.s-one {
-                left: scale(-480);
-                top: scale(-290);
+                right: 323px;
+                top: -357px;
 
                 img {
-                    width: scale(280)
+                    width: clamp(250px, scale(280), 300px);
                 }
             }
 
             &.s-two {
-                left: scale(-95);
-                top: scale(-380);
+                left: -136px;
+                top: -500px;
 
                 img {
-                    width: scale(376)
+                    width: clamp(325px, scale(376), 400px);
                 }
             }
 
             &.s-three {
-                left: scale(260);
-                top: scale(-170);
+                left: 298px;
+                top: -227px;
 
                 img {
-                    // width: clamp(320px, scale(397), 440px);
-                    width: scale(397);
-
+                    width: clamp(350px, scale(397), 440px);
                 }
             }
 
             &.s-four {
-                left: scale(-10);
-                top: scale(90);
+                left: -28px;
+                top: 100px;
 
                 img {
-                    width: scale(309)
+                    width: clamp(280px, scale(309), 350px);
                 }
             }
 
             &.s-five {
-                left: scale(-429);
-                top: scale(66);
+                left: -542px;
+                top: 66px;
 
                 img {
-                    width: scale(313)
+                    width: clamp(280px, scale(313), 350px);
                 }
             }
         }
@@ -137,7 +133,6 @@
         display: none;
     }
 }
-
 
 // power-insights
 .power-insights {

@@ -34,7 +34,12 @@ export default function Hero() {
         </div>
       </header>
       <div className="container">
-        <div className="col">
+        <div className="col image">
+          <div className="image-holder">
+            <Animation />
+          </div>
+        </div>
+        <div className="col contents">
           <div className="content">
             <h1>
               <div className="row">
@@ -56,19 +61,6 @@ export default function Hero() {
                 <span>Gains</span>
               </div>
             </h1>
-          </div>
-        </div>
-        <div className="col">
-          <div className="image-holder">
-            {/* <ScaledImage
-              src="/images/laptop.png"
-              width={844}
-              height={511}
-              alt="Laptop"
-              quality={98}
-            /> */}
-
-            <Animation />
           </div>
         </div>
       </div>

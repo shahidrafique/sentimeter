@@ -42,11 +42,14 @@
 
     >.container {
         height: 90%;
+        flex-direction: row-reverse;
+
 
         .col {
             flex: 1;
             position: relative;
             align-content: center;
+            transition: .35s;
 
 
             .content {
@@ -54,6 +57,7 @@
                 left: 0;
                 top: 50%;
                 transform: translateY(-50%);
+                transition: .35s;
 
                 h1 {
                     .row {
@@ -84,7 +88,7 @@
                                     font-weight: 400;
                                     line-height: 1.1;
                                     margin-left: clamp(10px, scale(20), 20px);
-                                    width: clamp(190px, scale(480), 500px);
+                                    width: clamp(190px, scale(500), 520px);
                                     display: inline-block;
                                 }
                             }
@@ -152,11 +156,41 @@
                     // height: 800px !important;
                     height: auto !important;
                     aspect-ratio: 1.5;
+                    transition: .35s;
                 }
 
 
             }
+
         }
+
+
+        .image {
+            &:hover {
+                flex: 2.5;
+
+                .image-holder {
+                    canvas {
+                        width: scale(1200) !important;
+                    }
+                }
+
+                ~.contents {
+                    flex: 1.5;
+
+                    .content {
+                        transform: scaleX(.75) scaleY(.75) translateY(-50%);
+                    }
+                }
+            }
+        }
+
+        // .image:hover~.contents,
+        // .image:hover+.contents {
+        //     flex: 1.5;
+        //     border: 1px solid red;
+        // }
+
     }
 
 }
