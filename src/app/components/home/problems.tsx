@@ -72,7 +72,7 @@ export default function Problems() {
         pin: true,
         pinSpacing: true,
         trigger: ".problems",
-        start: "50% 50%",
+        start: "47% 50%",
         end: "+=2000",
       },
     });

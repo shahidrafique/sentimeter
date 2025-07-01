@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${exo.variable} font-sans`}>
-        <Main>{children}</Main>;
+        <Main>{children}</Main>
       </body>
     </html>
   );

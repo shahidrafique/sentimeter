@@ -37,7 +37,7 @@ export default function Header() {
                   {/* <li className="nav__item">
                     <Link href="/solution">Solutions</Link>
                   </li> */}
-                  <li className="nav__item">
+                  <li className="nav__item has-sub-nav">
                     <Link href="/cx">Product</Link>
                     <div className="sub-nav">
                       <div className="container">
@@ -232,7 +232,7 @@ export default function Header() {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="text-analysis">
+                                    <a href="/text-analysis">
                                       <div className="link-title">
                                         Text Analysis
                                       </div>

@@ -45,7 +45,7 @@ export default function page() {
                 </p>
                 <div className="row">
                   <p>Discover Seamless Feedback Collection</p>
-                  <a href="#" className="button">
+                  <a href="/demo-form" className="button">
                     Learn More
                   </a>
                 </div>

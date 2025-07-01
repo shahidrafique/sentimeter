@@ -9,7 +9,24 @@ export default function page() {
       <section className="banner">
         <div className="container">
           <div className="content">
-            <h2 className="title">Hero Banner</h2>
+            <div className="nps-form">
+              <h3> NPS® Survey Platform</h3>
+              <h5>Turn customers into Promoters.</h5>
+            </div>
+
+            <h2 className="title">
+              The Best{" "}
+              <span>
+                NPS<sup>®</sup>
+              </span>{" "}
+              Survey Platform
+            </h2>
+            <p>
+              Harness the power of Net Promoter Score℠ (NPS®), the gold standard
+              in customer loyalty measurement. Capture feedback at every
+              touchpoint, track performance, and implement strategic
+              improvements to drive customer retention and brand advocacy.
+            </p>
           </div>
         </div>
       </section>

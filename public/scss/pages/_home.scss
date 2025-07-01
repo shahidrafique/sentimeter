@@ -1,5 +1,6 @@
 // problems
 .problems {
+    padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -12,7 +13,7 @@
     }
 
     .heading {
-        font-size: scale(100);
+        font-size: clamp(100px, scale(110), 120px);
         text-transform: uppercase;
         color: $red;
         position: absolute;
@@ -136,6 +137,7 @@
 
 // power-insights
 .power-insights {
+    margin-top: 100px;
     color: $white;
     @extend .gradient;
 

@@ -41,7 +41,7 @@ const SentiInsightsTabs: React.FC = () => {
             </button>
           </div>
           <Link href="/demo-form">
-            Explore More
+            <span>Explore More</span>
             <ScaledImage
               src={"/images/arrow-right-white.svg"}
               width={16}

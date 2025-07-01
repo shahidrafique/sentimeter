@@ -159,7 +159,6 @@
                     transition: .35s;
                 }
 
-
             }
 
         }
@@ -179,18 +178,11 @@
                     flex: 1.5;
 
                     .content {
-                        transform: scaleX(.75) scaleY(.75) translateY(-50%);
+                        transform: scaleX(.75) scaleY(.75) translateY(-50%) translateX(-20%);
                     }
                 }
             }
         }
-
-        // .image:hover~.contents,
-        // .image:hover+.contents {
-        //     flex: 1.5;
-        //     border: 1px solid red;
-        // }
-
     }
 
 }
@@ -222,15 +214,9 @@
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-
     z-index: 99999;
 
     .wrapper {
-
-
-
-
-
         .home-sub-nav {
             position: absolute;
             z-index: -1;
@@ -238,10 +224,11 @@
             left: 50%;
             transform: translateX(-50%);
             background: $dark-blue;
+            backdrop-filter: blur(1px);
             border: 1px solid $yellow;
-            width: clamp(420px, scale(450), 550px);
+            width: clamp(350px, scale(400), 500px);
             border-radius: 20px;
-            padding-bottom: 100px;
+            padding-bottom: 70px;
             display: none;
 
             ul {

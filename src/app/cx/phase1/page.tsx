@@ -49,10 +49,10 @@ export default function page() {
           <div className="col">
             <div className="content">
               <h3>Create a Data-Driven CX Strategy</h3>
-              <h4>
+              <h2>
                 Transform the way you understand your customers' paths to
                 success.
-              </h4>
+              </h2>
               <p>
                 At Sentimeter, we guide you in crafting customer journeys
                 tailored to your organization's unique processes. This isn't

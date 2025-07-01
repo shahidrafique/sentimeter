@@ -58,7 +58,7 @@ export default function page() {
                   </p>
                 </div>
                 <div className="section-footer">
-                  <a href="#" className="button">
+                  <a href="/demo-form" className="button">
                     Learn More
                   </a>
                 </div>
@@ -99,7 +99,7 @@ export default function page() {
                   </p>
                 </div>
                 <div className="section-footer">
-                  <a href="#" className="button">
+                  <a href="/demo-form" className="button">
                     Learn More
                   </a>
                 </div>
@@ -157,7 +157,7 @@ export default function page() {
                   </p>
                 </div>
                 <div className="section-footer">
-                  <a href="#" className="button">
+                  <a href="/demo-form" className="button">
                     Learn More
                   </a>
                 </div>
@@ -201,7 +201,7 @@ export default function page() {
                   </p>
                 </div>
                 <div className="section-footer">
-                  <a href="#" className="button">
+                  <a href="/demo-form" className="button">
                     Learn More
                   </a>
                 </div>
@@ -257,7 +257,7 @@ export default function page() {
                   </p>
                 </div>
                 <div className="section-footer">
-                  <a href="#" className="button">
+                  <a href="/demo-form" className="button">
                     Learn More
                   </a>
                 </div>

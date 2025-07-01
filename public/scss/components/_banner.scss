@@ -12,7 +12,7 @@
     }
 
     .content {
-        max-width: 700px;
+        max-width: scale(700);
 
         @include sm {
             max-width: none;
@@ -41,7 +41,7 @@
 
         p {
             margin-bottom: clamp(16px, scale(30), 32px);
-            max-width: 700px;
+            max-width: scale(700);
         }
     }
 

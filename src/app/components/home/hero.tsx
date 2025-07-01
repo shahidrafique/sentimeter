@@ -69,7 +69,7 @@ export default function Hero() {
         <nav className="nav nav--home">
           <div className="wrapper">
             <ul>
-              <li className="nav__item nav__item--home">
+              {/* <li className="nav__item nav__item--home">
                 <Link href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ export default function Hero() {
                     <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                   </svg>
                 </Link>
-              </li>
+              </li> */}
               <li className="nav__item">
                 <Link href="/text-analysis">AI Text Analytics</Link>
               </li>

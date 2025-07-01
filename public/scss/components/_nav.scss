@@ -18,14 +18,28 @@
       font-size: clamp(16px, scale(18), 20px);
       padding: 0 10px;
       transition: 0.35s;
-      color: $black;
+
       align-content: center;
+      color: $darkest-blue;
 
       &:hover {
-        color: $dark-blue;
+        color: $black;
 
         .sub-nav {
           display: block;
+        }
+      }
+
+      &.has-sub-nav {
+        &:after {
+          content: "";
+          width: 15px;
+          height: 15px;
+          display: inline-block;
+          background: url('/images/arrow-down-blue.svg') no-repeat center;
+          background-size: contain;
+          margin-left: 6px;
+          transform: translateY(2px);
         }
       }
     }
@@ -44,24 +58,35 @@
       justify-content: space-between;
       background: $dark-blue;
       border: 1px solid $yellow;
-      padding: 0px 24px 0px 6px;
+      padding: 0px;
       border-radius: 50px;
-      width: clamp(420px, scale(450), 550px);
+      width: clamp(350px, scale(400), 500px);
 
 
       #{$self}__item {
         padding: 14px 10px;
+        border-radius: 50px;
+        flex: 1;
+        justify-self: center;
 
         a {
           color: white;
           font-size: clamp(16px, scale(18), 20px);
           padding: 4px 10px;
-          border-radius: 20px;
           white-space: nowrap !important;
+          text-align: center;
+          width: 100%;
+          display: inline-block;
+
         }
 
         &:hover {
-          background: rgba($yellow, .5);
+          background: rgba($yellow, 1);
+
+          >a {
+            color: $dark-blue;
+          }
+
 
           .home-sub-nav {
             display: block !important;

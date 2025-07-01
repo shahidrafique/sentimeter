@@ -109,7 +109,7 @@
     display: block;
     height: clamp(22px, scale(30), 36px);
     aspect-ratio: 1;
-    border-radius: clamp(20px, scale(24), 28px);
+    border-radius: clamp(20px, scale(24), 24px);
     background: url("/images/arrow.svg") no-repeat center $yellow;
     background-size: 50%;
     padding: 0;

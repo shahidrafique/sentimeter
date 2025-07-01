@@ -198,7 +198,7 @@ export default function page() {
                 </p>
               </div>
               <div className="section-footer">
-                <Link href="#" className="button">
+                <Link href="/demo-form" className="button">
                   Get Started
                 </Link>
               </div>
