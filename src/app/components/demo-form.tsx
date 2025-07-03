@@ -15,7 +15,7 @@ export default function DemoForm() {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/ajax/shahid.rafique@arbisoft.com",
+        "https://formsubmit.co/ajax/contact@sentimeter.io",
         {
           method: "POST",
           body: formData,
