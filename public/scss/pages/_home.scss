@@ -31,48 +31,28 @@
             position: absolute;
 
             &.p-one {
-                right: 271px;
-                top: -357px;
-
-                img {
-                    width: clamp(250px, scale(280), 300px);
-                }
+                right: 242px;
+                top: -300px;
             }
 
             &.p-two {
-                left: -84px;
-                top: -500px;
-
-                img {
-                    width: clamp(325px, scale(376), 400px);
-                }
+                left: -20px;
+                top: -360px;
             }
 
             &.p-three {
                 left: 350px;
-                top: -227px;
-
-                img {
-                    width: clamp(350px, scale(397), 440px);
-                }
+                top: -117px;
             }
 
             &.p-four {
                 left: 25px;
-                top: 100px;
-
-                img {
-                    width: clamp(280px, scale(309), 350px);
-                }
+                top: 80px;
             }
 
             &.p-five {
                 left: -489px;
                 top: 66px;
-
-                img {
-                    width: clamp(280px, scale(313), 350px);
-                }
             }
         }
     }
@@ -84,48 +64,28 @@
             position: absolute;
 
             &.s-one {
-                right: 323px;
-                top: -357px;
-
-                img {
-                    width: clamp(250px, scale(280), 300px);
-                }
+                right: 293px;
+                top: -300px;
             }
 
             &.s-two {
-                left: -136px;
-                top: -500px;
-
-                img {
-                    width: clamp(325px, scale(376), 400px);
-                }
+                left: -74px;
+                top: -363px;
             }
 
             &.s-three {
                 left: 298px;
-                top: -227px;
-
-                img {
-                    width: clamp(350px, scale(397), 440px);
-                }
+                top: -117px;
             }
 
             &.s-four {
                 left: -28px;
-                top: 100px;
-
-                img {
-                    width: clamp(280px, scale(309), 350px);
-                }
+                top: 80px;
             }
 
             &.s-five {
                 left: -542px;
                 top: 66px;
-
-                img {
-                    width: clamp(280px, scale(313), 350px);
-                }
             }
         }
     }
@@ -137,7 +97,6 @@
 
 // power-insights
 .power-insights {
-    margin-top: 100px;
     color: $white;
     @extend .gradient;
 

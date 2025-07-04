@@ -101,6 +101,7 @@
       p {
         transform: translateX(scale(100));
         width: 150%;
+        margin-top: scale(140);
       }
     }
 
@@ -112,7 +113,7 @@
         width: 120%;
 
         &:nth-child(1) {
-          margin-top: scale(200);
+          margin-top: scale(250);
         }
 
         &:nth-child(2) {

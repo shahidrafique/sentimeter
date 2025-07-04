@@ -1,0 +1,36 @@
+.privacy-policy {
+    line-height: 1.6;
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f9f9f9;
+
+    h1,
+    h3 {
+        color: $blue;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    section {
+        margin-bottom: 2em;
+    }
+
+    ul,
+    li {
+        margin-top: 0.5em;
+        margin-left: 10px;
+        list-style: disc !important;
+        font-size: 18px;
+    }
+}

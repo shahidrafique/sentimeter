@@ -231,40 +231,40 @@ export default function Problems() {
           <div className="icon p-one">
             <Image
               src="/images/home/problems/problem-one.svg"
-              width={280}
-              height={280}
+              width={211}
+              height={211}
               alt="Problem One"
             />
           </div>
           <div className="icon p-two">
             <Image
               src={"/images/home/problems/problem-two.svg"}
-              width={376}
-              height={376}
+              width={211}
+              height={245}
               alt="Problem two"
             />
           </div>
           <div className="icon p-three">
             <Image
               src={"/images/home/problems/problem-three.svg"}
-              width={397}
-              height={397}
+              width={251}
+              height={211}
               alt="Problem three"
             />
           </div>
           <div className="icon p-four">
             <Image
               src={"/images/home/problems/problem-four.svg"}
-              width={309}
-              height={309}
+              width={234}
+              height={234}
               alt="Problem four"
             />
           </div>
           <div className="icon p-five">
             <Image
               src={"/images/home/problems/problem-five.svg"}
-              width={313}
-              height={313}
+              width={235}
+              height={235}
               alt="Problem five"
             />
           </div>
@@ -274,40 +274,40 @@ export default function Problems() {
           <div className="icon s-one">
             <Image
               src="/images/home/problems/solution-one.svg"
-              width={280}
-              height={280}
+              width={211}
+              height={211}
               alt="solution One"
             />
           </div>
           <div className="icon s-two">
             <Image
               src={"/images/home/problems/solution-two.svg"}
-              width={376}
-              height={376}
+              width={215}
+              height={250}
               alt="solution two"
             />
           </div>
           <div className="icon s-three">
             <Image
               src={"/images/home/problems/solution-three.svg"}
-              width={397}
-              height={397}
+              width={253}
+              height={212}
               alt="solution three"
             />
           </div>
           <div className="icon s-four">
             <Image
               src={"/images/home/problems/solution-four.svg"}
-              width={309}
-              height={309}
+              width={233}
+              height={233}
               alt="solution four"
             />
           </div>
           <div className="icon s-five">
             <Image
               src={"/images/home/problems/solution-five.svg"}
-              width={313}
-              height={313}
+              width={236}
+              height={236}
               alt="solution five"
             />
           </div>
