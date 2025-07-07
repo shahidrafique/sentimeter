@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ScaledImage from "./scaled-image";
 
 export default function Footer() {
@@ -27,7 +28,9 @@ export default function Footer() {
                   height={16}
                   alt="mail icon"
                 />
-                <a href="mailto: contact@sentimeter.io">contact@sentimeter.io</a>
+                <a href="mailto: contact@sentimeter.io">
+                  contact@sentimeter.io
+                </a>
               </li>
               <li>
                 <Image
@@ -53,7 +56,9 @@ export default function Footer() {
                       height={23}
                       alt="map icon"
                     />
-                    <span>25 Canal Rd, Westwood Colony Lahore, Punjab 54000</span>
+                    <span>
+                      25 Canal Rd, Westwood Colony Lahore, Punjab 54000
+                    </span>
                   </div>
                 </div>
               </div>
@@ -113,7 +118,9 @@ export default function Footer() {
                       height={23}
                       alt="map icon"
                     />
-                    <span>Chambers Fazl-ul-Haq Road, Blue Area Islamabad 44010</span>
+                    <span>
+                      Chambers Fazl-ul-Haq Road, Blue Area Islamabad 44010
+                    </span>
                   </div>
                 </div>
               </div>
@@ -131,6 +138,8 @@ export default function Footer() {
               />
               <p>
                 Copyright 2025 © All rights reserved to <b>Sentimeter</b>
+                {" - "}
+                <Link href="/privacy-policy">Privacy Policy</Link>
               </p>
             </div>
             <div className="socialmedia-section">
