@@ -225,7 +225,8 @@ export default function page() {
             <a href="mailto:dpo@sentimeter.io">dpo@sentimeter.io</a>
           </p>
           <p>
-            <strong>Address:</strong> [Organization Address]
+            <strong>Address:</strong> 25 Canal Rd, Westwood Colony Lahore,
+            Punjab 54000
           </p>
           <p>
             <strong>Sentimeter</strong> reserves the right to amend this policy

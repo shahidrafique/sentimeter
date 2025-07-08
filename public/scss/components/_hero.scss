@@ -163,24 +163,54 @@
 
         }
 
+        @media (min-width: 1024px) {
 
-        .image {
-            &:hover {
-                flex: 2.5;
+            .image {
+
+                &:hover {
+                    flex: 2.5;
+
+                    .image-holder {
+                        canvas {
+                            width: scale(1200) !important;
+                        }
+                    }
+
+                    ~.contents {
+                        flex: 1.5;
+
+                        .content {
+                            transform: scaleX(.75) scaleY(.75) translateY(-50%) translateX(-20%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include sm {
+
+        >.container {
+            flex-direction: column;
+
+            .image {
+                flex: none;
+                margin-top: 10px;
 
                 .image-holder {
+                    height: 100%;
+
                     canvas {
-                        width: scale(1200) !important;
+                        width: calc(100% + 40px) !important;
+                        aspect-ratio: 1;
+                        margin-left: -20px;
+                        margin-right: -20px;
                     }
                 }
+            }
 
-                ~.contents {
-                    flex: 1.5;
-
-                    .content {
-                        transform: scaleX(.75) scaleY(.75) translateY(-50%) translateX(-20%);
-                    }
-                }
+            .contents {
+                flex: none;
             }
         }
     }

@@ -1,18 +1,8 @@
 "use client";
-import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Animation from "../animation";
-import { StringTune, StringSplit } from "@fiddle-digital/string-tune";
-
 export default function Hero() {
-  useEffect(() => {
-    const stringTune = StringTune.getInstance();
-    stringTune.use(StringSplit);
-    // stringTune.use(StringMagnetic);
-    stringTune.start(60); // Start with 60 FPS
-  }, []);
-
   return (
     <section className="hero section-title">
       <div className="lines">
