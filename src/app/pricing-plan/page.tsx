@@ -1,4 +1,46 @@
+"use client";
+
+import { useState, useRef, useEffect } from "react";
+import { recaptchaReady } from "../components/recaptcha-script";
+
+
 export default function page() {
+  const [captchaVerified, setCaptchaVerified] = useState(true);
+  const captchaRef = useRef<HTMLDivElement | null>(null);
+  const widgetIdRef = useRef<number | null>(null);
+
+    useEffect(() => {
+      let cancelled = false;
+  
+      async function mountCaptcha() {
+        await recaptchaReady;
+        if (cancelled || !captchaRef.current) return;
+  
+        if (widgetIdRef.current == null) {
+          widgetIdRef.current = window.grecaptcha.render(captchaRef.current, {
+            sitekey: process.env.NEXT_PUBLIC_CAPTCHA_SITE_KEY!,
+            theme: "light",
+            size: "normal",
+          });
+        }
+      }
+  
+      mountCaptcha();
+      return () => { cancelled = true; };
+    }, []);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Check if reCAPTCHA is verified
+    const id = widgetIdRef.current;
+    const token = id != null ? window.grecaptcha.getResponse(id) : "";
+    if (!token) {
+      setCaptchaVerified(false);
+      return;
+    }
+    setCaptchaVerified(true);
+  }
   return (
     <article className="pricing">
       {/* Pricing Plan */}
@@ -51,7 +93,7 @@ export default function page() {
               <div className="request-pricing-card">
                 <h4>Request Pricing</h4>
                 <p>We'll get in touch with you shortly.</p>
-                <form>
+                <form onSubmit={handleSubmit}>
                   <input
                     type="text"
                     name="fullName"
@@ -72,10 +114,17 @@ export default function page() {
                     required
                   />
                   <input type="text" name="message" placeholder="Message" />
-                  <a href="#" className="button">
+                  <div ref={captchaRef}></div>
+                  <button type="submit" className="button">
                     Send Contact Request
-                  </a>
+                  </button>
                 </form>
+
+                {!captchaVerified && (
+                  <p className="error-message">
+                    Please complete the reCAPTCHA.
+                  </p>
+                )}
               </div>
             </div>
           </div>

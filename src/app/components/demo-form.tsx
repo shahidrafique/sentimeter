@@ -1,18 +1,53 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import { recaptchaReady } from "./recaptcha-script";
+
+const DEFAULT_ERROR_MESSAGE = "Something went wrong. Please try again."
 
 export default function DemoForm() {
   const [successMessage, setSuccessMessage] = useState(false);
-  const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const captchaRef = useRef<HTMLDivElement | null>(null);
+  const widgetIdRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function mountCaptcha() {
+      await recaptchaReady;
+      if (cancelled || !captchaRef.current) return;
+
+      if (widgetIdRef.current == null) {
+        widgetIdRef.current = window.grecaptcha.render(captchaRef.current, {
+          sitekey: process.env.NEXT_PUBLIC_CAPTCHA_SITE_KEY!,
+          theme: "light",
+          size: "normal",
+        });
+      }
+    }
+
+    mountCaptcha();
+    return () => { cancelled = true; };
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Check if reCAPTCHA is verified
+    const id = widgetIdRef.current;
+    const token = id != null ? window.grecaptcha.getResponse(id) : "";
+    if (!token) {
+      setErrorMessage("Please complete the reCAPTCHA.");
+      return;
+    }
+    setErrorMessage("");
+    
     const form = e.currentTarget;
     const formData = new FormData(form);
-
+    
     try {
       const response = await fetch(
         "https://formsubmit.co/ajax/contact@sentimeter.io",
@@ -25,8 +60,9 @@ export default function DemoForm() {
       const result = await response.json();
       if (result.success === "true") {
         setSuccessMessage(true);
-        setError(false);
+        setErrorMessage("");
         form.reset();
+        if (id != null) window.grecaptcha.reset(id);
 
         if (timeoutRef.current) clearTimeout(timeoutRef.current);
         timeoutRef.current = setTimeout(() => {
@@ -35,11 +71,12 @@ export default function DemoForm() {
           setTimeout(() => setSuccessMessage(false), 400); // wait for animation
         }, 6000);
       } else {
-        setError(true);
+        setErrorMessage(DEFAULT_ERROR_MESSAGE);
         setSuccessMessage(false);
+        if (id != null) window.grecaptcha.reset(id);
       }
     } catch (err) {
-      setError(true);
+      setErrorMessage(DEFAULT_ERROR_MESSAGE);
       setSuccessMessage(false);
     }
   };
@@ -115,6 +152,7 @@ export default function DemoForm() {
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_subject" value="New submission!" />
+            <div ref={captchaRef} className="recaptcha-wrapper"></div>
             <button type="submit" className="button">
               Schedule your personalized demo
             </button>
@@ -124,9 +162,9 @@ export default function DemoForm() {
                 Thanks you! We will be in touch with you shortly.
               </p>
             )}
-            {error && (
+            {errorMessage && (
               <p className="error-message">
-                Something went wrong. Please try again.
+                {errorMessage}
               </p>
             )}
           </form>
