@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "../../public/scss/styles.scss";
+import RecaptchaScript from "./components/recaptcha-script";
 import Main from "./components/main";
 import { Exo } from "next/font/google";
 const exo = Exo({
@@ -30,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${exo.variable} font-sans`}>
+        <RecaptchaScript />
         <Main>{children}</Main>
       </body>
     </html>
