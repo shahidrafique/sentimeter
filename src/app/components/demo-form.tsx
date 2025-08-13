@@ -152,7 +152,7 @@ export default function DemoForm() {
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_subject" value="New submission!" />
-            <div ref={captchaRef}></div>
+            <div ref={captchaRef} className="recaptcha-wrapper"></div>
             <button type="submit" className="button">
               Schedule your personalized demo
             </button>
