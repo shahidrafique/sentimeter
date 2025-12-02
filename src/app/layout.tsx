@@ -3,7 +3,13 @@ import "./globals.css";
 import "../../public/scss/styles.scss";
 import RecaptchaScript from "./components/recaptcha-script";
 import Main from "./components/main";
-import { Exo } from "next/font/google";
+import { Exo, Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // choose what you need
+});
+
 const exo = Exo({
   variable: "--font-exo-sans",
   subsets: ["latin"],

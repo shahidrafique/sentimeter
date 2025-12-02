@@ -14,6 +14,28 @@ footer {
     @include xs {
       align-items: flex-start;
     }
+
+    &.proofline {
+      align-items: flex-start;
+
+      .footer-section-title {
+        font-size: clamp(20px, scale(24), 24px);
+        margin-bottom: scale(30);
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: scale(15);
+
+        a {
+          &:hover {
+            color: $yellow;
+          }
+        }
+      }
+
+    }
   }
 
   .offices-container {
@@ -38,6 +60,10 @@ footer {
 
   .col {
     flex: 1;
+
+    &.col-2 {
+      flex: 2;
+    }
   }
 
   .row {

@@ -15,11 +15,11 @@ export default function Footer() {
               className="sentimeter-footer-logo"
               alt="sentimeter footer logo"
             />
-            <h3 className="footer-section-title">
+            <p className="footer-section-title">
               Master Sentiment.
               <br />
               Maximize Impact.
-            </h3>
+            </p>
             <ul className="contact-list">
               <li>
                 <Image
