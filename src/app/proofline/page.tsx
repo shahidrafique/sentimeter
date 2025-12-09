@@ -861,23 +861,23 @@ export default function page() {
           <div className="form-container">
             <form onSubmit={handleSubmit}>
               <div className="form-group">
-                <input type="text" placeholder="Your Full Name *" required="" />
+                <input type="text" placeholder="Your Full Name *" required />
               </div>
 
               <div className="form-group">
-                <input type="email" placeholder="Work Email *" required="" />
+                <input type="email" placeholder="Work Email *" required />
               </div>
 
               <div className="form-group">
                 <input
                   type="text"
                   placeholder="Bank or Institution Name *"
-                  required=""
+                  required
                 />
               </div>
 
               <div className="form-group">
-                <select required="">
+                <select required>
                   <option value="">Your Role *</option>
                   <option value="Head of Fraud Risk">Head of Fraud Risk</option>
                   <option value="Chief Compliance Officer">
