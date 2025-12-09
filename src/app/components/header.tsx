@@ -18,18 +18,20 @@ export default function Header() {
         <header className="header">
           <div className="container">
             <div className="header-left">
-              <Link href="/" className="logo">
-                <ScaledImage
-                  src="/images/logo-icon.svg"
-                  width={56}
-                  height={56}
-                  alt="Sentimeter"
-                  min={30}
-                />
-                <span>
+              <div className="logo">
+                <Link href={"/"}>
+                  <ScaledImage
+                    src="/images/logo-icon.svg"
+                    width={56}
+                    height={56}
+                    alt="Sentimeter"
+                  />
+                </Link>
+                <div className="line" />
+                <Link href={"/sentimeter"}>
                   <b>Senti</b>meter
-                </span>
-              </Link>
+                </Link>
+              </div>
             </div>
             <div className="header-right">
               <nav className={isActive ? "nav show" : "nav"}>

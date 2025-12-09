@@ -160,4 +160,63 @@
             }
         }
     }
+
+    .who-we-are {
+
+        .container {
+            h3 {
+                text-align: center;
+                font-size: clamp(28px, scale(72), 96px);
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                color: $blue;
+                margin-block: scale(100) scale(40);
+            }
+
+            .col {
+                padding-block: scale(120);
+                flex: 1;
+                align-content: center;
+
+                h2 {
+                    font-size: clamp(36px, scale(72), 96px);
+                    color: $dark-blue;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: bold;
+                }
+
+                h4 {
+                    font-size: clamp(24px, scale(30), 40px);
+                    font-weight: 500;
+                    color: $blue;
+                    max-width: scale(500);
+                }
+
+                p {
+                    max-width: clamp(350px, scale(600), 700px);
+                    line-height: 1.7;
+                }
+
+            }
+        }
+
+        @include sm {
+            .container {
+                h3 {
+                    margin-block: 50px 40px;
+                }
+
+                .col {
+                    padding-block: 0;
+
+                    h4 {
+                        max-width: none;
+                    }
+                }
+            }
+
+
+        }
+
+    }
 }

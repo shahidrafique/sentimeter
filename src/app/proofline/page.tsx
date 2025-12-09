@@ -1,8 +1,11 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ScaledImage from "../components/scaled-image";
+import { recaptchaReady } from "../components/recaptcha-script";
+
+const DEFAULT_ERROR_MESSAGE = "Something went wrong. Please try again.";
 
 export default function page() {
   const faqs = [
@@ -33,6 +36,32 @@ export default function page() {
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState(false);
+  const captchaRef = useRef<HTMLDivElement | null>(null);
+  const widgetIdRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function mountCaptcha() {
+      await recaptchaReady;
+      if (cancelled || !captchaRef.current) return;
+
+      if (widgetIdRef.current == null) {
+        widgetIdRef.current = window.grecaptcha.render(captchaRef.current, {
+          sitekey: process.env.NEXT_PUBLIC_CAPTCHA_SITE_KEY!,
+          theme: "light",
+          size: "normal",
+        });
+      }
+    }
+
+    mountCaptcha();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const toggle = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -41,6 +70,55 @@ export default function page() {
   const handleClick = () => {
     setIsActive(!isActive);
   };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Check if reCAPTCHA is verified
+    const id = widgetIdRef.current;
+    const token = id != null ? window.grecaptcha.getResponse(id) : "";
+    if (!token) {
+      setErrorMessage("Please complete the reCAPTCHA.");
+      return;
+    }
+    setErrorMessage("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/ajax/khalid.athar@arbisoft.com",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      const result = await response.json();
+      if (result.success === "true") {
+        setSuccessMessage(true);
+        setErrorMessage("");
+        form.reset();
+        if (id != null) window.grecaptcha.reset(id);
+
+        if (timeoutRef.current) clearTimeout(timeoutRef.current);
+        timeoutRef.current = setTimeout(() => {
+          const msg = document.querySelector(".success-message");
+          if (msg) msg.classList.add("message-hide");
+          setTimeout(() => setSuccessMessage(false), 400); // wait for animation
+        }, 6000);
+      } else {
+        setErrorMessage(DEFAULT_ERROR_MESSAGE);
+        setSuccessMessage(false);
+        if (id != null) window.grecaptcha.reset(id);
+      }
+    } catch (err) {
+      setErrorMessage(DEFAULT_ERROR_MESSAGE);
+      setSuccessMessage(false);
+    }
+  };
+
   return (
     <section className="page-proofline">
       {/* Header */}
@@ -50,12 +128,14 @@ export default function page() {
           <div className="container">
             <div className="header-left">
               <div className="logo">
-                <ScaledImage
-                  src="/images/logo-icon.svg"
-                  width={56}
-                  height={56}
-                  alt="Sentimeter"
-                />
+                <Link href={"/"}>
+                  <ScaledImage
+                    src="/images/logo-icon.svg"
+                    width={56}
+                    height={56}
+                    alt="Sentimeter"
+                  />
+                </Link>
                 <div className="line" />
                 <strong>Proofline</strong>
               </div>
@@ -776,7 +856,7 @@ export default function page() {
         </div>
         <div className="container dir-col">
           <div className="form-container">
-            <form onsubmit="event.preventDefault(); alert('Thank you! We will contact you within 24 hours to schedule your personalized demo.');">
+            <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <input type="text" placeholder="Your Full Name *" required="" />
               </div>
@@ -808,18 +888,23 @@ export default function page() {
                 </select>
               </div>
 
+              <div className="form-group">
+                <div ref={captchaRef} className="recaptcha-wrapper"></div>
+              </div>
+
               <button type="submit" className="form-submit">
                 Request Demo →
               </button>
+
+              {errorMessage && <p className="error-message">{errorMessage}</p>}
 
               <div className="form-footer">
                 📧{" "}
                 <a href="mailto:proofline@sentimeter.io">
                   proofline@sentimeter.io
                 </a>{" "}
-                | 📞 +92-XXX-XXXXXXX
+                | 📞 +92-300-8477741
                 <br />
-                Response within 24 hours • Priority scheduling available
               </div>
             </form>
           </div>
