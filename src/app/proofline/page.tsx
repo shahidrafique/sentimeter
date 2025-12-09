@@ -71,10 +71,11 @@ export default function page() {
     setIsActive(!isActive);
   };
 
+  const timeoutRef = useRef<number | null>(null);
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Check if reCAPTCHA is verified
     const id = widgetIdRef.current;
     const token = id != null ? window.grecaptcha.getResponse(id) : "";
     if (!token) {
@@ -103,10 +104,12 @@ export default function page() {
         if (id != null) window.grecaptcha.reset(id);
 
         if (timeoutRef.current) clearTimeout(timeoutRef.current);
-        timeoutRef.current = setTimeout(() => {
+
+        timeoutRef.current = window.setTimeout(() => {
           const msg = document.querySelector(".success-message");
           if (msg) msg.classList.add("message-hide");
-          setTimeout(() => setSuccessMessage(false), 400); // wait for animation
+
+          setTimeout(() => setSuccessMessage(false), 400);
         }, 6000);
       } else {
         setErrorMessage(DEFAULT_ERROR_MESSAGE);
