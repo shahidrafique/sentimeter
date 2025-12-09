@@ -5,7 +5,7 @@ import Image from "next/image";
 import ScaledImage from "../components/scaled-image";
 import { recaptchaReady } from "../components/recaptcha-script";
 
-const DEFAULT_ERROR_MESSAGE = "Something went wrong. Please try again."
+const DEFAULT_ERROR_MESSAGE = "Something went wrong. Please try again.";
 
 export default function page() {
   const faqs = [
@@ -58,7 +58,9 @@ export default function page() {
     }
 
     mountCaptcha();
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const toggle = (index) => {
@@ -126,12 +128,14 @@ export default function page() {
           <div className="container">
             <div className="header-left">
               <div className="logo">
-                <ScaledImage
-                  src="/images/logo-icon.svg"
-                  width={56}
-                  height={56}
-                  alt="Sentimeter"
-                />
+                <Link href={"/"}>
+                  <ScaledImage
+                    src="/images/logo-icon.svg"
+                    width={56}
+                    height={56}
+                    alt="Sentimeter"
+                  />
+                </Link>
                 <div className="line" />
                 <strong>Proofline</strong>
               </div>
@@ -884,26 +888,23 @@ export default function page() {
                 </select>
               </div>
 
-              <div className="form-group"><div ref={captchaRef} className="recaptcha-wrapper"></div></div>
+              <div className="form-group">
+                <div ref={captchaRef} className="recaptcha-wrapper"></div>
+              </div>
 
               <button type="submit" className="form-submit">
                 Request Demo →
               </button>
 
-              {errorMessage && (
-                <p className="error-message">
-                  {errorMessage}
-                </p>
-              )}
+              {errorMessage && <p className="error-message">{errorMessage}</p>}
 
               <div className="form-footer">
                 📧{" "}
                 <a href="mailto:proofline@sentimeter.io">
                   proofline@sentimeter.io
                 </a>{" "}
-                | 📞 +92-XXX-XXXXXXX
+                | 📞 +92-300-8477741
                 <br />
-                Response within 24 hours • Priority scheduling available
               </div>
             </form>
           </div>

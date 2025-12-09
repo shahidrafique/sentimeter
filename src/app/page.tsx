@@ -92,6 +92,37 @@ export default function Landing() {
           </a>
         </section>
       </section>
+      <section className="section section has-bg blue who-we-are">
+        <div className="card">
+          <div className="container">
+            <div className="col">
+              <h2>Who We Are</h2>
+              <h4>Enterprise Software for Pakistan's Growth Economy</h4>
+            </div>
+            <div className="col">
+              <p>
+                Sentimeter is an Arbisoft company founded in 2018 with a
+                mission: help Pakistan's leading organizations turn operational
+                challenges into competitive advantages through intelligent
+                software.
+              </p>
+              <p>
+                We started with customer experience management, serving brands
+                like <b>McDonald's, Total, Metro,</b> and<b> Bata</b> across
+                food, retail, fuel, and fashion sectors. In 2024, we expanded
+                into financial services with <b>Proofline </b> — a fraud
+                investigation platform purpose-built for Pakistan's banking
+                sector and State Bank of Pakistan (SBP) compliance requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <h3>
+            Different industries. Different challenges. Same engineering rigor.
+          </h3>
+        </div>
+      </section>
     </article>
   );
 }
