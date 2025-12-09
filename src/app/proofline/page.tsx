@@ -35,7 +35,7 @@ export default function page() {
     },
   ];
 
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState(false);
   const captchaRef = useRef<HTMLDivElement | null>(null);
@@ -63,7 +63,7 @@ export default function page() {
     };
   }, []);
 
-  const toggle = (index) => {
+  const toggle = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
   const [isActive, setIsActive] = useState(false);
