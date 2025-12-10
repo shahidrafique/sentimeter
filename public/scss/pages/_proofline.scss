@@ -10,6 +10,13 @@
     --warning-orange: #F59E0B;
     --gold: #D4AF37;
 
+
+    .container {
+        >.container {
+            padding: 10px;
+        }
+    }
+
     .header {
         .logo {
             font-family: "Poppins", sans-serif;
@@ -167,7 +174,9 @@
     .transformation-section {
         background-color: $dark-blue;
         color: white;
-        padding: scale(100) 0;
+        // padding: scale(100) 0;
+        padding-block: clamp(50px, scale(100), 150px);
+        padding-inline: 0;
 
         // font-family: "Poppins", sans-serif;
 
@@ -240,8 +249,12 @@
             margin-top: scale(80);
             text-align: center;
             width: 50%;
-            font-size: scale(18);
+            font-size: clamp(16px, scale(18), 24p);
             margin: scale(80) auto 0;
+
+            @include md {
+                width: 100%;
+            }
         }
 
 
@@ -252,7 +265,8 @@
 
         .card {
             @extend .gradient;
-            padding: scale(100) 0;
+            padding-block: clamp(50px, scale(100), 150px);
+            padding-inline: 0;
         }
 
         .crisis-header {
@@ -281,12 +295,16 @@
             .crisis-card-label {
                 font-size: clamp(18px, scale(24), 32px);
                 font-weight: 500;
-                margin-bottom: scale(30);
+                margin-bottom: clamp(16px, scale(30), 48px);
             }
 
             .crisis-card-desc {
-                font-size: clamp(18px, scale(24), 32px);
+                font-size: clamp(16px, scale(24), 32px);
                 max-width: 80%;
+
+                @include md {
+                    max-width: none;
+                }
             }
         }
 
@@ -295,7 +313,9 @@
     .workflow-section {
         background-color: $dark-blue;
         color: white;
-        padding: scale(100) 0;
+        // padding: scale(100) 0;
+        padding-block: clamp(50px, scale(100), 150px);
+        padding-inline: 0;
 
         .container {
             align-items: center;
@@ -337,7 +357,7 @@
             width: 100%;
 
             .arrow-visual {
-                font-size: scale(60);
+                font-size: clamp(40px, scale(60), 80px);
                 text-align: center;
             }
 
@@ -436,7 +456,9 @@
 
     .credibility-section {
         background-color: #D0EDDE;
-        padding: scale(100) 0;
+        // padding: scale(100) 0;
+        padding-block: clamp(50px, scale(100), 150px);
+        padding-inline: 0;
 
         .section-header {
             text-align: center;
@@ -469,12 +491,12 @@
             background-color: $green;
             color: white;
             flex: 1;
-            padding: scale(40);
+            padding: clamp(30px, scale(40), 60px);
             border-radius: scale(8);
 
             .credibility-icon {
-                font-size: clamp(32px, scale(54), 72px);
-                margin-bottom: scale(10);
+                font-size: clamp(48px, scale(54), 72px);
+                margin-bottom: scale(16);
             }
 
             h3 {
@@ -510,7 +532,8 @@
 
     /* COMPARISON TABLE */
     .comparison-section {
-        padding: scale(100) 0;
+        padding-block: clamp(50px, scale(100), 150px);
+        padding-inline: 0;
         background-color: #F8FFFD;
 
         .section-header {
@@ -616,7 +639,8 @@
 
     .ai-roadmap-section {
         background-color: #D0E4ED;
-        padding: scale(100) 0;
+        padding-block: clamp(50px, scale(100), 150px);
+        padding-inline: 0;
 
         .ai-roadmap-header {
             text-align: center;
@@ -673,7 +697,8 @@
     .pricing-section {
         background: #003B6D;
         color: white;
-        padding: scale(100) 0;
+        padding-block: clamp(50px, scale(100), 150px);
+        padding-inline: 0;
 
         .section-header {
             text-align: center;
@@ -762,6 +787,10 @@
             max-width: scale(1000);
             margin: scale(50) auto 0;
             text-align: center;
+
+            @include md {
+                max-width: none;
+            }
         }
     }
 
@@ -769,7 +798,8 @@
 
 
     .faq-section {
-        padding: scale(100) 0;
+        padding-block: clamp(50px, scale(100), 150px);
+        padding-inline: 0;
 
         .section-header {
             text-align: center;
@@ -843,7 +873,8 @@
     .final-cta-section {
         background-color: $green;
         color: white;
-        padding: scale(100) 0;
+        padding-block: clamp(50px, scale(100), 150px);
+        padding-inline: 0;
 
         .section-header {
             text-align: center;

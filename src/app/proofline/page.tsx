@@ -11,11 +11,11 @@ export default function page() {
   const faqs = [
     {
       q: "Is Proofline approved by SBP?",
-      a: "Proofline is built using SBP Fraud Investigation Circulars as the core compliance framework. The platform supports all SBP requirements including the 2-day preliminary report (≥ Rs 5M cases), 10-day detailed investigation deadlines, and 3-day customer compensation requirements. SBP does not certify third-party software vendors. Instead, they audit banks' fraud investigation processes and documentation. Proofline generates audit-ready documentation that meets SBP's regulatory requirements.",
+      a: "Proofline is built using SBP Fraud Investigation Circulars as the core compliance framework. The platform supports all SBP requirements including the 2-day preliminary report (≥ Rs 5M cases), 10-day detailed investigation deadlines, and 3-day customer compensation requirements. Proofline generates audit-ready documentation that meets SBP's regulatory requirements.",
     },
     {
       q: "Can it integrate with our core banking system?",
-      a: "Yes. Proofline is designed to integrate with major Pakistani banking platforms including HBL, UBL, MCB, Faysal Bank core systems, card management platforms, 1LINK, call recording systems, and document management solutions. Integration requirements are assessed during implementation planning, and secure API connectors are configured during deployment. Average integration timeline: 3-4 weeks for most banks.",
+      a: "Yes. Proofline is designed to integrate with major Pakistani banking platforms core systems, card management platforms, 1LINK, call recording systems, and document management solutions. Integration requirements are assessed during implementation planning, and secure API connectors are configured during deployment. Average integration timeline: 3-4 weeks for most banks.",
     },
     {
       q: "How long does implementation really take?",
@@ -161,17 +161,17 @@ export default function page() {
                   </li>
                 </ul>
               </nav>
-              <Link href="/demo-form" className="button">
+              <Link href="#contact" className="button">
                 Request for Demo
               </Link>
             </div>
           </div>
 
-          <div className="menu-button" onClick={handleClick}>
+          {/* <div className="menu-button" onClick={handleClick}>
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </div> */}
         </header>
       </>
 
@@ -248,7 +248,7 @@ export default function page() {
               Complete investigations in &lt;10 days, not 45-90 days.
             </p>
             <div className="cta-group">
-              <Link href="/demo-form" className="button">
+              <Link href="#contact" className="button">
                 Request for Demo
               </Link>
 
@@ -484,11 +484,11 @@ export default function page() {
 
                 <div className="flow-module">
                   <div className="module-icon">⚙️</div>
-                  <div className="module-title">FTDH Handling</div>
+                  <div className="module-title">FTDH</div>
                   <ul className="module-features">
                     <li>Automated account lien marking</li>
                     <li>Card/channel blocking (RPA)</li>
-                    <li>Device blocking &amp; PTA reporting</li>
+                    {/* <li>Device blocking &amp; PTA reporting</li> */}
                     <li>Branch notifications &amp; field interface</li>
                     <li>Inter-bank fraud intelligence sharing</li>
                     <li>Replaces 100s of manual emails (5-10 days → hours)</li>
@@ -648,12 +648,12 @@ export default function page() {
                     ✅ Pakistan banking expert-built
                   </td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <td>Annual Cost</td>
                   <td>Low software, high labor</td>
                   <td>$200,000 - $300,000</td>
                   <td>$40,000 - $125,000</td>
-                </tr>
+                </tr> */}
                 <tr>
                   <td>Average Investigation Time</td>
                   <td>45-90 days</td>
@@ -754,14 +754,14 @@ export default function page() {
                 <li>Integration complexity with your systems</li>
               </ul>
 
-              <div className="pricing-box">
+              {/* <div className="pricing-box">
                 <div className="pricing-label">Typical Annual Investment</div>
                 <div className="pricing-amount">$40,000 - $125,000</div>
                 <div className="pricing-note">
                   Customized based on bank size, case volume, and module
                   selection
                 </div>
-              </div>
+              </div> */}
 
               {/* <a href="#contact" className="pricing-cta-white">
                 Request Custom Quote →
@@ -906,7 +906,7 @@ export default function page() {
                 <a href="mailto:proofline@sentimeter.io">
                   proofline@sentimeter.io
                 </a>{" "}
-                | 📞 +92-300-8477741
+                {/* | 📞 +92-300-8477741 */}
                 <br />
               </div>
             </form>
@@ -943,7 +943,7 @@ export default function page() {
                   proofline@sentimeter.io
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <Image
                   src="/images/phone-icon.svg"
                   width={21}
@@ -951,7 +951,7 @@ export default function page() {
                   alt="phone icon"
                 />
                 <a href="tell: +923008477741">+92 300 8477741</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="col">
@@ -1004,7 +1004,7 @@ export default function page() {
               </p>
             </div>
             <div className="socialmedia-section">
-              <ul className="socialmedia-list">
+              {/* <ul className="socialmedia-list">
                 <li>
                   <a href="#">
                     <ScaledImage
@@ -1038,7 +1038,7 @@ export default function page() {
                     />
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

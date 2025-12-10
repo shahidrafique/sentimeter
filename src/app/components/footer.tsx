@@ -32,7 +32,7 @@ export default function Footer() {
                   contact@sentimeter.io
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <Image
                   src="/images/phone-icon.svg"
                   width={21}
@@ -40,7 +40,7 @@ export default function Footer() {
                   alt="phone icon"
                 />
                 <a href="tell: +923008477741">+92 300 8477741</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="col offices-container">
