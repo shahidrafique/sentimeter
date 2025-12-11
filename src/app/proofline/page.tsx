@@ -861,23 +861,24 @@ export default function page() {
           <div className="form-container">
             <form onSubmit={handleSubmit}>
               <div className="form-group">
-                <input type="text" placeholder="Your Full Name *" required />
+                <input type="text" placeholder="Your Full Name *" name="fullName" required />
               </div>
 
               <div className="form-group">
-                <input type="email" placeholder="Work Email *" required />
+                <input type="email" placeholder="Work Email *" name="email" required />
               </div>
 
               <div className="form-group">
                 <input
                   type="text"
                   placeholder="Bank or Institution Name *"
+                  name="institution"
                   required
                 />
               </div>
 
               <div className="form-group">
-                <select required>
+                <select required name="role">
                   <option value="">Your Role *</option>
                   <option value="Head of Fraud Risk">Head of Fraud Risk</option>
                   <option value="Chief Compliance Officer">
@@ -899,6 +900,7 @@ export default function page() {
                 Request Demo →
               </button>
 
+              {successMessage && <p className="success-message">Thanks you! We will be in touch with you shortly.</p>}
               {errorMessage && <p className="error-message">{errorMessage}</p>}
 
               <div className="form-footer">
