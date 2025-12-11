@@ -86,6 +86,7 @@ export default function page() {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
+    formData.delete("g-recaptcha-response");
 
     try {
       const response = await fetch(
