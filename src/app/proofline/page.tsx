@@ -90,7 +90,7 @@ export default function page() {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/ajax/khalid.athar@arbisoft.com",
+        "https://formsubmit.co/ajax/proofline@sentimeter.io",
         {
           method: "POST",
           body: formData,
@@ -861,12 +861,27 @@ export default function page() {
         <div className="container dir-col">
           <div className="form-container">
             <form onSubmit={handleSubmit}>
+              <input
+                type="hidden"
+                name="_cc"
+                value="khalid.athar@arbisoft.com"
+              />
               <div className="form-group">
-                <input type="text" placeholder="Your Full Name *" name="fullName" required />
+                <input
+                  type="text"
+                  placeholder="Your Full Name *"
+                  name="fullName"
+                  required
+                />
               </div>
 
               <div className="form-group">
-                <input type="email" placeholder="Work Email *" name="email" required />
+                <input
+                  type="email"
+                  placeholder="Work Email *"
+                  name="email"
+                  required
+                />
               </div>
 
               <div className="form-group">
@@ -901,7 +916,11 @@ export default function page() {
                 Request Demo →
               </button>
 
-              {successMessage && <p className="success-message">Thanks you! We will be in touch with you shortly.</p>}
+              {successMessage && (
+                <p className="success-message">
+                  Thanks you! We will be in touch with you shortly.
+                </p>
+              )}
               {errorMessage && <p className="error-message">{errorMessage}</p>}
 
               <div className="form-footer">
