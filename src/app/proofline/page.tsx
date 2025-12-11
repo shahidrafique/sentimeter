@@ -23,11 +23,11 @@ export default function page() {
     },
     {
       q: "What if we already use global fraud detection vendors?",
-      a: "Proofline is different—it's post-fraud INVESTIGATION, not real-time fraud DETECTION. Global fraud detection platforms prevent fraud at transaction time. Proofline accelerates investigation and resolution AFTER fraud is reported to meet SBP deadlines. They're complementary systems. Many banks run both: detection platforms prevent fraud, Proofline investigates and reports it to SBP.",
+      a: "Proofline is different—it's post-fraud INVESTIGATION, not real-time fraud PREVENTION or DETECTION. Global fraud Monitoring platforms prevent or detect fraud at transaction time. Proofline accelerates investigation and resolution AFTER fraud is reported to meet SBP deadlines. They're complementary systems. Many banks run both.",
     },
     {
       q: "Who is currently using Proofline?",
-      a: "Proofline is currently in deployment with leading Pakistani financial institutions. Due to confidentiality agreements, we cannot publicly share client names at this stage. However, the platform is backed by Arbisoft, which has 17 years of experience delivering enterprise software for World Bank, Insurify (100M+ quotes), HyperJar (600K+ users), and other major financial institutions. During your demo, we can arrange confidential discussions with banking professionals who have evaluated Proofline.",
+      a: "Proofline is currently in assessment with leading Pakistani financial institutions. Due to confidentiality agreements, we cannot publicly share client names at this stage. However, the platform is backed by Arbisoft, which has 17 years of experience delivering enterprise software for World Bank, Insurify (100M+ quotes), HyperJar (600K+ users), and other major financial institutions.",
     },
     {
       q: "Can we customize it for our bank's specific workflows?",
@@ -487,7 +487,7 @@ export default function page() {
                   <div className="module-title">FTDH</div>
                   <ul className="module-features">
                     <li>Automated account lien marking</li>
-                    <li>Card/channel blocking (RPA)</li>
+                    <li>Card/channel blocking</li>
                     {/* <li>Device blocking &amp; PTA reporting</li> */}
                     <li>Branch notifications &amp; field interface</li>
                     <li>Inter-bank fraud intelligence sharing</li>

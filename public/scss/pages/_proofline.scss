@@ -27,6 +27,28 @@
             background-clip: text;
             letter-spacing: -0.02em;
         }
+
+        .button {
+            background: $green;
+
+            &:hover {
+                background: darken($green, 10)
+            }
+        }
+
+        .header-right {
+            .nav {
+                .nav__item {
+                    a {
+                        color: $green;
+
+                        &:hover {
+                            color: darken($green, 20)
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .banner--proofline {
@@ -859,7 +881,7 @@
             &.open {
                 .faq-answer {
                     display: block;
-                    max-height: 200px;
+                    max-height: 400px;
                     padding: scale(15) scale(30);
 
                 }
