@@ -998,14 +998,21 @@ export default function page() {
 
             <ul>
               <li>
-                <a href="#">About Arbisoft</a>
+                <a href="https://www.arbisoft.com" target="_blank">
+                  About Arbisoft
+                </a>
               </li>
               <li>
-                <a href="#">Fintech Portfolio</a>
+                <a
+                  href="https://arbisoft.com/industries/finance"
+                  target="_blank"
+                >
+                  Fintech Portfolio
+                </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">Security & Compliance</a>
-              </li>
+              </li> */}
               <li>
                 <Link href="/privacy-policy">Privacy Policy</Link>
               </li>
