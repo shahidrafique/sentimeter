@@ -86,10 +86,11 @@ export default function page() {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
+    formData.delete("g-recaptcha-response");
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/ajax/khalid.athar@arbisoft.com",
+        "https://formsubmit.co/ajax/proofline@sentimeter.io",
         {
           method: "POST",
           body: formData,
@@ -860,24 +861,40 @@ export default function page() {
         <div className="container dir-col">
           <div className="form-container">
             <form onSubmit={handleSubmit}>
+              <input
+                type="hidden"
+                name="_cc"
+                value="khalid.athar@arbisoft.com"
+              />
               <div className="form-group">
-                <input type="text" placeholder="Your Full Name *" required />
+                <input
+                  type="text"
+                  placeholder="Your Full Name *"
+                  name="fullName"
+                  required
+                />
               </div>
 
               <div className="form-group">
-                <input type="email" placeholder="Work Email *" required />
+                <input
+                  type="email"
+                  placeholder="Work Email *"
+                  name="email"
+                  required
+                />
               </div>
 
               <div className="form-group">
                 <input
                   type="text"
                   placeholder="Bank or Institution Name *"
+                  name="institution"
                   required
                 />
               </div>
 
               <div className="form-group">
-                <select required>
+                <select required name="role">
                   <option value="">Your Role *</option>
                   <option value="Head of Fraud Risk">Head of Fraud Risk</option>
                   <option value="Chief Compliance Officer">
@@ -899,6 +916,11 @@ export default function page() {
                 Request Demo →
               </button>
 
+              {successMessage && (
+                <p className="success-message">
+                  Thanks you! We will be in touch with you shortly.
+                </p>
+              )}
               {errorMessage && <p className="error-message">{errorMessage}</p>}
 
               <div className="form-footer">
@@ -976,14 +998,21 @@ export default function page() {
 
             <ul>
               <li>
-                <a href="#">About Arbisoft</a>
+                <a href="https://www.arbisoft.com" target="_blank">
+                  About Arbisoft
+                </a>
               </li>
               <li>
-                <a href="#">Fintech Portfolio</a>
+                <a
+                  href="https://arbisoft.com/industries/finance"
+                  target="_blank"
+                >
+                  Fintech Portfolio
+                </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">Security & Compliance</a>
-              </li>
+              </li> */}
               <li>
                 <Link href="/privacy-policy">Privacy Policy</Link>
               </li>
